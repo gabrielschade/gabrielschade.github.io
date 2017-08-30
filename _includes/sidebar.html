@@ -3,13 +3,13 @@
     <div class="sidebar-about">
       <h2>
         <a href="/{{ site.baseurl }}">
-          {{ site.title }}
+          Gabriel Schade
         </a>
       </h2>
       <p class="lead">{{ site.description }}</p>
     </div>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav transparent-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">Home</a>
 
       {% assign pages_list = site.pages %}
@@ -41,13 +41,6 @@
       </a>
 
     </div>
-
-    <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">Teste materialize</label>
-        </div>
-      </div>
 
     <p>&copy; {{ site.time | date: '%Y' }} - Todos os direitos reservados.</p>
   </div>
