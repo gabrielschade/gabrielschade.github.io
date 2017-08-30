@@ -2,3 +2,33 @@
     background-color: transparent;
     box-shadow: none;
 }
+
+.sidebar{
+    box-shadow: 3px 0 3px #ccc;
+}
+
+.sidebar .background{
+    background-color: red;
+    min-height: 120px;
+}
+
+.no-bottom{
+    margin-bottom:0;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.none-decoration{
+    text-decoration: none;
+}
+
+.mid-image-container{
+    margin-bottom:-32px;
+}
+
+.mid-image{
+    height: 96px;
+    margin-top: -36px;
+}
