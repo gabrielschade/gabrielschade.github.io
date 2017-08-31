@@ -5,12 +5,15 @@
 
 .sidebar{
     box-shadow: 3px 0 3px #ccc;
+    background-color:white;
+    color: rgba(0,0,0,0.87);
 }
 
 .sidebar .background{
     background-image: url(/public/img/profile-card-bg.jpg);
     background-position: 55% 20%;
     background-size: cover;
+    min-height: 120px;
 }
 
 .no-bottom{
@@ -29,6 +32,14 @@
 
 .font-16{
     font-size: 16px;
+}
+
+.accent-text{
+    color: rgba(0,0,0,0.87);
+}
+
+.light-text{
+     color: rgba(0,0,0,0.54);
 }
 
 .none-decoration, 
