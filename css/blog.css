@@ -49,6 +49,10 @@
     padding:0;
 }
 
+.padding-top-0{
+    padding-top: 0;
+}
+
 .padding-bottom-80{
     top: 95%;
     padding-bottom: 80px;
