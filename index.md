@@ -7,7 +7,5 @@ title: Home
 
 {% for post in site.posts %}
   {% include postdate.html %}  
-  [ {{ post.title }} ]
-  [{{post.excerpt }}]
-  ({{ post.url }})
+  [ {{ post.title }} ] ({{ post.url }})
 {% endfor %}
