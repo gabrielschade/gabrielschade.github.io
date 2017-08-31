@@ -16,6 +16,14 @@
     margin-bottom:0;
 }
 
+.margin-top-15{
+    margin-top:15px;
+}
+
+.no-padding{
+    padding:0;
+}
+
 .font-16{
     font-size: 16px;
 }
