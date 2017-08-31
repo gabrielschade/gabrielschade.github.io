@@ -8,8 +8,9 @@
 }
 
 .sidebar .background{
-    background-color: red;
-    min-height: 120px;
+    background-image: url(/public/img/profile-card-bg.jpg);
+    background-position: 55% 20%;
+    background-size: cover;
 }
 
 .no-bottom{
@@ -30,7 +31,8 @@
     font-size: 16px;
 }
 
-.none-decoration{
+.none-decoration, 
+.none-decoration:hover{
     text-decoration: none;
 }
 
