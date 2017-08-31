@@ -48,7 +48,9 @@
   <div class="container sidebar-sticky">
       
     <nav class="sidebar-nav transparent-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">
+        <span class="accent-text">Home</span>
+      </a>
 
         {% assign pages_list = site.pages %}
         {% for node in pages_list %}
