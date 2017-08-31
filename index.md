@@ -6,6 +6,8 @@ title: Home
 ## Posts
 
 {% for post in site.posts %}
-  {{ post.date | date: "%d %b %Y" }}  
-  [ {{ post.title }} ]({{ post.url }})
+  {% include postdate.html %}  
+  [ {{ post.title }} ]
+  [{{post.excerpt }}]
+  ({{ post.url }})
 {% endfor %}
