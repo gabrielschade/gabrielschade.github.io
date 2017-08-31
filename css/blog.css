@@ -1,6 +1,7 @@
 .transparent-nav {
     background-color: transparent;
     box-shadow: none;
+    height:auto;
 }
 
 .sidebar{
