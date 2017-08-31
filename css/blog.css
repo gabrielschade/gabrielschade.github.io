@@ -129,7 +129,10 @@ a .icon:hover{
 .content-card{
     background-color: white;
     margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right:0;
+    max-width:100%;
     padding: 15px 30px;
     padding-top: 15px;
-    margin-bottom: 30px;
+    
 }
