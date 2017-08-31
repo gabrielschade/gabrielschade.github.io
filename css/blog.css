@@ -1,3 +1,7 @@
+body{
+    background-color:#f8f8f8;
+}
+
 .transparent-nav {
     background-color: transparent;
     box-shadow: none;
@@ -8,9 +12,6 @@
     top:15px;
     left: 15px;
     bottom:15px;
-    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
-    -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
-    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
     background-color:white;
     color: rgba(0,0,0,0.87);
 }
@@ -123,4 +124,12 @@ a .icon:hover{
 
 .light-font{
     font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.content-card{
+    background-color: white;
+    margin-top: 30px;
+    padding: 15px 30px;
+    padding-top: 15px;
+    margin-bottom: 30px;
 }
