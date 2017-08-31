@@ -116,12 +116,6 @@ a .icon:hover{
     height: 100px;
 }
 
-@media (min-width: 48em) {
-    .intro-content{
-        height: 100vh;
-    }
-}
-
 .default-font{
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
