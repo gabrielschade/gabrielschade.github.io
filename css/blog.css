@@ -19,7 +19,9 @@
 .margin-top-15{
     margin-top:15px;
 }
-
+.margin-side-15{
+    margin: 0 15px;
+}
 .no-padding{
     padding:0;
 }
