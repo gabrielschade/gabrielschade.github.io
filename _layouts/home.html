@@ -1,8 +1,18 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<div class="page">
-  TESTE
-  {{ content }}
-</div>
+  {% include head.html %}
+
+  <body>
+      <div class="bg-image">
+      </div>
+      
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+{% include scripts.html %}
+  </body>
+</html>
