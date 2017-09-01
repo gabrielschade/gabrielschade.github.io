@@ -1,6 +1,7 @@
 ---
 layout: parallax
 title: Home
+parallax-bg: /public/img/bg.png
 ---
 
 ## Posts
