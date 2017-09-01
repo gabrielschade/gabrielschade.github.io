@@ -65,10 +65,14 @@
 .font-16{
     font-size: 16px;
 }
+.font-large{
+    font-size:48px;
+}
 
 .font-64{
     font-size:64px;
 }
+
 
 a .icon{
     transition: all 300ms;
@@ -149,12 +153,14 @@ a .icon:hover{
     min-height:500px;
   }
 
-
-
   @media (min-width: 48em) {
     .sidebar {
         width:14em;
     }
+
+    .font-large{
+        font-size:64px;   
+       }
 
     .content {
         max-width: 30rem;
