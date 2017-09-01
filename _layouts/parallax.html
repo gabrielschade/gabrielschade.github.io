@@ -1,0 +1,31 @@
+---
+layout: default
+---
+  
+{% include sidebar.html %}
+
+<div class="parallax-container">
+  <div>
+     Dev,
+     <br/>ciência
+     <br/>e reflexões 
+  </div>
+  <div class="parallax"><img src="/public/img/bg.jpg"></div>
+</div>
+
+<div class="section white">
+  <div class="row container">
+    <h2 class="header">Parallax</h2>
+    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+  </div>
+</div>
+
+<div class="content container padding-top-0">
+  {{ content }}
+</div>
+
+<script type="text/javascript" >
+$(document).ready(function(){
+      $('.parallax').parallax();
+});
+</script>

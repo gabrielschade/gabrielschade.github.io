@@ -1,10 +1,11 @@
 ---
-layout: home
+layout: parallax
 title: Home
 ---
 
 ## Posts
 
 {% for post in site.posts %} {% include postdate.html %}
+[ {{ post.title }} ]({{ post.url }}) 
 
-[ {{ post.title }} ]({{ post.url }}) {% endfor %}
+{% endfor %}
