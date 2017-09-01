@@ -157,6 +157,10 @@ a .icon:hover{
         box-shadow: none;
 }
 
+.strong-on-hover:hover{
+    color: rgba(0,0,0,0.87);
+}
+
   @media (min-width: 48em) {
     .sidebar {
         width:14em;
