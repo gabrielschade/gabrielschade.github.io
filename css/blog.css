@@ -149,21 +149,7 @@ a .icon:hover{
     min-height:500px;
   }
 
-  @media (min-width: 83.5em){
-    .content {
-        margin-left: 18rem;
-        margin-right: 4rem;
-        max-width: 36rem;
-    }
-  }
 
-  @media (min-width: 64em){
-  .content {
-      margin-left: 18rem;
-      margin-right: 4rem;
-      max-width: 32rem;
-  }
-}
 
   @media (min-width: 48em) {
     .sidebar {
@@ -177,3 +163,18 @@ a .icon:hover{
     }
 }
 
+@media (min-width: 64em){
+    .content {
+        margin-left: 18rem;
+        margin-right: 4rem;
+        max-width: 32rem;
+    }
+  }
+
+  @media (min-width: 83.5em){
+    .content {
+        margin-left: 18rem;
+        margin-right: 4rem;
+        max-width: 36rem;
+    }
+  }
