@@ -11,8 +11,13 @@
     bottom:15px;
     background-color:white;
     color: rgba(0,0,0,0.87);
-    width:14em;
     z-index:99;
+}
+
+@media (min-width: 48em) {
+    .sidebar {
+        width:14em;
+    }
 }
 
 .sidebar .background{
@@ -62,6 +67,10 @@
 
 .font-16{
     font-size: 16px;
+}
+
+.font-64{
+    font-size:64px;
 }
 
 a .icon{
@@ -140,6 +149,5 @@ a .icon:hover{
 }
 
 .parallax-container {
-    height: 100vh;
     min-height:500px;
   }
