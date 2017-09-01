@@ -1,5 +1,5 @@
 ---
-layout: parallax
+layout: home
 title: Home
 parallax-bg: /public/img/bg.png
 ---
