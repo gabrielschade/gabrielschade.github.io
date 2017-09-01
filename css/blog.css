@@ -150,6 +150,13 @@ a .icon:hover{
     min-height:500px;
   }
 
+.side-nav{
+        position: static;
+        width: auto;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+}
+
   @media (min-width: 48em) {
     .sidebar {
         width:14em;
