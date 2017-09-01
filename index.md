@@ -4,7 +4,9 @@ title: Home
 parallax-bg: /public/img/bg.png
 parallax-text: >
      Dev,
+
      ciência
+     
      e reflexões 
 ---
 
