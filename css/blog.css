@@ -6,13 +6,9 @@
 }
 
 .sidebar{
-    top:15px;
-    left: 15px;
-    bottom:15px;
     background-color:white;
     color: rgba(0,0,0,0.87);
     z-index:99;
-    max-height: 550px;
 }
 
 
