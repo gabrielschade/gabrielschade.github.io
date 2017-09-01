@@ -136,3 +136,7 @@ a .icon:hover{
     padding-top: 15px;
     
 }
+
+.parallax-container {
+    height: "600px";
+  }
