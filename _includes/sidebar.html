@@ -55,13 +55,10 @@
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">
         <span class="accent-text">Home</span>
       </a>
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">
-        <span class="accent-text">Home2</span>
+      <a class="sidebar-nav-item{% if page.url == (site.baseurl + '/about') %} active{% endif %}" href="/{{ site.baseurl }}/about">
+        <span class="accent-text">About</span>
       </a>
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">
-        <span class="accent-text">Home3</span>
-      </a>
-
+      
         {% assign pages_list = site.pages %}
         {% for node in pages_list %}
           {% if node.title != null %}
