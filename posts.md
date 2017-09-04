@@ -1,11 +1,9 @@
 ---
 layout: page
 title: Posts
-markdown: kramdown
-kramdown: 
-	syntax_highlighter_opts:
-		disable : true
 ---
+
+a
 
 {% assign rawtags = "" %}
 {% for post in site.posts %}
@@ -13,6 +11,8 @@ kramdown:
 	{% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
+
+b
 
 {% assign tags = "" %}
 {% for tag in rawtags %}
@@ -26,10 +26,9 @@ kramdown:
 	{% endif %}
 {% endfor %}
 
+c
+
 {% for tag in tags %}
-	a
-	
 	{% include huge-h2.html content=tag %} 
 	{% include posts-por-tag.html content=tag %} 
-
 {% endfor %}
