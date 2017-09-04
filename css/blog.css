@@ -130,7 +130,22 @@ h3.huge{
     margin:0;
 }
 
+.font-16{
+    font-size: 16px;
+}
 
+.font-12{
+    font-size:12px;
+}
+
+.font-10{
+    font-size:10px;
+}
+
+
+.font-small{
+    font-size:14px;
+}
 
 .content-list-item{
     float: none;
