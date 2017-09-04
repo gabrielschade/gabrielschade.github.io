@@ -23,70 +23,6 @@
 
 
 
-.no-bottom{
-    margin-bottom:0;
-}
-
-.margin-top-32{
-    margin-top:32px;
-}
-
-.margin-top-0{
-    margin-top:0;
-}
-
-.margin-bottom-0{
-    margin-bottom:0;
-}
-
-.margin-top-15{
-    margin-top:15px;
-}
-.margin-side-15{
-    margin: 0 15px;
-}
-.margin-side-30{
-    margin: 0 30px;
-}
-
-.no-padding{
-    padding:0;
-}
-
-.padding-top-0{
-    padding-top: 0;
-}
-
-.padding-bottom-80{
-    top: 95%;
-    padding-bottom: 80px;
-}
-
-.font-16{
-    font-size: 16px;
-}
-
-.font-12{
-    font-size:12px;
-}
-
-.font-10{
-    font-size:10px;
-}
-
-
-.font-small{
-    font-size:14px;
-}
-.font-large{
-    font-size:48px;
-}
-
-.font-64{
-    font-size:64px;
-}
-
-
 a .icon{
     transition: all 300ms;
 }
@@ -218,9 +154,6 @@ h3.huge{
     color: rgba(0,0,0,0.54);
 }
 
-.gold{
-    color:#caa669
-}
 
 .content a{
     color: rgba(0,0,0,0.87)
@@ -244,6 +177,82 @@ h3.huge{
     color: rgba(0,0,0,0.54);
     text-decoration: none;
 }
+
+
+
+
+.no-bottom{
+    margin-bottom:0;
+}
+
+.margin-top-32{
+    margin-top:32px;
+}
+
+.margin-top-0{
+    margin-top:0;
+}
+
+.margin-bottom-0{
+    margin-bottom:0;
+}
+
+.margin-top-15{
+    margin-top:15px;
+}
+.margin-side-15{
+    margin: 0 15px;
+}
+.margin-side-30{
+    margin: 0 30px;
+}
+
+.no-padding{
+    padding:0;
+}
+
+.padding-top-0{
+    padding-top: 0;
+}
+
+.padding-bottom-80{
+    top: 95%;
+    padding-bottom: 80px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.font-12{
+    font-size:12px;
+}
+
+.font-10{
+    font-size:10px;
+}
+
+
+.font-small{
+    font-size:14px;
+}
+.font-large{
+    font-size:48px;
+}
+
+.font-64{
+    font-size:64px;
+}
+
+
+.gold{
+    color:#caa669
+}
+
+
+
+
+
 
   @media (min-width: 48em) {
     .sidebar {
