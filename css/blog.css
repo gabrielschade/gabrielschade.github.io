@@ -130,23 +130,6 @@ h3.huge{
     margin:0;
 }
 
-.font-16{
-    font-size: 16px;
-}
-
-.font-12{
-    font-size:12px;
-}
-
-.font-10{
-    font-size:10px;
-}
-
-
-.font-small{
-    font-size:14px;
-}
-
 .content-list-item{
     float: none;
     line-height: 48px;
@@ -162,6 +145,18 @@ h3.huge{
     padding: 0 32px;
     font-size: 22px;
     border-bottom: 1px solid #eee;
+}
+
+.content-list-item a.font-16{
+    font-size:16px;
+}
+
+.content-list-item a.font-12{
+    font-size:12px;
+}
+
+.content-list-item a.font-small{
+    font-size:14px;
 }
 
 .content-list-item a:hover{
