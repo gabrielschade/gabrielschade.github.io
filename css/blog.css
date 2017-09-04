@@ -170,9 +170,20 @@ a .icon:hover{
 .huge{
     font-size: 2.0rem;
     color: rgba(0,0,0,0.4);
+}
+
+h2.huge{
     margin-top: 60px;
     margin-bottom: 45px;    
 }
+
+h3.huge{
+    font-size: 1.5rem;
+    margin:0;
+}
+
+
+
 .content-list-item{
     float: none;
     line-height: 48px;
