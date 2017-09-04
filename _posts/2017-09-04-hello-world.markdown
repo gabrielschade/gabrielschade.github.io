@@ -8,7 +8,7 @@ tags: [Discussões]
 
 O primeiro post não poderia ser diferente do famoso "Olá Mundo". Se você está lendo isso, bom, seja bem-vindo ao meu blog!
 
-Não vou perder tempo me descrevendo, se você quiser saber mais sobre mim acesse a página [sobre mim](/about/).
+Não vou perder tempo me descrevendo, se você quiser saber mais sobre mim acesse a página [sobre mim](/about).
 
 Espero que este seja só o primeiro de muitos outros, fiquem ligados que logo os conteúdos "de verdade" começam!
 
