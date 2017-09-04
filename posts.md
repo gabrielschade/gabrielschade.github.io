@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Posts
+markdown: kramdown
+kramdown: 
+	syntax_highlighter_opts:
+		disable : true
 ---
 
 {% assign rawtags = "" %}
@@ -23,6 +27,9 @@ title: Posts
 {% endfor %}
 
 {% for tag in tags %}
+	a
+	
 	{% include huge-h2.html content=tag %} 
 	{% include posts-por-tag.html content=tag %} 
+
 {% endfor %}
