@@ -25,17 +25,17 @@ title: Posts
 {% endfor %}
 
 {% for tag in tags %}
-    {% include huge-h3.html content="{{ tag }}" %} 
+    <!-- {% include huge-h3.html content="{{ tag }}" %}  -->
 	<ul>
 	 {% for post in site.posts %}
 		 {% if post.tags contains tag %}
-		  {% include single-post.html %} 
+
+		  <!-- {% include single-post.html %}  -->
+		  
 		 {% endif %}
 	 {% endfor %}
 	</ul>
 {% endfor %}
 
-{% for post in site.posts %} {% include postdate.html %}
-[ {{ post.title }} ]({{ post.url }}) 
 
 {% endfor %}
