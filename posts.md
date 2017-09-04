@@ -36,6 +36,3 @@ title: Posts
 	 {% endfor %}
 	</ul>
 {% endfor %}
-
-
-{% endfor %}
