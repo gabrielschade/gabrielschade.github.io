@@ -3,7 +3,7 @@ layout: page
 title: Posts
 ---
 
-a
+
 
 {% assign rawtags = "" %}
 {% for post in site.posts %}
@@ -12,7 +12,7 @@ a
 {% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
 
-b
+
 
 {% assign tags = "" %}
 {% for tag in rawtags %}
@@ -26,9 +26,4 @@ b
 	{% endif %}
 {% endfor %}
 
-c
-
-{% for tag in tags %}
-	{% include huge-h2.html content=tag %} 
-	{% include posts-por-tag.html content=tag %} 
-{% endfor %}
+{% include tags.html tags=tags %} 
