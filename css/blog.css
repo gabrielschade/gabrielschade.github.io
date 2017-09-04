@@ -187,12 +187,16 @@ a .icon:hover{
     line-height: 48px;
     padding: 0 32px;
     font-size: 22px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
 }
 
 .content-list-item a:hover{
     background-color: transparent;
     color: rgba(0,0,0,0.54);
+}
+
+.gold{
+    color:#caa669
 }
 
   @media (min-width: 48em) {
