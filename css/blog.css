@@ -226,6 +226,10 @@ h3.huge{
     border:none;
 }
 
+.light-bottom-border{
+    border-bottom: 1px solid #eee
+}
+
 .content-list-item a:hover{
     background-color: transparent;
     color: rgba(0,0,0,0.54);

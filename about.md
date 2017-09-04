@@ -24,9 +24,3 @@ Hoje, além de programador, também atuo como professor na [UNIVALI (Universidad
 Todas estas coisas foram conquistadas com muito esforço e dedicação, e claro, com um pouquinho de sorte. Afinal é como dizem "*luck is when preparation meets opportunity*".
 
 {% include skills.html %}
-
-{% include huge-h2.html content="Livros" %} 
-{% include livros.html %}
-
-{% include huge-h2.html content="Palestras" %} 
-{% include palestras.html %}
