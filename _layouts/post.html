@@ -10,14 +10,7 @@ layout: page
   {% include huge-h2.html content="Estes posts podem ser interessantes para você" %} 
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{% include postdate.html %}</small>
-          </a>
-        </h3>
-      </li>
+     {% include single-post.html %} 
     {% endfor %}
   </ul>
 </div>
