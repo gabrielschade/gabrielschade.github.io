@@ -23,7 +23,7 @@ title: Posts
 {% endfor %}
 
 {% for tag in tags %}
-	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+	{% include huge-h2.html content=tag %} 
 	<ul>
 	 {% for post in site.posts %}
 		 {% if post.tags contains tag %}
