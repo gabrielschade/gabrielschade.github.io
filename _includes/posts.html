@@ -2,9 +2,9 @@
     <ul class="side-nav" style="transform: translateX(0px);">
         {% for post in site.posts %} 
         <li>
-            <a class="none-decoration waves-effect" href="{{ post.url }}">
+            <a class="none-decoration waves-effect content-list-item" href="{{ post.url }}">
                 {{ post.title }}
-                <span class="right">{% include postdate.html %}</span>
+                <span class="right font-small">{% include postdate.html %}</span>
             </a>
         </li>
         {% endfor %}

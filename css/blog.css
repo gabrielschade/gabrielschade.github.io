@@ -62,6 +62,10 @@
 .font-16{
     font-size: 16px;
 }
+
+.font-small{
+    font-size:14px;
+}
 .font-large{
     font-size:48px;
 }
@@ -164,9 +168,19 @@ a .icon:hover{
 }
 
 .huge{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: rgba(0,0,0,0.4);
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 45px;    
+}
+
+.content-list-item{
+    font-size: 22px;
+}
+
+.content-list-item:hover{
+    background-color: transparent;
+    color: rgba(0,0,0,0.54);
 }
 
   @media (min-width: 48em) {
