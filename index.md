@@ -10,9 +10,8 @@ parallax-text: >
      e reflexões 
 ---
 
-## Posts
+Olá, Eu sou o Gabriel, desenvolvedor, palestrante, escritor, pesquisador e professor. Expert em desenvolvimento .NET web e entusiasta do paradigma de programação funcional. Apaixonado por tecnologia e tudo que ela pode trazer de bom para o mundo.
 
-{% for post in site.posts %} {% include postdate.html %}
-[ {{ post.title }} ]({{ post.url }}) 
 
-{% endfor %}
+{% include huge-h2.html content="Últimas Postagens" %} 
+{% include posts.html %} 

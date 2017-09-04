@@ -97,8 +97,10 @@ a .icon:hover{
 }
 
 .none-decoration, 
-.none-decoration:hover{
+.none-decoration:hover,
+.none-decoration:focus{
     text-decoration: none;
+    outline: none;
 }
 
 .mid-image-container{
@@ -159,6 +161,12 @@ a .icon:hover{
 
 .strong-on-hover:hover{
     color: rgba(0,0,0,0.87);
+}
+
+.huge{
+    font-size: 2.5rem;
+    color: rgba(0,0,0,0.4);
+    margin-bottom: 60px;
 }
 
   @media (min-width: 48em) {
