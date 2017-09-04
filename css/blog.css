@@ -190,7 +190,7 @@ a .icon:hover{
     border-bottom: 1px solid #ccc;
 }
 
-.content-list-item:hover{
+.content-list-item a:hover{
     background-color: transparent;
     color: rgba(0,0,0,0.54);
 }
