@@ -24,21 +24,5 @@ title: Posts
 
 {% for tag in tags %}
 	{% include huge-h2.html content=tag %} 
-	<ul>
-	 {% for post in site.posts %}
-		 {% if post.tags contains tag %}
-		 <li>
-		 <h3>
-		 <a href="{{ post.url }}">
-		 {{ post.title }}
-		 <small>{{ post.date | date_to_string }}</small>
-		 </a>
-		 {% for tag in post.tags %}
-			 <a class="tag" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
-		 {% endfor %}
-		 </h3>
-		 </li>
-		 {% endif %}
-	 {% endfor %}
-	</ul>
+	{% include posts-por-tag.html content=tag %} 
 {% endfor %}
