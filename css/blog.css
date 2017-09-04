@@ -45,6 +45,9 @@
 .margin-side-15{
     margin: 0 15px;
 }
+.margin-side-30{
+    margin: 0 30px;
+}
 
 .no-padding{
     padding:0;
@@ -212,6 +215,10 @@ h3.huge{
 
 .content a{
     color: rgba(0,0,0,0.87)
+}
+
+.border-none{
+    border:none;
 }
 
 .content-list-item a:hover{
