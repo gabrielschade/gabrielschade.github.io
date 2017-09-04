@@ -25,6 +25,9 @@ github:           http://github.com/gabrielschade
 
 # Build settings
 markdown: kramdown
+kramdown: 
+  syntax_highlighter_opts:
+    disable : true
 theme: minima
 plugins:
   - jekyll-feed
