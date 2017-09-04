@@ -6,26 +6,21 @@
 
   <div class="row mid-image-container">
     <div class="col s4">
-        <img src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400" alt="" 
-      class="circle icon z-depth-1 responsive-img activator card-profile-image mid-image">
+        <img src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400" alt="" class="circle icon z-depth-1 responsive-img activator card-profile-image mid-image">
 
     </div>
-    <div class="col s8 margin-top-15">
-        <div class="row no-bottom">
-          <div class="col s12 no-padding">
-              <a href="/" class="none-decoration accent-text">
-                <span class="accent-text">Gabriel Schade</span>
-              </a>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col s12 font-16 no-padding light-text">
-                  Programador, professor e escritor
-                </div>
-        </div>
+    <div class="col s8">
+        <a href="/" class="none-decoration accent-text">
+            <span class="accent-text">Gabriel Schade</span>
+        </a>
     </div>
   </div>
-
+  <div class="row">
+      <div class="col s12 font-16 light-text">
+          Programador, professor e escritor
+      </div>
+  </div>
+        
   <div class="row center-align no-bottom margin-top-32">
       <div class="col s3 no-padding">
         <a title="Github" href="https://github.com/gabrielschade" class="none-decoration">
@@ -53,34 +48,10 @@
   <div class="row">
     <ul id="slide-out" class="side-nav" style="transform: translateX(0px);">
               <li><a class="none-decoration waves-effect" href="/{{ site.baseurl }}"><i class="strong-on-hover material-icons">home</i>Home</a></li>
+              <li><a class="none-decoration waves-effect" href="/posts"><i class="strong-on-hover material-icons">comment</i>Posts</a></li>
+              <li><a class="none-decoration waves-effect" href="/projects"><i class="strong-on-hover material-icons">code</i>Projetos</a></li>
               <li><a class="none-decoration waves-effect" href="/about"><i class="strong-on-hover material-icons">account_circle</i>Sobre</a></li>
-              <li><div class="divider"></div></li>
-              <li><a class="subheader">Últimas postagens</a></li>
             </ul>
     </div>
     
-
-  <!-- <div class="container sidebar-sticky">
-      
-    <nav class="sidebar-nav transparent-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" >
-        <span class="accent-text">Home</span>
-      </a>
-      <a class="sidebar-nav-item{% if page.url == (site.baseurl + '/about') %} active{% endif %}" href="/about">
-        <span class="accent-text">About</span>
-      </a>
-      
-        {% assign pages_list = site.pages %}
-        {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if node.layout == "page" %}
-              <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
-                  <span class="accent-text">{{ node.title }}</span>
-                </a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-
-    </nav>
-  </div> -->
 </div>
