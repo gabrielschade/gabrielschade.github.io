@@ -217,6 +217,11 @@ h3.huge{
     color: rgba(0,0,0,0.87)
 }
 
+.content a:hover{
+    text-decoration: none;
+    color: rgba(0,0,0,0.54)
+}
+
 .border-none{
     border:none;
 }
