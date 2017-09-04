@@ -25,7 +25,7 @@ title: Posts
 {% endfor %}
 
 {% for tag in tags %}
-    {% include huge-h2.html content="{{ tag }}" %} 
+    {% include huge-h3.html content="{{ tag }}" %} 
 	<ul>
 	 {% for post in site.posts %}
 		 {% if post.tags contains tag %}
@@ -33,7 +33,6 @@ title: Posts
 		 {% endif %}
 	 {% endfor %}
 	</ul>
-
 {% endfor %}
 
 {% for post in site.posts %} {% include postdate.html %}
