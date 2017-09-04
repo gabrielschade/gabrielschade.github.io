@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Teste de novo post!"
-date:   2017-08-31 04:08:14 +0000
-categories: jekyll
+title:  "Teste de novo post em F#"
+date:   2017-09-04 04:08:14 +0000
 comments: true
 tags: [f#, dev]
 ---
+
+TESTE TESTE TESTE
 Teste para novo post, incluindo tags refenciais de F#, como o meu [github][git]
 launches a web server and auto-regenerates your site when a file is updated.
 
