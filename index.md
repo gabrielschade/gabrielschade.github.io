@@ -14,4 +14,5 @@ Olá, Eu sou o Gabriel, desenvolvedor, palestrante, escritor, pesquisador e prof
 
 
 {% include huge-h2.html content="Últimas Postagens" %} 
+{% include tags.html %} 
 {% include posts.html %} 
