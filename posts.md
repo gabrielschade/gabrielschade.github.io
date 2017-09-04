@@ -3,8 +3,6 @@ layout: page
 title: Posts
 ---
 
-
-
 {% assign rawtags = "" %}
 {% for post in site.posts %}
 	{% assign ttags = post.tags | join:'|' | append:'|' %}
