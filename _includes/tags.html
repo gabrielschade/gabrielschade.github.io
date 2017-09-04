@@ -17,7 +17,7 @@
 	{% endif %}
 {% endfor %}
 
-{% for tag in include.tags %}
+{% for tag in tags %}
     {% include huge-h2.html content=tag %} 
     {% include posts-por-tag.html content=tag %} 
 {% endfor %}
