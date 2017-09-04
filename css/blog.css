@@ -199,6 +199,16 @@ a .icon:hover{
     color:#caa669
 }
 
+.content a{
+    color: rgba(0,0,0,0.87)
+}
+
+.content-list-item a:hover{
+    background-color: transparent;
+    color: rgba(0,0,0,0.54);
+    text-decoration: none;
+}
+
   @media (min-width: 48em) {
     .sidebar {
         width:14em;
