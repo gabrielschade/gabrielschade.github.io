@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "Comparação Referencial vs Comparação Estrutural"
+date:   2017-09-08 00:00:00 +0000
+comments: true
+tags: [Discussões]
+---
+
+Eu estava na sala de aula explicando para os alunos de ciência da computação sobre os arrays em C++ e suas características, entre elas a forma como ordenar e comparar *elementos*. Até que surge a pergunta:
+
+> "Professor, como faço para comparar o array inteiro?"
+
+A resposta clara que vem em mente é: *comparando elemento por elemento*, mas será que isso é normal mesmo ou só nos acostumamos com esse comportamento?
+
+E se compararmos o array inteiro, utilizando os operadores de igualdade, o que acontece?
+
+``` javascript
+[0, 1, 2] == [0, 1, 2] // -> false
+```
+
+No trecho acima estou utilizando JavaScript e não C++ como na aula, mas vamos analisar com calma este código, sim, eu sei que é um código MUITO simples.
+
+A instrução é bastante simples, estamos criando dois arrays diferentes, contendo os mesmos elementos (0, 1, 2), na mesma ordem e mesmo assim o resultado desta comparação é *false*.
+
+A razão disso é bastante simples, o JavaScript (assim como o C++) compara arrays (e várias outras coisas) através de uma comparação referêncial, ou seja, utilizando sua referência.
+
+Mas o que isso significa na prática?
+
+Referência é o nome que é dado para o endereço em memória que um dado está armazenado, isso ocorre quando declaramos uma varíavel/objeto/array. Neste momento nosso programa solicita ao sistema operacional um espaço em memória para armazená-la e implicitamente associa um endereço de memória para aquela variável.
+
+Os membros que utilizam comparação referencial não comparam os seus dados armazenados e sim o seu endereço em memória. O mesmo acontece em operações de atribuição, ao atribuir um tipo que é baseado em referências, a atribuição altera o endereço de memória e não os valores.
+
+Com isso, ao realizarmos uma atribuição de um valor deste, não criamos um novo endereço em memória, apenas criamos um novo "atalho" para um endereço existente.
+
+``` javascript
+[0,1,2] === [0,1,2] // -> false
+
+var array1 = [0,1,2]
+var array2 = array1
+array2 == array1 // -> true
+```
+
+No código JavaScript acima podemos ver que, quando os endereços de memória (referências) são iguais, o resultado realmente retorna verdadeiro. Além disso, podemos realizar mais um pequeno teste. O que ocorre se alterarmos o conteúdo em `array2`?
+
+Vamos incluir o valor 3 dentro deste novo array, conforme código:
+
+``` javascript
+array2.push(3);
+
+array2 == array1 // -> true
+```
+
+A comparação ainda retorna `true`, isso ocorre porque a ligação destes dois arrays ocorre através de referência, ou seja, o `array2` é apenas um atalho na memória para o `array1`, logo, qualquer mudança feita no `array2` reflete diretamente no `array1`.
+
+Apesar deste comportamento ser básico e quase inerete à programação em geral parece bastante confuso para iniciantes e de modo geral, me soa bastante contra-intuitivo.
+
+Até uns 2 ou 3 anos atrás eu acreditava que este comportamento era praticamente universal, mas depois de me envolver um pouco mais com programação funcional notei que não há uma unanimidade entre todas as linguagens. Ao utilizarmos F#, por exemplo, o resultado destas mesmas operações seriam totalmente diferentes.
+
+``` fsharp
+[| 1; 2; 3 |] = [| 1; 2; 3 |] // -> true
+```
+
+O F# é uma linguagem que utiliza a comparação estrutural ao invés da referêncial, então dois arrays contendo os mesmos elementos na mesma ordem são considerados iguais, mesmo não sendo a mesma referência.
+
+``` fsharp
+let array1 = [| 1; 2; 3 |]
+let array2 = array1
+
+array1 = array2 // -> true
+```
+Esta operação independe de referência e funciona normalmente mesmo em valores não imediatos, podemos armazená-los para realizar comparações posteriores.
+
+Mas e se o `array1` é alterado, o que ocorrerá com o `array2`?
+
+Na verdade, por padrão em F# você não poderá alterar o valor original de `array1` nunca, porque os valores são imutáveis (mas isso é conversa para outro post).
+
+De modo geral, eu tendo a preferir a comparação estrutural ao invés da referêncial, me soa mais intuitiva e parece fazer mais sentido para o uso em geral. É importante ressaltar que estamos falando exclusivamente da **comparação** entre valores, e não sobre todo o **comportamento** referêncial.
+
+Nos últimos tempos estou me envolvendo cada vez mais com a linguagem F# e gosto muito da forma que ela aborda alguns aspectos, a comparação entre valores com certeza é um deles.
+
+Mas e você, o que acha?
