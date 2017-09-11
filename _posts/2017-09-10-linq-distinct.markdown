@@ -103,7 +103,7 @@ Produto[] produtosSemRepeticao =
 
 Neste exemplo o método `Distinct` acaba não fazendo nada, afinal, mesmo existindo duas canetas e dois computadores na listagem, tratam-se de referencias diferentes, portanto são tratados como valores diferentes.
 
-Felizmente todos estão cientes disso, então, existem formas de contornar este problema, de acordo com a documentação do método `Distinct` que você pode encontrar [aqui][https://msdn.microsoft.com/pt-br/library/bb348436(v=vs.110).aspx], você pode acabar com este problema fazendo com que sua classe implemente a interface `IEquatable<T>` onde `T` é o tipo da própria classe. Vamos lá:
+Felizmente todos estão cientes disso, então, existem formas de contornar este problema, de acordo com a documentação do método `Distinct` que você pode encontrar [aqui](https://msdn.microsoft.com/pt-br/library/bb348436(v=vs.110).aspx), você pode acabar com este problema fazendo com que sua classe implemente a interface `IEquatable<T>` onde `T` é o tipo da própria classe. Vamos lá:
 
 ``` csharp
 public class Produto : IEquatable<Produto>
@@ -370,7 +370,7 @@ Acredito que esta é a melhor forma que conheço para criar comparadores genéri
 
 Eu sei, este post foi bem mais pesado que os anteriores e exigiu um nível técnico considerável em C#, mas acredito é uma implementação muito útil e tive vontade de compartilhá-la.
 
-(Uma biblioteca minha chamada TangoII possui esta implementação [aqui][https://github.com/gabrielschade/TangoII/blob/master/TangoII/Linq/EqualityComparerBuilder.cs])
+(Uma biblioteca minha chamada TangoII possui esta implementação [aqui](https://github.com/gabrielschade/TangoII/blob/master/TangoII/Linq/EqualityComparerBuilder.cs))
 
 Mas me diga você, o que achou desta implementação?
 Ficaram dúvidas?
