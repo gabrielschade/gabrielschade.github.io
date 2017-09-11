@@ -174,7 +174,9 @@ O resultado desejado é encontrarmos algo próximo a esta implementação:
 
 ``` csharp
 IEnumerable<Produto> produtosSemRepeticao = 
-    produtos.Distinct( (produto1, produto2) => produto1.Id == produto2.Id );
+    produtos.Distinct( 
+        (produto1, produto2) => produto1.Id == produto2.Id 
+                     );
 ```
 
 Esta implementação não parece muito mais simples do que precisarmos criar uma nova classe, implementar a interface para comparação e só depois disso, implementar o método?
@@ -252,7 +254,9 @@ public class ComparadorGenerico<T> : IEqualityComparer<T>
     public Func<T, T, bool> MetodoEquals { get; }
     public Func<T, int> MetodoGetHashCode { get; }
 
-    public ComparadorGenerico(Func<T, T, bool> metodoEquals, Func<T, int> metodoGetHashCode)
+    public ComparadorGenerico(
+        Func<T, T, bool> metodoEquals, 
+        Func<T, int> metodoGetHashCode )
     {
         this.MetodoEquals = metodoEquals;
         this.MetodoGetHashCode = metodoGetHashCode;
@@ -274,10 +278,10 @@ Agora, podemos comparar os produtos com dignidade, sem precisar criar várias cl
 
 ``` csharp
 IEnumerable<Produto> produtosSemRepeticao = 
-                produtos.Distinct(new ComparadorGenerico<Produto>(
-                    (produto1, produto2) => produto1.Id == produto2.Id,
-                    produto => produto.Id.GetHashCode())
-                );
+    produtos.Distinct(new ComparadorGenerico<Produto>(
+        (produto1, produto2) => produto1.Id == produto2.Id,
+        produto => produto.Id.GetHashCode())
+    );
 ```
 
 A grande vantagem desta abordagem é que a classe de comparação genérica é escrita uma única vez para todas as diferentes classes.
@@ -301,14 +305,21 @@ public class ComparadorGenerico<T> : IEqualityComparer<T>
 {
     public Func<T, T, bool> MetodoEquals { get; }
     public Func<T, int> MetodoGetHashCode { get; }
-    private ComparadorGenerico(Func<T, T, bool> metodoEquals, Func<T, int> metodoGetHashCode)
+    private ComparadorGenerico(
+        Func<T, T, bool> metodoEquals, 
+        Func<T, int> metodoGetHashCode )
     {
         this.MetodoEquals = metodoEquals;
         this.MetodoGetHashCode = metodoGetHashCode;
     }
 
-    public static ComparadorGenerico<T> Criar(Func<T, T, bool> metodoEquals, Func<T, int> metodoGetHashCode)
-        => new ComparadorGenerico<T>(metodoEquals, metodoGetHashCode);
+    public static ComparadorGenerico<T> Criar(
+        Func<T, T, bool> metodoEquals, 
+        Func<T, int> metodoGetHashCode )
+            => new ComparadorGenerico<T>(
+                    metodoEquals, 
+                    metodoGetHashCode
+                );
 
     public bool Equals(T x, T y)
         => MetodoEquals(x, y);
@@ -323,7 +334,9 @@ Por fim, a cereja do bolo é criarmos uma extensão para o próprio `IEnumerable
 Antes disso, vamos analisar a assinatura do método `Distinct` da própria biblioteca LINQ:
 
 ``` csharp
-public static IEnumerable<TSource> Distinct<TSource>(this IEnumerable<TSource> source, IEqualityComparer<TSource> comparer);
+public static IEnumerable<TSource> Distinct<TSource>(
+    this IEnumerable<TSource> source, 
+    IEqualityComparer<TSource> comparer);
 ```
 
 Eu não vou detalhar como funcionam os métodos de extensão neste post (ficará para o futuro), mas a ideia por trás destes métodos é simples: extender uma classe ou interface com um método implementado em outro local.
@@ -339,7 +352,11 @@ public static class DistinctExtension
         this IEnumerable<TSource> source, 
         Func<TSource, TSource, bool> metodoEquals, 
         Func<TSource, int> metodoGetHashCode)
-            => source.Distinct(ComparadorGenerico<TSource>.Criar(metodoEquals, metodoGetHashCode));
+            => source.Distinct(
+                ComparadorGenerico<TSource>.Criar(
+                    metodoEquals, 
+                    metodoGetHashCode)
+                    );
 }
 ```
 
@@ -361,7 +378,8 @@ IEnumerable<Produto> produtosSemRepeticaoPorId =
 
 IEnumerable<Produto> produtosSemRepeticaoPorNome = 
     produtos.Distinct(
-        (produto1, produto2) => produto1.Nome.ToLower() == produto2.Nome.ToLower(),
+        (produto1, produto2) => 
+            produto1.Nome == produto2.Nome,
         produto => produto.Nome.GetHashCode()
     );
 ```
