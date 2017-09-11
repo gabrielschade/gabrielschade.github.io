@@ -52,7 +52,7 @@ array2 == array1 // -> true
 
 A comparação ainda retorna `true`, isso ocorre porque a ligação destes dois arrays ocorre através de referência, ou seja, o `array2` é apenas um atalho na memória para o `array1`, logo, qualquer mudança feita no `array2` reflete diretamente no `array1`.
 
-Apesar deste comportamento ser básico e quase inerete à programação em geral parece bastante confuso para iniciantes e de modo geral, me soa bastante contra-intuitivo.
+Apesar deste comportamento ser básico e quase inerente à programação em geral parece bastante confuso para iniciantes e de modo geral, me soa bastante contra-intuitivo.
 
 Até uns 2 ou 3 anos atrás eu acreditava que este comportamento era praticamente universal, mas depois de me envolver um pouco mais com programação funcional notei que não há uma unanimidade entre todas as linguagens. Ao utilizarmos F#, por exemplo, o resultado destas mesmas operações seriam totalmente diferentes.
 
