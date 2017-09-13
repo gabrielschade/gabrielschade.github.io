@@ -3,7 +3,7 @@ layout: post
 title:  "Utilizando o Distinct do LINQ com dignidade"
 date:   2017-09-10 00:00:00 +0000
 comments: true
-tags: [C#, Programação III]
+tags: [C#, Dev]
 ---
 
 Olá pessoas do meu coração, depois de dois posts com bastante conversa e pouca programação, decidi que já era hora de mostrar um pouco de código, neste post irei ilustrar um problema bem específico, o método `Distinct` provido pelo LINQ.
@@ -164,7 +164,7 @@ Qual as vantagens e desvantagens desta abordagem?
 
 As principais vantagens são: não estamos poluíndo a classe `Produto` e podemos criar diversos comparadores para objetos de uma mesma classe, escolhendo qual comparador utilizar no momento da chamada do método `Distinct`.
 
-A principal desvantagem ao meu ver é a necessidade de criarmos uma nova classe para informarmos este métodos cada vez que for necessário comparar um objeto de uma forma ainda não implementada. Este tipo de abordagem não me soa produtivo.
+A principal desvantagem ao meu ver é a necessidade de criarmos uma nova classe para informarmos estes métodos cada vez que for necessário comparar um objeto de uma forma ainda não implementada. Este tipo de abordagem não me soa produtivo.
 
 Mas o que fazer neste caso? **HOF**!
 
