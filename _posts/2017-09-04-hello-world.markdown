@@ -2,8 +2,6 @@
 layout: post
 title:  "Olá Mundo"
 date:   2017-09-04 00:00:00 +0000
-icon: chat
-icon-color: green
 comments: true
 tags: [Discussões]
 ---
