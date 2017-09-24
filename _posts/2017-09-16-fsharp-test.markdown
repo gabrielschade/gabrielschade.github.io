@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Teste Unitário com F#"
-date:   2017-09-16 00:00:00 +0000
+date:   2017-09-26 00:00:00 +0000
 comments: true
 tags: [F#, Dev]
 ---

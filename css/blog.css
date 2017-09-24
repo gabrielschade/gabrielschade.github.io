@@ -169,6 +169,9 @@ h3.huge{
     color: rgba(0,0,0,0.54);
 }
 
+.content p{
+    text-align: justify;
+}
 
 .content a{
     color: rgba(0,0,0,0.87)
