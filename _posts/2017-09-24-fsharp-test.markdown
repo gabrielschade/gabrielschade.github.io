@@ -150,6 +150,8 @@ Com isso a integração no Visual Studio acaba ficando mais limpa, conforme imag
 
 ![Integração com o Visual Studio](https://i.imgur.com/8HYXZEk.png)
 
+Você pode encontrar o código deste teste em: http://bit.ly/testes-csharp-Fsunit
+
 Mas me diga você, o que achou de testar seu código com F#?
 Ficaram dúvidas?
 Sugestões?
