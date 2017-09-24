@@ -173,6 +173,10 @@ h3.huge{
     text-align: justify;
 }
 
+.content blockquote p{
+    text-align: left;
+}
+
 .content a{
     color: rgba(0,0,0,0.87)
 }

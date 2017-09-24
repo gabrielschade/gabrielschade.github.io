@@ -57,10 +57,10 @@ public void TesteSomando2E3()
 ```
 É muito comum utilizarmos os métodos da classe `Assert` para validarmos o resultado do teste, por conta disso, esta classe possui uma boa quantidade de métodos para diferentes tipos de validação:
 
-* AreEqual
-* IsTrue
-* Fail
-* IsInstanceOfType
+* ● AreEqual
+* ● IsTrue
+* ● Fail
+* ● IsInstanceOfType
 
 Existem vários outros além dos listados acima, no entanto, como eu falei no início do post, eu estou preferindo utilizar a sintaxe do F# para realizar este tipo de operação. Vamos ver como ficaria este mesmo teste, agora em F#.
 
@@ -126,11 +126,11 @@ Parece loucura certo? Mas é ótimo.
 
 Eu costumo não realizar este tipo de tradução, mas isso fica a seu critério. Também existem diferentes operações assim como no `Assert`.
 
-* should equal
-* should not' (função)
-* should be (função)
-* should startWith
-* should endWith
+* ● should equal
+* ● should not' (função)
+* ● should be (função)
+* ● should startWith
+* ● should endWith
 
 E nos casos onde há o sufixo "(função)" é possível compor com outras funções, por exemplo:
 `should not' (equal 5)`, `should be (greaterThan 5)` e etc.
@@ -148,7 +148,7 @@ let ``Teste somando os valores 2 e 3``() =
 
 Com isso a integração no Visual Studio acaba ficando mais limpa, conforme imagem abaixo:
 
-![Integração com o Visual Studio](https://i.imgur.com/8HYXZEk.png)
+{% include image.html link="https://i.imgur.com/8HYXZEk.png" alt="Integração com o Visual Studio" width=50 %} 
 
 Você pode encontrar o código deste teste em: http://bit.ly/testes-csharp-Fsunit
 
