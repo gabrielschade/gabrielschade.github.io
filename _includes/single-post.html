@@ -1,6 +1,14 @@
-<li class="content-list-item">
+<li class="collection-item avatar content-list-item">
+     {% if post.img == blank  %}
+        <i class="material-icons circle {{post.icon-color}}">{{post.icon}}</i>
+     {% endif %}
+     {% if post.img != blank  %}
+        <img src="/{{ site.baseurl }}public/icons/{{post.img}}" alt="" class="circle {{post.icon-color}}">
+     {% endif %}
     <a class="none-decoration waves-effect" href="{{ post.url }}">
-        {{ post.title }}
-        <span class="right font-small">{% include postdate.html %}</span>
+            {{ post.title }}
+        <span class="font-small">
+            {% include postdate.html %}
+        </span>
     </a>
 </li>

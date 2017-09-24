@@ -2,6 +2,8 @@
 layout: post
 title:  "Utilizando o Distinct do LINQ com dignidade"
 date:   2017-09-10 00:00:00 +0000
+img: csharp.jpg
+icon-color: purple
 comments: true
 tags: [C#, Dev]
 ---
