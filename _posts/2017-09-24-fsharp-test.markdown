@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Teste Unitário com F#"
+title:  "Código em C#, teste unitário em F#"
 date:   2017-09-24 00:00:00 +0000
 comments: true
 tags: [F#, Dev]
