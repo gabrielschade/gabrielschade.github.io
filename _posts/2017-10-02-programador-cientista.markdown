@@ -14,7 +14,7 @@ Entendo.
 
 Hoje em dia o mundo está diferente, saber utilizar as ferramentas do mercado é excelente, mas talvez isso não seja o bastante para alcançar o topo.
 
-Termos como: aprendizado de máquina, sistemas de recomendação, *data science* e programação cognitiva não são mais restritos a academia, o mercado também precisa disso. 
+Termos como: aprendizado de máquina, sistemas de recomendação, *data science* e programação cognitiva não são mais restritos à academia, o mercado também precisa disso. 
 
 Tarefas como estas e as vezes até a própria criação de um bom algoritmo tornam-se complicadas de serem realizadas com sucesso sem ter algum nível de background científico.
 
@@ -48,9 +48,9 @@ Depois de identificar este problema fiz algumas pesquisas e fiquei surpreso com 
 
 COMO ASSIM?
 
-Sim, temos que fazer as coisas organizadas, limpas e de fácil manutenção. Há uma falsa correlação gigante nisso. Não se escreve código desorganizado ou mal refatorado por ser um cientista, escreve-se código assim por ser **desleixado**.
+Sim, temos que fazer as coisas organizadas, limpas e de fácil manutenção. Há uma falsa correlação gigante nisso. Não se escreve código desorganizado ou de baixa performance por ser um cientista, escreve-se código assim por ser **desleixado**.
 
-{% include huge-h2.html content="Adaptando ao novo cenário" %}
+{% include huge-h2.html content="Adaptando-se ao novo cenário" %}
 
 Como profissionais da área de tecnologia precisamos nos adaptar aos novos desafios, precisa-se perder alguns medos: matemática, complexidade de algoritmos, inteligência artificial, autômatos e muitas outras coisas. 
 
