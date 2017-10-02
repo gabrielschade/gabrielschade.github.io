@@ -3,7 +3,7 @@ layout: post
 title:  "Código em C#, teste unitário em F#"
 date:   2017-09-24 00:00:00 +0000
 comments: true
-tags: [F#, Dev]
+tags: [C#, F#, Dev]
 ---
 
 Olá pessoas, que tal falar um pouco sobre teste unitário?

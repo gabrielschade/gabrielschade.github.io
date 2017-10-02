@@ -1,10 +1,12 @@
 ---
-layout: default
-title: "404: Page not found"
+layout: page
+title: "404: Algo de errado não está certo"
 permalink: 404.html
 ---
 
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
-</div>
+  {% assign post = page %}
+  {% include huge-h2.html content=page.title css="left-align" %} 
+  
+  <div style="position:absolute; width:100%; height:100%">
+    <img src="/{{ site.baseurl }}public/img/wally.png" alt="Onde está Wally?" style="margin-left: auto; margin-right:auto; display:block;">
+  </div>
