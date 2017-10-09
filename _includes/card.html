@@ -6,9 +6,9 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p class="show-on-large">{{include.text}}</p>
-          <p class="show-on-medium">{{include.med-text}}</p>
-          <p class="show-on-small">{{include.small-text}}</p>
+          <p class="show-on-large hide-on-med-and-down">{{include.text}}</p>
+          <p class="show-on-medium hide-on-small-only hide-on-large-only">{{include.med-text}}</p>
+          <p class="show-on-small hide-on-med-and-up">{{include.small-text}}</p>
         </div>
         <div class="card-action">
           <a href="{{include.link}}">{{include.link-text}}</a>
