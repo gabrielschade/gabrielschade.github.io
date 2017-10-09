@@ -1,6 +1,9 @@
 <div class="col s12 m12">
-    <h3 class="huge header">{{include.title}}</h3>
+    <h3 class="huge header margin-top-65">{{include.title}}</h3>
     <div class="card horizontal hoverable">
+      <div class="card-image">
+        <img src="/{{site.baseurl}}public/img/{{include.img}}">
+      </div>
       <div class="card-stacked">
         <div class="card-content">
           <p class="show-on-large hide-on-med-and-down">{{include.text}}</p>
@@ -10,9 +13,6 @@
         <div class="card-action">
           <a href="{{include.link}}">{{include.link-text}}</a>
         </div>
-      </div>
-      <div class="card-image">
-        <img src="/{{site.baseurl}}public/img/{{include.img}}">
       </div>
     </div>
   </div>
