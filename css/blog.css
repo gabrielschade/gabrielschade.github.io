@@ -139,6 +139,12 @@ h3.huge{
     margin:0;
 }
 
+h3.huge.margin-top-65{
+    font-size: 1.5rem;
+    margin:0;
+    margin-top:65px;
+}
+
 .content-list-item{
     float: none;
     line-height: 48px;
