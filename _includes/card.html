@@ -1,0 +1,16 @@
+<div class="col s12 {{include.offset}} m8">
+    <h2 class="header">{{include.title}}</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="/{{ site.baseurl }}public/img/{{include.img}}">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>{{include.text}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{include.link}}">{{include.link-text}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
