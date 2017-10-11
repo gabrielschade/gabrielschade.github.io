@@ -28,6 +28,7 @@ O problema inerente ao `null` é a criação de códigos **mentirosos**, afinal 
 
 Vamos levar em consideração a classe abaixo:
 
+{% highlight csharp %}
 ``` csharp
 public class Pessoa
 {
@@ -36,14 +37,18 @@ public class Pessoa
     public string Nome { get; set; }
 }
 ```
+{% endhighlight %}
 Uma classe bastante simples. Agora vamos para um dos casos onde o `null` é problemático. Vamos criar um método para verificar se uma pessoa possui mais de 18 anos. 
 
 Esta é uma operação muito simples e mesmo assim, problemática.
 
+{% highlight csharp %}
 ``` csharp
 bool Maioridade(Pessoa pessoa)
     => pessoa.Idade >= 18;
 ```
+{% endhighlight %}
+
 Agora já temos o nosso primeiro código problemático. No cenário acima, é permitido passar o valor `null` por parâmetro, afinal `null` consegue se passar por uma instância da classe `Pessoa`. Caso isso venha a ocorrer, oque acontecerá?
 
 Será lançada uma exceção `ArgumentNullException` e como qualquer exceção não tratada, isso pode causar problemas.
@@ -53,16 +58,20 @@ Vamos chegar à um exemplo prático logo, mas antes vamos ver outro problema cau
 
 Como já citado anteriormente, é comum o `null` ser utilizado como um algo para informar que está faltando um valor, existem casos assim, inclusive na própria biblioteca LINQ. Observe o código abaixo:
 
+{% highlight csharp %}
 ``` csharp
 List<Pessoa> pessoas = new List<Pessoa>();
 
 Pessoa primeiraPessoa = pessoas.FirstOrDefault();
 Maioridade(primeiraPessoa);
 ```
+{% endhighlight %}
+
 Este código irá causar problemas, afinal o método `FirstOrDefault` irá retornar o primeiro valor da lista ou o valor padrão de acordo com o tipo do elemento na lista (`Pessoa`, no exemplo). Este é um código que utiliza o `null` como valor que não existe, ou como a falta de um valor.
 
 Vamos incluir um registro nesta lista:
 
+{% highlight csharp %}
 ``` csharp
 List<Pessoa> pessoas = new List<Pessoa>();
 pessoas.Add(null);
@@ -70,6 +79,8 @@ pessoas.Add(null);
 Pessoa primeiraPessoa = pessoas.FirstOrDefault();
 Maioridade(primeiraPessoa);
 ```
+{% endhighlight %}
+
 Mais uma vez o `null` está se passando por alguém que ele não é! E agora fica mais evidente o problema de retornar o valor `null` em casos onde faltam um valor.
 
 Neste segundo exemplo a lista não está vazia, mas contém um valor `null`. O método `FirstOrDefault` não faz nenhuma distinção sobre estas duas situações, que apesar de serem igualmente problemáticas, são sim casos diferentes.
