@@ -22,6 +22,7 @@ url: ""
 twitter_username: gabrielschade
 github_username:  gabrielschade
 github:           http://github.com/gabrielschade
+gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/blog/page:num/"
 # Build settings
