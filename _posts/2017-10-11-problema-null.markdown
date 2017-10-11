@@ -72,13 +72,11 @@ Este código irá causar problemas, afinal o método `FirstOrDefault` irá retor
 Vamos incluir um registro nesta lista:
 
 {% highlight csharp %}
-``` csharp
 List<Pessoa> pessoas = new List<Pessoa>();
 pessoas.Add(null);
 
 Pessoa primeiraPessoa = pessoas.FirstOrDefault();
 Maioridade(primeiraPessoa);
-```
 {% endhighlight %}
 
 Mais uma vez o `null` está se passando por alguém que ele não é! E agora fica mais evidente o problema de retornar o valor `null` em casos onde faltam um valor.
