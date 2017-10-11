@@ -71,7 +71,7 @@ Este código irá causar problemas, afinal o método `FirstOrDefault` irá retor
 
 Vamos incluir um registro nesta lista:
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 List<Pessoa> pessoas = new List<Pessoa>();
 pessoas.Add(null);
 
