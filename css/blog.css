@@ -115,6 +115,11 @@ a .icon:hover{
         box-shadow: none;
 }
 
+.side-nav li>a{
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+}
+
 .strong-on-hover:hover{
     color: rgba(0,0,0,0.87);
 }
@@ -244,6 +249,10 @@ h3.huge.margin-top-65{
 
 .no-padding{
     padding:0;
+}
+
+.padding-bottom-0{
+    padding-bottom: 0;
 }
 
 .padding-top-0{
