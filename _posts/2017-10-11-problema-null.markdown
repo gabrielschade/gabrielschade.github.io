@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "O null é mesmo um problema?"
-date:   2017-10-29 00:00:00 +0000
+date:   2017-10-11 00:00:00 +0000
 comments: true
 tags: [C#, Discussões]
 ---
@@ -17,9 +17,9 @@ Antes de discutirmos mais sobre esse valor maldito, vamos entender o motivo dele
 A referência do valor `null` na documentação da microsoft é basicamente esta:
 
 > **Null (C#)**
-
+>
 > `null` é a palavra reservada para representar uma referência nula, ou seja, algum endereço que não se refere à nenhum objeto instanciado. Além disso o `null` é o valor padrão para tipos baseados em referências.
-
+>
 > O texto original pode ser encontrado aqui: http://bit.ly/null-msdn
 
 Além disso, é bastante comum a utilização do `null` para indicar a falta de um valor ou a falta de um retorno para uma determinada operação. Este tipo de comportamento é bastante ruim e pessoalmente eu detesto utilizá-lo, mas temos exemplos na própria linguagem em que isto é feito.
@@ -73,6 +73,13 @@ Maioridade(primeiraPessoa);
 Mais uma vez o `null` está se passando por alguém que ele não é! E agora fica mais evidente o problema de retornar o valor `null` em casos onde faltam um valor.
 
 Neste segundo exemplo a lista não está vazia, mas contém um valor `null`. O método `FirstOrDefault` não faz nenhuma distinção sobre estas duas situações, que apesar de serem igualmente problemáticas, são sim casos diferentes.
+
+Mas se são tão problemáticos, como podemos evitá-los?
+
+A resposta que mais me agrada é: **containers**. Mas vamos explorar estas soluções em um próximo post!
+
+
+
 
 
 O que você acha disso?
