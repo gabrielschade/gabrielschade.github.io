@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Posts
+title: Posts por categoria
 ---
 
 {% include huge-h2.html content="Posts por categoria" css="margin-top-0" %} 
