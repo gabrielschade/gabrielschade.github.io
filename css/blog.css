@@ -271,6 +271,11 @@ h3.huge.margin-top-65{
 .font-small{
     font-size:14px;
 }
+
+.font-medium-large{
+    font-size:22px;
+}
+
 .font-large{
     font-size:48px;
 }
@@ -291,7 +296,7 @@ h3.huge.margin-top-65{
 
   @media (min-width: 48em) {
     .sidebar {
-        width:14em;
+        width:16em;
     }
 
     .font-large{
