@@ -50,7 +50,7 @@ Ok, mas o que é uma rede bayesinana?
 É uma técnica computacional diretamente ligada à área da Inteligência Artificial, tendo como propósito a reprodução de raciocíonio lógico probabilístico.
 A principal ideia por trás é que eventos passados alteram a probabilidade de um evento correlacionado ocorrer no futuro.
 
-Esta rede é criada através do mapeamento de nós, onde cada nó possui diferentes estados. Em nosso exemplo, cada nó representará um membro da família, Jaime e Cersei, por exemplo. E cada membro da família terá dois estados: **sem** falha genética (99%) e **com** falha genética (1%).
+Esta rede é representada por um grafo, onde cada nó possui diferentes estados. Em nosso exemplo, cada nó representará um membro da família, Jaime e Cersei, por exemplo. E cada membro da família terá dois estados: **sem** falha genética (99%) e **com** falha genética (1%).
 
 // INCLUIR PRINT DOS NÓS
 
@@ -62,7 +62,9 @@ Através desta ligação torna-se possível que a descoberta de uma evidência d
 
 Caso a Cersei tenha uma falha genética ela herdou de um dos pais, então a probabilidade dos pais da Cersei terem a falha genética não é mais apenas 1%, além disso, como Jaime é seu irmão e herdou os mesmos genes, a probabilidade dele também conter esta falha aumenta.
 
+Notem que este tipo de sistema mostra como resultado a probabilidade dos eventos aconteceram, devido à esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
 
+Agora vamos fazer algumas experiências para verificar o comportamento da rede!
 
 O que você acha disso?
 
