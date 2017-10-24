@@ -45,6 +45,23 @@ Vamos partir de algumas premissas:
 4. Vamos limitar a árvore genealógica das famílias envolvidas;
 
 
+Ok, mas o que é uma rede bayesinana?
+
+É uma técnica computacional diretamente ligada à área da Inteligência Artificial, tendo como propósito a reprodução de raciocíonio lógico probabilístico.
+A principal ideia por trás é que eventos passados alteram a probabilidade de um evento correlacionado ocorrer no futuro.
+
+Esta rede é criada através do mapeamento de nós, onde cada nó possui diferentes estados. Em nosso exemplo, cada nó representará um membro da família, Jaime e Cersei, por exemplo. E cada membro da família terá dois estados: **sem** falha genética (99%) e **com** falha genética (1%).
+
+// INCLUIR PRINT DOS NÓS
+
+Em toda rede bayeseana os nós são interligados de acordo com sua correção. Em nosso caso, é bastante simples entender esta relação: os filhos herdam as falhas genéticas dos pais.
+
+// INCLUIR PRINT DAS LIGAÇÔES
+
+Através desta ligação torna-se possível que a descoberta de uma evidência do problema altere a probabilidade dos estados de outros nós desta mesma rede.
+
+Caso a Cersei tenha uma falha genética ela herdou de um dos pais, então a probabilidade dos pais da Cersei terem a falha genética não é mais apenas 1%, além disso, como Jaime é seu irmão e herdou os mesmos genes, a probabilidade dele também conter esta falha aumenta.
+
 
 
 O que você acha disso?
