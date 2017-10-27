@@ -111,13 +111,22 @@ Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compa
 
 Um comportamento curioso da propagação de evidências que não é muito intuitivo, é o fato de os nós ascendentes sofrem com evidências novas mesmo em nós mais profundos.
 
-Tyrion, o melhor anão que você respeita possui 57% de chance de ter a mesma falha, isso considerando que apenas a Cersei e o Tywin possuíam a falha em questão.
+Tyrion, o melhor anão que você respeita, possui 57% de chance de ter a falha genética, considerando um cenário onde temos certeza de apenas Cersei e Tywin possuem a falha em questão.
 
-FALAR SOBRE GERAR EVIDENCIA NO JOFFREY E VER OS IMPACTOS + IMAGENS FINAIS
+E se incluirmos a evidência de que Joffrey também possui ela?
 
-Notem que este tipo de sistema mostra como resultado a probabilidade dos eventos aconteceram, devido à esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
+Ao fazer isso aumentamos as chances de Jaime `(57% -> 72%)` possuir esta falha, afinal se com certeza um dos filhos dele tem, as chances dele ter, aumentam. 
 
-Agora vamos fazer algumas experiências para verificar o comportamento da rede!
+Pela mesma razão, isso aumenta a probabilidade do pai de Tywin, Tytos `(42% -> 45%)` também ter a falha. E da mesma forma que Joffrey aumentou a probabilidade de seu pai, Tytos também o fez. Aumentando a probabilidade de seu pai em 1%.
+
+O aumento da probabilidade do pai de Tytos possuir a falha, propaga para todos os seus descentens: Tio de Tytos `(16% -> 19%)`, Joana `(13% -> 17%)` e por fim, Tyrion `(57% -> 58%)`.
+
+Também é curioso que, aumentando a probabilidade da falha estar em Tytos Lannister, diminuímos a chance da esposa dele conter a mesma falha `(20% -> 19%)`.
+
+
+Neste ponto você já deve ter notado que os resultados deste tipo de sistema é uma a probabilidade dos eventos aconteceram baseando-se em evidências, devido à esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
+
+
 
 O que você acha disso?
 
