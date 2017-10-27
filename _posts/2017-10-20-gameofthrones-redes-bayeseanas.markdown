@@ -54,7 +54,8 @@ A principal ideia por trás é que eventos passados alteram a probabilidade de u
 
 Esta rede é representada por um grafo, onde cada nó possui diferentes estados. Em nosso exemplo, cada nó representará um membro da família, Jaime e Cersei, por exemplo. E cada membro da família terá dois estados: **sem** falha genética (99%) e **com** falha genética (1%).
 
-// INCLUIR PRINT DOS NÓS
+
+{% include image.html link="https://i.imgur.com/ws6e4q8.png" alt="Nó representando Cersei" width=80 %} 
 
 Em toda rede bayeseana os nós são interligados de acordo com sua correlação. Em nosso caso, é bastante simples entender a relação entre os nós: os filhos herdam as falhas genéticas dos pais.
 
