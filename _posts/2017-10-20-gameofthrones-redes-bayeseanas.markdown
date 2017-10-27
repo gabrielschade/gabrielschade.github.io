@@ -65,7 +65,7 @@ Jaime e Cersei possuem três filhos: Joffrey, Myrcella e Tomen. Cada um deles de
 * Quando um dos pais possui a falha genética: a probabilidade de ter a falha é elevada para 50% (metade do gene herdado);
 * Quando ambos os pais possuem a falha genética: a probabilidade de ter a falha será 100% (não estamos considerando mutações que curam falhas genéticas)
 
-// INCLUIR PRINT DOS ESTADOS DOS NÓS FILHOS DAS LIGAÇÔES
+{% include image.html link="https://i.imgur.com/amVTu6x.jpg" alt="Nó representando Joffrey" width=80 %} 
 
 Através das ligações entre os nós é possível propagar uma evidência pela rede. Ou seja, ao alterarmos a probabilidade de um estado de um nó, todas as outras probabilidades também serão alteradas.
 
