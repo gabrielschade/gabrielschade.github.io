@@ -65,15 +65,15 @@ Jaime e Cersei possuem três filhos: Joffrey, Myrcella e Tomen. Cada um deles de
 * Quando um dos pais possui a falha genética: a probabilidade de ter a falha é elevada para 50% (metade do gene herdado);
 * Quando ambos os pais possuem a falha genética: a probabilidade de ter a falha será 100% (não estamos considerando mutações que curam falhas genéticas)
 
-{% include image.html link="https://i.imgur.com/amVTu6x.jpg" alt="Nó representando Joffrey" width=80 %} 
+ 
 
 Através das ligações entre os nós é possível propagar uma evidência pela rede. Ou seja, ao alterarmos a probabilidade de um estado de um nó, todas as outras probabilidades também serão alteradas.
 
 Vamos fazer um exemplo. Imagine que o lunático do Joffrey era desta forma por conta de uma falha genética, então vamos sinalizar que ele com certeza possui uma falha, veja o resultado da rede após informarmos esta evidência:
 
-//IMAGEM APÓS EVIDENCIA
+{% include image.html link="https://i.imgur.com/1IZ4kb6.jpg" alt="Evidência em Joffrey" width=80 %}
 
-Mas peraí, 26%? Como assim?
+Mas peraí, 26% para todos os outros? Como assim?
 
 Eu explico, esta probabilidade é o resultado do seguinte cenário: Temos 2 pais, cada um provendo metade dos genes para os filhos, 50% cada um.
 
@@ -95,27 +95,32 @@ Agora as coisas começam a ficar mais complicadas para a família Lannister, se 
 
 Cersei e Jaime possuem 50% de chances cada um de ter esta mesma falha, se por um acaso ela realmente foi passada adiante, cada um dos últimos filhos dos Lannister vão ter uma probabilidade de **75%** de ter este mesmo problema.
 
-//IMAGEM APÓS EVIDENCIA
+{% include image.html link="https://i.imgur.com/oreedzZ.png" alt="Evidência em Tywin" width=80 %}
 
 Mas calma, ainda **piora**.
 
-Piora porque Tywin e Joana Lannister são **primos**. E você achando que sua família era complicada.
+Piora porque Tywin e Joana Lannister são **primos**. 
+
+E você achando que sua família era complicada.
+
 Para conseguirmos mapear este relacionamento será preciso criar o nó com o pai de Tywin: Tytos e de seu irmão/irmã (não encontrei quem é o parente que é pai biológico) que é um ascendente de Joana.
 
 E para garantir que a rede entenda que eles são irmãos, também criaremos o nó do pai de Tytos (avó de Tywin e bisavó de Cersei e Jaime).
 
 {% include huge-h2.html content="Alguns experimentos" %}
 
-
 Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
 
-// IMAGEM APÓS EVIDENCIA
+{% include image.html link="https://i.imgur.com/3K91oU3.jpg" alt="Evidência em Tywin e Cersei" width=80 %}
 
 Um comportamento curioso da propagação de evidências que não é muito intuitivo, é o fato de os nós ascendentes sofrem com evidências novas mesmo em nós mais profundos.
 
 Tyrion, o melhor anão que você respeita, possui 57% de chance de ter a falha genética, considerando um cenário onde temos certeza de apenas Cersei e Tywin possuem a falha em questão.
 
 E se incluirmos a evidência de que Joffrey também possui ela?
+
+{% include image.html link="https://i.imgur.com/jrivrco.jpg" alt="Evidência em Tywin, Cersei e Joffrey" width=80 %}
+
 
 Ao fazer isso aumentamos as chances de Jaime `(57% -> 72%)` possuir esta falha, afinal se com certeza um dos filhos dele tem, as chances dele ter, aumentam. 
 
