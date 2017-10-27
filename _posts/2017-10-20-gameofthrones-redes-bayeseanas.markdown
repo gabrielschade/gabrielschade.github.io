@@ -123,8 +123,26 @@ O aumento da probabilidade do pai de Tytos possuir a falha, propaga para todos o
 
 Também é curioso que, aumentando a probabilidade da falha estar em Tytos Lannister, diminuímos a chance da esposa dele conter a mesma falha `(20% -> 19%)`.
 
-
 Neste ponto você já deve ter notado que os resultados deste tipo de sistema é uma a probabilidade dos eventos aconteceram baseando-se em evidências, devido à esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
+
+Existe um certo casal entre tio e sobrinha, isso parece muito errado? Calma que assim como os Lannisters, **piora**.
+
+## Targaryens - destruidores da família tradicional
+
+A árvore genealógica dos Targaryen é **gigante** e com muitas, mas muitas coisas erradas. É pai com filha, sobrinho com tia, irmão com irmã e por aí vai.
+
+A versão original da família Targaryen pode ser encontrada [aqui](https://i.imgur.com/hrlwbTg.jpg), para os experimentos criei uma versão simplificada colocando apenas os casamentos entre irmãos. As probabilidades não serão exatas, mas a rede se tornaria complexa demais e fugiria um pouco do propósito do post.
+
+// PRINT DA FAMILIA TARGARYEN (SEM MOSTRAR O JOAO DAS NEVES)
+
+Vamos focar principalmente do rei louco (Aerys II) e seus descendentes. Por conta da quantidade exagerada de gerações onde os irmãos se casaram e tiveram filhos, os irmãos Targaryen compartilham bem mais genes do que os irmãos Lannisters, vistos anteriormente.
+
+Vamos atribuir a loucura do rei louco a um falha genética, então vamos criar esta evidência. Além dele, o irmão da mãe dos dragões, Viserys, também mostrou no início da série que não batia muito bem das ideias.
+
+Tendo estas duas evidências, quais são as chances dos irmãos Rhaegere, Daenerys?
+
+No caso dos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Então cada um dos irmãos compartilham aproximadamente **90%**.
+
 
 
 
