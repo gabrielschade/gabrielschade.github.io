@@ -82,7 +82,7 @@ Neste caso Joffrey seria composto por 25% dos genes de cada avô. Somamos isso a
 
 Mas para termos um resultado mais real e entendermos melhor o problema, precisamos subir um pouco mais na árvore genealógica da família Lannister.
 
-## Criando uma representação da árvore genealógica dos Lannisters
+{% include huge-h2.html content="Criando uma representação da árvore genealógica dos Lannisters" %}
 
 Antes de criarmos os ascendentes dos irmãos, vamos criar o nó do Lannister mais amado **Tyrion** ao lado de Jaime e Cersei.
 
@@ -103,7 +103,8 @@ Para conseguirmos mapear este relacionamento será preciso criar o nó com o pai
 
 E para garantir que a rede entenda que eles são irmãos, também criaremos o nó do pai de Tytos (avó de Tywin e bisavó de Cersei e Jaime).
 
-## Experimentos
+{% include huge-h2.html content="Alguns experimentos" %}
+
 
 Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
 
@@ -127,7 +128,7 @@ Neste ponto você já deve ter notado que os resultados deste tipo de sistema é
 
 Existe um certo casal entre tio e sobrinha, isso parece muito errado? Calma que assim como os Lannisters, **piora**.
 
-## Targaryens - destruidores da família tradicional
+{% include huge-h2.html content="Targaryens - destruidores da família tradicional" %}
 
 A árvore genealógica dos Targaryen é **gigante** e com muitas, mas muitas coisas erradas. É pai com filha, sobrinho com tia, irmão com irmã e por aí vai.
 
@@ -137,16 +138,31 @@ A versão original da família Targaryen pode ser encontrada [aqui](https://i.im
 
 Vamos focar principalmente do rei louco (Aerys II) e seus descendentes. Por conta da quantidade exagerada de gerações onde os irmãos se casaram e tiveram filhos, os irmãos Targaryen compartilham bem mais genes do que os irmãos Lannisters, vistos anteriormente.
 
-Vamos atribuir a loucura do rei louco a um falha genética, então vamos criar esta evidência. Além dele, o irmão da mãe dos dragões, Viserys, também mostrou no início da série que não batia muito bem das ideias.
+Vamos atribuir a loucura do rei louco a um falha genética, então vamos criar esta evidência. Além dele, a querida mãe dos dragões já deu alguns indícios de que não bate muito bem das ideias. Seus conselheros vivem alertando-a sobre a possível loucura e o quão cuidadosa ela deve ser.
 
-Tendo estas duas evidências, quais são as chances dos irmãos Rhaegere, Daenerys?
+Considerando que ela herdous as falhas do pai, quais são as chances dos irmãos Rhaegar, Viserys também terem o mesmo problema?
 
-No caso dos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Então cada um dos irmãos compartilham aproximadamente **90%**.
+No caso dos irmãos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Logo, cada um dos irmãos compartilham aproximadamente **90%** genes. O.O
+
+Vamos o momento do **spoiler**, vá direto para o fim do post caso não queira receber informações indesejadas.
+
+O episódio final da sétima temporada mostrou um relacionamento ( ͡° ͜ʖ ͡°) entre Daenerys e Jon Snow.
+
+Até aí tudo bem, o problema é que este mesmo episódio revelou que Daenerys e Jon na verdade são tia e sobrinho. Ou seja, Jon também é um Targaryen.
+
+Por conta da quantidade de casamentos entre familiares Targaryen, Jon e Daenerys compartilham praticamente a mesma quantidade de genes que dois irmãos (45%).
+
+// PRINT DA ÁRVORE COM O JON SNOW
+
+Neste cenário, caso nasça uma criança deste relacionamento, há uma probabilidade de 72% da falha genética se propagar.
+
+Não seria nada mal chamá-lo de Aerys III, tendo em vista que podemos ter mais um rei louco acabando com Westeros e causando mais uma guerra. Desde que isso renda outra série com esta qualidade, não vejo mal algum!
 
 
 
+O que você achou deste post?
 
-O que você acha disso?
+Gostou? Odiou?
 
 Me conte nos comentários!
 
