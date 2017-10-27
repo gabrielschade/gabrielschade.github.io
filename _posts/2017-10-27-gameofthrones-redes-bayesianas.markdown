@@ -192,6 +192,8 @@ Não seria nada mal chamá-lo de Aerys III, tendo em vista que podemos ter mais 
 
 Desde que isso renda outra série com esta qualidade, não vejo problema nenhum.
 
+Você pode encontrar as duas redes baysianas utilizadas no experimento neste repositório:
+http://bit.ly/GoT-redes-bayesianas
 
 O que você achou deste post?
 
