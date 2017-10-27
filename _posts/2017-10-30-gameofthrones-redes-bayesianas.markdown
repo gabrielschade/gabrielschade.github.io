@@ -70,7 +70,7 @@ Em nosso exemplo, cada nó representará um membro da família, Jaime e Cersei, 
 
 Veja o nó que representa a Cersei, na imagem abaixo:
 
-
+{% include image.html link="https://i.imgur.com/ws6e4q8.png" alt="Nó representando Cersei" width=80 %} 
 
 Em toda rede bayesiana os nós são interligados de acordo com sua correlação. Em nosso caso, é bastante simples entender a relação entre os nós: os filhos herdam as falhas genéticas dos pais.
 
@@ -84,7 +84,7 @@ Jaime e Cersei possuem três filhos: Joffrey, Myrcella e Tommen. Cada um deles d
  
 Veja a representação do nó de Joffrey:
 
-{% include image.html link="https://i.imgur.com/VjICdTv.jpg" alt="Nó representando Cersei" width=80 %} 
+{% include image.html link="https://i.imgur.com/VjICdTv.jpg" alt="Nó representando Joffrey" width=80 %} 
 
 Através das ligações entre os nós é possível propagar uma evidência pela rede, ou seja, ao alterarmos a probabilidade de um estado de um nó, as probabilidades de estados de outros nós também poderão ser alteradas.
 
