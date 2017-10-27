@@ -40,9 +40,11 @@ Vamos partir de algumas premissas:
 
 2. Estamos considerando como a genética do nosso mundo funciona, não há evidências se isso se aplica ao universo de GoT;
 
-3. A chance de uma falha genética existir será 1%;
+3. A chance de uma mutação causar uma falha genética será 1%;
 
-4. Vamos limitar a árvore genealógica das famílias envolvidas;
+4. Não será considerado mutação para cura de falhas genéticas herdadas;
+
+5. Vamos limitar a árvore genealógica das famílias envolvidas;
 
 
 Ok, mas o que é uma rede bayesinana?
@@ -54,13 +56,64 @@ Esta rede é representada por um grafo, onde cada nó possui diferentes estados.
 
 // INCLUIR PRINT DOS NÓS
 
-Em toda rede bayeseana os nós são interligados de acordo com sua correção. Em nosso caso, é bastante simples entender esta relação: os filhos herdam as falhas genéticas dos pais.
+Em toda rede bayeseana os nós são interligados de acordo com sua correlação. Em nosso caso, é bastante simples entender a relação entre os nós: os filhos herdam as falhas genéticas dos pais.
 
-// INCLUIR PRINT DAS LIGAÇÔES
+Jaime e Cersei possuem três filhos: Joffrey, Myrcella e Tomen. Cada um deles depende dos pais para terem ou não falhas genéticas, por isso seus estados são um pouco mais complexos:
 
-Através desta ligação torna-se possível que a descoberta de uma evidência do problema altere a probabilidade dos estados de outros nós desta mesma rede.
+* Quando ambos os pais **não** possuem a falha genética: a probabilidade de ter a falha permanecerá em 1%.
+* Quando um dos pais possui a falha genética: a probabilidade de ter a falha é elevada para 50% (metade do gene herdado);
+* Quando ambos os pais possuem a falha genética: a probabilidade de ter a falha será 100% (não estamos considerando mutações que curam falhas genéticas)
 
-Caso a Cersei tenha uma falha genética ela herdou de um dos pais, então a probabilidade dos pais da Cersei terem a falha genética não é mais apenas 1%, além disso, como Jaime é seu irmão e herdou os mesmos genes, a probabilidade dele também conter esta falha aumenta.
+// INCLUIR PRINT DOS ESTADOS DOS NÓS FILHOS DAS LIGAÇÔES
+
+Através das ligações entre os nós é possível propagar uma evidência pela rede. Ou seja, ao alterarmos a probabilidade de um estado de um nó, todas as outras probabilidades também serão alteradas.
+
+Vamos fazer um exemplo. Imagine que o lunático do Joffrey era desta forma por conta de uma falha genética, então vamos sinalizar que ele com certeza possui uma falha, veja o resultado da rede após informarmos esta evidência:
+
+//IMAGEM APÓS EVIDENCIA
+
+Mas peraí, 26%? Como assim?
+
+Eu explico, esta probabilidade é o resultado do seguinte cenário: Temos 2 pais, cada um provendo metade dos genes para os filhos, 50% cada um.
+
+Agora em nossa rede, não há nenhuma informação que os pais compartilham qualquer quantidade de genes, sendo assim, estamos tratando como se Cersei e Jaime não fossem irmãos e com isso, os genes de Cersei e Jaime teriam vindo de pais diferentes.
+
+Neste caso Joffrey seria composto por 25% dos genes de cada avô. Somamos isso ao 1% de chance da causa ser uma mutação e chegamos nos 26%. Isso se propaga tanto para os pais, quanto para os irmãos de Joffrey.
+
+Mas para termos um resultado mais real e entendermos melhor o problema, precisamos subir um pouco mais na árvore genealógica da família Lannister.
+
+## Criando uma representação da árvore genealógica dos Lannisters
+
+Antes de criarmos os ascendentes dos irmãos, vamos criar o nó do Lannister mais amado **Tyrion** ao lado de Jaime e Cersei.
+
+Agora vamos criar os nós para representar os pais dos Lannisters: Tywin e Joana.
+
+Depois de criar estes nós precisamos reajustar a rede. Agora estes dois são os nós a priori e todos os outros dependem deles, direta ou indiretamente.
+
+Agora as coisas começam a ficar mais complicadas para a família Lannister, se Tywin (também conhecido como pai Lannister) possuir uma falha genética, ferrou.
+
+Cersei e Jaime possuem 50% de chances cada um de ter esta mesma falha, se por um acaso ela realmente foi passada adiante, cada um dos últimos filhos dos Lannister vão ter uma probabilidade de **75%** de ter este mesmo problema.
+
+//IMAGEM APÓS EVIDENCIA
+
+Mas calma, ainda **piora**.
+
+Piora porque Tywin e Joana Lannister são **primos**. E você achando que sua família era complicada.
+Para conseguirmos mapear este relacionamento será preciso criar o nó com o pai de Tywin: Tytos e de seu irmão/irmã (não encontrei quem é o parente que é pai biológico) que é um ascendente de Joana.
+
+E para garantir que a rede entenda que eles são irmãos, também criaremos o nó do pai de Tytos (avó de Tywin e bisavó de Cersei e Jaime).
+
+## Experimentos
+
+Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
+
+// IMAGEM APÓS EVIDENCIA
+
+Um comportamento curioso da propagação de evidências que não é muito intuitivo, é o fato de os nós ascendentes sofrem com evidências novas mesmo em nós mais profundos.
+
+Tyrion, o melhor anão que você respeita possui 57% de chance de ter a mesma falha, isso considerando que apenas a Cersei e o Tywin possuíam a falha em questão.
+
+FALAR SOBRE GERAR EVIDENCIA NO JOFFREY E VER OS IMPACTOS + IMAGENS FINAIS
 
 Notem que este tipo de sistema mostra como resultado a probabilidade dos eventos aconteceram, devido à esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
 
