@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Game of Thrones e probabilidade utilizando redes bayseanas"
-date:   2017-10-30 00:00:00 +0000
+title:  "Game of Thrones e probabilidade utilizando redes baysianas"
+date:   2017-10-27 00:00:00 +0000
 comments: true
 tags: [Ciência, IA]
 ---
@@ -162,13 +162,15 @@ A árvore genealógica dos Targaryen é **gigante** e com muitas, mas muitas coi
 
 A versão original da família Targaryen pode ser encontrada [aqui](https://i.imgur.com/hrlwbTg.jpg), para os experimentos criei uma versão simplificada colocando apenas os casamentos entre irmãos. 
 
-Nas imagens irei mostrar apenas a família a partir do rei louco, mas a rede utilizada é maior que isso (será disponibilizada no final do post).
+Nas imagens irei mostrar apenas os descendentes a partir do rei louco, mas a rede utilizada é maior que isso (será disponibilizada no final do post).
 
-Vamos focar principalmente do rei louco (Aerys II) e seus descendentes. Por conta da quantidade exagerada de gerações onde os irmãos se casaram e tiveram filhos, os irmãos Targaryen compartilham bem mais genes do que os irmãos Lannisters, vistos anteriormente.
+Por conta da quantidade exagerada de gerações onde os irmãos se casaram e tiveram filhos, os irmãos Targaryen compartilham bem mais genes do que os irmãos Lannisters, vistos na rede anterior.
 
-Vamos atribuir a loucura do rei louco a um falha genética, então vamos criar esta evidência. Além dele, a querida mãe dos dragões já deu alguns indícios de que não bate muito bem das ideias. Seus conselheros vivem alertando-a sobre a possível loucura e o quão cuidadosa ela deve ser.
+Vamos atribuir a loucura do rei louco a um falha genética, portanto vamos criar esta evidência. 
 
-Considerando que ela herdous as falhas do pai, quais são as chances dos irmãos Rhaegar, Viserys também terem o mesmo problema?
+Além dele, a querida mãe dos dragões já deu alguns indícios de que não bate muito bem. Seus conselheiros vivem alertando-a sobre uma possível loucura e o quão cuidadosa ela deve ser.
+
+Considerando que ela herdou as falhas do pai. Quais são as chances dos irmãos Rhaegar, Viserys também terem o mesmo problema?
 
 {% include image.html link="https://i.imgur.com/FLNxDuv.jpg" alt="Targaryen" width=80 %}
 
