@@ -138,9 +138,9 @@ Existe um certo casal entre tio e sobrinha, isso parece muito errado? Calma que 
 
 A árvore genealógica dos Targaryen é **gigante** e com muitas, mas muitas coisas erradas. É pai com filha, sobrinho com tia, irmão com irmã e por aí vai.
 
-A versão original da família Targaryen pode ser encontrada [aqui](https://i.imgur.com/hrlwbTg.jpg), para os experimentos criei uma versão simplificada colocando apenas os casamentos entre irmãos. As probabilidades não serão exatas, mas a rede se tornaria complexa demais e fugiria um pouco do propósito do post.
+A versão original da família Targaryen pode ser encontrada [aqui](https://i.imgur.com/hrlwbTg.jpg), para os experimentos criei uma versão simplificada colocando apenas os casamentos entre irmãos. 
 
-// PRINT DA FAMILIA TARGARYEN (SEM MOSTRAR O JOAO DAS NEVES)
+Nas imagens irei mostrar apenas a família a partir do rei louco, mas a rede utilizada é maior que isso (será disponibilizada no final do post).
 
 Vamos focar principalmente do rei louco (Aerys II) e seus descendentes. Por conta da quantidade exagerada de gerações onde os irmãos se casaram e tiveram filhos, os irmãos Targaryen compartilham bem mais genes do que os irmãos Lannisters, vistos anteriormente.
 
@@ -148,7 +148,9 @@ Vamos atribuir a loucura do rei louco a um falha genética, então vamos criar e
 
 Considerando que ela herdous as falhas do pai, quais são as chances dos irmãos Rhaegar, Viserys também terem o mesmo problema?
 
-No caso dos irmãos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Logo, cada um dos irmãos compartilham aproximadamente **90%** genes. O.O
+{% include image.html link="https://i.imgur.com/FLNxDuv.jpg" alt="Targaryen" width=80 %}
+
+No caso dos irmãos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Logo, cada um dos irmãos compartilham quase **90%** genes. O.O
 
 Vamos o momento do **spoiler**, vá direto para o fim do post caso não queira receber informações indesejadas.
 
@@ -158,12 +160,13 @@ Até aí tudo bem, o problema é que este mesmo episódio revelou que Daenerys e
 
 Por conta da quantidade de casamentos entre familiares Targaryen, Jon e Daenerys compartilham praticamente a mesma quantidade de genes que dois irmãos (45%).
 
-// PRINT DA ÁRVORE COM O JON SNOW
+{% include image.html link="https://i.imgur.com/DUIkefk.jpg" alt="Filho de Jon e Daenerys" width=80 %}
 
 Neste cenário, caso nasça uma criança deste relacionamento, há uma probabilidade de 72% da falha genética se propagar.
 
-Não seria nada mal chamá-lo de Aerys III, tendo em vista que podemos ter mais um rei louco acabando com Westeros e causando mais uma guerra. Desde que isso renda outra série com esta qualidade, não vejo mal algum!
+Não seria nada mal chamá-lo de Aerys III, tendo em vista que podemos ter mais um rei louco acabando com Westeros e causando mais uma guerra. 
 
+Desde que isso renda outra série com esta qualidade, não vejo problema nenhum.
 
 
 O que você achou deste post?
