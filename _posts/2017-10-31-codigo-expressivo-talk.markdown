@@ -18,6 +18,6 @@ Tive a oportunidade de palestrar sobre o tema e aqui vai um resumão da talk:
 
 A apresentação é bastante introdutória sobre os assuntos, espero que sirva de ponta pé inicial para você se aprofundar no assunto, buscando mais conteúdos (inclusive aqui no blog!).
 
-{% include slide-share.html width=595 height=485 url="http://www.slideshare.net/slideshow/embed_code/key/odgI3h7qVpE1Br" %}
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/odgI3h7qVpE1Br" %}
 
 E Até mais!
