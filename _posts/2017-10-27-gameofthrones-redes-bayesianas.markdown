@@ -150,7 +150,7 @@ O aumento da probabilidade do pai de Tytos possuir a falha, propaga para todos o
 
 Note também que, aumentando a probabilidade da falha estar em Tytos Lannister e nos ancestrais Lannister, diminuímos a chance da esposa de Tytos conter esta mesma falha `(20% -> 19%)`.
 
-Neste ponto você já deve ter notado que os resultados deste tipo de sistema é uma a probabilidade dos eventos aconteceram baseando-se em evidências, devido à esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
+Neste ponto você já deve ter notado que os resultados deste tipo de sistema são as probabilidades dos eventos ocorrerem baseado nas evidências, devido a esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
 
 Ainda sobre probabilidades, agora vamos focar em um outro casal, desta vez não são mais irmãos, mas são tia e sobrinho, isso parece muito errado? 
 
