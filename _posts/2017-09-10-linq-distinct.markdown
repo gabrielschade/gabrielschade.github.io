@@ -3,7 +3,7 @@ layout: post
 title:  "Utilizando o Distinct do LINQ com dignidade"
 date:   2017-09-10 00:00:00 +0000
 comments: true
-tags: [C#, Dev]
+tags: [C#]
 ---
 
 Olá pessoas do meu coração, depois de dois posts com bastante conversa e pouca programação, decidi que já era hora de mostrar um pouco de código, neste post irei ilustrar um problema bem específico, o método `Distinct` provido pelo LINQ.
