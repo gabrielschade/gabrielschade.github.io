@@ -3,7 +3,7 @@ layout: post
 title:  "Linguagem Ubíqua + Código Expressivo = Felicidade :)"
 date:   2017-10-31 00:00:00 +0000
 comments: true
-tags: [Talk]
+tags: [Talks]
 ---
 
 Olá pessoas!
