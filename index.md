@@ -10,8 +10,15 @@ parallax-text: >
      e reflexões 
 ---
 
-Olá, Eu sou o Gabriel, desenvolvedor, palestrante, escritor, pesquisador e professor. Expert em desenvolvimento .NET web e entusiasta do paradigma de programação funcional. Apaixonado por tecnologia e tudo que ela pode trazer de bom para o mundo.
+Olá, Eu sou o Gabriel, mestre em Computação Aplicada, professor, pesquisador, programador e autor de quatro livros na área de desenvolvimento de software. Trabalho com desenvolvimento .NET desde 2009 e sou entusiasta do paradigma de programação funcional. 
+
+Apaixonado por tecnologia e tudo que ela pode trazer de bom para o mundo. Aqui no blog compartilho coisas sobre desenvolvimento, ciência e algumas discussões relacionadas à area.
+
+Seja bem-vindo.
 
 
 {% include huge-h2.html content="Últimas Postagens" %} 
 {% include posts.html %} 
+
+{% include huge-h2.html content="Inscreva-se na minha newsletter" %} 
+{% include form-email.html %} 
