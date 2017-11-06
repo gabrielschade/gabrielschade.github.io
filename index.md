@@ -20,5 +20,5 @@ Seja bem-vindo.
 {% include huge-h2.html content="Últimas Postagens" %} 
 {% include posts.html %} 
 
-{% include huge-h2.html content="Inscreva-se na minha newsletter" %} 
+{% include huge-h2.html content="Inscreva-se no meu Newsletter" %} 
 {% include form-email.html %} 
