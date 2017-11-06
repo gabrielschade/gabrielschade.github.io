@@ -3,6 +3,7 @@ layout: post
 title:  "Mapeando incertezas com o tipo Option"
 date:   2017-11-09 00:00:00 +0000
 comments: true
+published: false
 tags: [C#]
 ---
 
