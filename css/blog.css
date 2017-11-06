@@ -37,7 +37,7 @@ a .icon:hover{
 
 
 .icon-medium{
-    max-width: 48px;
+    max-width: 36px;
 }
 
 .square{
@@ -237,6 +237,7 @@ h3.huge.margin-top-65{
 .margin-top-15{
     margin-top:15px;
 }
+
 .margin-side-15{
     margin: 0 15px;
 }
