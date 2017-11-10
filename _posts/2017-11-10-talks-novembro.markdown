@@ -26,7 +26,7 @@ No dia seguinte, terça-feira, ministrei um mini curso introdutório sobre a pro
 
 Você pode visualizar os slides contendo os exercícios logo abaixo:
 
-{% include slide-share.html width=595 height=485 url="www.slideshare.net/slideshow/embed_code/key/Asx6Owc0r6TdAV" %}
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/Asx6Owc0r6TdAV" %}
 
 Na quarta-feira participei da banca avaliadora de um TTC (Trabalho Técnico Científico de Conclusão de Curso) de Ciência da Computação. Um ótimo trabalho com uma proposta de interface híbrida (tangível e virtual) para o brinquedo de programar [RoPE](http://lite.acad.univali.br/pt/projetos/brinquedo-de-programar/).
 
