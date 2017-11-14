@@ -321,14 +321,14 @@ h3.huge.margin-top-65{
 
     .content {
         max-width: 30rem;
-        margin-left: 17rem;
+        margin-left: 16.5rem;
         margin-right: 2rem;
     }
 }
 
 @media (min-width: 64em){
     .content {
-        margin-left: 18rem;
+        margin-left: 16.5rem;
         margin-right: 4rem;
         max-width: 32rem;
     }
