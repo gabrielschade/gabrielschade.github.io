@@ -143,6 +143,8 @@ h2.huge.margin-top-0{
 h2.huge.img-title{
     margin-top:35px;
     color:white;
+    font-size: 1.5rem;
+    transition: .3s ease;
 }
 
 h3.huge{
