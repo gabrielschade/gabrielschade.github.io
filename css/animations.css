@@ -1,0 +1,113 @@
+.view {
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .view .mask,
+  .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+  }
+  
+  .view img {
+    display: block;
+    position: relative
+  }
+  
+  .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    margin: 20px 0 0 0
+  }
+  
+  .view p {
+    font-style: italic;
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+    padding: 0px 20px 0px;
+    text-align: center
+  }
+  
+  .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+  }
+  
+  .view a.info:hover {
+    box-shadow: 0 0 5px #000
+  }
+  
+  
+  .view-zoom img {
+    /*1*/
+    transition: all 0.2s linear;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .view-zoom .mask {
+    opacity: 0;
+    background-color: rgba(58, 1, 132, 0.44);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .view-zoom h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .view-zoom p {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  
+  .view-zoom a.info {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  /* */
+  
+  .view-zoom:hover img {
+    transform: scale(1.1);
+  }
+  
+  .view-zoom:hover .mask {
+    opacity: 1;
+  }
+  
+  .view-zoom:hover h2,
+  .view-zoom:hover p,
+  .view-zoom:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .view-zoom:hover p {
+    transition-delay: 0.1s;
+  }
+  
+  .view-zoom:hover a.info {
+    transition-delay: 0.2s;
+  }
