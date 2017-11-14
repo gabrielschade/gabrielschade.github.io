@@ -25,10 +25,24 @@
   .img-container:hover .img-overlay {
     height: 100%;
   }
-  
-  .img-container:hover .img-title {
-    font-size: 3em;
-}
+ 
+  @media (min-width: 48em){
+    .img-container:hover .img-title {
+      font-size: 3em;
+    }
+  }
+
+  @media (min-width: 64em){
+    .img-container:hover .img-title {
+      font-size: 2em;
+    }
+  }
+
+  @media (min-width: 83.5em){
+    .img-container:hover .img-title {
+      font-size: 3em;
+    }
+  }
 
   .img-text {
     white-space: nowrap; 
