@@ -103,10 +103,10 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
-.content {
+/* .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
-}
+} */
 
 @media (min-width: 48em) {
   .content {
