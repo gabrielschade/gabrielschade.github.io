@@ -52,6 +52,10 @@ a .icon:hover{
      color: rgba(0,0,0,0.54);
 }
 
+.parallax-text{
+    margin-top:25%;
+}
+
 .none-decoration, 
 .none-decoration:hover,
 .none-decoration:focus{
