@@ -1,4 +1,4 @@
-{% assign link = include.content | replace: "#", "sharp" % | downcase}
+{% assign link = include.content | replace: "#", "sharp" %}
 <a href="/posts-categoria/{{link}}">
 <div class="img-container hoverable z-depth-1">
     {% assign image = include.content | replace: "#", "" %}
