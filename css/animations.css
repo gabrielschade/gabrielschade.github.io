@@ -44,6 +44,10 @@
     }
   }
 
+  .img-container:hover .img-title {
+    font-size: 3em;
+  }
+
   .img-text {
     white-space: nowrap; 
     color: white;
