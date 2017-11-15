@@ -340,7 +340,7 @@ h3.huge.margin-top-65{
     }
   }
 
-  @media (min-width: 83.5em){
+  @media (min-width: 80em){
     .content {
         margin-left: 18rem;
         margin-right: 4rem;
