@@ -21,6 +21,8 @@ Depois de algum tempo na área, tive a oportunidade de palestrar pela em um even
 
 Hoje, além de programador, também atuo como professor na [UNIVALI (Universidade do Vale do Itajaí)](https://www.univali.br) no curso de Ciência da Computação e revisor de artigos científicos (convidado) no *journal* [Pattern Recognition Letters](https://www.journals.elsevier.com/pattern-recognition-letters/).
 
+Além disso, também organizei um grupo de .NET para os programadores da região do vale do Itajaí, você pode acessar o slack do grupo através do menu do blog.
+
 Todas estas coisas foram conquistadas com muito esforço e dedicação, e claro, com um pouquinho de sorte. Afinal é como dizem "*luck is when preparation meets opportunity*".
 
 {% include skills.html %}
