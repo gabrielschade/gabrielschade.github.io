@@ -42,13 +42,13 @@ Você pode encontrar o código do servidor [aqui](https://github.com/LeonardoPra
 
 Nesta palestra a dupla Rafael Broering e Willian Kirsch mostraram como utilizar este tipo de autenticação em uma aplicação .NET Core.
 
-{% include slide-share.html width=595 height=485 url="www.slideshare.net/slideshow/embed_code/key/mSw410zsavyeQS" %}
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/mSw410zsavyeQS" %}
 
 3. Uma abordagem funcional para gerenciamento de erros
 
 Na última palestra mostrei os problemas das exceções e do gerenciamento de erros e validações em aplicação de modo geral. Introduzindo um conceito de railway simples em C#, criando uma espécie de promise para o .NET.
 
-{% include slide-share.html width=595 height=485 url="www.slideshare.net/slideshow/embed_code/key/CfiCtNnLF0hUQn" %}
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/CfiCtNnLF0hUQn" %}
 
 Pessoal, esta foi a primeira experiência organizando um evento, foi pequeno, eu sei. Mas também foi muito gratificante e legal passar por isso, fiquem atento que ano que vem terão muito mais eventos!
 
