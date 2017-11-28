@@ -30,7 +30,7 @@ Agradecimentos especiais aos palestrantes e ao meu amigo Rafael, que além de pa
 
 Agora vamos às talks:
 
-1. React com .NET Core 2.0
+{% include huge-h3.html content="React com .NET Core 2.0" %}
 
 Nesta palestra Leonardo Prange mostrou como iniciar uma aplicação .NET Core 2.0 utilizando React, com direito a muito live code (e poucos slides, haha)!
 
@@ -38,13 +38,14 @@ Nesta palestra Leonardo Prange mostrou como iniciar uma aplicação .NET Core 2.
 
 Você pode encontrar o código do servidor [aqui](https://github.com/LeonardoPrange/Itajai-dotnet-server) e do client [aqui](https://github.com/LeonardoPrange/Itajai-dotnet-client)
 
-2. Aplicando autenticação JWT no .NET Core 2.0
+{% include huge-h3.html content="Aplicando autenticação JWT no .NET Core 2.0" %}
 
 Nesta palestra a dupla Rafael Broering e Willian Kirsch mostraram como utilizar este tipo de autenticação em uma aplicação .NET Core.
 
 {% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/mSw410zsavyeQS" %}
 
-3. Uma abordagem funcional para gerenciamento de erros
+
+{% include huge-h3.html content="Uma abordagem funcional para gerenciamento de erros" %}
 
 Na última palestra mostrei os problemas das exceções e do gerenciamento de erros e validações em aplicação de modo geral. Introduzindo um conceito de railway simples em C#, criando uma espécie de promise para o .NET.
 
