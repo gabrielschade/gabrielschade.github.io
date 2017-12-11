@@ -352,6 +352,14 @@ h3.huge.margin-top-65{
     background-color: #222;
   }
 
+  .nav-tango ul a:hover,
+  .nav-tango ul a.active{
+    background-color: rgba(0,0,0,0.2);
+    color: #ffb300;
+    text-decoration: none;
+    border-bottom: 1px solid #ffb300;
+  }
+
   .img-tango{
     height: 64px;
     vertical-align: middle;
