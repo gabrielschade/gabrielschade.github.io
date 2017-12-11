@@ -348,4 +348,11 @@ h3.huge.margin-top-65{
     }
   }
 
-  
+  .nav-tango{
+    background-color: #222;
+  }
+
+  .img-tango{
+    height: 64px;
+    vertical-align: middle;
+  }
