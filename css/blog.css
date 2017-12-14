@@ -14,8 +14,8 @@ strong{
 }
 
 .sidebar{
-    background-color:white;
-    color: rgba(0,0,0,0.87);
+    background: linear-gradient(150deg,rgba(19,106,138,.65) 30%,rgba(38,120,113,.44) 70%) 0 0/cover fixed,url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/xCCDBUa/technology-or-bio-molecular-structure-with-space-for-text-4k-looped-animation-presentation-background_voflj4vnl__F0000.png) center/cover no-repeat fixed;
+    color: white;
     z-index:99;
 }
 .side-nav li>a{
@@ -142,7 +142,8 @@ a .icon:hover{
 
 .huge{
     font-size: 2.0rem;
-    color: rgba(0,0,0,0.4);
+    color: #24bfcf;
+    font-weight: lighter;
     font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
 }
 
@@ -182,9 +183,10 @@ h3.huge.margin-top-65{
 }
 
 .content-list-item a{
-    color: rgba(0,0,0,0.87);
+    text-decoration:none;
+    color: #555;
     display: block;
-    font-weight: 500;
+    font-weight: 300;
     height: 48px;
     line-height: 48px;
     padding: 0 32px;
@@ -219,14 +221,7 @@ h3.huge.margin-top-65{
     text-align: left;
 }
 
-.content a{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
-}
 
-.content a:hover{
-    text-decoration: none;
-    color: rgba(0,0,0,0.54)
-}
 
 .border-none{
     border:none;
@@ -238,11 +233,21 @@ h3.huge.margin-top-65{
 
 .content-list-item a:hover{
     background-color: transparent;
-    color: rgba(0,0,0,0.54);
+    color: #24bfcf;
     text-decoration: none;
 }
 
+.content a{
+    color: #555;
+    text-decoration: underline;
+    text-decoration-color: #24bfcf;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
+}
 
+.content a:hover{
+    color: #24bfcf;
+    font-weight: 400;
+}
 
 
 .no-bottom{
