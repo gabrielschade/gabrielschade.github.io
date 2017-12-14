@@ -4,7 +4,6 @@ title:  "Tango, uma biblioteca para programação funcional em C#"
 date:   2017-12-14 00:00:00 +0000
 comments: true
 tags: [C#]
-published: false
 ---
 
 Olá pessoas!
