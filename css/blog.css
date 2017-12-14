@@ -1,3 +1,7 @@
+body{
+    color:#555;
+}
+
 strong{
     font-weight: bolder;
 }
@@ -14,8 +18,14 @@ strong{
     color: rgba(0,0,0,0.87);
     z-index:99;
 }
-
-
+.side-nav li>a{
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400; 
+}
+.side-nav li>a:hover{
+    background-color:transparent;
+    color: #24bfcf;
+}
 
 
 .sidebar .background{
@@ -45,7 +55,9 @@ a .icon:hover{
 }
 
 .accent-text{
-    color: rgba(0,0,0,0.87);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
 }
 
 .light-text{
@@ -131,6 +143,7 @@ a .icon:hover{
 .huge{
     font-size: 2.0rem;
     color: rgba(0,0,0,0.4);
+    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
 }
 
 
@@ -193,11 +206,13 @@ h3.huge.margin-top-65{
 
 .content-list-item a:hover{
     background-color: transparent;
-    color: rgba(0,0,0,0.54);
+    color: #24bfcf
 }
 
 .content p{
     text-align: justify;
+    color:#555;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
 }
 
 .content blockquote p{
@@ -205,7 +220,7 @@ h3.huge.margin-top-65{
 }
 
 .content a{
-    color: rgba(0,0,0,0.87)
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
 }
 
 .content a:hover{
@@ -363,4 +378,9 @@ h3.huge.margin-top-65{
   .img-tango{
     height: 64px;
     vertical-align: middle;
+  }
+
+  .card-profile-image{
+    height: 100px;
+    border: solid 1px #24bfcf;
   }
