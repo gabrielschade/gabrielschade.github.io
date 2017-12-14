@@ -14,7 +14,7 @@ strong{
 }
 
 .sidebar{
-    background: linear-gradient(rgba(80,50,190,0.344) 0%,rgba(0,110,154,0.5) 100%) 0 0/cover fixed,url(https://i.imgur.com/gycbJPb.png) center/cover no-repeat fixed;
+    background: #222;
     color: white;
     z-index:99;
 }
@@ -394,9 +394,4 @@ h3.huge.margin-top-65{
   .img-tango{
     height: 64px;
     vertical-align: middle;
-  }
-
-  .card-profile-image{
-    height: 100px;
-    border: solid 1px #24bfcf;
   }
