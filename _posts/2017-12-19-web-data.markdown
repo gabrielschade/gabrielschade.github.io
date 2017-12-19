@@ -1,0 +1,169 @@
+---
+layout: post
+title:  "Extraindo dados da web com F#"
+date:   2017-12-15 00:00:00 +0000
+comments: true
+tags: [F#]
+---
+
+Olá pessoas!
+
+Hoje vamos mudar um pouquinho de linguagem, eu tenho dado muitos exemplos em C#, mas adivinha só?
+
+**Não** existe só ele.
+
+Esse tipo de raciocínio serve para qualquer desenvolvedor de qualquer plataforma, você pode gostar da sua linguagem, não há nada de errado nisso, mas ela nem sempre vai ser a melhor opção.
+
+Hoje é um exemplo bastante claro, vamos propor um problema simples: *extrair dados da web*.
+
+Ok, isso é bastante genérico, vamos ser mais específicos.
+
+Eu quero que sua aplicação, leia os dados da *Wikipedia* sobre os filmes da [Marvel Cinematic Universe](https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films) e ordene os filmes de acordo com a crítica no [Rotten Tomatoes](https://www.rottentomatoes.com/).
+
+Olha que boa notícia! Os dados já estão mastigadinhos, olha só essa print:
+
+![Wiki - MCU](https://i.imgur.com/WbBIfFK.jpg)
+
+Então, como fazer?
+
+Bom, parece óbvio, basta fazer uma chamada ao endereço obter o texto do HTML e minerá-lo, certo?
+
+É, mais ou menos. Isso até funciona, mas dá **tanta** dor de cabeça que você já deve imaginar os problemas.
+
+Tratar uma string como um HTML é no mínimo sofrível.
+
+Felizmente temos uma solução **muito** melhor.
+
+{% include huge-h2.html content="Type Providers" %}
+
+Type provider é uma feature do F# que atua como um componente para prover tipos, propriedades e métodos para você utilizar em seu programa. Geralmente estes type providers se baseiam em fontes externas ao próprio programa, gerando um tipo automaticamente.
+
+Com este recurso eliminamos uma barreira **gigante** no processo de extração e aquisição de dados não estruturados.
+
+Você pode encontrar a documentação completa da Microsoft sobre Type Providers [aqui](https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/type-providers/).
+
+Bom, a primeira coisa que precisamos fazer é criar um projeto em F#, pode ser uma aplicação console mesmo, não se preocupe.
+
+Com o projeto criado, vamos começar a programar!
+
+A primeira coisa que faremos é criar uma **constante** com a url da página da Wikipedia, conforme código:
+
+```fsharp
+[<Literal>]
+let url = "https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films"
+```
+
+Para utilizar o type provider de HTML precisamos instalar o pacote `FSharp.Data`, que pode ser facilmente instalado via nuget:
+
+```
+PM> Install-Package FSharp.Data
+```
+
+Vamos importar este namespace ao projeto, para isso, utilize o comando `open`:
+
+```fsharp
+open FSharp.Data
+
+[<Literal>]
+let url = "https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films"
+
+[<EntryPoint>]
+let main argv = 
+    printfn "%A" argv
+    0 // return an integer exit code
+```
+
+Agora já estamos prontos para começar!
+
+Abaixo da declaração da constante vamos declarar o tipo de dado que representa a página da wiki. Mas espera, quais propriedades vamos definir nele?
+
+Nenhuma.
+
+Vamos utilizar o HtmlProvider, conforme código:
+
+```fsharp
+type PaginaMarvelCinematicUniverse = HtmlProvider<url>
+```
+Agora já conseguimos carregar os dados da página web de forma **tipada**!
+
+Para carregar a página utilize a função `Load` presente no tipo `PaginaMarvelCinematicUniverse`:
+
+``` fsharp
+let pagina = PaginaMarvelCinematicUniverse.Load url
+```
+
+Agora precisamos encontrar a tabela que contém a crítica dos filmes, a mesma mostrada na print acima. Bom, não vejo uma maneira mais intuitiva de encontrá-la se não, pelo próprio nome.
+
+Note que o valor `pagina` possui uma propriedade chamada `Tables` e essa propriedade lista todas as tabelas da página, de acordo com seu **nome**. Portanto, basta utilizarmos a seguinte instrução:
+
+```fsharp
+let filmes = pagina.Tables.``Critical response``.Rows
+```
+
+Como o F# permite nome de membros através de `strings` o nome da tabela listada na propriedade é exatamente o mesmo nome da tabela na página da Wiki, bem legal né?
+
+Ah, tem mais, o mesmo se aplica às propriedades de cada linha!
+
+Vamos fazer um tratamento para ignorar o item *Average* desta tabela, obter somente as informações relevantes ao problema, e ordenar os dados de acordo com a crítica, veja:
+
+```fsharp
+[<EntryPoint>]
+let main argv = 
+    let pagina = PaginaMarvelCinematicUniverse.Load url
+    let filmes = pagina.Tables.``Critical response``.Rows
+
+    let resultado =
+        filmes
+        |> Seq.filter (fun filme -> filme.Film <> "Average")
+        |> Seq.map (fun filme -> filme.Film, filme.``Rotten Tomatoes``)
+        |> Seq.sortByDescending( fun (filme,rotten) -> rotten)
+```
+
+Por último vamos usar um laço de repetição para exibir a listagem no console.
+
+Sim, eu sei que não é tão legal utilizar laços de repetição em linguagens funcionais, mas calma, só não quero tirar o foco do problema principal.
+
+O seu programa final deve ficar desta forma:
+
+```fsharp
+open FSharp.Data
+
+[<Literal>]
+let url = "https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films"
+type PaginaMarvelCinematicUniverse = HtmlProvider<url>
+
+[<EntryPoint>]
+let main argv = 
+    let pagina = PaginaMarvelCinematicUniverse.Load url
+    let filmes = pagina.Tables.``Critical response``.Rows
+
+    let resultado =
+        filmes
+        |> Seq.filter (fun filme -> filme.Film <> "Average")
+        |> Seq.map (fun filme -> filme.Film, filme.``Rotten Tomatoes``)
+        |> Seq.sortByDescending( fun (filme,rotten) -> rotten)
+
+    for (filme, rotten) in resultado do
+        printfn "%s | %s" filme rotten
+
+    System.Console.ReadKey() |> ignore
+    0 // return an integer exit code
+```
+
+Com menos de 20 linhas de código resolvemos o problema que inicialmente parecia bem mais complexo!
+
+Veja o resultado:
+
+![Resultado da extração dos dados](https://i.imgur.com/V9ztYWQ.jpg)
+
+É importante frisar que as possibilidades são bem maiores do que o simples exemplo mostrado aqui, você pode aplicar transformações, correlacionar e até aplicar algum tipo de inteligência artificial para tirar conclusões sobre seus dados.
+
+O ponto principal é que esta feature quebra uma das barreiras da extração de dados, facilitando (e muito) este processo.
+
+Você pode encontrar o código desenvolvido aqui no meu [Github](https://github.com/gabrielschade/TypeProviderSample/blob/master/HtmlTypeProviderSample/HtmlTypeProviderSample/Program.fs)
+
+O que você achou deste post?
+
+Me conte nos comentários!
+
+E Até mais!
