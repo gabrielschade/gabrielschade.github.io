@@ -9,7 +9,7 @@ tags: [Ciência, IA]
 Game of Thrones (GoT) é sem dúvida um fenômeno mundial. O último episódio da sétima temporada (última temporada exibida) bateu o recorde da série registrando assustadores 12.1 milhões de telespectadores nos Estados Unidos.
 
 Eu não sou nenhum fã super hardcore com conhecimentos sobre toda a mitologia da história e tudo mais, mas uma coisa eu sei, é uma série bastante popular e que nos fornece um bom conteúdo, inclusive para **experimentos**.
-
+<!--more-->
 Caso você esteja totalmente por fora da série, você perde um pouco da graça deste post e da brincadeira com os elementos da série, mas o conteúdo ainda será útil, mas já avisando: **contém spoilers**.
 
 A ideia principal deste post surgiu do vídeo entitulado: "A genética do incesto em Game of Thrones" do canal Nerdologia, recomendo assistí-lo antes:

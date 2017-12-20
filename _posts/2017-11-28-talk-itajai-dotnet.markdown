@@ -9,7 +9,7 @@ tags: [Talks]
 Olá pessoas!
 
 Esta mês rolou o primeiro encontro do grupo Itajaí .NET e acho que não há hora melhor para falar sobre ele do que agora. 
-
+<!--more-->
 Eu já estou acostumado a palestrar e ministrar cursos, sempre dá o famoso friozinho na barriga, mas consigo manter a calma, mas desta vez foi um pouquinho diferente. Além de palestrar eu estava organizando um evento pela primeira vez, isso não me deu um friozinho na barriga, me deu **pânico**.
 
 O encontro era sábado pela manhã, isso por si só já demanda um esforço do público para acordar cedo no fim de semana e para ajudar, o tempo não poderia estar pior.

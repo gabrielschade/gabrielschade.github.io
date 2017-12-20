@@ -7,7 +7,7 @@ tags: [C#]
 ---
 
 Olá pessoas do meu coração, depois de dois posts com bastante conversa e pouca programação, decidi que já era hora de mostrar um pouco de código, neste post irei ilustrar um problema bem específico, o método `Distinct` provido pelo LINQ.
-
+<!--more-->
 Este post será um pouco mais avançado, então será presumido que você já possui um nível de compreensão razoável em C# e na biblioteca LINQ. Este post não irá se extender demais em exemplos introdutórios.
 
 A biblioteca LINQ (*language integrated query*) do C# provê uma série de métodos para trabalharmos com coleções de dados, através dela é possível realizar uma série de operações como filtrar, reduzir, mapear, ordenar e até unir coleções.

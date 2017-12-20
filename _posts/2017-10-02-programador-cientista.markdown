@@ -11,7 +11,7 @@ Tive uma conversa com um amigo e ele me disse a seguinte frase:
 > "Eu por muito tempo fiquei focado só em saber fazer o que é *mainstream* no mercado, mas tô começando a sentir falta de uma boa base científica, entende?"
 
 Entendo.
-
+<!--more-->
 Hoje em dia o mundo está diferente, saber utilizar as ferramentas do mercado é excelente, mas talvez isso não seja o bastante para alcançar o topo.
 
 Termos como: aprendizado de máquina, sistemas de recomendação, *data science* e programação cognitiva não são mais restritos à academia, o mercado também precisa disso. 

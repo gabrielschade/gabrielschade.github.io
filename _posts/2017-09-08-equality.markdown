@@ -11,7 +11,7 @@ Eu estava na sala de aula explicando para os alunos de ciência da computação 
 > "Professor, como faço para comparar o array inteiro?"
 
 A resposta clara que vem em mente é: *comparando elemento por elemento*, mas será que isso é normal mesmo ou só nos acostumamos com esse comportamento?
-
+<!--more-->
 E se compararmos o array inteiro, utilizando os operadores de igualdade, o que acontece?
 
 ``` javascript

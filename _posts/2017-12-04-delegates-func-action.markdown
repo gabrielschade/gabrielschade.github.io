@@ -11,7 +11,7 @@ Olá pessoas!
 Hoje vou trazer um tema bastante específico do C#, os assustadores **delegates**.
 
 Ok, eles não são assustadores de verdade, mas há uma relação estranha entre os desenvolvedores e os delegates. Nunca entendi o real motivo, mas é bastante comum ver os desenvolvedores negligenciarem ou até não entenderem esta *feature* da linguagem.
-
+<!--more-->
 Acredito que a falta de contexto sobre o assunto é um problema, por isso decidi escrever um pouco sobre.
 
 Mas vamos lá, afinal de contas, o que é um delegate?

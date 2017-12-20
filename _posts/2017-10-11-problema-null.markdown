@@ -9,7 +9,7 @@ tags: [C#, Discussões]
 O `null` é mesmo um problema?
 
 **Sim**, é. Até mais e vamos ao próximo post. - Ainda não.
-
+<!--more-->
 Vamos lá, acredito que **todos** os programadores que já utilizaram objetos/referências, já se depararam com o problema do `null`. Muitas e muitas vezes nossos códigos geram problemas porque, em algum momento, sem que tívessemos pensado previamente, geramos um valor nulo.
 
 Antes de discutirmos mais sobre esse valor maldito, vamos entender o motivo dele existir.

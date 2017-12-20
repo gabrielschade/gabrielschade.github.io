@@ -9,7 +9,7 @@ tags: [C#]
 Olá pessoas!
 
 Hoje vou apresentar algo que estou trabalhando já faz um tempo, uma biblioteca para programação funcional em C#!
-
+<!--more-->
 ![TANGO](https://gabrielschade.gitbooks.io/tango-br/content/assets/logo%20tango.png)
 
 Quem me conhece sabe que sou bastante entusiasta deste paradigma, mas não, não vou listar motivos **X** ou **Y** para tentar provar que ele é melhor do que orientação à objeto.

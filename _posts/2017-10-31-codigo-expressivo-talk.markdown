@@ -9,7 +9,7 @@ tags: [Talks]
 Olá pessoas!
 
 No sábado deste fim de semana que passou (28/10/2017) aconteceu um Meetup sobre DDD - Domain-Driven Design. 
-
+<!--more-->
 Tive a oportunidade de palestrar sobre o tema e aqui vai um resumão da talk:
 
 1. Comentei sobre um caso real na empresa onde reforçamos o uso da linguagem ubíqua para mitigar um problema real de comunicação.

@@ -1,6 +1,10 @@
 <li class="content-list-item">
     <a class="none-decoration waves-effect" href="{{ post.url }}" style="height:100%">
-        {{ post.title }}
-        
+        <div>{{ post.title }}
+            <span class="post-date" style="font-size:18px">{% include postdate.html %}</span>
+            <div class="post-excerpt">
+                    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            </div>
+        </div>
     </a>
 </li>

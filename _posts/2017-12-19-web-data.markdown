@@ -15,12 +15,10 @@ Hoje vamos mudar um pouquinho de linguagem, eu tenho dado muitos exemplos em C#,
 Esse tipo de raciocínio serve para qualquer desenvolvedor de qualquer plataforma, você pode gostar da sua linguagem, não há nada de errado nisso, mas ela nem sempre vai ser a melhor opção.
 
 Hoje é um exemplo bastante claro, vamos propor um problema simples: *extrair dados da web*.
-
+<!--more-->
 Ok, isso é bastante genérico, vamos ser mais específicos.
 
 Eu quero que sua aplicação, leia os dados da *Wikipedia* sobre os filmes da [Marvel Cinematic Universe](https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films) e ordene os filmes de acordo com a crítica no [Rotten Tomatoes](https://www.rottentomatoes.com/).
-
-<!--more-->
 
 Olha que boa notícia! Os dados já estão mastigadinhos, olha só essa print:
 

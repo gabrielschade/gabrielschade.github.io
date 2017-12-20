@@ -11,7 +11,7 @@ Olá pessoas!
 Esta semana foi uma correria **gigante**, mas no final tudo deu certo.
 
 Segunda-feira ministrei uma palestra sobre a importância da programação funcional no dia-a-dia, explicando alguns conceitos práticos que melhora minha performance como programador, mesmo utilizando linguagens imperativas.
-
+<!--more-->
 Nesta palestra falei tanto em exemplos utilizando C# quanto F#, você pode conferir os slides abaixo:
 
 {% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/MqPtYkqQkqLzGF" %}

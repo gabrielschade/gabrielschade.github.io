@@ -395,3 +395,12 @@ h3.huge.margin-top-65{
     height: 64px;
     vertical-align: middle;
   }
+
+  .post-excerpt,
+  .post-excerpt:hover{
+    color: #333;
+    font-size: .8em;
+    line-height: 1.6em;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
