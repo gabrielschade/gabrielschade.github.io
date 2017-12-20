@@ -9,7 +9,7 @@ tags: [C#]
 Universos paralelos não são uma novidade no mundo das histórias em quadrinhos. Nas sagas do herói da DC, Flash, é comum existir este tipo de dinâmica.
 
 Toda vez que viajam para um universo paralelo, acabam em um planeta Terra muito similar ao nosso, inclusive com as mesmas pessoas. Mas estas pessoas tem outros empregos, outras personalidades e **outros comportamentos**.
-
+<!--more-->
 Em computação existem objetos chamados de *containers*, estes objetos se comportam de maneira similar a um universo paralelo, calma, eu vou explicar.
 
 Um container é representado por uma estrutura de dados, geralmente uma classe (não há obrigatoriedade nenhuma em precisar ser uma classe). Seu objetivo principal é encapsular um outro valor de qualquer tipo sob algumas regras de acesso e organização.
