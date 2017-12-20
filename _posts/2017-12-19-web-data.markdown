@@ -20,6 +20,8 @@ Ok, isso é bastante genérico, vamos ser mais específicos.
 
 Eu quero que sua aplicação, leia os dados da *Wikipedia* sobre os filmes da [Marvel Cinematic Universe](https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films) e ordene os filmes de acordo com a crítica no [Rotten Tomatoes](https://www.rottentomatoes.com/).
 
+<!--more-->
+
 Olha que boa notícia! Os dados já estão mastigadinhos, olha só essa print:
 
 ![Wiki - MCU](https://i.imgur.com/WbBIfFK.jpg)

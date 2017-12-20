@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Gabriel Schade Cardoso
-email: your-email@example.com
+email: gabriel.schade@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   Blog pessoal sobre desenvolvimento de software e coisas afins
 baseurl: "" 
@@ -25,6 +25,7 @@ github:           http://github.com/gabrielschade
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/blog/page:num/"
+excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 kramdown: 
