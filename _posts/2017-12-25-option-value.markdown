@@ -3,7 +3,7 @@ layout: post
 title:  "Lidando com a falta de valores"
 date:   2017-12-25 00:00:00 +0000
 comments: true
-tags: [C#]
+tags: [C#, F#]
 ---
 
 Olá pessoas!
