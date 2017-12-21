@@ -3,7 +3,7 @@ layout: post
 title:  "Game of Thrones e probabilidade utilizando redes baysianas"
 date:   2017-10-27 00:00:00 +0000
 comments: true
-tags: [Ciência, IA]
+tags: [IA]
 ---
 
 Game of Thrones (GoT) é sem dúvida um fenômeno mundial. O último episódio da sétima temporada (última temporada exibida) bateu o recorde da série registrando assustadores 12.1 milhões de telespectadores nos Estados Unidos.
