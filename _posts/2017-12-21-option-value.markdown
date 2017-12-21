@@ -12,9 +12,9 @@ Hoje vamos ver como lidar com a falta de valores em nossa aplicação, nos casos
 
 As implementações vão utilizar a linguagem C#, mas terá uma forte inspiração em implementações disponíveis em outras linguagens!
 
-Anteriormente já vimos que o [`null` é um problema]({{ site.baseurl }}{% link _posts/2017-10-11-problema-null.markdown %}), além disso, também já vimos o conceito abstrato dos [objetos que agem como *containers*]({{ site.baseurl }}{% link _posts/2017-11-06-object-container.markdown %}).
-
 <!--more-->
+
+Anteriormente já vimos que o [`null` é um problema]({{ site.baseurl }}{% link _posts/2017-10-11-problema-null.markdown %}), além disso, também já vimos o conceito abstrato dos [objetos que agem como *containers*]({{ site.baseurl }}{% link _posts/2017-11-06-object-container.markdown %}).
 
 Agora vamos ver uma das formas de resolver isso. Através dos valores **opcionais**.
 
