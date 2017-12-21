@@ -15,7 +15,7 @@
 	{% endif %}
 {% endfor %}
 
-{% for tag in tags %}
+{% for tag in tags reversed %}
 	{% assign link = tag | replace: "#", "sharp" %}
 	<a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
 		class="collection-item">
