@@ -16,6 +16,11 @@
 {% endfor %}
 
 {% for tag in tags %}
+	{% assign link = tag | replace: "#", "sharp" %}
 	<a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
-		class="collection-item"><span class="new badge">{{tag}}</span></a>
+		class="collection-item">
+		<span class="post-tag-badge badge" style="font-size: 0.8rem;color: #fff;">
+			{{tag}}
+		</span>
+	</a>
 {% endfor %}
