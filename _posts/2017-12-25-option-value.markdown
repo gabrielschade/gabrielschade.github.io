@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lidando com a falta de valores"
-date:   2017-12-21 00:00:00 +0000
+date:   2017-12-25 00:00:00 +0000
 comments: true
 tags: [C#, F#]
 ---
@@ -14,7 +14,7 @@ As implementações vão utilizar a linguagem C#, mas terá uma forte inspiraç�
 
 <!--more-->
 
-Anteriormente já vimos que o [`null` é um problema]({{ site.baseurl }}{% link _posts/2017-10-11-problema-null.markdown %}), além disso, também já vimos o conceito abstrato dos [objetos que agem como *containers*]({{ site.baseurl }}{% link _posts/2017-11-06-object-container.markdown %}).
+Anteriormente já vimos que o [null é um problema]({{ site.baseurl }}{% link _posts/2017-10-11-problema-null.markdown %}), além disso, também já vimos o conceito abstrato dos [objetos que agem como *containers*]({{ site.baseurl }}{% link _posts/2017-11-06-object-container.markdown %}).
 
 Agora vamos ver uma das formas de resolver isso. Através dos valores **opcionais**.
 
