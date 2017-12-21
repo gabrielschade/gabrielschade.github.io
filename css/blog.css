@@ -404,3 +404,17 @@ h3.huge.margin-top-65{
     margin-bottom: 30px;
     margin-top: 15px;
   }
+
+  .post-date{
+      margin-bottom:1.5rem;
+  }
+
+  .post-tag-badge{
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #24bfcf;
+    border-radius: 2px;
+    min-width: 1.75rem;
+    text-align: center;
+  }
