@@ -17,11 +17,15 @@ Nada mais justo que fazer uma retrospectiva de 2017 e falar um pouquinho sobre o
 
 ### Mudança de Empresa
 
-Vi bastante gente reclamando **muito** sobre 2017, mas pra mim este ano foi sem dúvida um marco extremamente positivo.
+Vi bastante gente reclamando **muito** sobre 2017, mas pra mim este ano foi sem dúvida um marco positivo.
 
-Troquei a empresa que trabalho, hoje me vejo em um ambiente muito mais profissional e tranquilo. A qualidade de vida subiu de uma maneira que fica difícil descrever. Eu estava passando por diversas situações ruins, infelizmente elas foram acumulando e estava insustentável continuar onde eu estava.
+Troquei a empresa que trabalho, hoje percebo que estou em um ambiente muito mais profissional e tranquilo. Minha qualidade de vida subiu de uma maneira que fica até difícil descrever.
 
-É injusto colocar a culpa toda na empresa, haviam sim, decisões que eu não concordava (e acho que sempre vão haver, em qualquer empresa), mas era mais do que isso. O ambiente estava pesado, era difícil encontrar um **propósito**.
+Eu estava passando por diversas situações ruins no dia-a-dia e infelizmente elas foram acumulando e estava insustentável continuar onde eu estava.
+
+É injusto colocar a culpa toda na empresa, haviam sim, decisões que eu não concordava (e acho que sempre vão haver, em qualquer empresa), mas era mais do que isso. 
+
+O ambiente estava pesado e tóxico. Eu não conseguia mais enxergar um **propósito**.
 
 E se levantar da cama para ir para o trabalho ficou difícil, é porque aquele já não era mais o meu lugar.
 
@@ -29,9 +33,11 @@ E se levantar da cama para ir para o trabalho ficou difícil, é porque aquele j
 
 ### Vida acadêmica
 
-Outro passo importante que mudou muito a forma que eu penso foi o início da minha carreira como professor universitário. Foi um ano de muito aprendizado e com várias novidades. Pela primeira vez na vida, me vi transformando a vida de pessoas através de conhecimento.
+Outro passo importante na minha vida foi o início da minha carreira como professor universitário. Foi um ano de muito aprendizado e com várias novidades. Pela primeira vez na vida, me vi transformando a vida das pessoas através do conhecimento.
 
-E sim, há um pouco de **magia** nisso. Pretendo continuar nesse ambiente por muitos e muitos anos!
+Claro, eu já havia dado várias palestras, mas não é o mesmo que acompanhar o crescimento de alguém durante um ano inteiro.
+
+Há um pouco de magia nisso, não sei descrever com palavras, mas sei que pretendo continuar nesse ambiente por muitos e muitos anos!
 
 **Obrigado** UNIVALI, por acreditar em mim como seu novo professor.
 
@@ -51,7 +57,7 @@ Através de C# e F# procurei trazer os principais tópicos deste paradigma de pr
 
 Depois do lançamento do livro eu ainda sentia que programação funcional era um tópico muito distante do "programador comum", na verdade, ainda sinto isso.
 
-O que é uma pena, afinal de contas, programação funcional tem uma série de benefícios que podem te ajudar a solucionar problemas. Não, eu não quero que você esqueça tudo que aprendeu sobre orientação à objetos e utilize 100% das coisas com este paradigma.
+O que é uma pena, afinal de contas, programação funcional tem uma série de benefícios que podem te ajudar a solucionar problemas. Não, eu não quero que você esqueça tudo que aprendeu sobre orientação à objetos e utilize este paradigma para 100% dos problemas.
 
 Eu quero que você **consiga** utilizar o paradigma funcional quando ele for necessário, ou quando ele resolver o problema de forma mais simples, ou mais eficiente.
 
