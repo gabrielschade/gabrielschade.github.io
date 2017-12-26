@@ -4,6 +4,7 @@ title:  "Seja bem-vindo 2018"
 date:   2018-01-01 00:00:00 +0000
 comments: true
 tags: [Discussões]
+published: false
 ---
 
 Olá pessoas!
@@ -82,8 +83,7 @@ Os motivos são os mesmos, tanto no blog quanto no Linkedin, como o público é 
 
 Mas acho que também cabe o meu **Obrigado** à todos que comentam, compartilham e leem os meus artigos.
 
-E **obrigado** à você que está lendo até aqui.
-
+### Que venha 2018
 
 2018 tem tudo para ser um ano daqueles!
 
@@ -104,8 +104,6 @@ Que tal aplicarmos os 4 P's propostos por Mitchel Resnick do MIT o ano inteiro?
 3. **P**assion: Precisa explicar? Faça o que você ama, invista energia naquilo que você se importa;
 4. **P**lay: Tente novas coisas, novos experimentos, corra riscos, tente de novo, e de novo, e de novo!
 
-O que você achou deste post?
+Um último **obrigado**, desta vez à você que está lendo até aqui.
 
-Me conte nos comentários!
-
-E Até mais!
+Seja muito bem-vindo 2018!
