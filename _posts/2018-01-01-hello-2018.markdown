@@ -34,13 +34,13 @@ E sim, há um pouco de **magia** nisso. Pretendo continuar nesse ambiente por mu
 
 **Obrigado** UNIVALI, por acreditar em mim como seu novo professor.
 
-Além dessa jornada como professor, também continuei como revisor no *journal* Pattern Recognition Letters, muita coisa legal, algumas nem tanto, mas sempre vale o esforço!
+Além dessa jornada como professor, também continuei como revisor no *journal* [Pattern Recognition Letters](https://www.journals.elsevier.com/pattern-recognition-letters/), muita coisa legal, algumas nem tanto, mas sempre vale o esforço!
 
 **Obrigado** Elsevier, por confiar em mim como seu revisor.
 
 ### Publiquei meu quarto livro
 
-Após mais ou menos um ano de trabalho consegui finalizar meu quarto livro, desta vez, sobre programação funcional na plataforma .NET.
+Após mais ou menos um ano de trabalho consegui finalizar meu [quarto livro](https://www.casadocodigo.com.br/products/livro-programacao-funcional-net), desta vez, sobre programação funcional na plataforma .NET.
 
 Através de C# e F# procurei trazer os principais tópicos deste paradigma de programação ainda não tão explorado. Foi um trabalho incrível do qual me orgulho muito.
 
@@ -64,13 +64,13 @@ Você pode se **empoderar** com a **Tango**. Ela também conta com uma vasta [do
 
 Já fazia um tempo que sentia falta de um grupo de discussão, para debater tópicos relacionados à programação, trends e tudo mais. Era preciso reunir os programadores do Vale do Itajaí, eu sabia que havia público e que poderíamos **juntos** todos melhorarmos.
 
-Com essa ideia criei o grupo no Slack, que hoje tem 3 meses de idade (mais ou menos) e conta com 60 membros. Ok, ainda é pouco, mas 60 pessoas juntas são muito mais do que 60 pessoas sozinhas.
+Com essa ideia criei o [grupo no Slack](https://itajaidotnet.slack.com), que hoje tem 3 meses de idade (mais ou menos) e conta com 60 membros. Ok, ainda é pouco, mas 60 pessoas juntas são muito mais do que 60 pessoas sozinhas.
 
 **Obrigado** à todos os membros que compartilham, conversam e vão aos eventos presenciais, vocês são demais.
 
 ### Criei este blog
 
-Isso mesmo, esse blog no qual escrevo agora não existia em 2016, fico muito feliz em poder compartilhar conteúdo por aqui.
+Isso mesmo, esse [blog](https://gabrielschade.github.io) no qual escrevo agora não existia em 2016, mas fico muito feliz em ter tomado esta atitude e agora poder compartilhar conteúdo por aqui.
 
 Sempre amei programação, ensinar e escrever. Com o blog consigo unir estas três coisas em uma única tarefa, acho até que demorei demais para fazer isso.
 
