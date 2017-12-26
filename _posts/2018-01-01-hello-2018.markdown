@@ -1,0 +1,111 @@
+---
+layout: post
+title:  "Seja bem-vindo 2018"
+date:   2018-01-01 00:00:00 +0000
+comments: true
+tags: [Discussões]
+---
+
+Olá pessoas!
+
+Feliz ano novo para todo mundo! Espero que as festas tenham sido maravilhosas!
+
+Nada mais justo que fazer uma retrospectiva de 2017 e falar um pouquinho sobre os planos para 2018!
+
+<!--more-->
+
+### Mudança de Empresa
+
+Vi bastante gente reclamando **muito** sobre 2017, mas pra mim este ano foi sem dúvida um marco extremamente positivo.
+
+Troquei a empresa que trabalho, hoje me vejo em um ambiente muito mais profissional e tranquilo. A qualidade de vida subiu de uma maneira que fica difícil descrever. Eu estava passando por diversas situações ruins, infelizmente elas foram acumulando e estava insustentável continuar onde eu estava.
+
+É injusto colocar a culpa toda na empresa, haviam sim, decisões que eu não concordava (e acho que sempre vão haver, em qualquer empresa), mas era mais do que isso. O ambiente estava pesado, era difícil encontrar um **propósito**.
+
+E se levantar da cama para ir para o trabalho ficou difícil, é porque aquele já não era mais o meu lugar.
+
+**Obrigado** ResourceIT, por acreditar em mim como seu novo colaborador.
+
+### Vida acadêmica
+
+Outro passo importante que mudou muito a forma que eu penso foi o início da minha carreira como professor universitário. Foi um ano de muito aprendizado e com várias novidades. Pela primeira vez na vida, me vi transformando a vida de pessoas através de conhecimento.
+
+E sim, há um pouco de **magia** nisso. Pretendo continuar nesse ambiente por muitos e muitos anos!
+
+**Obrigado** UNIVALI, por acreditar em mim como seu novo professor.
+
+Além dessa jornada como professor, também continuei como revisor no *journal* Pattern Recognition Letters, muita coisa legal, algumas nem tanto, mas sempre vale o esforço!
+
+**Obrigado** Elsevier, por confiar em mim como seu revisor.
+
+### Publiquei meu quarto livro
+
+Após mais ou menos um ano de trabalho consegui finalizar meu quarto livro, desta vez, sobre programação funcional na plataforma .NET.
+
+Através de C# e F# procurei trazer os principais tópicos deste paradigma de programação ainda não tão explorado. Foi um trabalho incrível do qual me orgulho muito.
+
+**Obrigado** Casa do Código, por acreditar em mim em mais um projeto.
+
+### Criação da Tango
+
+Depois do lançamento do livro eu ainda sentia que programação funcional era um tópico muito distante do "programador comum", na verdade, ainda sinto isso.
+
+O que é uma pena, afinal de contas, programação funcional tem uma série de benefícios que podem te ajudar a solucionar problemas. Não, eu não quero que você esqueça tudo que aprendeu sobre orientação à objetos e utilize 100% das coisas com este paradigma.
+
+Eu quero que você **consiga** utilizar o paradigma funcional quando ele for necessário, ou quando ele resolver o problema de forma mais simples, ou mais eficiente.
+
+Com isso em mente resolvi criar a [**Tango**]({{ site.baseurl }}{% link _posts/2017-12-14-welcome-tango.markdown %}), uma biblioteca em C# para trazer programação funcional em um formato simples e que os programadores já estão acostumados.
+
+Você pode se **empoderar** com a **Tango**. Ela também conta com uma vasta [documentação]({{ site.baseurl }}{% link tango-br.md %}), tudo isso para fazer a programação funcional ser o mais simples possível.
+
+**Obrigado** à todos os desenvolvedores que testaram, me passaram feedbacks e deram novas ideias para a **Tango**, juntos somos melhores!
+
+### Fundei o grupo Itajaí .NET
+
+Já fazia um tempo que sentia falta de um grupo de discussão, para debater tópicos relacionados à programação, trends e tudo mais. Era preciso reunir os programadores do Vale do Itajaí, eu sabia que havia público e que poderíamos **juntos** todos melhorarmos.
+
+Com essa ideia criei o grupo no Slack, que hoje tem 3 meses de idade (mais ou menos) e conta com 60 membros. Ok, ainda é pouco, mas 60 pessoas juntas são muito mais do que 60 pessoas sozinhas.
+
+**Obrigado** à todos os membros que compartilham, conversam e vão aos eventos presenciais, vocês são demais.
+
+### Criei este blog
+
+Isso mesmo, esse blog no qual escrevo agora não existia em 2016, fico muito feliz em poder compartilhar conteúdo por aqui.
+
+Sempre amei programação, ensinar e escrever. Com o blog consigo unir estas três coisas em uma única tarefa, acho até que demorei demais para fazer isso.
+
+**Obrigado** à todos que comentam, compartilham e leem os posts que eu escrevo.
+
+### Comecei a escrever no Linkedin
+
+Os motivos são os mesmos, tanto no blog quanto no Linkedin, como o público é um pouco diferente, tento ser um pouco menos técnico nesta rede, ainda deixo os textos mais *hardcore* para o blog.
+
+Mas acho que também cabe o meu **Obrigado** à todos que comentam, compartilham e leem os meus artigos.
+
+E **obrigado** à você que está lendo até aqui.
+
+
+2018 tem tudo para ser um ano daqueles!
+
+Agora sou oficialmente membro do LITE (Laboratório de Inovação Tecnológica na Educação), ainda em janeiro irei para a Campus Party com o laboratório.
+
+Marcarei presença no TDC (The Developers Conference) e outros eventos de tecnologia!
+
+Continuarei como professor, programador e revisor!
+
+E claro, vamos todo mês movimentar o Itajaí .NET!
+
+Estou muito empolgado com esse novo ano, e você?
+
+Que tal aplicarmos os 4 P's propostos por Mitchel Resnick do MIT o ano inteiro?
+
+1. **P**rojects: Pessoas trabalham melhor quando atuam em projetos em que elas vejam propósito;
+2. **P**eers: Compartilhe, seja ponte, o mundo já tem ilhas demais;
+3. **P**assion: Precisa explicar? Faça o que você ama, invista energia naquilo que você se importa;
+4. **P**lay: Tente novas coisas, novos experimentos, corra riscos, tente de novo, e de novo, e de novo!
+
+O que você achou deste post?
+
+Me conte nos comentários!
+
+E Até mais!
