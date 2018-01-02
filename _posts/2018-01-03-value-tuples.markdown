@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Tuplas em C#"
-date:   2018-01-01 00:00:00 +0000
+date:   2018-01-03 00:00:00 +0000
 comments: true
 tags: [C#]
-published: false
 ---
 
 Olá pessoas!

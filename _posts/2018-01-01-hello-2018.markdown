@@ -4,7 +4,6 @@ title:  "Seja bem-vindo 2018"
 date:   2018-01-01 00:00:00 +0000
 comments: true
 tags: [Discussões]
-published: false
 ---
 
 Olá pessoas!
