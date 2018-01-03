@@ -79,7 +79,7 @@ type PerfilGitHub = JsonProvider<url>
 ```
 Com a definição do tipo `PerfilGitHub` já podemos acessar as informações com os tipos corretos!
 
-Para carregar a página utilize a função `Load` presente no tipo `PerfilGitHub`, informando a url do perfil que deseja buscarS:
+Para carregar a página utilize a função `Load` presente no tipo `PerfilGitHub`, informando a url do perfil que deseja buscar:
 
 ``` fsharp
 let perfil = PerfilGitHub.Load url
