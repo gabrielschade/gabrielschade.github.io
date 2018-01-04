@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Extraindo dados de uma planilha excel - CSV"
+title:  "Extraindo dados de uma planilha Excel - CSV"
 date:   2018-01-10 00:00:00 +0000
 comments: true
 tags: [F#]
@@ -8,15 +8,15 @@ tags: [F#]
 
 Olá pessoas!
 
-Alguém aqui já precisou importar dados de uma planilha excel? - Sentiu aquela raiva do cliente?
+Alguém aqui já precisou importar dados de uma planilha Excel? - Sentiu aquela raiva do cliente?
 
-Por mais que você não goste, paciência. O mundo gosta do excel e ele é bem maneiro. Aceite.
+Por mais que você não goste, paciência. O mundo gosta do Excel e ele é bem maneiro. Aceite.
 
 É totalmente factível fazer esta implementação em C#, inclusive tenho um amigo que já fez isso, tantas, mas tantas vezes, que ele poderia dar uma aula aqui.
 
 Mas mesmo com toda a prática do mundo, eu ainda acho que C# não é a melhor linguagem para fazer isso, vamos mais uma vez **apelar** para a facilidade dos type providers do F#!.
 
-Três linhas de código, planilha do excel em suas mãos.
+Três linhas de código, planilha do Excel em suas mãos.
 <!--more-->
 
 Vamos começar criando uma aplicação console em F#!
@@ -75,7 +75,7 @@ Veja o resultado:
 Você pode encontrar o código desenvolvido aqui no meu [Github](https://github.com/gabrielschade/TypeProviderSample/blob/master/CsvTypeProviderSample/CsvTypeProviderSample/Program.fs).
 
 
-> Atenção
+> **Atenção**
 >
 > Se quiser se aprofundar mais sobre os type providers você pode encontrar a documentação completa da Microsoft [aqui](https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/type-providers/).
 

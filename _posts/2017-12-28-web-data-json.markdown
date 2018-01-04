@@ -108,7 +108,7 @@ Veja o resultado:
 Você pode encontrar o código desenvolvido aqui no meu [Github](https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs).
 
 
-> Atenção
+> **Atenção**
 >
 > Se quiser se aprofundar mais sobre os type providers você pode encontrar a documentação completa da Microsoft [aqui](https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/type-providers/).
 

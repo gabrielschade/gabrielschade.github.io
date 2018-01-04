@@ -96,7 +96,7 @@ Antes de falarmos dos processos envolvidos, é interessante você entender algun
 |--------------------------------|----------------------------------------------------------------------------------|
 | Treinamento                    | Preparar os dados para criar um model que pode ser utilizado por uma aplicação   |
 | Aprendizado supervisionado     | O resultado que será predizido está nos dados utilizados para treinamento        |
-| Aprendizado não supervisionado | O resultado que será predizido **não** está nos dados utilizados para treimaento |
+| Aprendizado não supervisionado | O resultado que será predizido **não** está nos dados utilizados para treinamento |
 
 ### Processos em Machine Learning
 
