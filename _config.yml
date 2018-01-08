@@ -17,8 +17,8 @@ title: Gabriel Schade Cardoso
 email: gabriel.schade@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   Blog pessoal sobre desenvolvimento de software e coisas afins
-baseurl: "" 
-url: ""
+baseurl: ""
+url: "https://gabrielschade.github.io/"
 twitter_username: gabrielschade
 github_username:  gabrielschade
 github:           http://github.com/gabrielschade
