@@ -9,20 +9,17 @@ published: false
 
 Olá pessoas!
 
-Hoje vamos discutir sobre quatro conceitos importantíssimos no C#, conceitos estes que todos os programadores deveriam saber, mas na prática, não é bem assim.
+Quem me conhece ou me acompanha sabe que eu programo majoritariamente na plataforma .NET, mas também sabe que eu considero um erro enorme os programados se fecharem em seu mundinho, seja ele Java, .Net ou qualquer plataforma que seja.
 
-Você já ouviu falar de: 
+Se você quer começar a programar, qual a melhor linguagem? - Depende.
 
-* Stack vs Heap memory
-* Boxing vs Unboxing
+Depende da sua experiência, se você nunca se relacionou de nenhuma forma, eu sugiro fortemente a linguagem [Portugol](http://lite.acad.univali.br/portugol/).
 
-Caso não esteja afiado, você pode ser surpreendido em uma entrevista de emprego!
-
-Vem comigo e vamos debater um à um!
+Caso você esteja pensando em seguir carreira e já possui um mínimo de lógica e noções de programação, eu sugiro fortemente **Python**.
 <!--more-->
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+AAAAAA, como assim **Python**? Mas e a plataforma .NET? Você não era super fã das tecnologias da Microsoft? - Disse o hator.
+
+De fato, eu sou apaixonado pela plataforma .NET e acho sim que ela é uma **excelente** plataforma, mas não é a única.
+
+Aprender **Python** pode te ajudar de várias 
