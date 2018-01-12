@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "TESTE"
-date:   2018-01-22 00:00:00 +0000
+title:  "Você deveria aprender Python"
+date:   2018-01-29 00:00:00 +0000
 comments: true
-tags: [C#]
+tags: [Python]
+published: false
 ---
 
 Olá pessoas!

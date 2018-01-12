@@ -28,7 +28,8 @@ paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
-kramdown: 
+kramdown:
+  input: GFM
   syntax_highlighter: rouge
 theme: minima
 plugins:
