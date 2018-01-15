@@ -4,7 +4,6 @@ title:  "Nas profundezas do C#"
 date:   2018-01-22 00:00:00 +0000
 comments: true
 tags: [C#]
-published: false
 ---
 
 Olá pessoas!

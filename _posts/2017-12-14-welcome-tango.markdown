@@ -14,7 +14,7 @@ Hoje vou apresentar algo que estou trabalhando já faz um tempo, uma biblioteca 
 
 Quem me conhece sabe que sou bastante entusiasta deste paradigma, mas não, não vou listar motivos **X** ou **Y** para tentar provar que ele é melhor do que orientação à objeto.
 
-Ao invés disso, podemos só utilizar os dois e sermos mais feliz.
+Ao invés disso, podemos só utilizar os dois e sermos mais felizes.
 
 Infelizmente programação funcional ainda é um tanto quanto nichada. Tenho muitos amigos programadores, mas dá para contar na mão os que usam o paradigma, considerando os iniciantes.
 
