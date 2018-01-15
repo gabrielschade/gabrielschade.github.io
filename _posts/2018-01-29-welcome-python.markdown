@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Você deveria aprender Python"
-date:   2018-11-29 00:00:00 +0000
+date:   2018-01-29 00:00:00 +0000
 comments: true
 tags: [Python]
+published: false
 ---
 
 Olá pessoas!
