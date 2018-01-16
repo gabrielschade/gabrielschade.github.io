@@ -334,6 +334,13 @@ h3.huge.margin-top-65{
     font-size:22px;
 }
 
+h2.font-medium-large.img-title{
+    margin-top:35px;
+    color:white;
+    font-size: 22px;
+    transition: .3s ease;
+}
+
 .font-large{
     font-size:48px;
 }
