@@ -4,7 +4,6 @@ title:  "Extraindo dados de uma planilha Excel - CSV"
 date:   2018-01-10 00:00:00 +0000
 comments: true
 tags: [F#]
-serie: Programe em Python!
 ---
 
 Olá pessoas!
