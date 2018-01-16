@@ -44,6 +44,10 @@ print("Hello World")
 
 E é isso! Não há nada omitido no código, não há declaração de namespace, importação de pacote, função `main`, **nada**. Legal né?
 
+Outro ponto bem legal sobre o Python é que ele utiliza uma sintaxe baseada em espaçamento, algo que o F# reaproveitou e também fez.
+
+Isso faz a linguagem ser consideravelmente mais enxuta, porque não é necessário pontos e vírgulas, chaves e todo o ruído normalmente presente nos códigos que escrevemos.
+
 Eu não coloquei nada sobre a instalação do Python e sobre o ambiente de desenvolvimento, se você já acompanha meu blog, provavelmente você já deve imaginar que estou usando o *Visual Studio*.
 
 Você pode encontrar a documentação, como instalar e tudo mais [neste link](https://www.visualstudio.com/vs/python/).

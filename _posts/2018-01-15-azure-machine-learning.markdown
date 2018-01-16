@@ -4,6 +4,7 @@ title:  "Azure Machine Learning"
 date:   2018-01-15 00:00:00 +0000
 comments: true
 tags: [IA]
+serie: Azure Machine Learning
 ---
 
 Olá pessoas!
