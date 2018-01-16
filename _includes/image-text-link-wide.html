@@ -1,0 +1,12 @@
+{% assign link = include.content | replace: "#", "sharp" %}
+<a href="/posts-serie/{{link | downcase | replace: "ê", "e" | replace: "õ","o" | replace: "ã", "a"}}">
+<div class="img-container hoverable z-depth-1">
+    {% assign image = include.content | replace: "#", "" %}
+    <img class="img-image" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="Avatar">
+    <div class="img-overlay">
+        <div class="img-text">
+            <h2 class="center-align huge light-font img-title"> {{include.content}} </h2>
+        </div>
+    </div>
+</div>
+</a>
