@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Começando com Python"
-date:   2018-01-29 00:00:00 +0000
+date:   2018-01-31 00:00:00 +0000
 comments: true
 tags: [Python]
 serie: Programe em Python!
@@ -204,9 +204,9 @@ nao_sol_ou_chuva = not sol_pela_manha or chuva_pela_tarde # -> False
 
 Para ajudar a entender estas operações temos a famosa "Tabela Verdade", veja:
 
-| Operador `not`    | Operador `and`              | Operador `or`               |
+| Operador | negação (`not`)  | Operador | *e* | `and` | Operador | *ou* |`or` |
 |-------------------|-----------------------------|-----------------------------|
-| Valor | Resultado |  Valor |  Valor | Resultado |  Valor |  Valor | Resultado |
+| **Valor** | **Resultado** |  **Valor** |  **Valor** | **Resultado** | **Valor** |  **Valor** | **Resultado** |
 |:-----:|:---------:|:------:|:------:|:---------:|:------:|:------:|:---------:|
 | True  | False     | True   | True   | True      | True   | True   | True      |
 | False | True      | True   | False  | False     | True   | False  | True      |
