@@ -14,9 +14,10 @@ layout: page
 <div class="related">
   {% include huge-h2.html content="Você pode ter interesse em" %} 
   <ul>
+      {% assign limite = -1 %}
     <span style="display:none">{% increment limite %}</span>
     {% for post in site.related_posts %}
-      {% if limite <= 3 %}
+      {% if limite_r <= 3 %}
         {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
         {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
         {% if posttime <= nowunix %}
