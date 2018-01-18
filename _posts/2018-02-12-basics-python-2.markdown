@@ -58,14 +58,14 @@ Vamos fazer mais um exemplo!
     </div>
     
 <div class="spoiler-hidden" markdown="block">
-    ```python
+    {% highlight python %}
     nota = 5
 
     if nota >= 7:
         print("Aprovado")
     else:
         print("Reprovado")
-    ```
+    {% endhighlight %}
 </div>
 </div>
 
