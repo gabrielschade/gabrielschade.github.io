@@ -1,8 +1,8 @@
 <div class="row">
     <ul style="transform: translateX(0px);">
-        {% increment limite %}
+        <span style="display:none">{% increment limite %}</span>
         {% for post in site.posts %} 
-            {% if limite < 5 %}
+            {% if limite <= 5 %}
                 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
                 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
                 {% if posttime <= nowunix %}
