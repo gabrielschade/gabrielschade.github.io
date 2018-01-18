@@ -1,8 +1,8 @@
 <li class="content-list-item">
     <a class="none-decoration waves-effect" href="{{ post.url }}" style="height:100%;padding-bottom:30px;">
         <div>{{ post.title }}
-            <span class="post-date" style="font-size:18px">{% include postdate.html %}</span>
-            <div class="post-excerpt">
+            <span class="post-date" style="font-size:18px;{{_style}}">{% include postdate.html %}</span>
+            <div class="post-excerpt" style="{{_style}}">
                     {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
             </div>
         </div>
