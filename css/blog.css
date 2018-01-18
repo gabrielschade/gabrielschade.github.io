@@ -439,6 +439,7 @@ h2.font-medium-large.img-title{
   .spoiler{
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
+    margin-bottom: 15px;
   }
 
   .spoiler-message{

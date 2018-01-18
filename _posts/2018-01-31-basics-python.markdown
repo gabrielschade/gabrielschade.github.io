@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Começando com Python"
+title:  "Lição 1 - Começando com Python"
 date:   2018-01-31 00:00:00 +0000
 comments: true
 tags: [Python]
