@@ -4,7 +4,7 @@
                 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
                 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
                 {% if posttime <= nowunix %}
-                    {% include single-post.html _style="display:none;" _padding=padding-bottom:0;%} 
+                    {% include single-post.html _style="display:none;" _padding="padding-bottom:0;" %} 
                 {% endif %}
             {% endif %}
         {% endfor %}
