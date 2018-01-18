@@ -57,7 +57,7 @@ Vamos fazer mais um exemplo!
         <span>Cuidado com Spoiler </span>
     </div>
     
-<div class="spoiler-hidden" markdown="1">
+<div class="spoiler-hidden" markdown="block">
     ```python
     nota = 5
 
