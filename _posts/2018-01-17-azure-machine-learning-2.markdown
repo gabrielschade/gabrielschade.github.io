@@ -14,7 +14,7 @@ Terminou o pré-processamento dos dados no post anterior?
 Vamos finalizar o exemplo!
 <!--more-->
 
-No [post anterior]({{ site.baseurl }}{% link _posts/2018-01-15-azure-machine-learning.markdown %}) começamos a implementar nosso exemplo, para este post, você deve estar no mesmo ponto.
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/azure machine learning.html %})
 
 Caso não tenha feito, sugiro fortemente voltar para a parte 1 antes de continuar. Dito isso, vamos começar com as etapas restantes!
 

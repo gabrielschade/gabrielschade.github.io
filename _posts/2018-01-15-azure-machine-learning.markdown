@@ -14,6 +14,8 @@ Ultimamente tenho estudado e lido bastante sobre Machine Learning e devo confess
 Vamos fazer um exemplo?
 <!--more-->
 
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/azure machine learning.html %})
+
 Existem duas formas diferentes para utilizar o Azure Machine Learning Studio, uma delas é gratuita e a outra paga. Existem algumas diferenças entre as duas versões, mas para fins de estudo à versão gratuita é **excelente**.
 
 Você pode ficar por dentro das restrições desta versão acessando [este link](https://azure.microsoft.com/en-us/pricing/details/machine-learning-studio/).
