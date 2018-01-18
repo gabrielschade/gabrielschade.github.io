@@ -52,12 +52,13 @@ Vamos fazer mais um exemplo!
 * Crie uma variável numérica para representar uma nota de uma prova, depois disso exiba a mensagem "Aprovado" **caso** a nota seja maior ou igual à 7, caso contrário exiba a mensagem "Reprovado".
 
 <div class="spoiler">
-	<div class="spoiler-message" onclick="$(this).hide(); $(this).siblings('.spoiler-hidden').show();">
-        <span>Cuidado com Spoiler</span>
+	<div class="spoiler-message" 
+    onclick="$(this).hide(); $(this).siblings('.spoiler-hidden').show();">
+        <span>Cuidado com Spoiler </span>
     </div>
     
-	<div class="spoiler-hidden" markdown="1">
-    ```Python
+<div class="spoiler-hidden" markdown="1">
+    ```python
     nota = 5
 
     if nota >= 7:
@@ -65,7 +66,7 @@ Vamos fazer mais um exemplo!
     else:
         print("Reprovado")
     ```
-    </div>
+</div>
 </div>
 
 
