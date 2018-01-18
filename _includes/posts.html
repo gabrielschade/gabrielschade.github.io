@@ -7,7 +7,7 @@
                 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
                 {% if posttime <= nowunix %}
                     {% include single-post.html %} 
-                    {% assign limit = limit-1 %}
+                    {% decrement limit %}
                 {% endif %}
             {% endif %}        
         {% endfor %}
