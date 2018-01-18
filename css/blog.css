@@ -435,3 +435,23 @@ h2.font-medium-large.img-title{
     min-width: 1.75rem;
     text-align: center;
   }
+
+  .spoiler{
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+  }
+
+  .spoiler-message{
+    cursor: pointer;
+  }
+    .spoiler-message span{
+        color: rgb(85, 85, 85);
+        font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+        font-size: 24px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    .spoiler-hidden{
+        display: none;
+    }
