@@ -396,10 +396,30 @@ h2.font-medium-large.img-title{
     }
   }
 
+  a.brand-logo:hover{
+      text-decoration: none;
+  }
+
   .nav-itj{
     background-color: #68217a;
   }
 
+  .banner-itj{
+      min-height: 550px;
+      background-color: #70397e;
+  }
+
+  .span-itj-left{
+    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    margin-left: 60px;
+  }
+
+  .span-itj-right{
+    margin-right: 60px;
+    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+  }
+  
   .img-itj{
     height: 60px;
     vertical-align: middle;
