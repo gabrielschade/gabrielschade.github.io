@@ -427,7 +427,11 @@ h2.font-medium-large.img-title{
     vertical-align: middle;
     display: inline;
   }
-
+  .margin-side-10p{
+      margin-left:10%;
+      margin-right:10%;
+      text-align: justify;
+  }
   .font-white{
       color: white;
   }
