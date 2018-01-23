@@ -396,7 +396,8 @@ h2.font-medium-large.img-title{
     }
   }
 
-  a.brand-logo:hover{
+  a.brand-logo:hover,
+  a.brand-logo:focus{
       text-decoration: none;
   }
 
@@ -405,7 +406,7 @@ h2.font-medium-large.img-title{
   }
 
   .banner-itj{
-      min-height: 550px;
+      min-height: 250px;
       background-color: #70397e;
   }
 
@@ -425,6 +426,12 @@ h2.font-medium-large.img-title{
     vertical-align: middle;
   }
 
+  .banner-itj .text-itj .header{
+    color:white;
+    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    margin-top:30px;
+    font-size:42px;
+}
 
   .nav-tango{
     background-color: #222;

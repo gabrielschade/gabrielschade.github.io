@@ -1,5 +1,5 @@
 ---
-layout: blank-layout
+layout: blank-layout-scroll
 title: Itajaí .NET
 parallax-bg: /public/img/bio-bg.jpg
 parallax-text: >
