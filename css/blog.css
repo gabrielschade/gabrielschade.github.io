@@ -425,6 +425,16 @@ h2.font-medium-large.img-title{
     margin-top: -30px;
     height: 75px;
     vertical-align: middle;
+    display: inline;
+  }
+
+  .font-white{
+      color: white;
+  }
+
+  .purple-itj{
+    color: #68217a;
+    font-size:64px;
   }
 
   .banner-itj .text-itj .header{

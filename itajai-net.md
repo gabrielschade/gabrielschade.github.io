@@ -14,7 +14,7 @@ parallax-text: >
 
 {% include itj-net-menu.html %}
 
-{% include huge-h2.html content="Itajaí .NET" %} 
+{% include huge-h2.html content="Itajaí .NET" css="purple-itj" %} 
 
 O Itajaí .NET é uma organização criada com o objetivo principal de conectar pessoas da região do Vale do Itajaí para que juntos façamos a diferença.
 
