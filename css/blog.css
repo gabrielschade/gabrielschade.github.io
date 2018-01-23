@@ -396,6 +396,16 @@ h2.font-medium-large.img-title{
     }
   }
 
+  .nav-itj{
+    background-color: #68217a;
+  }
+
+  .img-itj{
+    height: 60px;
+    vertical-align: middle;
+  }
+
+
   .nav-tango{
     background-color: #222;
   }
