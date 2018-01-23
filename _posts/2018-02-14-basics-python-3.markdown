@@ -147,7 +147,7 @@ itens = itens_cozinha.split(",")
 ```
 Ok, mas agora como eu faço para acessar os valores individuais? -Simples, utilizamos um **índice**.
 
-Índice?? - Não faço ideia do que seja isso. ¯\_(ツ)_/¯
+Índice?? - Não faço ideia do que seja isso!
 
 Não se preocupe, você já trabalhou com índices na função `format`, isso mesmo, índices são números sequênciais que no caso do **Python** começam com zero (0).
 
