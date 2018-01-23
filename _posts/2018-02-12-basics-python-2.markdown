@@ -73,6 +73,35 @@ Neste caso você pode optar por duas abordagens distintas: salvar o resultado da
 
 Geralmente é mais comum utilizarmos a expressão diretamente no comando, salvo em casos onde esta mesma comparação precisa ser feita mais de uma vez, nestes casos é melhor armazenarmos o resultado e reutilizá-lo ao invés de fazer a comparação várias vezes.
 
+Também acontece precisarmos tratar mais de dois casos, ou seja, há situações em que um **se** e um **senao** não são suficientes para atender todas as condições, veja este exemplo: Um aluno que tira acima de 7 já está aprovado, se tirar 7 ou 6 ele irá para recuperação e abaixo disso estará reprovado. Como fazer?
+
+```python
+nota = 6
+if nota > 7:
+    print ("Aprovado")
+else:
+    if nota == 7 or nota == 6:
+        print("Recuperacao")
+    else:
+        print ("Reprovado")
+```
+
+Você pode colocar vários comandos `if` e `else` aninhados, ou seja, um dentro do outro. Este código funcionará sem problemas, mas isso não significa que esta é a melhor forma de fazer isso. 
+
+Para casos onde é necessário uma expressão: senão se, utilize o comando `elif`. Este comando é uma mescla dos dois anteriores. Ele funciona como um `if`, mas só será testado caso o `if` anterior ter resultado em `False`, veja:
+
+```python
+if nota > 7:
+    print ("Aprovado")
+
+elif nota == 7 or nota == 6:
+     print("Recuperacao")
+
+else:
+     print ("Reprovado")
+```
+Este exemplo é bastante simples, mas já dá para entendermos a utilização do `elif`. É importante ressaltar também que este comando de desvio permite apenas um `if` e um `else` que estejam conectados, mas é você pode inserir quantos `elif` forem necessários.
+
 ### Valores confiáveis
 
 Outro conceito interessante no Python é a questão dos *Truthy values*, este conceito define quando os valores são confiáveis, ou verdadeiros para uso. Por exemplo, no caso de um número, qualquer valor que seja **diferente** de zero é um valor confiável (incluindo números negativos).
@@ -143,13 +172,22 @@ print( "Aprovado" if nota >= 7 else "Reprovado" z )
 ```
 A ordem das palavras muda um pouco, mas não se assuste, vamos com calma que logo você se acostuma.
 
-A lição desta vez era essa, vamos aos exercícios!
+## Vamos Praticar!
 
 * Faça um algoritmo que solicite 3 notas para o usuário, calcule a média e indique se o aluno foi aprovado ou reprovado (nota precisar ser maior ou igual à sete para o aluno ser aprovado).
 
 * Faça um algoritmo que solicite o ano que o usuário nasceu, depois disso, faça o programa descrever se o usuário fará ou já fez 18 anos neste ano.
 
-* Faça um programa que solicite ao usuário 2 valores, utilize uma condição ternária para escrever qual o maior valor: o primeiro ou o segundo.
+* Faça um programa que solicite ao usuário sua idade, depois disso, exiba a classificação etária de acordo com as faixas de valores: 
+  * Criança para 0 até 11 anos;
+  * Adolescente para 12 até 18 anos;
+  * Jovem para 19 até 24 anos;
+  * Adulto para 25 até 40 anos;
+  * Meia Idade para 41 até 60 anos;
+  * Idoso acima de 60 anos.
+
+* Faça um programa que solicite ao usuário 2 valores, utilize uma condição ternária para escrever qual o maior valor: o primeiro ou o segundo (caso os valores sejam iguais, considere o segundo).
+
 
 > **Atenção**
 >
