@@ -40,7 +40,7 @@ parallax-text: >
 </div>
 
 <div class="row">
-    <div class="col s12 m4 l4 no-margin">
+    <div class="col s12 m4 l4 no-margin no-padding">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
             <div class="img-container">
                 <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
@@ -54,7 +54,7 @@ parallax-text: >
             </div>
         </a>
 	</div>   
-    <div class="col s12 m4 l4 no-margin">
+    <div class="col s12 m4 l4 no-margin no-padding">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
             <div class="img-container">
                 <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
@@ -68,7 +68,7 @@ parallax-text: >
             </div>
         </a>
 	</div>   
-    <div class="col s12 m4 l4 no-margin">
+    <div class="col s12 m4 l4 no-margin no-padding">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
             <div class="img-container">
                 <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
