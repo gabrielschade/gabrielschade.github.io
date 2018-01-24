@@ -38,7 +38,7 @@ parallax-text: >
 
 <div class="row">
     <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="{{link _posts/2017-11-28-talk-itajai-dotnet.html}}">
+        <a href="/2017/11/28/talk-itajai-dotnet.html">
             <div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/C2AolAT.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
@@ -52,31 +52,31 @@ parallax-text: >
         </a>
 	</div>   
     <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
-            <div class="img-container">
-                <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
-                <div class="img-overlay-itj">
-                    <div class="img-text">
-                        <h2 class="center-align huge light-font img-title">
-                            Teste 2
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </a>
-	</div>   
-    <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
+        <a href="https://bit.ly/ITJ-net-janeiro-palestras">
             <div class="img-container img-container-itj">
-                <img class="img-image img-image-itj" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/PdT2Tp2.png" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
-                            Teste 3
+                            27/01/2018
                         </h2>
                     </div>
                 </div>
             </div>
         </a>
-	</div>   
+	</div>  
+    <div class="col s12 m4 l4 no-margin no-padding">
+        <a href="">
+            <div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/PdT2Tp2.png" alt="Avatar">
+                <div class="img-overlay-itj">
+                    <div class="img-text">
+                        <h2 class="center-align huge light-font img-title">
+                            sem data
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+	</div>     
 </div>
