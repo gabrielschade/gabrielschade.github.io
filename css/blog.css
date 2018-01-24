@@ -408,7 +408,12 @@ h2.font-medium-large.img-title{
       font-weight: 200;
       color:#68217a;
   }
-  
+
+  .icon-itj{
+    text-align: center;
+    display: inherit;
+  }
+
   .nav-itj{
     background-color: #68217a;
   }
