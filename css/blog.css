@@ -403,13 +403,21 @@ h2.font-medium-large.img-title{
       text-decoration: none;
   }
 
+  .speaker-name{
+      text-align: center;
+      font-weight: 200;
+      color:#68217a;
+  }
+  
   .nav-itj{
     background-color: #68217a;
   }
 
-  .no-side-margin{
+  .no-margin{
      margin:0;
   }
+
+  
 
   .banner-itj{
       min-height: 250px;
