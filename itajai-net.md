@@ -83,7 +83,7 @@ parallax-text: >
 
 <div class="margin-side-10p">
     {% include huge-h2.html content="Palestrantes que já passaram por aqui" css="purple-itj font-64" %} 
-    <div class="row">
+    <div class="row margin-top-65">
         <div class="col s12 m3">
             <a class="speaker-name" href="/">
                         <img style="height:100px;margin: auto;" src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400" alt="" class="center circle icon z-depth-3 responsive-img card-profile-image mid-image">
@@ -100,7 +100,7 @@ parallax-text: >
         </div>
         <div class="col s12 m3">
             <a class="speaker-name" href="https://github.com/leoprange">
-                        <img style="height:100px;margin: auto;" src="https://avatars3.githubusercontent.com/u/7429247?s=400&v=4" alt="" class="center circle icon z-depth-3 responsive-img card-profile-image mid-image">
+                        <img style="height:100px;margin: auto;" src="https://i.imgur.com/rkS9MLw.jpg" alt="" class="center circle icon z-depth-3 responsive-img card-profile-image mid-image">
                         <h4 class="speaker-name">
                         Leonardo Prange</h4>
             </a>
@@ -116,5 +116,7 @@ parallax-text: >
 </div>
 
 <div class="banner-itj">
-
+    {% include huge-h2.html content="Contatos" css="font-white font-64 text-left" %} 
+    <a href="mailto:itajai.dot.net@gmail.com">itajai.dot.net@gmail.com</a>
+    <a href="https://itajaidotnet.slack.com">itajaidotnet.slack.com</a>
 </div>
