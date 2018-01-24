@@ -238,7 +238,9 @@ h3.huge.margin-top-65{
     text-align: left;
 }
 
-
+.text-left{
+    text-align: left;
+}
 
 .border-none{
     border:none;
@@ -405,6 +407,10 @@ h2.font-medium-large.img-title{
     background-color: #68217a;
   }
 
+  .no-side-margin{
+     margin:0;
+  }
+
   .banner-itj{
       min-height: 250px;
       background-color: #70397e;
@@ -438,8 +444,9 @@ h2.font-medium-large.img-title{
 
   .purple-itj{
     color: #68217a;
-    font-size:64px;
   }
+
+  
 
   .banner-itj .text-itj .header{
     color:white;
