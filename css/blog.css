@@ -427,6 +427,9 @@ h2.font-medium-large.img-title{
   .vertical-top{
     vertical-align: top;
   }
+  .itj-font{
+    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  }
 
   .nav-itj{
     background-color: #68217a;
