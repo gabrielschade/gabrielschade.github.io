@@ -18,7 +18,7 @@ parallax-text: >
 
 {% include huge-h2.html content="Itajaí .NET" css="purple-itj font-64 text-left" %} 
 
-<div class="row">
+ <div class="row">
     <div class="col s4">
         <h4><i class="medium material-icons purple-itj">share</i></h4>
         <p class="light-font">O Itajaí .NET é uma organização criada com o objetivo principal de conectar pessoas da região do Vale do Itajaí para que juntos façamos a diferença.</p>
@@ -34,15 +34,16 @@ parallax-text: >
     <h4><i class="medium material-icons purple-itj">accessibility</i></h4>
     <p class="light-font">Juntos somos <strong>mais fortes</strong>, tão simples quanto isso.</p>
    </div>
+ </div>
 
-   {% include huge-h2.html content="Eventos Passados" css="purple-itj font-64 text-left" %} 
+ {% include huge-h2.html content="Eventos Passados" css="purple-itj font-64 text-left" %} 
 </div>
 
 <div class="row">
     <div class="col s12 m4 l4 no-margin">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
             <div class="img-container">
-                <img class="img-image" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="Avatar">
+                <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
@@ -56,7 +57,7 @@ parallax-text: >
     <div class="col s12 m4 l4 no-margin">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
             <div class="img-container">
-                <img class="img-image" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="Avatar">
+                <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
@@ -70,7 +71,7 @@ parallax-text: >
     <div class="col s12 m4 l4 no-margin">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
             <div class="img-container">
-                <img class="img-image" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="Avatar">
+                <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
