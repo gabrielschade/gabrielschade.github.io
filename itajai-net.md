@@ -38,13 +38,13 @@ parallax-text: >
 
 <div class="row">
     <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
-            <div class="img-container">
-                <img class="img-image" src="https://i.imgur.com/Cay4UBV.png" alt="Avatar">
+        <a href="{{link _posts/2017-11-28-talk-itajai-dotnet.html}}">
+            <div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/C2AolAT.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
-                            Teste
+                            28/11/2017
                         </h2>
                     </div>
                 </div>
@@ -67,8 +67,8 @@ parallax-text: >
 	</div>   
     <div class="col s12 m4 l4 no-margin no-padding">
         <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}">
-            <div class="img-container">
-                <img class="img-image" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
+            <div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="/{{ site.baseurl }}public/img/Talks.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">

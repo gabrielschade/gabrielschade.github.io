@@ -3,11 +3,19 @@
     cursor:pointer;
   }
   
+  .img-container-itj {
+    height:250px;
+  }
+
   .img-image {
     display: block;
     width: 100%;
     height: auto;
     border-radius:0;
+  }
+
+  .img-image-itj{
+    height:100%;
   }
   
   .img-overlay {
@@ -74,6 +82,10 @@
     transition: .5s ease;
   }
   
-  .img-container:hover .img-overlay-itj {
+  .img-container-itj:hover .img-overlay-itj {
     opacity: .75;
+  }
+
+  .img-container-itj:hover .img-title {
+    font-size: 3em;
   }
