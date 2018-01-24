@@ -52,23 +52,23 @@ parallax-text: >
         </a>
 	</div>   
     <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="https://bit.ly/ITJ-net-janeiro-palestras">
+        <a href="">
             <div class="img-container img-container-itj">
-                <img class="img-image img-image-itj" src="https://i.imgur.com/PdT2Tp2.png" alt="Avatar">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
-                            27/01/2018
+                            sem data
                         </h2>
                     </div>
                 </div>
             </div>
         </a>
-	</div>  
+	</div>   
     <div class="col s12 m4 l4 no-margin no-padding">
         <a href="">
             <div class="img-container img-container-itj">
-                <img class="img-image img-image-itj" src="https://i.imgur.com/PdT2Tp2.png" alt="Avatar">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
