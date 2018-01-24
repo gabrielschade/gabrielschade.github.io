@@ -424,6 +424,10 @@ h2.font-medium-large.img-title{
       padding-top:5px;
   }
 
+  .vertical-top{
+    vertical-align: top;
+  }
+
   .nav-itj{
     background-color: #68217a;
   }
