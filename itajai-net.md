@@ -80,3 +80,17 @@ parallax-text: >
         </a>
 	</div>     
 </div>
+
+<div class="margin-side-10p">
+    {% include huge-h2.html content="Palestrantes que já passaram por aqui" css="purple-itj font-64" %} 
+    <div class="row">
+        <div class="col s12 m3">
+                <img style="height:100px;   " src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400" alt="" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
+                <h4>Gabriel Schade Cardoso</h4>
+        </div>
+    </div>
+</div>
+
+<div class="banner-itj">
+
+</div>
