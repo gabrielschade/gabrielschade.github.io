@@ -115,20 +115,20 @@ parallax-text: >
     </div>
 </div>
 
-<div class="banner-itj">
+<div class="banner-itj" style="height:350px">
     <div class="margin-side-10p">
         {% include huge-h2.html content="Contatos" css="font-white font-64 text-left" %} 
         <div class="row">
-            <div class="col s12">
+            <div class="col s12 no-padding">
                 <a class="none-decoration font-white font-32" href="mailto:itajai.dot.net@gmail.com">
-                    <i class="medium material-icons">email</i>
+                    <i class="small material-icons">email</i>
                     itajai.dot.net@gmail.com</a>
             </div>
         </div>
         <div class="row">
-            <div class="col s12">
+            <div class="col s12 no-padding">
                 <a class="none-decoration font-white font-32" href="https://itajaidotnet.slack.com">
-                    <i class="medium material-icons">chat</i>
+                    <i class="small material-icons">chat</i>
                     itajaidotnet.slack.com</a>
             </div>
         </div>
