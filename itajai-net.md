@@ -116,7 +116,21 @@ parallax-text: >
 </div>
 
 <div class="banner-itj">
-    {% include huge-h2.html content="Contatos" css="font-white font-64 text-left" %} 
-    <a href="mailto:itajai.dot.net@gmail.com">itajai.dot.net@gmail.com</a>
-    <a href="https://itajaidotnet.slack.com">itajaidotnet.slack.com</a>
+    <div class="margin-side-10p">
+        {% include huge-h2.html content="Contatos" css="font-white font-64 text-left" %} 
+        <div class="row">
+            <div class="col s12">
+                <a class="none-decoration font-white font-32" href="mailto:itajai.dot.net@gmail.com">
+                    <i class="medium material-icons">email</i>
+                    itajai.dot.net@gmail.com</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <a class="none-decoration font-white font-32" href="https://itajaidotnet.slack.com">
+                    <i class="medium material-icons">chat</i>
+                    itajaidotnet.slack.com</a>
+            </div>
+        </div>
+    </div>
 </div>
