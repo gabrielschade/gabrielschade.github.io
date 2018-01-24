@@ -121,14 +121,14 @@ parallax-text: >
         <div class="row">
             <div class="col s12 no-padding">
                 <a class="none-decoration font-white font-32" href="mailto:itajai.dot.net@gmail.com">
-                    <i class="small material-icons">email</i>
+                    <i class="small material-icons icon-padding">email</i>
                     itajai.dot.net@gmail.com</a>
             </div>
         </div>
         <div class="row">
             <div class="col s12 no-padding">
                 <a class="none-decoration font-white font-32" href="https://itajaidotnet.slack.com">
-                    <i class="small material-icons">chat</i>
+                    <i class="small material-icons icon-padding">chat</i>
                     itajaidotnet.slack.com</a>
             </div>
         </div>

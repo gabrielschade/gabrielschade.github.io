@@ -420,6 +420,10 @@ h2.font-medium-large.img-title{
     display: inherit;
   }
 
+  .icon-padding{
+      padding-top:5px;
+  }
+
   .nav-itj{
     background-color: #68217a;
   }
