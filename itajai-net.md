@@ -37,6 +37,7 @@ parallax-text: >
 </div>
 
 <div class="row">
+<div class="col s12">
  <div class="carousel">
     <a class="carousel-item" href="/2018/01/30/talk-itajai-dotnet-janeiro.html"><div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/1bZonGo.jpg" alt="Avatar">
@@ -70,6 +71,7 @@ parallax-text: >
             </div></a>
     <!-- <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
     <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a> -->
+  </div> 
   </div> 
 </div>
 
