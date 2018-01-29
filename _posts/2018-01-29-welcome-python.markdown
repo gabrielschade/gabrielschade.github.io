@@ -13,10 +13,10 @@ Quem me conhece ou me acompanha sabe que eu programo majoritariamente na platafo
 
 Se você quer começar a programar, qual a melhor linguagem? - Depende.
 
-Depende da sua experiência, se você nunca se relacionou de nenhuma forma, eu sugiro fortemente a linguagem [Portugol](http://lite.acad.univali.br/portugol/).
-
 Caso você esteja pensando em seguir carreira e já possui um mínimo de lógica e noções de programação, eu sugiro fortemente **Python**.
 <!--more-->
+
+Dependendo da sua experiência, se você nunca se relacionou de nenhuma forma com programação, eu sugiro dar uma olhadinha na linguagem [Portugol](http://lite.acad.univali.br/portugol/). Caso queira algo mais avançado, você pode escolher **Python**.
 
 AAAAAA, como assim **Python**? Mas e a plataforma .NET? Você não era super fã das tecnologias da Microsoft? - Disse o hater.
 
