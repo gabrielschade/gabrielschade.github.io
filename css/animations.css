@@ -89,3 +89,8 @@
   .img-container-itj:hover .img-title {
     font-size: 3em;
   }
+
+  .carousel .carousel-item{
+    width: 500px;
+    height:500px;
+  }
