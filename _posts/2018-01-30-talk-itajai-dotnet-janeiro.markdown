@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Encontro Itajaí .NET - Janeiro/2018"
+title:  "Encontro Itajaí .NET - Janeiro de 2018"
 date:   2018-01-30 00:00:00 +0000
 comments: true
 tags: [Talks]
