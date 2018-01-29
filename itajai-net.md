@@ -38,13 +38,13 @@ parallax-text: >
 
 <div class="row">
     <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="/2017/11/28/talk-itajai-dotnet.html">
+        <a href="/2018/01/30/talk-itajai-dotnet-janeiro.html">
             <div class="img-container img-container-itj">
-                <img class="img-image img-image-itj" src="https://i.imgur.com/C2AolAT.jpg" alt="Avatar">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/1bZonGo.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
-                            28/11/2017
+                            27/01/2018
                         </h2>
                     </div>
                 </div>
@@ -52,13 +52,13 @@ parallax-text: >
         </a>
 	</div>   
     <div class="col s12 m4 l4 no-margin no-padding">
-        <a href="">
+        <a href="/2017/11/28/talk-itajai-dotnet.html">
             <div class="img-container img-container-itj">
-                <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/C2AolAT.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
                         <h2 class="center-align huge light-font img-title">
-                            sem data
+                            28/11/2017
                         </h2>
                     </div>
                 </div>
