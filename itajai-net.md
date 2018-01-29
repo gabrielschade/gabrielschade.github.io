@@ -37,7 +37,7 @@ parallax-text: >
 </div>
 
 <div class="row">
-    <div class="col s12 m4 l4 no-margin no-padding">
+    <div class="col s12 m3 l3 no-margin no-padding">
         <a href="/2018/01/30/talk-itajai-dotnet-janeiro.html">
             <div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/1bZonGo.jpg" alt="Avatar">
@@ -51,7 +51,7 @@ parallax-text: >
             </div>
         </a>
 	</div>   
-    <div class="col s12 m4 l4 no-margin no-padding">
+    <div class="col s12 m3 l3 no-margin no-padding">
         <a href="/2017/11/28/talk-itajai-dotnet.html">
             <div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/C2AolAT.jpg" alt="Avatar">
@@ -65,7 +65,7 @@ parallax-text: >
             </div>
         </a>
 	</div>   
-    <div class="col s12 m4 l4 no-margin no-padding">
+    <div class="col s12 m3 l3 no-margin no-padding">
         <a href="">
             <div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
@@ -78,7 +78,21 @@ parallax-text: >
                 </div>
             </div>
         </a>
-	</div>     
+	</div>   
+    <div class="col s12 m3 l3 no-margin no-padding">
+        <a href="">
+            <div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
+                <div class="img-overlay-itj">
+                    <div class="img-text">
+                        <h2 class="center-align huge light-font img-title">
+                            sem data
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+	</div>    
 </div>
 
 <div class="margin-side-10p">
