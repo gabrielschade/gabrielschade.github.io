@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Encontro Itajaí .NET - Janeiro/2018"
-date:   2018-02-30 00:00:00 +0000
+date:   2018-01-30 00:00:00 +0000
 comments: true
 tags: [Talks]
 ---
@@ -31,11 +31,15 @@ Agora vamos às talks na ordem que aconteceram:
 
 Nesta palestra eu mostrei alguns conceitos fundamentais sobre machine learning e fizemos juntos um exemplo utilizando o Azure Machine Learning Studio!
 
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/pP2WwS5TqwRNNT" %}
 
+{% include huge-h2.html content="Primeiro passos com React Native" %}
 
 Nesta palestra Leornado Prange deu uma boa introdução do React Native com direito à exemplo de código e tudo!
 
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/DQxoNLPIwEtdNw" %}
 
+Você pode encontrar o código [aqui](https://github.com/LeonardoPrange/React-Native-ItajaiDotNet)
 
 Galera ainda somos um grupo pequeno, mas é sempre muito legal ver como as pessoas são capazes de se organizar para ajudar umas as outras. Vamos ter vários novos eventos ainda este ano, nos ajude, compartilhe conhecimento com a comunidade.
 
