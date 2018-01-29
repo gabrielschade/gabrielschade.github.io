@@ -19,7 +19,7 @@ No final deu tudo certo, foram chegando um por um e conseguimos um público seme
 
 Tivemos duas palestras legais, sem muitos problemas. O exemplo que eu fiz de Machine Learning com o Azure funcionou totalmente na web (estava com medo da conexão de rede, mas deu tudo certo). Também tivemos novas pessoas para se juntar ao grupo e um pouco de networking e troca de informação!
 
-<!-- Aproveito este post para anunciar o novo espaço do grupo [aqui no blog]({{ site.baseurl }}{% link /itajai-net.html %}) -->
+Aproveito este post para anunciar o novo espaço do grupo [aqui no blog]({{ site.baseurl }}{% link /itajai-net.html %})
 
 Um **muito obrigado** à todos que participaram do evento, de verdade. É muito difícil organizar um grupo e fazer as coisas acontecerem e claro, eu não seria capaz sozinho.
 
@@ -31,15 +31,11 @@ Agora vamos às talks na ordem que aconteceram:
 
 Nesta palestra eu mostrei alguns conceitos fundamentais sobre machine learning e fizemos juntos um exemplo utilizando o Azure Machine Learning Studio!
 
-{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/pP2WwS5TqwRNNT" %}
 
-{% include huge-h2.html content="Primeiro passos com React Native" %}
 
 Nesta palestra Leornado Prange deu uma boa introdução do React Native com direito à exemplo de código e tudo!
 
-{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/DQxoNLPIwEtdNw" %}
 
-Você pode encontrar o código [aqui](https://github.com/LeonardoPrange/React-Native-ItajaiDotNet)
 
 Galera ainda somos um grupo pequeno, mas é sempre muito legal ver como as pessoas são capazes de se organizar para ajudar umas as outras. Vamos ter vários novos eventos ainda este ano, nos ajude, compartilhe conhecimento com a comunidade.
 
