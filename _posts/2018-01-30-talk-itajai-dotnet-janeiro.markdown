@@ -19,7 +19,7 @@ No final deu tudo certo, foram chegando um por um e conseguimos um público seme
 
 Tivemos duas palestras legais, sem muitos problemas. O exemplo que eu fiz de Machine Learning com o Azure funcionou totalmente na web (estava com medo da conexão de rede, mas deu tudo certo). Também tivemos novas pessoas para se juntar ao grupo e um pouco de networking e troca de informação!
 
-Aproveito este post para anunciar o novo espaço do grupo [aqui no blog]({{ site.baseurl }}{% link /itajai-net.html %})
+<!-- Aproveito este post para anunciar o novo espaço do grupo [aqui no blog]({{ site.baseurl }}{% link /itajai-net.html %}) -->
 
 Um **muito obrigado** à todos que participaram do evento, de verdade. É muito difícil organizar um grupo e fazer as coisas acontecerem e claro, eu não seria capaz sozinho.
 
