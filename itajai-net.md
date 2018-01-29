@@ -37,9 +37,8 @@ parallax-text: >
 </div>
 
 <div class="row">
-    <div class="col s12 m3 l3 no-margin no-padding">
-        <a href="/2018/01/30/talk-itajai-dotnet-janeiro.html">
-            <div class="img-container img-container-itj">
+ <div class="carousel">
+    <a class="carousel-item" href="/2018/01/30/talk-itajai-dotnet-janeiro.html"><div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/1bZonGo.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
@@ -48,12 +47,8 @@ parallax-text: >
                         </h2>
                     </div>
                 </div>
-            </div>
-        </a>
-	</div>   
-    <div class="col s12 m3 l3 no-margin no-padding">
-        <a href="/2017/11/28/talk-itajai-dotnet.html">
-            <div class="img-container img-container-itj">
+            </div></a>
+    <a class="carousel-item" href="/2017/11/28/talk-itajai-dotnet.html"><div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/C2AolAT.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
@@ -62,12 +57,8 @@ parallax-text: >
                         </h2>
                     </div>
                 </div>
-            </div>
-        </a>
-	</div>   
-    <div class="col s12 m3 l3 no-margin no-padding">
-        <a href="">
-            <div class="img-container img-container-itj">
+            </div></a>
+    <a class="carousel-item" href=""><div class="img-container img-container-itj">
                 <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
                 <div class="img-overlay-itj">
                     <div class="img-text">
@@ -76,23 +67,10 @@ parallax-text: >
                         </h2>
                     </div>
                 </div>
-            </div>
-        </a>
-	</div>   
-    <div class="col s12 m3 l3 no-margin no-padding">
-        <a href="">
-            <div class="img-container img-container-itj">
-                <img class="img-image img-image-itj" src="https://i.imgur.com/eOmpD8D.jpg" alt="Avatar">
-                <div class="img-overlay-itj">
-                    <div class="img-text">
-                        <h2 class="center-align huge light-font img-title">
-                            sem data
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </a>
-	</div>    
+            </div></a>
+    <!-- <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a> -->
+  </div> 
 </div>
 
 <div class="margin-side-10p">
