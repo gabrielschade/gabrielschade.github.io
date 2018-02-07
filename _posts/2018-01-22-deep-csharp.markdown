@@ -48,7 +48,7 @@ Com essas três linhas podemos descrever o comportamento citado, vamos lá:
 
 Veja a ilustração a seguir para entender melhor o que está acontecendo linha por linha:
 
-![Stack vs Heap Memory](https://i.imgur.com/c5CjI2u.png)
+{% include img.html caption="Stack vs Heap Memory" src="https://i.imgur.com/c5CjI2u.png" %}
 
 Podemos perceber algumas coisas na ilustração acima. A primeira delas é que a *Stack memory* de fato funciona de acordo com a estrutura de dados pilha (*stack*), pois cada nova alocação é inserida no topo da pilha. O mesmo vale para a desalocação, apesar de não estar visível na imagem.
 
