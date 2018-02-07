@@ -70,7 +70,7 @@ Em nosso exemplo, cada nó representará um membro da família, Jaime e Cersei, 
 
 Veja o nó que representa a Cersei, na imagem abaixo:
 
-{% include material-img.html src="https://i.imgur.com/ws6e4q8.png" caption="Nó representando Cersei" width=80 %} 
+{% include image.html link="https://i.imgur.com/ws6e4q8.png" alt="Nó representando Cersei" width=80 %} 
 
 Em toda rede bayesiana os nós são interligados de acordo com sua correlação. Em nosso caso, é bastante simples entender a relação entre os nós: os filhos herdam as falhas genéticas dos pais.
 
@@ -84,13 +84,13 @@ Jaime e Cersei possuem três filhos: Joffrey, Myrcella e Tommen. Cada um deles d
  
 Veja a representação do nó de Joffrey:
 
-{% include material-img.html src="https://i.imgur.com/VjICdTv.jpg" caption="Nó representando Joffrey" width=80 %} 
+{% include image.html link="https://i.imgur.com/VjICdTv.jpg" alt="Nó representando Joffrey" width=80 %} 
 
 Através das ligações entre os nós é possível propagar uma evidência pela rede, ou seja, ao alterarmos a probabilidade de um estado de um nó, as probabilidades de estados de outros nós também poderão ser alteradas.
 
 Vamos fazer um exemplo. Imagine que o lunático do Joffrey era desta forma por conta de uma falha genética, então vamos sinalizar que ele com certeza possui uma falha, veja o resultado da rede após informarmos esta evidência:
 
-{% include material-img.html src="https://i.imgur.com/1IZ4kb6.jpg" caption="Evidência em Joffrey" width=80 %}
+{% include image.html link="https://i.imgur.com/1IZ4kb6.jpg" alt="Evidência em Joffrey" width=80 %}
 
 Mas peraí, 26% para todos os outros? Como assim?
 
@@ -114,7 +114,7 @@ Agora as coisas começam a ficar mais complicadas para a família Lannister, se 
 
 Cersei e Jaime possuem aproximadamente 50% de chances cada um de ter esta mesma falha, além disso, cada um dos filhos do casal terão uma probabilidade de **75%** de ter este mesmo problema.
 
-{% include material-img.html src="https://i.imgur.com/oreedzZ.png" caption="Evidência em Tywin" width=80 %}
+{% include image.html link="https://i.imgur.com/oreedzZ.png" alt="Evidência em Tywin" width=80 %}
 
 Mas calma, ainda **piora**.
 
@@ -132,7 +132,7 @@ Por fim, vamos completar a família criando o nó do Lannister mais amado, **Tyr
 
 Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
 
-{% include material-img.html src="https://i.imgur.com/3K91oU3.jpg" caption="Evidência em Tywin e Cersei" width=80 %}
+{% include image.html link="https://i.imgur.com/3K91oU3.jpg" alt="Evidência em Tywin e Cersei" width=80 %}
 
 Um comportamento curioso da propagação de evidências que não é muito intuitivo, é o fato de os nós ascendentes sofrem com evidências novas mesmo que a evidência seja revelada em um nó mais profundo.
 
@@ -140,7 +140,7 @@ Tyrion, o melhor anão que você respeita, possui 57% de chance de ter a falha g
 
 E se incluirmos a evidência de que Joffrey com certeza também possui a falha?
 
-{% include material-img.html src="https://i.imgur.com/jrivrco.jpg" caption="Evidência em Tywin, Cersei e Joffrey" width=80 %}
+{% include image.html link="https://i.imgur.com/jrivrco.jpg" alt="Evidência em Tywin, Cersei e Joffrey" width=80 %}
 
 Ao fazer isso aumentamos as chances de Jaime `(57% -> 72%)` possuir esta falha, afinal se um dos filhos com certeza tem o problema, as chances dele ter também aumentam. 
 
@@ -172,7 +172,7 @@ Além dele, a querida mãe dos dragões já deu alguns indícios de que não bat
 
 Considerando que ela herdou as falhas do pai. Quais são as chances dos irmãos Rhaegar, Viserys também terem o mesmo problema?
 
-{% include material-img.html src="https://i.imgur.com/FLNxDuv.jpg" caption="Targaryen" width=80 %}
+{% include image.html link="https://i.imgur.com/FLNxDuv.jpg" alt="Targaryen" width=80 %}
 
 No caso dos irmãos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Logo, cada um dos irmãos compartilham quase **90%** genes. O.O
 
@@ -184,7 +184,7 @@ Até aí tudo bem, o problema é que este mesmo episódio revelou que Daenerys e
 
 Por conta da quantidade de casamentos entre familiares Targaryen, Jon e Daenerys compartilham praticamente a mesma quantidade de genes que dois irmãos (45%).
 
-{% include material-img.html src="https://i.imgur.com/DUIkefk.jpg" caption="Filho de Jon e Daenerys" width=80 %}
+{% include image.html link="https://i.imgur.com/DUIkefk.jpg" alt="Filho de Jon e Daenerys" width=80 %}
 
 Neste cenário, caso nasça uma criança deste relacionamento, há uma probabilidade de 72% da falha genética se propagar.
 
