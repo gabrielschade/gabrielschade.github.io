@@ -21,7 +21,7 @@ O primeiro deles foi a participação na Campus Party, o maior evento de tecnolo
 
 Ainda vamos ter mais eventos com o LITE, então vai ter mais conteúdo sobre isso por aqui também!
 
-Mudando um pouco o foco do assunto, também tivemos o segundo encontro presencial do Itajaí .NET: com palestras sobre React Native e Machine Learning. Como eu sempre digo, ainda somos pequenos, mas estamos nos mexendo! Há um outro post aqui no blog sobre as talks, você pode encontrar ele [aqui]({{ site.baseurl }}{% link _posts/talk-itajai-dotnet-janeiro.html %}).
+Mudando um pouco o foco do assunto, também tivemos o segundo encontro presencial do Itajaí .NET: com palestras sobre React Native e Machine Learning. Como eu sempre digo, ainda somos pequenos, mas estamos nos mexendo! Há um outro post aqui no blog sobre as talks, você pode encontrar ele [aqui]({{ site.baseurl }}{% link _posts/2018-01-30-talk-itajai-dotnet-janeiro.html %}).
 
 Ainda sobre palestras! Vou participar da série Descomplicando Azure, falando um pouco sobre Machine Learning! Meu vídeo vai ao ar no dia 26/02/2018, mas não assistam só o meu não, vai ter muita gente bacana falando de vários temas diferentes relacionados ao Azure!
 
