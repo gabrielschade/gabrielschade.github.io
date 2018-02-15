@@ -81,22 +81,69 @@ lista_de_compras.append("Café")
 
 Agora sim!
 
+Ao utilizar o `append`, adicionamos um item ao fim da lista, ou seja, ele será o último elemento. Além do `append` existem diversas outras funções e recursos para este tipo de variável. Um dos recursos disponíveis é a palavra reservada `in`.
+
+Podemos utilizar este comando para checar se um item está na lista, basta utilizar a seguinte sintaxe: `item in lista`, isso irá retornar um valor lógico `True` ou `False`, dependendo se o item informado está contido na lista ou não.
+
+Isso nos permite criar desvios condicionais, por exemplo, veja:
+
+```python
+if "Café" in lista_de_compras:
+    print("Preciso comprar café")
+```
+
+Bem simples né?
+
+Outra tarefa bem comum é a necessidade de contar quantos itens uma determinada lista possui, para fazer isso utilizamos a função `len` embutida na linguagem. O comando `len` é uma abreviação para *length*, palavra em inglês para tamanho.
+
+A função `len` deve receber a lista por parâmetro e ela retornará um inteiro com a quantidade de elementos. 
+
+```python
+len( lista_de_compras ) # -> 5
+```
+
+Perceba que a quantidade de elementos não é a mesma coisa que a posição máxima do índice. Em nosso exemplo, a lista contém cinco itens, portanto temos como índices válidos 0 até 4.
+
+Já vimos como adicionar itens em uma lista, como verificar se um item está contido nela e até verificar a quantidade de itens, mas ainda não vimos como remover um item da lista. Algum palpite?
+
+Muitos iniciantes tentam realizar a seguinte operação:
+
+```python
+lista_de_compras[2] = None
+```
+O raciocínio até que faz um pouco de sentido, se eu digo que não há nada na posição 2, então este item não deve existir, certo? -Errado.
+
+Ao fazer a operação acima, você irá dizer que o item na posição 2 não contém nada e não que não há item na posição 2. Percebe a diferença sutíl? No primeiro caso você diz que a posição 2 existe, mas não há nada nela, enquanto no segundo caso, você remove ela da lista.
+
+Ok, mas como fazemos para remover ela da lista? Da mesma forma que temos uma abreviação para *lenght* também há uma abreviação para *delete*. Este comando chama-se `del`.
+
+Vamos remover os ovos(posição 3) da nossa lista de compra!
+
+```python
+del lista_de_compras[3]
+```
+Simples assim.
+
+Agora é importante você notar que, a posição 3 não deixará de existir. O que acontece de fato, é que todos os itens que estavam em uma posição maior que a do item excluído são deslocados uma posição para a esquerda.
+
+Ou seja, tínhamos o café na posição 4 e agora ele está na posição 3, fazendo com que a posição 4 deixe de existir.
+
+Vamos entender melhor cada função com alguns exercícios!
+
 ## Vamos Praticar!
 
-* Faça um programa que solicite o nome do usuário e depois disso faça uma saudação no formato: "Olá {nome digitado pelo usuário}"
+* Faça um programa que inicialize uma lista com o nome das pessoas da sua família.
 
-* Faça um programa que solicite uma mensagem qualquer para o usuário e exiba esta mensagem com todas as letras em maiúsculo.
+* Faça um programa que inicialize uma lista vazia e solicite ao usuário 3 nomes de cidades, um por vez, cada vez que o usuário digitar um nome, o programa deve incluir este nome na lista de cidades. 
 
-* Faça um programa que solicite a idade do usuário, verifique se o texto informado só contém números. Caso contenha somente números exiba a mensagem: "Você tem {idade digitada} anos.", caso contrário exiba a mensagem: "Você digitou uma idade inválida".
+* Faça um programa que inicialize uma lista com vários números diferentes, depois disso, solicite ao usuário um número, verifique se o número está ou não na lista e exiba uma mensagem notificando o usuário do resultado.
 
-* Faça um programa que solicite o nome completo do usuário e exiba somente o seu segundo nome/primeiro sobrenome.
+* Faça um programa que inicialize uma lista vazia e a preencha com 5 nomes diferentes digitados pelo usuário, depois disso solicite um número de 0 até 4 e remova o elemento desta posição.
 
 > **Atenção**
->
-> Alguns exercícios utilizam funções que não foram mostradas neste post, você pode buscá-las através da internet, documentação do Python ou simplesmente digite a string no Visual Studio e pressione ctrl + espaço (ele mostrará as funções disponíveis).
 > 
 > É fortemente recomendado que você tente fazer os exercícios antes de ver as respostas.
-> Você pode encontrar as respostas [aqui](https://github.com/gabrielschade/Python-Intro-Serie/blob/master/03-NoneStringList.py), elas estão bem no fim no arquivo.
+> Você pode encontrar as respostas [aqui](https://github.com/gabrielschade/Python-Intro-Serie/blob/master/04-Listas.py), elas estão bem no fim no arquivo.
 
 O que achou do post? - Pratique mais até o próximo post da série!
 
