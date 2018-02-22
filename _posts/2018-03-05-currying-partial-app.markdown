@@ -35,7 +35,7 @@ Como o próprio nome sugere, a programação **funcional** é baseada principalm
 
 Então, isso deveria implicar em: todas as funções escritas em um código funcional devem conter apenas um parâmetro, certo? Mas como fazer isso? - Com **Currying**
 
-## Entendendo Currying
+### Entendendo Currying
 
 O processo de *currying* consiste em quebrar funções de N parâmetros em N funções, onde cada função irá receber apenas um parâmetro e retornar uma **nova função** que espera os parâmetros restantes.
 
@@ -96,7 +96,7 @@ Esta forma me soa mais intuitiva, mas esteja livre para escolher o que mais lhe 
 > É importante frisar que este é um post mais conceitual, se você deseja entender como a função `Curry` funciona acesse o código da biblioteca **Tango** disponível no meu [GitHub](https://github.com/gabrielschade/Tango/blob/master/Tango/Tango/Functional/Currying.cs).
 
 
-## Entendendo a Aplicação Parcial
+### Entendendo a Aplicação Parcial
 
 A aplicação parcial é um pouco diferente do processo de *currying*, mas também envolve a questão dos tipos de uma função.
 
@@ -120,7 +120,7 @@ Veja a implementação descrita, primeiro através de currying:
 
 ```csharp
 Func<int, int, int, int> soma = 
-    (valor, valor2) => valor + valor2;
+    (valor, valor2, valor3) => valor + valor2 + valor3;
 
 Func<int, Func<int, Func<int, int>>> somaPosCurrying = soma.Curry();
 int resultado = somaPosCurrying(2)(3)(5);
@@ -131,7 +131,7 @@ Utilizando aplicação parcial com apenas um parâmetro:
 
 ```csharp
 Func<int, int, int, int> soma = 
-    (valor, valor2) => valor + valor2;
+    (valor, valor2, valor3) => valor + valor2 + valor3;
 
 Func<int, int, int> somaParcialmenteFeita = soma.PartialApply(2);
 int resultado = = somaParcialmenteFeita(3,5);
@@ -141,7 +141,7 @@ int resultado = = somaParcialmenteFeita(3,5);
 Utilizando aplicação parcial com dois parâmetros:
 ```csharp
 Func<int, int, int, int> soma = 
-    (valor, valor2) => valor + valor2;
+    (valor, valor2, valor3) => valor + valor2 + valor3;
 
 Func<int, int> somaParcialmenteFeita = soma.PartialApply(2);
 int resultado = = somaParcialmenteFeita(3,5);
@@ -158,6 +158,51 @@ Todos os métodos disponíveis para aplicação parcial e *currying* podem ser e
 Estas funções operam em métodos de até 4 parâmetros, podendo retornar qualquer tipo, inclusive `void`. Tanto em formato estático quanto como método de extensão.
 
 Eu gosto bastante dessa biblioteca que desenvolvi e se você gosta de programação funcional ela pode ser uma boa companheira!
+
+### Espera aí, mas e o F#?
+
+Bom, eu tinha comentado que mostraria exemplos em F# também, certo?
+
+Lembram que eu falei que a sintaxe para o tipo de funções de multiplos parâmetros era diferente no F#? Isso acontece porque nessa linguagem as funções interagem com *curry* e aplicação parcial **automaticamente**.
+
+```fsharp
+let soma valor valor2 valor3 = 
+    valor + valor2 + valor3
+
+//tipo da soma: int -> int -> int -> int
+```
+Viram só? O tipo já vem no formato de *currying*!
+
+Então ele trata cada função como múltiplas funções de um parâmetro, mas as facilidades não acabam aqui. Além disso, você **pode** informar mais de um parâmetro normalmente e caso não informe todos, a aplicação parcial ocorre automaticamente!
+
+```fsharp
+let soma valor valor2 valor3 = 
+    valor + valor2 + valor3
+
+let somaParcialmenteAplicada = soma 2
+
+let resultado = somaParcialmenteAplicada 3 5 
+
+//resultado = 10
+//tipo da somaParcialmenteAplicada: int -> int -> int
+```
+O mesmo pode ser feito com múltiplos parâmetros, veja:
+
+```fsharp
+let soma valor valor2 valor3 = 
+    valor + valor2 + valor3
+
+let somaParcialmenteAplicada = soma 2 3
+
+let resultado = somaParcialmenteAplicada 5 
+
+//resultado = 10
+//tipo da somaParcialmenteAplicada: int -> int
+```
+
+Neste sentido, por conta do F# ser voltado para programação funcional ele entrega uma série de funcionalidades já imbutidas na linguagem, legal né?
+
+Por hoje era isso pessoal!
 
 O que achou do post? Gosta de programação funcional?
 
