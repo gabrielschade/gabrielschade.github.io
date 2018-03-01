@@ -100,9 +100,6 @@ A outra instrução é o `break`, neste caso a interrupção é mais agressiva, 
 Isso significa que, ao utilizarmos o comando `break` vamos sair do laço de repetição mesmo se comparação ainda for verdadeira, quebrando inclusive loops infinitos.
 
 ```python
-"""
-Utilizando o continue para pular a quinta posição
-"""
 posicao = 0
 while posicao < len(numeros):
     posicao += 1
@@ -116,9 +113,6 @@ Com o código acima, seriam exibidos os números da posição 0 até a posição
 A estratégia para evitar o `break` é simples. Se você está utilizando-o provavelmente sua lógica de verificação no laço de repetição não está cumprindo seu papel. No exemplo acima não queremos percorrer até o final da lista como a condição sugere, mas sim, até a quarta posição:
 
 ```python
-"""
-Alterando a comparação para encerrar na quinta posição sem o break
-"""
 posicao = 0
 while posicao < 5:
     print(numeros[posicao])
