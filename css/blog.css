@@ -515,6 +515,18 @@ h2.font-medium-large.img-title{
       margin-bottom:1.5rem;
   }
 
+  .post-serie-badge{
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #617ab9;
+    border-radius: 2px;
+    min-width: 6rem;
+    margin-left:0;
+    float:left;
+    text-align: center;
+  }
+
   .post-tag-badge{
     font-weight: 300;
     font-size: 0.8rem;
