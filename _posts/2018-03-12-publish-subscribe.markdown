@@ -305,7 +305,7 @@ Com isso finalizamos nossa implementação deste padrão! O que achou?
 
 > **Atenção**
 >
-> Você pode encontrar o código implementado aqui no meu [GitHub](https://github.com/gabrielschade/CSharp-Publish-Subscribe-Sample/tree/master/Publish.Subscribe.Exemplo).
+> Você pode encontrar o código implementado aqui no meu [GitHub](https://github.com/gabrielschade/CSharp-Patterns/tree/master/Publish.Subscribe.Exemplo).
 
 Alguma sugestão? Gostou deste tipo de post?
 
