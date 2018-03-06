@@ -3,6 +3,11 @@ layout: page
 ---
 
   {% assign post = page %}
+
+  {% if post.github <> "" %}
+    {% include github-link.html link=post.github %} 
+  {% endif %}
+
   {% include huge-h2.html content=page.title css="left-align" %} 
   <span class="post-date right-align">
     {% include postdate.html %}

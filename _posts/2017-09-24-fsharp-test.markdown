@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Código em C#, teste unitário em F#"
+github: https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp
 date:   2017-09-24 00:00:00 +0000
 comments: true
 tags: [C#, F#]
@@ -150,7 +151,7 @@ Com isso a integração no Visual Studio acaba ficando mais limpa, conforme imag
 
 {% include image.html link="https://i.imgur.com/8HYXZEk.png" alt="Integração com o Visual Studio" width=50 %} 
 
-Você pode encontrar o código deste teste em: http://bit.ly/testes-csharp-Fsunit
+Você pode encontrar o código deste teste em: https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp
 
 Mas me diga você, o que achou de testar seu código com F#?
 Ficaram dúvidas?

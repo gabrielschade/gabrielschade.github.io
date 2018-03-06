@@ -512,7 +512,7 @@ h2.font-medium-large.img-title{
   }
 
   .post-date{
-      margin-bottom:3.5rem;
+      margin-bottom:3.5rem; 
   }
 
   .post-serie-badge{
@@ -557,3 +557,17 @@ h2.font-medium-large.img-title{
     .spoiler-hidden{
         display: none;
     }
+
+    a.github-fixed-button {
+        position: fixed;
+        top: 15px;
+        right: -55px;
+        width: 65px;
+        height: 65px;
+        border-radius: 0;
+    }
+    
+    a.github-fixed-button:hover{
+            transform: scale(0.9) translateX(-60px);
+            transition: all 300ms;       
+        }
