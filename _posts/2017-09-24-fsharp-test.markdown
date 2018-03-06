@@ -6,12 +6,14 @@ comments: true
 tags: [C#, F#]
 ---
 
-{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp" %} 
 
 Olá pessoas, que tal falar um pouco sobre teste unitário?
 
 O foco deste post será propor uma forma de você começar a implementar seus testes unitários de aplicações .NET utilizando a linguagem F#.
 <!--more-->
+
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp" %} 
+
 Para quem ainda não conhece esta linguagem maravilhosa e não sabe do que estou falando: F# é a iniciativa da Microsoft para o paradigma de programação funcional na plataforma .NET.
 
 Não é nenhum segredo que eu gosto MUITO desta linguagem e do quão **idiomática** ela é. Eu concordo totalmente com a frase: "Um bom código é feito primeiro para humanos entenderam depois para computadores", afinal, quem nunca teve de alterar um código totalmente incompreesível e sofreu com isso?
