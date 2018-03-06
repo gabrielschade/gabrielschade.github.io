@@ -13,6 +13,8 @@ Que tal continuar nossos exemplos com laços de repetição?
 
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/06-Loops%202.py" %} 
+
 Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
 
 O último post antes deste introduziu o conceito de laços de repetição utilizando o comando `for`. Mas esta não é a única forma de realizar este tipo de operação!

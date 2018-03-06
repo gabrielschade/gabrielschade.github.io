@@ -19,6 +19,8 @@ Mas mesmo com toda a prática do mundo, eu ainda acho que C# não é a melhor li
 Três linhas de código, planilha do Excel em suas mãos.
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/CsvTypeProviderSample/CsvTypeProviderSample/Program.fs" %} 
+
 Vamos começar criando uma aplicação console em F#!
 
 Depois disso vamos instalar o pacote `FSharp.Data`, através do nuget:

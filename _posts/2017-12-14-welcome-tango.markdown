@@ -10,6 +10,8 @@ Olá pessoas!
 
 Hoje vou apresentar algo que estou trabalhando já faz um tempo, uma biblioteca para programação funcional em C#!
 <!--more-->
+{% include github-link.html link="https://github.com/gabrielschade/Tango" %} 
+
 ![TANGO](https://gabrielschade.gitbooks.io/tango-br/content/assets/logo%20tango.png)
 
 Quem me conhece sabe que sou bastante entusiasta deste paradigma, mas não, não vou listar motivos **X** ou **Y** para tentar provar que ele é melhor do que orientação à objeto.

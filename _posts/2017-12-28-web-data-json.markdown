@@ -19,6 +19,8 @@ Mas a facilidade que o F# provê, permite criar isso com **três** linhas de có
 É sério, não tem enrolação, são só três linhas mesmo.
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs" %} 
+
 É absurdamente fácil realizar esta tarefa através do `JsonTypeProvider`.
 
 Assim como vimos com o [provider para html]({{ site.baseurl }}{% link _posts/2017-12-19-web-data.markdown %}), também é possível criar um tipo a partir de um JSON.

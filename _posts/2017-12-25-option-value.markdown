@@ -14,6 +14,8 @@ As implementações vão utilizar a linguagem C#, mas terá uma forte inspiraç�
 
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/Tango/blob/master/Tango/Tango/Types/Option.cs" %} 
+
 Anteriormente já vimos que o [null é um problema]({{ site.baseurl }}{% link _posts/2017-10-11-problema-null.markdown %}), além disso, também já vimos o conceito abstrato dos [objetos que agem como *containers*]({{ site.baseurl }}{% link _posts/2017-11-06-object-container.markdown %}).
 
 Agora vamos ver uma das formas de resolver isso. Através dos valores **opcionais**.

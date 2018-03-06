@@ -16,6 +16,9 @@ Esse tipo de raciocínio serve para qualquer desenvolvedor de qualquer plataform
 
 Hoje é um exemplo bastante claro, vamos propor um problema simples: *extrair dados da web*.
 <!--more-->
+
+{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/HtmlTypeProviderSample/HtmlTypeProviderSample/Program.fs" %} 
+
 Ok, isso é bastante genérico, vamos ser mais específicos.
 
 Eu quero que sua aplicação, leia os dados da *Wikipedia* sobre os filmes da [Marvel Cinematic Universe](https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films) e ordene os filmes de acordo com a crítica no [Rotten Tomatoes](https://www.rottentomatoes.com/).

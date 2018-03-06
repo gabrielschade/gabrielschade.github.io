@@ -15,6 +15,8 @@ Tanto *Currying* quanto *Aplicação Parcial* são conceitos muito poderosos e q
 Para fins de exemplo, vamos utilizar C# e F#. Vamos lá!
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/Tango/blob/master/Tango/Tango/Functional" %} 
+
 Esses dois conceitos operam diretamente em funções com o objetivo de alterar tipo delas. Espera aí, tipo das funções? Isso mesmo!
 
 Se você ainda não conhece delegates, dá uma olhadinha [neste post]({{ site.baseurl }}{% link _posts/2017-12-04-delegates-func-action.markdown %}), sugiro fortemente que dê uma olhada lá e depois volte aqui com essa bagagem!

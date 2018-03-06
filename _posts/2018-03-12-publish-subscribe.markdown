@@ -13,6 +13,8 @@ Acho que hoje é a primeira vez que veremos um padrão aqui no blog, ele será o
 Deixo aqui o aviso, este post é um pouco mais avançado do que eu costumo colocar, mas vale a pena conferir!
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/CSharp-Patterns/tree/master/Publish.Subscribe.Exemplo" %} 
+
 Esse é um *pattern* (padrão), beeeem versátil e popular, dá pra fazer várias coisas bem legais com ele, mas para entender todo seu poder, precisamos antes, entender seu **conceito**.
 
 Vamos lá, de forma muito resumida, este padrão consiste em criarmos um ou mais publicadores onde cada um irá possuir um ou mais inscritos. A partir disso, criamos um sistema para troca de mensagens de forma **indireta**.

@@ -14,6 +14,8 @@ Muita gente me pediu para escrever sobre os famosos *design patterns*.
 Pois bem, vamos conhecê-los! Começando com o padrão **Command**!
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/06-Loops%202.py" %} 
+
 Existe muito material na internet sobre isso. E quando eu falo muito, eu quero dizer **MUITO** mesmo. Então porque escrever sobre isso?
 
 Bom, primeiro porque me pediram, então isso deve fazer algum sentido para quem acompanha o blog. Além disso, quero fazer um pouco diferente, sempre que possível vou tentar abordar o mesmo padrão sob duas perspectivas diferentes: **orientado à objeto** e com programação **funcional**.

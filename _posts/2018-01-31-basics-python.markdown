@@ -14,6 +14,8 @@ No post anterior eu comentei sobre alguns motivos para você aprender **Python**
 Pois bem, vamos começar! Sem muita teoria agora, vamos por a mão na massa!
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/01-VariaveisTiposIO.py" %} 
+
 Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}) 
 
 É importante ressaltar que para esta série estou utilizando a versão 3.6 do Python e o Visual Studio 2017 como IDE, você poderá escolher um ambiente diferente, mas recomendo utilizar o mesmo para evitar possíveis conflitos.

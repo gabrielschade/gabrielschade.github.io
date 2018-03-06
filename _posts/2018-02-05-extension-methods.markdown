@@ -11,6 +11,8 @@ Olá pessoas!
 Hoje vamos discutir sobre um conceito muito poderoso presente no C#. Trata-se dos *extension methods*, ou em português, métodos de extensão.
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/ExtensionMethods" %} 
+
 Os métodos de extensão são um recurso bastante utilizado dentro da própria linguagem. A biblioteca `Linq`, por exemplo, extende a interface `IEnumerable` com diversos métodos, talvez você nunca tenha percebido, mas métodos como o `Select` e `Where`, por exemplo, não estão escritos na própria coleção. 
 
 Isso porque a funcionalidade conhecida como **Extension Methods** permite aos desenvolvedores .NET adicionar métodos à tipos ou classes existentes, permitindo inclusive chamá-los como se fizessem parte da classe, mesmo que o código esteja em outro arquivo.
