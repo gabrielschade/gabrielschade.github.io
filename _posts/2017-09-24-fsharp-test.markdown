@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "Código em C#, teste unitário em F#"
-github: https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp
 date:   2017-09-24 00:00:00 +0000
 comments: true
 tags: [C#, F#]
 ---
 
-{% include github-link.html link=post.github %} 
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp" %} 
 
 Olá pessoas, que tal falar um pouco sobre teste unitário?
 
