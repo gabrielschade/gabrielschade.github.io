@@ -7,6 +7,8 @@ comments: true
 tags: [C#, F#]
 ---
 
+{% include github-link.html link=post.github %} 
+
 Olá pessoas, que tal falar um pouco sobre teste unitário?
 
 O foco deste post será propor uma forma de você começar a implementar seus testes unitários de aplicações .NET utilizando a linguagem F#.
