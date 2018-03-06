@@ -4,7 +4,7 @@ layout: page
 
   {% assign post = page %}
 
-  {% if post.github <> "" %}
+  {% if post.github <> blank %}
     {% include github-link.html link=post.github %} 
   {% endif %}
 
