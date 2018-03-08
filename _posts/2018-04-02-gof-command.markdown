@@ -170,7 +170,7 @@ O que mais me incomoda na implementação desta forma é que as funções dos co
 
 Note que eu não estou dizendo em momento nenhum que isso é extrapolável para todos os padrões de projeto, mas o comando especificamente, me parece muito melhor quando implementado sob a ótica da programação funcional, portanto, vamos repensar nossa implementação em uma forma mais compacta.
 
-### Implementação utilizando programação funcional em C#
+### Implementação utilizando programação funcional em C##
 
 A verdade é que não há mudanças drásticas nesta implementação, mas sim alguns detalhes que acho válido para mostrar como um segundo ponto de vista.
 
@@ -243,7 +243,7 @@ De modo geral, eu tendo a preferir esta forma, acredito que ela seja mais simple
 
 Agora, antes de fechar o post, vamos implementar este mesmo padrão, mas dessa vez com uma linguagem funcional. O F#!
 
-### Implementação utilizando programação funcional em F#
+### Implementação utilizando programação funcional em F##
 
 Neste ponto você já deve estar craque sobre o que precisa ser feito, então vamos direto à pratica!
 No caso do F#, também não vamos incluir uma definição abstrata do comando. Vamos utilizar o mesmo raciocínio da implementação funcional em C#, ou seja, utilizaremos diretamente as funções!
