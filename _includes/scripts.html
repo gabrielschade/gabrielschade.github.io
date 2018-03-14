@@ -16,9 +16,15 @@ ga('send', 'pageview');
           $('.parallax').parallax();
           $('.carousel').carousel();
           $('.materialboxed').materialbox();
-          $('.tap-target').tapTarget('open');
-          setTimeout(function(){
-                $('.tap-target').tapTarget('close');
+          
+          $("#github-link").addClass("open");
+            setTimeout(function(){
+                $("#github-link").removeClass("open");
           },2000);
+          
+        //   $('.tap-target').tapTarget('open');
+        //   setTimeout(function(){
+        //         $('.tap-target').tapTarget('close');
+        //   },2000);
     });
 </script>
