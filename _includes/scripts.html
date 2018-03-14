@@ -19,9 +19,13 @@ ga('send', 'pageview');
           
           $("#github-link").addClass("open");
             setTimeout(function(){
+                $("#github-link").addClass("closing");
                 $("#github-link").removeClass("open");
+                setTimeout(function(){
+                    $("#github-link").removeClass("closing");
+                }, 300);
           },2000);
-          
+
         //   $('.tap-target').tapTarget('open');
         //   setTimeout(function(){
         //         $('.tap-target').tapTarget('close');
