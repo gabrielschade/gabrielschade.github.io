@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lição 7: Use Dicionários!"
-date:   2018-03-19 00:00:00 +0000
+date:   2018-04-09 00:00:00 +0000
 comments: true
 tags: [Python]
 serie: Programe em Python!
