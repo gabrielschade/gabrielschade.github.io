@@ -129,7 +129,7 @@ Então agora é hora de por a mão na massa!
 
 * Faça um programa que inicialize uma lista de compras com 5 itens diferentes e exiba todos utilizando um laço de repetição `while`.
 
-* Faça um programa que inicialize que crie uma lista com os valores de 1 até 10 e depois exiba apenas os números pares utilizando `while`.
+* Faça um programa que inicialize uma lista com os valores de 1 até 10 e depois exiba apenas os números pares utilizando `while`.
 
 * Faça um programa que inicialize uma lista vazia, solicite ao usuário 10 números ímpares diferentes, um por vez. Caso o número digitado seja par, solicite novamente um número, até que o valor seja um número ímpar. Depois disso, exiba os 10 números digitados.
 
