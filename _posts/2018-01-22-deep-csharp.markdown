@@ -6,7 +6,7 @@ comments: true
 tags: [C#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje vamos discutir sobre quatro conceitos importantíssimos no C#, conceitos estes que todos os programadores deveriam saber, mas na prática, não é bem assim.
 

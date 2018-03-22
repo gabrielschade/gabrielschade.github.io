@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Se você tem praticado em Python você já deve ter se deparado com o problema de criação de variáveis para descrever listas, por exemplo, um conjunto de estudantes, um conjunto de carros estacionados ou até uma lista de compras!
 

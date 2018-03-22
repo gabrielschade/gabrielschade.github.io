@@ -6,7 +6,7 @@ comments: true
 tags: [C#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Acho que hoje é a primeira vez que veremos um padrão aqui no blog, ele será o *publish-subscribe*, um padrão para troca de mensagens de forma desacoplada!
 

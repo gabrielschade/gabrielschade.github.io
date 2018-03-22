@@ -6,7 +6,7 @@ comments: true
 tags: [Talks]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 No último sábado (27/01/2017) aconteceu o segundo encontro do grupo Itajaí .NET, como prometido vou usar o espaço aqui do blog para falar um pouco do evento e claro, compartilhar os slides e códigos!
 <!--more-->

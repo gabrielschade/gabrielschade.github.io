@@ -6,7 +6,7 @@ comments: true
 tags: [C#, F#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje vamos ver como lidar com a falta de valores em nossa aplicação, nos casos onde geramos ou obtemos um valor.
 

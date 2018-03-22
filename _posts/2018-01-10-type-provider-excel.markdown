@@ -6,7 +6,7 @@ comments: true
 tags: [F#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Alguém aqui já precisou importar dados de uma planilha Excel? - Sentiu aquela raiva do cliente?
 

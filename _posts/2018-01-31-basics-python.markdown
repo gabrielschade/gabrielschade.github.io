@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 No post anterior eu comentei sobre alguns motivos para você aprender **Python**, além disso, comentei que faria uma série de posts para ajudar você à aprender.
 

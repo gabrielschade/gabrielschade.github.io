@@ -6,7 +6,7 @@ comments: true
 tags: [Talks]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Esta mês rolou o primeiro encontro do grupo Itajaí .NET e acho que não há hora melhor para falar sobre ele do que agora. 
 <!--more-->

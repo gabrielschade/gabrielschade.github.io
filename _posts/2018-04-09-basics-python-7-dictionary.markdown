@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Mais um post na série para aprendizagem em Python, desta vez, vamos utilizar os dicionários!
 

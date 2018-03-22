@@ -6,7 +6,7 @@ comments: true
 tags: [C#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje vou trazer um tema bastante específico do C#, os assustadores **delegates**.
 

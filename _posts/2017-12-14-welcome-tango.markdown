@@ -6,7 +6,7 @@ comments: true
 tags: [C#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje vou apresentar algo que estou trabalhando já faz um tempo, uma biblioteca para programação funcional em C#!
 <!--more-->

@@ -7,7 +7,7 @@ tags: [C#, F#]
 serie: Design Patterns
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Muita gente me pediu para escrever sobre os famosos *design patterns*.
 

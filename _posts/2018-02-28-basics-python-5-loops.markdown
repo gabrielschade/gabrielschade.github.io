@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje veremos um recurso **muito** importante em qualquer linguagem de programação: Os laços de repetição, também conhecidos como loops.
 

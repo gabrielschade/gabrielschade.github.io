@@ -7,7 +7,7 @@ tags: [IA]
 serie: Azure Machine Learning
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Terminou o pré-processamento dos dados no post anterior?
 

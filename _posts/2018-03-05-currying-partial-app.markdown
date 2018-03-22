@@ -6,7 +6,7 @@ comments: true
 tags: [C#, F#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje veremos dois recursos presentes no paradigma de programação **funcional**, que causam um pouco de confusão.
 

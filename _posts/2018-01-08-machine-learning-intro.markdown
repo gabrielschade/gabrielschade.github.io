@@ -6,7 +6,7 @@ comments: true
 tags: [IA]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje o post vai ser um pouquinho mais teórico, mas calma, é fácil e pode te ajudar muito!
 

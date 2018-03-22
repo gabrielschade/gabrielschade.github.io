@@ -7,7 +7,7 @@ tags: [C#, F#]
 ---
 
 
-Olá pessoas, que tal falar um pouco sobre teste unitário?
+Olá pessoa, que tal falar um pouco sobre teste unitário?
 
 O foco deste post será propor uma forma de você começar a implementar seus testes unitários de aplicações .NET utilizando a linguagem F#.
 <!--more-->

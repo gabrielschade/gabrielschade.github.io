@@ -6,7 +6,7 @@ comments: true
 tags: [Discussões]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Este ano está um tanto quanto ímpar. Sério!
 Comecei ele com pé na porta e quero compartilhar algumas novidades com vocês!

@@ -6,7 +6,7 @@ comments: true
 tags: [Talks]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Esta semana foi uma correria **gigante**, mas no final tudo deu certo.
 

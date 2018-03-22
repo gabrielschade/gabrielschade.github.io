@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Se você está acompanhando esta série, já deve ter aprendido o básico sobre Python as variáveis e tipos do Python!
 

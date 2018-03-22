@@ -6,7 +6,7 @@ comments: true
 tags: [Talks]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 No sábado deste fim de semana que passou (28/10/2017) aconteceu um Meetup sobre DDD - Domain-Driven Design. 
 <!--more-->

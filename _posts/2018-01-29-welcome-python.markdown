@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Quem me conhece ou me acompanha sabe que eu programo majoritariamente na plataforma .NET, mas também sabe que eu considero um erro enorme os programados se fecharem em seu mundinho, seja ele Java, .Net ou qualquer plataforma que seja.
 

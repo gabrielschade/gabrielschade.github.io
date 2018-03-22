@@ -6,7 +6,7 @@ comments: true
 tags: [C#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje falaremos de uma funcionalidade que já existia no C#, mas que teve uma melhora **absurda** nas últimas atualizações!
 

@@ -6,7 +6,7 @@ comments: true
 tags: [C#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje vamos discutir sobre um conceito muito poderoso presente no C#. Trata-se dos *extension methods*, ou em português, métodos de extensão.
 <!--more-->

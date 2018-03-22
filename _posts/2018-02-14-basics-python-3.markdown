@@ -7,7 +7,7 @@ tags: [Python]
 serie: Programe em Python!
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Se você está acompanhando esta série, você já deve ser capaz de criar variáveis e criar desvios condicionais em seu programa. Agora vamos olhar um pouco mais de perto algumas características dos tipos em Python!
 

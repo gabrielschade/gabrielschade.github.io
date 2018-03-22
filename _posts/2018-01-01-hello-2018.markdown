@@ -6,7 +6,7 @@ comments: true
 tags: [Discussões]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Feliz ano novo para todo mundo! Espero que as festas tenham sido maravilhosas!
 

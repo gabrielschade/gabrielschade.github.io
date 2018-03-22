@@ -6,7 +6,7 @@ comments: true
 tags: [F#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Na semana passada fiz um post sobre como extrair dados da web através dos type providers!
 

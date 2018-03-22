@@ -6,7 +6,7 @@ comments: true
 tags: [F#]
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Hoje vamos mudar um pouquinho de linguagem, eu tenho dado muitos exemplos em C#, mas adivinha só?
 

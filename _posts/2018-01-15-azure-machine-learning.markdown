@@ -7,7 +7,7 @@ tags: [IA]
 serie: Azure Machine Learning
 ---
 
-Olá pessoas!
+Olá pessoa!
 
 Ultimamente tenho estudado e lido bastante sobre Machine Learning e devo confessar, eu fiquei **assustado** sobre o quão fácil é criar uma solução dessas com o Azure Machine Learning.
 
