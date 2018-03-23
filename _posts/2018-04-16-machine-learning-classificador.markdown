@@ -346,12 +346,18 @@ print("e", falsos_positivos, "% são falsos positivos")
 print("e", falsos_negativos, "% são falsos negativos")
 ```
 
-{% include image.html link="https://i.imgur.com/vLaMXj6.jpg" alt="Choque de cultura" width=80 %} 
+{% include image.html link="https://i.imgur.com/vLaMXj6.jpg" alt="Resultados completos" width=80 %} 
 
+A partir destes dados já conseguimos tirar informações e medir se a nossa solução proposta atende o resultado esperado:
+
+{% include image.html link="https://i.imgur.com/mZtibzV.jpg" alt="Gráfico de Resultados" width=80 %} 
+
+A partir daqui já podemos melhorar algumas tomadas de decisões!
 
 Agora sim! Já podemos finalizar!
 
 Todo o código desta solução está disponível em meu [GitHub](https://github.com/gabrielschade/IA/tree/master/ClassificacaoComentariosComNaiveBayes)!
+
 
 O que achou deste post?
 
