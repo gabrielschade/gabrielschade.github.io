@@ -15,7 +15,7 @@ Agora vamos fazer codificar uma Machine Learning com algoritmo de classificaçã
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/07-Dicionario.py" %} 
+{% include github-link.html link="https://github.com/gabrielschade/IA/tree/master/ClassificacaoComentariosComNaiveBayes" %} 
 
 Este post exige um conhecimento básico tanto em *machine learning* quanto em Python, se você não estiver familiarizado com estes temas sugiro que você acesse os links abaixo:
 
@@ -230,7 +230,7 @@ def realizar_treinamento(registros_de_treino, vetorizador):
 Com isso já temos nosso modelo pronto para avaliar novos comentários! Basta obtermos o retorno deste método e utilizarmos a função `predict`!
 
 ```python
-registros_de_treino, validacao = pre_processamento()
+registros_de_treino, registros_para_avaliacao = pre_processamento()
 vetorizador = CountVectorizer(binary = 'true')
 classificador = realizar_treinamento(registros_de_treino, vetorizador)
 resultado = classificador.predict(vetorizador.transform(["love this movie!"])
@@ -254,7 +254,7 @@ def analisar_frase(classificador, vetorizador, frase):
 A partir de agora podemos analisar novos comentários utilizando estas funções!
 
 ```python
-registros_de_treino, validacao = pre_processamento()
+registros_de_treino, registros_para_avaliacao = pre_processamento()
 vetorizador = CountVectorizer(binary = 'true')
 classificador = realizar_treinamento(registros_de_treino, vetorizador)
 
@@ -273,11 +273,87 @@ Mas achou que já tá tudo pronto?
 
 {% include image.html link="https://i.imgur.com/iUk4RvN.jpg" alt="Choque de cultura" width=80 %} 
 
-Para sabermos a eficiência de nosso modelo precisamos medir os resultados!
+Piadinhas à parte, antes de finalizarmos nossa implementação precisamos saber a eficiência de nosso modelo candidato, lembram das 3 etapas? Pois é, então precisamos medir os resultados!
 
 ### Avaliação
 
-O que achou do post? - Pratique mais até o próximo post da série!
+Já definimos nossa estratégia de validação lá no comecinho do post! 
+
+Vamos percorrer todos os registros que separamos para este teste e compararmos o resultado real com o resultado obtido a partir de nosso modelo. Em cada um destes resultados nós podemos contabilizar os acertos.
+
+```python
+def realizar_avaliacao_simples(registros_para_avaliacao):
+    avaliacao_comentarios = [registro_avaliacao[0] for registro_avaliacao in registros_para_avaliacao]
+    avaliacao_respostas   = [registro_avaliacao[1] for registro_avaliacao in registros_para_avaliacao]
+
+    total = len(avaliacao_comentarios)
+    acertos = 0
+
+    for indice in range(0, total):
+        resultado_analise = analisar_frase(classificador, vetorizador, avaliacao_comentarios[indice])
+        frase, resultado = resultado_analise
+        acertos += 1 if resultado[0] == avaliacao_respostas[indice] else 0
+
+    return acertos * 100 / total
+```
+Este algoritmo é a forma mais simples de extrairmos uma avaliação para assertividade. Com isso obteremos um percentual de 82% de assertividade. Mas isso não nos diz muita coisa, idealmente precisamos coletar os verdadeiros e falsos positivos e negativos.
+
+Dessa forma teremos 4 métricas diferentes. Vamos lá, a implementação é bastante semelhante, a única coisa que precisaremos alterar são as comparações e iremos contabilizar 4 contadores ao invés de apenas um.
+
+No momento de retornar os dados podemos criar uma tupla contendo as quatro informações diferentes. Desta forma, basta desconstruir a tupla na aplicação principal e poderemos utilizar todas as informações!
+
+```python
+def realizar_avaliacao_completa(registros_para_avaliacao):
+    avaliacao_comentarios = [registro_avaliacao[0] for registro_avaliacao in registros_para_avaliacao]
+    avaliacao_respostas   = [registro_avaliacao[1] for registro_avaliacao in registros_para_avaliacao]
+
+    total = len(avaliacao_comentarios)
+    verdadeiros_positivos = 0
+    verdadeiros_negativos = 0
+    falsos_positivos = 0
+    falsos_negativos = 0
+
+    for indice in range(0, total):
+        resultado_analise = analisar_frase(classificador, vetorizador, avaliacao_comentarios[indice])
+        frase, resultado = resultado_analise
+        if resultado[0] == '0':
+            verdadeiros_negativos += 1 if avaliacao_respostas[indice] == '0' else 0
+            falsos_negativos += 1 if avaliacao_respostas[indice] != '0' else 0
+        else:
+            verdadeiros_positivos += 1 if avaliacao_respostas[indice] == '1' else 0
+            falsos_positivos += 1 if avaliacao_respostas[indice] != '1' else 0
+
+    return ( verdadeiros_positivos * 100 / total, 
+             verdadeiros_negativos * 100 / total,
+             falsos_positivos * 100 / total,
+             falsos_negativos * 100 / total
+           )
+```
+
+Agora, após realizar nossas análises de novos comentários podemos incluir a avaliação, veja:
+
+```python
+percentual_acerto = realizar_avaliacao_simples(registros_para_avaliacao)
+informacoes_analise = realizar_avaliacao_completa(registros_para_avaliacao)
+verdadeiros_positivos,verdadeiros_negativos,falsos_positivos,falsos_negativos = informacoes_analise
+
+print("O modelo teve uma taxa de acerto de", percentual_acerto, "%")
+
+print("Onde", verdadeiros_positivos, "% são verdadeiros positivos")
+print("e", verdadeiros_negativos, "% são verdadeiros negativos")
+
+print("e", falsos_positivos, "% são falsos positivos")
+print("e", falsos_negativos, "% são falsos negativos")
+```
+
+{% include image.html link="https://i.imgur.com/vLaMXj6.jpg" alt="Choque de cultura" width=80 %} 
+
+
+Agora sim! Já podemos finalizar!
+
+Todo o código desta solução está disponível em meu [GitHub](https://github.com/gabrielschade/IA/tree/master/ClassificacaoComentariosComNaiveBayes)!
+
+O que achou deste post?
 
 Me conte nos comentários!
 
