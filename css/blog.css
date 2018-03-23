@@ -265,6 +265,7 @@ h3.huge.margin-top-65{
 
 .content a:hover{
     color: #24bfcf;
+    background-color: rgba(0,0,0,0.05);
 }
 
 
