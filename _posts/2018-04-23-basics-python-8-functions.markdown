@@ -125,20 +125,108 @@ soma(10, 5) # -> 15
 
 Legal né?
 
+Além disso, não há restrição sobre o tipo enviado por parâmetro, veja mais um exemplo:
+
+```python
+def saudacao(nome):
+    print("Olá", nome)
+```
+
+### Retornos
+
+Além de receber informações (parâmetros) as funções também podem produzir resultados. Esses resultados são chamados de **retornos**.
+
+Nem todas as funções produzem resultados, veja a função `saudacao` criada anteriormente. De fato ela não precisa produzir nenhum resultado. 
+
+Por outro lado, não faz muito sentido a função `soma` apenas escrever o resultado da soma. A função se tornaria muito mais reutilizável produzindo um resultado. Desta forma o desenvolvedor poderia fazer o que bem entendesse com o resultado, inclusive escrevê-lo.
+
+Sempre que precisamos criar um retorno utilizamos a palavra reservada `return`. Ela faz com que a função produza um resultado, assim como uma expressão.
+
+Vamos refatorar a função `soma`:
+
+```python
+def soma(numero1, numero2):
+    return numero1 + numero2
+```
+
+Ok, mas como obter o resultado desta função? -Simples!
+
+Basta pensar que a função passa a se comportar uma expressão, portanto conseguimos realizar atribuições, somas e qualquer outra operação que poderíamos fazer com uma expressão. Veja:
+
+```python
+resultado = soma(1,2)
+print(resultado) # -> 3
+
+resultado = soma(2,2) * 3
+print(resultado) # -> 12
+
+resultado = soma(5,5) - 2 * 5
+print(resultado) # -> 0
+
+print(soma(3,7)) # -> 10
+```
+
+A palavra reservada `return` força a interrupção da função para que o resultado seja retornado, portanto é bastante comum que este comando esteja no final da função. Apesar de não haver nenhuma obrigatoriedade não é uma boa prática interromper o código com um `return`.
+
+Veja este exemplo:
+
+```python
+def exemplo(valor):
+    numero = valor * 2
+    if numero > 10:
+        return numero
+
+    valor = valor + 5
+    return valor
+```
+
+Neste exemplo, caso a variável `numero` seja maior do que 10 a função será interrompida. Caso contrário será retornado o valor da variável `valor` somado à 5.
+
+É importante que você compreenda que este código não está necessariamente errado, mas cria-se uma complexidade que não precisa existir, vamos manter a funcionalidade e reescrevê-lo para termos apenas uma instrução de retorne, veja:
+
+```python
+def exemplo(valor):
+    resultado = None
+    numero = valor * 2
+
+    if numero > 10:
+        resultado = numero
+    else:
+        resultado = valor + 5
+    
+    return resultado
+```
+Desta forma, centralizamos a regra na variável `resultado`, sempre retornando-a, independente de qual valor foi atribuido à ela.
+
+Em python podemos encurtar esta função um pouco mais utilizando o desvio condicional ternário:
+
+```python
+def exemplo(valor):
+    numero = valor * 2
+    return numero if numero > 10 else valor + 5
+```
+
+Agora ficamos com um código bem mais curto e simples!
+
+Com isso passamos por todos os conceitos envolvidos na criação de uma função!
+
+
 ## Vamos Praticar!
 
-* Faça um programa que crie um dicionário para definir um produto, contendo sua descrição e seu preço.
+* Faça um programa que escreva "Minha primeira função", esta escrita deve ser realizada a partir da chamada de uma função.
 
-* Faça um programa que inicialize uma lista de compras com 5 itens diferentes, onde cada item é um dicionário contendo a descrição e preço do produto. Depois disso, percorra a lista e exiba as informações de cada item.
+* Faça um programa que solicite o nome do usuário e a idade do usuário, depois disso exiba a mensagem: *"{nome} possui {idade} anos."*. Esta mensagem deve ser escrita em uma função.
 
-* Utilize a lista de compras do programa anterior para identificar qual o produto mais barato e qual o produto mais caro da lista de compras.
+* Faça um programa que solicite dois números ao usuário e exiba a multiplicação deles. A multiplicação deve ser calculada em uma função.
 
-* Faça um programa que tenha uma lista com 5 de pessoas, onde cada pessoa tem seu nome e sobrenome armazenado em um dicionário, depois disso, exiba todos os nomes e sobrenomes. Para complicar um pouco as coisas, vamos simular que estes dados foram obtidos da web e com isso recebemos algumas inconsistências. Duas das cinco pessoas possuem o dicionário onde as chaves estão em maiúsculo e os outros três em minúsculo.
+* Faça um programa que solicite ao usuário três números diferentes e exiba o dobro do maior número. Para fazer issos separe seu código em duas funções diferentes: Uma função para retornar o maior dos três números e outra função para dobrar o número.
+
+* Faça um programa que inicialize uma lista vazia, depois disso solicite 5 nomes diferentes ao usuário (utilize laço de repetição). Cada nome digitado deve ser adicionado à lista e por fim, todos os nomes devem ser escritos no console. Utilize uma função para solicitar e retornar o nome digitado, uma função para adicionar o nome à lista (passando o nome e a lista por parâmetro) e outra função para escrever todos os nomes no console.
 
 > **Atenção**
 > 
 > É fortemente recomendado que você tente fazer os exercícios antes de ver as respostas.
-> Você pode encontrar as respostas [aqui](https://github.com/gabrielschade/Python-Intro-Serie/blob/master/07-Dicionario.py), elas estão bem no fim no arquivo.
+> Você pode encontrar as respostas [aqui](https://github.com/gabrielschade/Python-Intro-Serie/blob/master/07-08-Funcoes.py), elas estão bem no fim no arquivo.
 
 O que achou do post? - Pratique mais até o próximo post da série!
 
