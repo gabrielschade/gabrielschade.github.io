@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Crie tipos com Discriminated Unions"
-date:   2018-05-14 00:00:00 +0000
+date:   2018-05-21 00:00:00 +0000
 comments: true
 tags: [F#]
 ---
