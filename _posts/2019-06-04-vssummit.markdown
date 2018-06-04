@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Visual Studio Summit 2018"
+date:   2019-06-04 00:00:00 +0000
+comments: true
+tags: [Talks]
+---
+
+Olá pessoa!
+
+Neste final de semana, durante os dias 01 e 02 de Junho, tive a oportunidade de palestrar no Visual Studio Summit 2018, um dos maiores eventos de Visual Studio da américa latina!
+
+<!--more-->
+
+Como vocês devem imaginar, esse foi sem dúvida nenhum um final de semana bastante atípico, primeiro porque pela primeira vez estive na Microsoft São Paulo, segundo porque conheci vários **gigantes** na área de desenvolvimento .NET!
+
+Eu estava lá para falar sobre programação funcional utilizando C#, como eu sempre digo, vamos parar de fazer uma briga de times de orientação à objetos vs programação funcional! Vamos usar os dois!
+
+Gente, foi demais **mesmo**. Estou muito contente com o resultado do evento e de ter conhecido esse pessoal sensacional! Queria agradecer ao [Rogério Rodrigues](https://www.linkedin.com/in/rogeriorodrigues/), [Ramon Durães](https://www.linkedin.com/in/ramonduraes/), [Thamirys Gameiro](https://www.linkedin.com/in/thamirys-gameiro-5535a520/) e a toda equipe envolvida no evento, tudo ocorreu da melhor forma possível e tivemos um suporte excepcional para os palestrantes!
+
+Eu sei, estou escrevendo muitas exclamações, mas é porque foi sensacional mesmo, parabéns à toda equipe. Segue abaixo algumas imagens do evento e os slides das minhas apresentações.
+
+<div class="row">
+<div class="col s12">
+ <div class="carousel">
+    <a class="carousel-item" href=""><div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="https://imgur.com/Tvh4UBA" alt="Avatar">
+            </div></a>
+    <a class="carousel-item" href=""><div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="https://imgur.com/EVQ31HF" alt="Avatar">
+            </div></a>
+    <a class="carousel-item" href=""><div class="img-container img-container-itj">
+                <img class="img-image img-image-itj" src="https://imgur.com/R6NwZyI" alt="Avatar">
+            </div></a>
+  </div> 
+  </div> 
+</div>
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/vwfshAVAn9Mmgm" %}
+
+O que você achou deste post?
+
+Me conte nos comentários!
+
+E Até mais!
