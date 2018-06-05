@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visual Studio Summit 2018"
-date:   2019-06-04 00:00:00 +0000
+date:   2018-06-04 00:00:00 +0000
 comments: true
 tags: [Talks]
 ---
@@ -24,11 +24,12 @@ Gente, foi demais **mesmo**. Estou muito contente com o resultado do evento e de
 
 
 
-Eu sei, estou escrevendo muitas exclamações, mas é porque foi sensacional mesmo, parabéns à toda equipe. Segue abaixo a foto com toda galera do evento e os slides das minhas apresentações.
+Eu sei, estou escrevendo muitas exclamações, mas é porque foi sensacional mesmo, parabéns à toda equipe. Segue abaixo a foto com toda galera do evento e os slides das minhas apresentações (estou com problemas para subir no slideshare, então vai pelo google drive mesmo).
 
 {% include image.html link="https://imgur.com/R6NwZyI.jpg" alt="Alguns dos Palestrantes" width=90 %}
 
-<iframe src="https://drive.google.com/file/d/1X_tg2WM0va5hDGwVOmvg1KBLYBqWeCdc/preview" width="640" height="480"></iframe>
+{% include g-drive.html link="https://drive.google.com/file/d/1X_tg2WM0va5hDGwVOmvg1KBLYBqWeCdc/preview" %}
+
 
 O que você achou deste post?
 
