@@ -1,0 +1,203 @@
+---
+layout: post
+title:  "Documentação Viva com Swagger e .NET Core"
+date:   2018-06-18 00:00:00 +0000
+comments: true
+tags: [C#]
+---
+
+Olá pessoa!
+
+Hoje vamos tocar em um assunto que muita gente não gosta, mas é MUITO importante: **documentação**!
+
+<!--more-->
+
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/APICore" %} 
+
+Em um mundo integrado onde os sistemas se comunicam com muita frequência é difícil não precisarmos de uma documentação, eu sei, talvez você, como dev, não goste de ler isso. Mas é a verdade, além disso, a outra opção é você ter que conversar por telefone, e-mail ou sinal de fumaça com cada terceiro que fará a integração.
+
+Se você não gostou da segunda opção, é porque ela é bem ruim mesmo! Além de ser chato conversar sobre *endpoints* e esclarecer essas coisas por telefone, também não é um modelo exatamente escalável.
+
+O ideal é que sua aplicação tenha uma documentação própria e que todos os envolvidos em uma integração pudessem obter todas as informações necessárias através dela.
+
+Certo, vamos escrever um doc? -Não, por favor **não**.
+
+Não que escrever docs seja a pior coisa do mundo, spoiler: não são. Mas uma documentação deste tipo tende a ficar desatualizada com o tempo e uma documentação desatualizada serve para vários nadas. A documentação precisa ser **viva**, ou seja, software atualizou? Documentação precisa atualizar também!
+
+Existem diversas maneiras diferentes para criarmos uma documentação viva, uma delas é o **Swagger**.
+
+### Swagger
+
+O Swagger é um framework *open-source* para documentação de APIs, ele descreve os recursos disponíveis separando por *controllers* e *actions*, mostrando: parâmetros de entrada, retornos, códigos HTTP, autenticação e praticamente todas as informações de sua API.
+
+Existem várias ferramentas para auxiliar nesse processo de criar a documentação utilizando Swagger, você pode encontrá-las pela internet aos montes, o que vamos fazer aqui é um pouco diferente, vamos configurar nossa aplicação para que ela mesma gere a documentação com nossos *endpoints*!
+
+Vamos começar criando nossa aplicação .NET Core através do Visual Studio, na prática, se você criar a aplicação por linha de comando não verá nenhuma diferença, então sinta-se à vontade!
+
+{% include image.html link="https://i.imgur.com/egHI6Cr.jpg" alt="Projeto do tipo API" width=90 %}
+
+Com isso sua aplicação base é criada, contendo apenas o *ValueController*. Agora vamos preparar a aplicação para integração com o Swagger!
+
+O primeiro passo é instalarmos o pacote `SwashBuckle` em nossa aplicação:
+
+> PM> Install-Package Swashbuckle.AspNetCore
+
+Com os pacotes instalados já é possível configurar a documentação. Para isso, vamos para a classe `Startup`, responsável pela configuração dos serviços da aplicação. Faremos a alteração no método `ConfigureServices`, por padrão este método contará apenas com uma instrução de: `services.AddMvc();`. Nossa modificação acontecerá após essa instrução, conforme código:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+    services.AddSwaggerGen(options =>
+        options.SwaggerDoc("beta",
+            new Info
+            {
+                Title = "Exemplo de documentação",
+                Version = "beta",
+                Description = "Projeto ASP.Net Core",
+
+                Contact = new Contact
+                {
+                    Name = "Gabriel Schade",
+                    Url = "https://gabrielschade.github.io"
+                }
+            })
+    );
+}
+```
+Note que várias dessas informações você deverá preencher conforme o projeto, inclusive a versão (que informei como beta). Após isso, incluíremos algumas instruções no método `Configure`, essas configurações criam o *endpoint* para visualizarmos a documentação.
+
+```csharp
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+
+    app.UseMvc();
+    app.UseSwagger();
+    app.UseSwaggerUI(setup =>
+    {
+        setup.RoutePrefix = "swagger";
+        setup.SwaggerEndpoint("/swagger/beta/swagger.json", "Exemplo de documentação");
+    });
+}
+```
+
+Só com estas alterações já conseguimos visualizar a página de documentação online! Para isso precisamos acessar a página `"/swagger"`, conforme configurado anteriormente:
+
+{% include image.html link="https://i.imgur.com/tEbgRa2.jpg" alt="Página de documentação" width=90 %}
+
+A página gerada é totalmente interativa, podendo inclusive realizar chamadas à sua API, o que pode ser bastante útil para os consumidores das APIs.
+
+No entanto, ainda não configuramos um detalhe bastante importante, veja só como o *endpoint* `Values/{id}` está sendo visualizado na documentação:
+
+{% include image.html link="https://i.imgur.com/rYxnDki.jpg" alt="Página de documentação para o endpoint Values/(id)" width=90 %}
+
+Apesar da `action` estar listada, não conseguimos ver uma descrição humana da `action` ou de seus parâmetros. Felizmente podemos fazer isso através dos comentários do próprio código!
+
+```csharp
+/// <summary>
+/// Método para obter todos os valores disponíveis
+/// </summary>
+/// <returns>
+/// Retorna todos os valores
+/// </returns>
+[HttpGet]
+public IEnumerable<string> Get()
+{
+    return new string[] { "value1", "value2" };
+}
+
+/// <summary>
+/// Método para obter um valor específico
+/// </summary>
+/// <param name="id">Id do valor que será obtido</param>
+/// <returns>
+/// Retorna o valor de acordo com o Id informado
+/// </returns>
+[HttpGet("{id}")]
+public string Get(int id)
+{
+    return "value";
+}
+
+/// <summary>
+/// Método para publicar um valor de acordo com o parâmetro
+/// </summary>
+/// <param name="value">
+/// Valor que deve ser publicado
+/// </param>
+[HttpPost]
+public void Post([FromBody]string value)
+{}
+```
+Note que inclui descrições relativamente genéricas, claro que isso porque esta API é apenas um exemplo. Em aplicações reais é importante descrever todas as características principais para comunicação com sua API, sem exceção.
+
+Agora que já criamos os comentários precisamos informar para o Swagger a forma de carregâ-los. A primeira coisa a fazer é indicar em seu projeto, que você está gerando o arquivo XML com os comentários. Para fazer isso, acesse as propriedades de seu projeto e marque a opção: `"XML Documentation file"`, conforme imagem:
+
+{% include image.html link="https://i.imgur.com/ZR2Epnv.jpg" alt="Configurando a documentação XML" width=90 %}
+
+Por fim, vamos voltar ao método `ConfigureServices` e incluir as instruções na chamada ao método `AddSwaggerGen`, conforme código:
+
+```csharp
+services.AddSwaggerGen(options =>
+{
+    string caminhoAplicacao = PlatformServices.Default.Application.ApplicationBasePath;
+    string nomeAplicacao = PlatformServices.Default.Application.ApplicationName;
+    string caminhoDocumentacao = Path.Combine(caminhoAplicacao, $"{ nomeAplicacao}.xml");
+    options.IncludeXmlComments(caminhoDocumentacao);
+
+    options.SwaggerDoc("beta",
+        new Info
+        {
+            Title = "Exemplo de documentação",
+            Version = "beta",
+            Description = "Projeto ASP.Net Core",
+
+            Contact = new Contact
+            {
+                Name = "Gabriel Schade",
+                Url = "https://gabrielschade.github.io"
+            }
+        });
+});
+```
+
+Note que estou utilizando o caminho padrão para a documentação XML, caso você tenha escolhido outro caminho, é necessário incluí-lo aqui também.
+
+Agora sim, ao acessar a página de documentação você verá suas *actions* e parâmetros comentados!
+
+{% include image.html link="https://i.imgur.com/4vKbsT0.jpg" alt="Configurando a documentação XML" width=90 %}
+
+O mais legal é que o conceito de documentação viva realmente acontece aqui, vamos fazer o teste criando um novo `Controller`. Este controlador será responsável pelo recurso de clientes e teremos apenas um método: `ObterId`, este método receberá o CPF do cliente e retornará um identificador fictício, veja:
+
+```csharp
+[Route("api/Cliente")]
+public class ClienteController : Controller
+{
+    /// <summary>
+    /// Método para obter o Id do cliente por CPF
+    /// </summary>
+    /// <returns>
+    /// Retorna o Id do cliente
+    /// </returns>
+    [HttpGet]
+    public Guid ObterId(string CPF)
+        => Guid.NewGuid();
+}
+```
+
+Só criamos um controller normalmente, certo? -Certo! E mesmo assim, ele já estará disponível na documentação, conforme imagem:
+
+{% include image.html link="https://i.imgur.com/SKMbhTf.jpg" alt="Recurso de cliente na documentação" width=90 %}
+
+Você já pode inclusive testar seu método! Legal né?
+
+> Você pode encontrar a aplicação de exemplo com o Swagger configurado no meu [Github](https://github.com/gabrielschade/posts-blog/tree/master/APICore).
+O que você achou deste post?
+
+Me conte nos comentários!
+
+E Até mais!
