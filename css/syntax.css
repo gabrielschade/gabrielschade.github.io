@@ -59,5 +59,6 @@
 .highlight .bp { color: rgb(220,220,220); } /* Name.Builtin.Pseudo */
 .highlight .vc { color: #008080 } /* Name.Variable.Class */
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vglnk { color: rgb(214,157,133); font-family: Menlo, Monaco, "Courier New", monospace; } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
