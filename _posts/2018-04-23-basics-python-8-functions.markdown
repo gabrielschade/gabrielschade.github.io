@@ -219,14 +219,14 @@ Com isso passamos por todos os conceitos envolvidos na criação de uma função
 
 * Faça um programa que solicite dois números ao usuário e exiba a multiplicação deles. A multiplicação deve ser calculada em uma função.
 
-* Faça um programa que solicite ao usuário três números diferentes e exiba o dobro do maior número. Para fazer issos separe seu código em duas funções diferentes: Uma função para retornar o maior dos três números e outra função para dobrar o número.
+* Faça um programa que solicite ao usuário três números diferentes e exiba o dobro do maior número. Para fazer isso separe seu código em duas funções diferentes: Uma função para retornar o maior dos três números e outra função para dobrar o número.
 
 * Faça um programa que inicialize uma lista vazia, depois disso solicite 5 nomes diferentes ao usuário (utilize laço de repetição). Cada nome digitado deve ser adicionado à lista e por fim, todos os nomes devem ser escritos no console. Utilize uma função para solicitar e retornar o nome digitado, uma função para adicionar o nome à lista (passando o nome e a lista por parâmetro) e outra função para escrever todos os nomes no console.
 
 > **Atenção**
 > 
 > É fortemente recomendado que você tente fazer os exercícios antes de ver as respostas.
-> Você pode encontrar as respostas [aqui](https://github.com/gabrielschade/Python-Intro-Serie/blob/master/07-08-Funcoes.py), elas estão bem no fim no arquivo.
+> Você pode encontrar as respostas [aqui](https://github.com/gabrielschade/Python-Intro-Serie/blob/master/08-Funcoes.py), elas estão bem no fim no arquivo.
 
 O que achou do post? - Pratique mais até o próximo post da série!
 
