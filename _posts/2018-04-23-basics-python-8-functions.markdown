@@ -17,7 +17,7 @@ Vamos fazer isso com **funções**!
 
 {% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/08-Funcoes.py" %} 
 
-Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}).
 
 Este post talvez seja um pouco mais teórico que os anteriores, mas não se preocupe, vamos programar bastante aqui também!
 

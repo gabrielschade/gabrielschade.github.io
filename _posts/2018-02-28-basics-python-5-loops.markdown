@@ -15,7 +15,7 @@ Hoje veremos um recurso **muito** importante em qualquer linguagem de programaç
 
 {% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/05-Loops.py" %} 
 
-Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}).
 
 O último post antes deste explicou o funcionamento das listas e continuaremos a partir dele.
 

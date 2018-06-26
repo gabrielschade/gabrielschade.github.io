@@ -15,7 +15,7 @@ Mais um post na série para aprendizagem em Python, desta vez, vamos utilizar os
 
 {% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/07-Dicionario.py" %} 
 
-Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}).
 
 Já estamos trabalhando com listas e laços de repetição desde a lição 4, já está na hora de criarmos mais estruturas, desta vez, vamos usar os dicionários!
 
