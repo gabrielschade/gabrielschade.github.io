@@ -4,7 +4,7 @@ title:  "Extraindo dados da web - HTML"
 date:   2017-12-19 00:00:00 +0000
 comments: true
 tags: [F#]
-serie: Entenda o Mundo com Type Providers
+serie: Entenda o Mundo com F#
 ---
 
 Olá pessoa!
@@ -18,7 +18,7 @@ Esse tipo de raciocínio serve para qualquer desenvolvedor de qualquer plataform
 Hoje é um exemplo bastante claro, vamos propor um problema simples: *extrair dados da web*.
 <!--more-->
 
-Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com Type Providers.html %})
+Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com fsharp.html %})
 
 {% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/HtmlTypeProviderSample/HtmlTypeProviderSample/Program.fs" %} 
 

@@ -4,7 +4,7 @@ title:  "Extraindo dados da web - JSON"
 date:   2017-12-28 00:00:00 +0000
 comments: true
 tags: [F#]
-serie: Entenda o Mundo com Type Providers
+serie: Entenda o Mundo com F#
 ---
 
 Olá pessoa!

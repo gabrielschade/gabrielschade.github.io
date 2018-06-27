@@ -4,7 +4,7 @@ title:  "Extraindo dados do World Bank"
 date:   2018-07-02 00:00:00 +0000
 comments: true
 tags: [F#]
-serie: Entenda o Mundo com Type Providers
+serie: Entenda o Mundo com F#
 ---
 
 Olá pessoa!
@@ -16,7 +16,7 @@ Dessa vez vamos utilizar o World Bank Type Provider, talvez um dos mais poderoso
 É sério, tem muita informação mesmo. Que tal obter informações sobre o mundo através deste recurso?
 <!--more-->
 
-Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com Type Providers.html %})
+Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com fsharp.html %})
 
 A página do World Bank contém diversas informações sobre o projeto, incluindo indicadores e gráficos sobre os países. Você pode acessá-la [aqui](http://www.worldbank.org/en/about).
 
