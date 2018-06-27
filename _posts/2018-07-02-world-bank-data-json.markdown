@@ -111,7 +111,7 @@ Ok, temos os dados, mas o que faremos com eles?
 
 Bom, essa pergunta com certeza tem mais de uma resposta, mas quero mostrar um jeito prático para compartilhar esses dados com alguém não técnico, de forma que agregue valor para e com poucas mudanças no código.
 
-Na verdade, tudo que trocaremos é o divisor de colunas dos dados. Atualmente estamos utilizando um *pipe* (|) e vamos simplesmente alterar para ponto e vírgula.
+Na verdade, tudo que trocaremos é o divisor de colunas dos dados. Atualmente estamos utilizando um *pipe* `(|)` e vamos simplesmente alterar para ponto e vírgula.
 
 ```fsharp
 printfn "País;Capital;População;Homens;Mulheres;0-14 anos;15-64 anos;acima"

@@ -175,7 +175,7 @@ pre {
 pre code {
   padding: 0;
   font-size: 100%;
-  color: inherit;
+  color: rgb(220,220,220);
   background-color: transparent;
 }
 
