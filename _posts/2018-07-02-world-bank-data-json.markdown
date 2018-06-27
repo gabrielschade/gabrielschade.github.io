@@ -139,13 +139,13 @@ Mas podemos fazer com que o sistema operacional gere um arquivo para nós! Vamos
 
 Para fazer isso é super simples, abra o Prompt de Comandos, sim, vamos usar Command Line por aqui. A primeira instrução é super simples, basta irmos até a pasta do projeto:
 
-> cd "diretório de sua aplicação"
+> `cd "diretório de sua aplicação"`
 
 {% include image.html link="https://i.imgur.com/HZWTKaL.jpg" alt="Arquivos do projeto" width=90 %}
 
 Estando no diretório do arquivo *.fsproj* você será capaz de executá-lo com o comando:
 
-> dotnet run WorldBankTypeProviderSample
+> `dotnet run WorldBankTypeProviderSample`
 
 Com isso você consegue visualizar os resultados separados por ponto e vírgula no próprio console. Ok, mas cadê nosso arquivo?
 
@@ -153,7 +153,7 @@ Aqui que entra o sistema operacional, nós podemos fazer com que ele redirecione
 
 Então utilize novamente o comando, mas desta vez com a sintaxe para redirecionar em um arquivo CSV.
 
-> dotnet run WorldBankTypeProviderSample > paises.CSV
+> `dotnet run WorldBankTypeProviderSample > paises.CSV`
 
 {% include image.html link="https://i.imgur.com/DChH0F3.jpg" alt="Arquivos CSV gerado" width=90 %}
 
