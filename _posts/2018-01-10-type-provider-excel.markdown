@@ -4,6 +4,7 @@ title:  "Extraindo dados de uma planilha Excel - CSV"
 date:   2018-01-10 00:00:00 +0000
 comments: true
 tags: [F#]
+serie: Entenda o Mundo com Type Providers
 ---
 
 Olá pessoa!
@@ -18,6 +19,8 @@ Mas mesmo com toda a prática do mundo, eu ainda acho que C# não é a melhor li
 
 Três linhas de código, planilha do Excel em suas mãos.
 <!--more-->
+
+Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com Type Providers!.html %})
 
 {% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/CsvTypeProviderSample/CsvTypeProviderSample/Program.fs" %} 
 

@@ -4,6 +4,7 @@ title:  "Lição 9: Funções Lambda"
 date:   2018-06-25 00:00:00 +0000
 comments: true
 tags: [Python]
+serie: Programe em Python!
 ---
 
 Olá pessoa!
