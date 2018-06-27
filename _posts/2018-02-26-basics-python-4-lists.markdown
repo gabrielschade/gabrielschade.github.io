@@ -17,7 +17,7 @@ Você não precisa criar uma variável para cada item da lista! Como vimos no po
 
 {% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/04-Listas.py" %} 
 
-Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}).
 
 Assim como os exemplos descritos anteriores, todo tipo de informação que precisa ser agrupada em algum tipo de conjunto utiliza este recurso, um exemplo disso, foi a função `split` que vimos no post passado. Essa função resulta em uma série de valores que estão agrupados em uma única variável, uma lista.
 

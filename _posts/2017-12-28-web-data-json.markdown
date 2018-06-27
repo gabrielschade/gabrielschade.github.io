@@ -19,7 +19,7 @@ Mas a facilidade que o F# provê, permite criar isso com **três** linhas de có
 É sério, não tem enrolação, são só três linhas mesmo.
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs" %} 
+{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs" %} 
 
 É absurdamente fácil realizar esta tarefa através do `JsonTypeProvider`.
 
@@ -107,7 +107,7 @@ Veja o resultado:
 
 ![Resultado da extração dos dados](https://i.imgur.com/5Uvz01B.jpg)
 
-Você pode encontrar o código desenvolvido aqui no meu [Github](https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs).
+Você pode encontrar o código desenvolvido aqui no meu [Github](https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs).
 
 
 > **Atenção**

@@ -16,7 +16,7 @@ Que tal continuar?
 
 {% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/02-DesvioCondicional.py" %} 
 
-Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}).
 
 Agora que você já viu os tipos básicos e já trabalhou bastante com valores lógicos, iremos introduzir uma complexidade para nossos programas. Criaremos um desvio condicional, ou seja, vamos fazer com que o programa siga por um caminho ou outro de acordo com uma condição.
 

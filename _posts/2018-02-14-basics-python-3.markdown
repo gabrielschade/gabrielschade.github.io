@@ -15,7 +15,7 @@ Se você está acompanhando esta série, você já deve ser capaz de criar vari�
 
 {% include github-link.html link="https://github.com/gabrielschade/Python-Intro-Serie/blob/master/03-NoneStringList.py" %} 
 
-Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %})
+Este post faz parte de uma série! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/programe em python!.html %}).
 
 Vamos começar apresentando um novo tipo de valor, os valores `None`.
 
