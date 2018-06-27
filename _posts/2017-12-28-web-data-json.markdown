@@ -20,7 +20,7 @@ Mas a facilidade que o F# provê, permite criar isso com **três** linhas de có
 É sério, não tem enrolação, são só três linhas mesmo.
 <!--more-->
 
-Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com Type Providers!.html %})
+Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com Type Providers.html %})
 
 {% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/JsonTypeProviderSample/JsonTypeProviderSample/Program.fs" %} 
 
