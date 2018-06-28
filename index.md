@@ -9,7 +9,7 @@ parallax-text: >
      
      e reflexões 
 ---
-{% include huge-h2.html content="Últimas Postagens" css=".margin-low" %} 
+{% include huge-h2.html content="Últimas Postagens" css="margin-low" %} 
 {% include posts.html %} 
 
 {% include huge-h2.html content="Inscreva-se no meu Newsletter" %} 
