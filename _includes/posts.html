@@ -2,7 +2,7 @@
     <ul class="home-list" style="transform: translateX(0px);">
         <span style="display:none">{% increment limite %}</span>
         {% for post in site.posts %} 
-            {% if limite <= 5 %}
+            {% if limite <= 10 %}
                 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
                 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
                 {% if posttime <= nowunix %}
