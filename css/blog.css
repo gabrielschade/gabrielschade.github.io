@@ -528,7 +528,8 @@ h2.font-medium-large.img-title{
       margin-bottom:3.5rem; 
   }
 
-  ul.home-list .post-date{
+  ul.home-list .post-date,
+  .content-list-item .post-date{
       margin-bottom:5px;
   }
 
