@@ -170,6 +170,11 @@ h2.huge.margin-top-0{
     margin-bottom: 45px;    
 }
 
+h2.huge.margin-low{
+    margin-top: 15px;
+    margin-bottom: 0px;    
+}
+
 h2.huge.img-title{
     margin-top:35px;
     color:white;
@@ -517,14 +522,19 @@ h2.font-medium-large.img-title{
     color: #333;
     font-size: .8em;
     line-height: 1.6em;
-    margin-bottom: 30px;
-    margin-top: 15px;
   }
 
   .post-date{
       margin-bottom:3.5rem; 
   }
 
+  ul.home-list .post-date{
+      margin-bottom:5px;
+  }
+
+  ul.home-list .content-list-item{
+      margin-top:0;
+  }
   .post-serie-badge{
     font-weight: 300;
     font-size: 0.8rem;
