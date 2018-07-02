@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Me tornei um Microsoft MVP"
+date:   2018-07-03 00:00:00 +0000
+comments: true
+tags: [Discussões]
+---
+
+Olá pessoa!
+
+Venho aqui no blog compartilhar uma notícia muito legal.
+
+Acabei de receber a premiação Microsoft MVP na categoria Visual Studio and Development Technologies!
+<!--more-->
+
+Eu fiquei muito feliz em receber o e-mail dizendo que eu tinha me tornado um MVP.
+
+Se você me acompanha por aqui, já deve conhecer meu trabalho e minhas contribuições com a comunidade técnica, e é justamente essas contribuições que contam para o recebimento do prêmio.
+
+Na verdade, não existe muito uma fórmula, você vai contribuindo com a comunidade e uma hora ou outra o reconhecimento vem. Pelo menos foi assim comigo.
+
+Essa premiação existe faz mais ou menos uns 20 anos na Microsoft e de acordo com a própria Microsoft, os MVPs são: "líderes das comunidades que já demonstraram um compromisso exemplar ao ajudar os outros a obter o máximo de sua experiência com as tecnologias Microsoft. Eles compartilham sua paixão excepcional, o conhecimento do mundo real, e conhecimentos técnicos com a comunidade e com a Microsoft.”
+
+Muitos MVPs sempre foram referência para mim e agora, poder estar no mesmo grupo que eles é verdadeiramente uma honra, estou muito feliz e que venha o próximo ano!
+
+{% include image.html link="https://i.imgur.com/ES3ljsO.png" alt="Perfil MVP" width=90 %}
+
+E Até mais!
