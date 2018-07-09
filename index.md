@@ -1,16 +1,15 @@
 ---
-layout: home
+layout: default-2
 title: Home
-parallax-bg: /public/img/bg.png
-parallax-text: >
-     Dev,
-
-     ciência
-     
-     e reflexões 
 ---
 {% include huge-h2.html content="Últimas Postagens" css="margin-low" %} 
-{% include posts.html %} 
+{% include posts-cards.html %} 
 
-{% include huge-h2.html content="Inscreva-se no meu Newsletter" %} 
-{% include form-email.html %} 
+<a href="/posts-categoria" class="right light-font" style="
+    font-size: 28px;
+    margin-bottom: 45px;">Ver mais</a>
+
+<div class="card z-depth-3" style="padding: 15px;margin-top:75px;">
+    {% include huge-h2.html content="Inscreva-se no meu Newsletter" css="margin-top-0" %} 
+    {% include form-email.html %} 
+</div>
