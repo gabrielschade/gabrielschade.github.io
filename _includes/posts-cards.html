@@ -1,7 +1,7 @@
 <div class="row">
     <span style="display:none">{% increment limite-cards %}</span>
     {% for post in site.posts %} 
-        {% if limite <= 15 %}
+        {% if limite-cards <= 15 %}
             {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
             {% if posttime <= nowunix %}
