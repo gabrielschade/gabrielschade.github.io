@@ -41,7 +41,7 @@
                                     {% assign link = tag | replace: "#", "sharp" %}
                                     {% assign image = tag | replace: "#", "" %}
                                     <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
-                                        class="collection-item">
+                                        class="collection-item none-decoration" target="_blank">
                                         <img style="height:50px;width:55px;margin: 0 0 0 0;display: inline-block;" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="{{tag}}" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
                                     </a>
                                 {% endfor %}
