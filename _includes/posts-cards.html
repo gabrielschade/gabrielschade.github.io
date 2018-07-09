@@ -6,15 +6,15 @@
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
             {% if posttime <= nowunix %}
                 <div class="col m4 s12">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="public/img/EntendaoMundocomF.jpg">
-                            <span class="card-title">{{ post.title }}</span>
-                            <span class="post-date" style="font-size:18px;{{include._style}}">{% include postdate.html %}</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                        </div>
+                    <div class="card" style="padding:15px;">
+                        <span class="card-title" style="line-height: normal;">{{ post.title }}</span>
+                        <span class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{% include postdate.html %}</span>
                         <div class="card-content">
-                            <div class="post-excerpt" style="{{include._style}}">
+                            <div class="post-excerpt" style="{{include._style}} height: 150px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 6;
+                            -webkit-box-orient: vertical;">
                                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                             </div>
                         </div>
