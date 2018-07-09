@@ -38,7 +38,7 @@
                                 
                                 {% for tag in tags reversed %}
                                     {% assign link = tag | replace: "#", "sharp" %}
-                                    {% assign image = include.content | replace: "#", "" %}
+                                    {% assign image = tag | replace: "#", "" %}
                                     <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
                                         class="collection-item">
                                         <img style="height:50px;" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="{{tag}}" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
