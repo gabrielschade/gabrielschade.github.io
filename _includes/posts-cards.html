@@ -17,9 +17,8 @@
                             -webkit-box-orient: vertical;">
                                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                             </div>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
-                        <div class="card-action">
+                        <div class="card-action" style="max-height:65px">
                                 {% assign rawtags = "" %}
                                 {% assign ttags = post.tags | join:'|' | append:'|' %}
                                 {% assign rawtags = rawtags | append:ttags %}
@@ -39,9 +38,10 @@
                                 
                                 {% for tag in tags reversed %}
                                     {% assign link = tag | replace: "#", "sharp" %}
+                                    {% assign image = include.content | replace: "#", "" %}
                                     <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
                                         class="collection-item">
-                                        <img style="height:80px;" src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400" alt="" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
+                                        <img style="height:50px;" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="{{tag}}" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
                                     </a>
                                 {% endfor %}
                         </div>
