@@ -1,11 +1,12 @@
 <div class="row">
-    <span style="display:none">{% increment limite %}</span>
+    {% assign limite-cards = 0 %}
+    <span style="display:none">{% increment limite-cards %}</span>
     {% for post in site.posts %} 
         {% if limite <= 15 %}
             {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
             {% if posttime <= nowunix %}
-            <span style="display:none">{% increment limite %}</span>
+            <span style="display:none">{% increment limite-cards %}</span>
                 <div class="col m4 s12">
                     <a href="{{ post.url }}" style="text-decoration: none;">
                     <div class="card hoverable" style="padding:15px;cursor:pointer;">
