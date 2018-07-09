@@ -6,10 +6,11 @@
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
             {% if posttime <= nowunix %}
                 <div class="col m4 s12">
-                    <div class="card" style="padding:15px;">
+                    <a href="{{ post.url }}" style="text-decoration: none;">
+                    <div class="card hoverable" style="padding:15px;cursor:pointer;">
                         <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
                         <span class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{% include postdate.html %}</span>
-                        <div class="card-content">
+                        <div class="card-content" style="padding:15px 0;">
                             <div class="post-excerpt" style="{{include._style}} height: 150px;
                             overflow: hidden;
                             display: -webkit-box;
@@ -41,11 +42,12 @@
                                     {% assign image = tag | replace: "#", "" %}
                                     <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
                                         class="collection-item">
-                                        <img style="height:50px;" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="{{tag}}" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
+                                        <img style="height:50px;width:55px;margin: 0 0 0 0;display: inline-block;" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="{{tag}}" class="center circle icon z-depth-3 responsive-img activator card-profile-image mid-image">
                                     </a>
                                 {% endfor %}
                         </div>
                     </div>
+                    </a>
                 </div>
             {% endif %}
         {% endif %}        
