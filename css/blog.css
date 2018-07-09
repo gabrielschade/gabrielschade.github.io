@@ -617,6 +617,15 @@ h2.font-medium-large.img-title{
         transition: all 300ms;  
     }
 
-    
+.card .card-title{
+    font-size: 22px;
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 60px;
+    height: 60px;
+}    
 
 
