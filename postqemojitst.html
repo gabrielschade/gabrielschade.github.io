@@ -1,0 +1,42 @@
+<html>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8" id="affdex_elements" style="height: 480px; width:640px;"></div>
+        </div>
+        <div>
+            <button id="start" onclick="onStart()">Iniciar</button>
+            <button id="stop" onclick="onStop()">Parar</button>
+            <button id="reset" onclick="onReset()">Reiniciar</button>
+
+        </div>
+
+        <div>
+            <label>Pontos: </label>
+            <input type="checkbox" checked id="mostrarPontos" />
+            <input type="color" id="corPontos" value="#FFFFFF" />
+        </div>
+        <div>
+            <label>Retangulo: </label>
+            <input type="checkbox" checked id="mostrarRetangulo" />
+            <input type="color" id="corRetangulo" value="#036487" />
+        </div>
+        <div>
+            <label>Emoji: </label>
+            <input type="checkbox" checked id="mostrarEmoji" />
+        </div>
+        <div>
+            <label>Idade: </label>
+            <input type="checkbox" checked id="mostrarIdade" />
+            <input type="color" id="corTexto" value="#FFFFFF" />
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+<script src="https://download.affectiva.com/js/3.1/affdex.js" type="text/javascript"> </script>
+<script src="js/index.js" type="text/javascript"></script>
+
+</html>
