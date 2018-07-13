@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IA na Copa do Mundo"
-date:   2018-07-03 00:00:00 +0000
+date:   2018-07-16 00:00:00 +0000
 comments: true
 tags: [IA]
 ---
