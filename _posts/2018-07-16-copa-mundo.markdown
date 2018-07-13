@@ -126,20 +126,20 @@ Agora vamos fazer nossos testes para medir as emoções na copa do mundo!
 
 <div class="row">
 <div class="col s12">
- <div class="carousel">
-    <a class="carousel-item">
+ <div class="carousel" style="height:450px;margin-bottom:40px;margin-top:-150px;">
+    <a class="carousel-item" href="https://imgur.com/Zk499oe.png" target="_blank">
         <img src="https://imgur.com/Zk499oe.png">
     </a>
-    <a class="carousel-item">
+    <a class="carousel-item" href="https://imgur.com/GKNb59z.png" target="_blank">
         <img src="https://imgur.com/GKNb59z.png">
     </a>
-    <a class="carousel-item">
+    <a class="carousel-item" href="https://imgur.com/O2HEwaD.png" target="_blank">
         <img src="https://imgur.com/O2HEwaD.png">
     </a>
-    <a class="carousel-item">
+    <a class="carousel-item" href="https://imgur.com/5BDO9ey.png" target="_blank">
         <img src="https://imgur.com/5BDO9ey.png">
     </a>
-    <a class="carousel-item">
+    <a class="carousel-item" href="https://imgur.com/0TbgQsc.png" target="_blank">
         <img src="https://imgur.com/0TbgQsc.png">
     </a>
   </div>
