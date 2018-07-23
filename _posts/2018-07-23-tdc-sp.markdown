@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "O TDC São Paulo foi incrível!"
+date:   2018-07-23 00:00:00 +0000
+comments: true
+tags: [Talks]
+---
+
+Olá pessoa!
+
+Nessa última semana eu estava no The Developer's Conference em São Paulo!
+
+<!--more-->
+
+Se você não conhece o evento, eu recomendo **muito** que se informe, é sério. O evento é um lugar ótimo para assistir palestras de alto nível, encontrar com a comunidade e claro, fazer muito networking! Você pode encontrar mais informações no [site do evento](http://www.thedevelopersconference.com.br/tdc/2018/).
+
+Eu palestrei nas trilhas .NET (terça-feira), Arquitetura .NET (quarta-feira) e Programação Funcional (sábado). Além disso, também estava na coordenação da trilha TDC4KIDS (sábado), um espaço reservado para atividades com crianças e jovens.
+
+Primeiro fica aqui meu agradecimento por toda equipe de organização do evento, estava impecável. Tudo correu muito bem e como o título do post já sugere, o evento foi incrível!
+
+Também queria agradecer toda a equipe que fez o TDC4Kids acontecer! Voluntários, palestrantes e nossa equipe na UNIVALI, fica aqui meu gigante **obrigado** a cada um de vocês.
+
+Por fim, conforme sempre é pedido, seguem os meus slides das palestras de cada uma das trilhas!
+
+{% include huge-h2.html content="Programação Funcional usando C#" %}
+
+Nesta palestra eu mostrei alguns conceitos fundamentais sobre programação funcional utilizando C#, essa palestra é muito parecida com a que foi ministrada no Visual Studio Summit.
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/4dfpne0qPIQRek" %}
+
+{% include huge-h2.html content="Primeiro passos com React Native" %}
+
+Nesta palestra Leornado Prange deu uma boa introdução do React Native com direito à exemplo de código e tudo!
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/DQxoNLPIwEtdNw" %}
+
+
+O que você achou deste post?
+
+Me conte nos comentários!
+
+E Até mais!
