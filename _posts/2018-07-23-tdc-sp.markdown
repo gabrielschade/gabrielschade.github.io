@@ -28,15 +28,19 @@ Nesta palestra eu mostrei alguns conceitos fundamentais sobre programação func
 
 {% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/4dfpne0qPIQRek" %}
 
-{% include huge-h2.html content="Primeiro passos com React Native" %}
+{% include huge-h2.html content="Arquitetura Limpa com .NET Core" %}
 
-Nesta palestra Leornado Prange deu uma boa introdução do React Native com direito à exemplo de código e tudo!
+Nesta palestra eu mostrei os conceitos principais de uma arquitetura limpa (ou hexagonal, ou ports and adapters) utilizando uma aplicação em .NET Core com as linguagens C# e F#.
 
-{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/DQxoNLPIwEtdNw" %}
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/aKz7voI4d4Uhhu" %}
+
+{% include huge-h2.html content="Programação Funcional para Humanos" %}
+
+Na última palestra mostrei algumas implementações funcionais com as linguagens C# e F#, incorporando exemplos práticos para tirarmos valor deste paradigma no ambiente .NET.
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/6hF8xbh5DKv8TE" %}
 
 
-O que você achou deste post?
+O que você achou das palestras? -Poste um feedback nos comentários!
 
-Me conte nos comentários!
-
-E Até mais!
+E até o próximo post!
