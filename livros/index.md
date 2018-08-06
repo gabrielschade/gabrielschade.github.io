@@ -6,5 +6,5 @@ title: Home
 {% include livros.html %} 
 
 {% include huge-h2.html content="Gratuitos" css="margin-low" %} 
-<!-- {% include livros-gratuitos.html %}  -->
+
 
