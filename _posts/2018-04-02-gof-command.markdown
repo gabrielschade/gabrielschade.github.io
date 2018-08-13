@@ -50,7 +50,7 @@ Vamos para as implementações!
 
 ### Implementação utilizando Orientação à Objetos
 
-Bom, vamos fazer as implementações seguinda a estrutura do padrão!
+Bom, vamos fazer as implementações seguindo a estrutura do padrão!
 
 Primeiro começaremos com a especificação do comando, em orientação à objeto faremos isso através de uma interface!
 
