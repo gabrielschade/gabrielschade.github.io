@@ -12,8 +12,6 @@ Já pensou em criar uma aplicação React e fazer toda a publicação do *front-
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/CSharp-Patterns/tree/master/Decorator" %} 
-
 Geralmente eu publico sobre tecnologias *back-end*, mas isso não significa que eu não vai ter conteúdo de *front-end* ou *devops* por aqui, viu?
 
 Esta publicação vai fazer um passo a passo para, criarmos uma aplicação React e deixarmos ela disponível na Web!
