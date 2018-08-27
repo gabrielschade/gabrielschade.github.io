@@ -80,6 +80,8 @@ Agora é só acessar a url informada no retorno do comando e pronto!
 
 Com isso finalizamos nossa publicação! 
 
+> Agradecimentos especiais para o [Leo Prange](https://github.com/leonardoprange) que foi quem me mostrou essas ferramentas e que também está me dando uma força monstra com React <3.
+
 O que achou?
 
 Alguma sugestão? Gostou deste tipo de post?
