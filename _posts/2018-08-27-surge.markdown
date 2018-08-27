@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Publicando seu React Web App em 10 segundos"
+date:   2018-08-27 00:00:00 +0000
+comments: true
+tags: [React]
+serie: Design Patterns
+---
+
+Olá pessoa!
+
+Já pensou em criar uma aplicação React e fazer toda a publicação do *front-end* em 10 segundos? -Pois é, com **Surge** é bem fácil.
+
+<!--more-->
+
+{% include github-link.html link="https://github.com/gabrielschade/CSharp-Patterns/tree/master/Decorator" %} 
+
+Geralmente eu publico sobre tecnologias *back-end*, mas isso não significa que eu não vai ter conteúdo de *front-end* ou *devops* por aqui, viu?
+
+Esta publicação vai fazer um passo a passo para, criarmos uma aplicação React e deixarmos ela disponível na Web!
+
+> **Atenção**
+>
+> Você precisará do [npm](https://www.npmjs.com/) instalado em sua máquina, caso ainda não tiver, é só clicar no link!
+
+Vamos começar criando nossa aplicação React. Para fazer isso, estou utilizando o editor **Visual Studio Code**, ele é gratuito e pode ser baixado [neste link](https://code.visualstudio.com/). 
+
+Com o VSCode aberto, abra o terminal de *command line*, utilize a Command Pallete (Ctrl + Shift + P) e selecione a opção *Terminal: Create New Integrated Terminal*. Se preferir, também pode fazer isso pelo prompt de comandos do Windows.
+
+Navegue até a pasta desejada e crie a aplicação através do comando `create-react-app` + nome da aplicação, conforme imagem:
+
+{% include image.html link="https://i.imgur.com/J54aAHF.png" alt="Create-react-app" width=90 %}
+
+Não se assuste, esse processo de criar a aplicação, demora um pouco mesmo.
+
+Agora que a aplicação está criada você pode fazer sua mágica, implemente o que bem entender, afinal, esse não é assunto da publicação.
+
+Ok, já terminei de implementar tudo que eu queria, como publicar?
+
+**Simples**, usando o [Surge](http://surge.sh/).
+
+Para fazer isso, precisamos instalá-lo (esse vai ser bem mais rapidinho):
+
+```
+npm install surge
+```
+
+Agora já temos como subir nossa aplicação, só precisamos construí-la. Para fazer isso, também vamos utilizar o console, mas dessa vez, precisamos navegar um diretório.
+
+Estamos na pasta: `Publicar-react`, mas para construirmos, precisamos navegar até a pasta da aplicação, no meu exemplo: `exemplo-react`, conforme código:
+
+```
+cd .\exemplo-react\
+```
+
+Depois de navegar para a pasta da aplicação, execute o script para construir a Web App:
+
+```
+npm run build
+```
+
+Se tudo ocorreu bem, você deve encontrar a pasta *build* em seu projeto, conforme imagem:
+
+{% include image.html link="https://i.imgur.com/Elcc6As.png" alt="Aplicação construída" width=90 %}
+
+Agora vamos começar nosso processo de publicação.
+
+Comece navegando para a pasta build:
+
+```
+cd build
+```
+
+Agora execute o comando `surge`, ele irá pedir credenciais para o cadastro, quando o comando terminar sua aplicação estará no ar. E é sério, não tem mais nenhum passo:
+
+{% include image.html link="https://i.imgur.com/n9gFmcM.png" alt="Aplicação sendo publicada" width=90 %}
+
+Agora é só acessar a url informada no retorno do comando e pronto!
+
+{% include image.html link="https://i.imgur.com/l9aqUpR.png" alt="Aplicação publicada" width=90 %}
+
+Com isso finalizamos nossa publicação! 
+
+O que achou?
+
+Alguma sugestão? Gostou deste tipo de post?
+
+Me conte nos comentários!
+
+E Até mais!
