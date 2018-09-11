@@ -87,7 +87,7 @@ Por fim, temos o pattern matching para estruturas de dados, este é um caso que 
 
 <h2>
 <span>Implementação proposta</span>
-<a tabindex="-1" href="#implementacao"></a>
+<a name="implementacao" tabindex="-1" href="#implementacao"></a>
 </h2> 
 
 Vamos deixar uma coisa clara, a base de inspiração dessa implementação foi o pattern matching do F#, então vamos fazer algumas comparações por aqui, usando os exemplos da introdução, beleza?
