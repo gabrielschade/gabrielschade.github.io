@@ -273,6 +273,12 @@ string codigo =
 
 Bom pessoal, este é o estágio em que o pattern matching está, assim que eu gostar mais dele vou incluí-lo na `Tango`, por enquanto, ainda fica só como experimentação!
 
+Problemas que ainda existem:
+
+1. Não está suportando pattern matching com coleção de dados separando Head e Tail;
+1. Para pattern matching com classes derivadas preciamos fazer a comparação com `is` duas vezes;
+1. Todas condições são validadas antes do Match executar (essa dá para resolver transformando o parâmetro de bool? para Func<bool?>, mas ainda não tenho certeza do quanto gosto disso)
+
 Me mandem feedbacks, gostaram? Acharam que ficou ruim? Sugestões? Críticas?
 
 - Bom, me conte nos comentários!
