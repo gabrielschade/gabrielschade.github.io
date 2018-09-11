@@ -3,7 +3,7 @@ layout: post
 title:  "Criando um Pattern Matching em C#"
 date:   2018-09-11 00:00:00 +0000
 comments: true
-tags: [C#]
+tags: [C#, F#]
 ---
 
 Olá pessoa!
@@ -23,7 +23,7 @@ Primeiro vale citar uma pequena explicação sobre o pattern matching:
 
 ## Introdução
 
-Primeiro vale uma introdução geral sobre pattern matchings em F#, se você já domina este assunto, fique à vontade para pular para a [implementação proposta na próxima seção]({{ site.baseurl }}{% link _posts/2019-09-11-pattern-matching.markdown#implementacao %}).
+Primeiro vale uma introdução geral sobre pattern matchings em F#, se você já domina este assunto, fique à vontade para pular para a [implementação proposta na próxima seção](#implementacao).
 
 Vamos começar com um pattern matching "comum" em F#, algo similar à um desvio condicional, veja:
 
