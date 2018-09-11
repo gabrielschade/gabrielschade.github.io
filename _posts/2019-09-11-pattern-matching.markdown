@@ -85,9 +85,9 @@ let codigo =
 
 Por fim, temos o pattern matching para estruturas de dados, este é um caso que possui várias particularidades. A principal delas é que o próprio pattern matching separa o primeiro elemento do resto da estrutura, facilitando a implementação de funções recursivas. Infelizmente o pattern matching proposto neste post **ainda** não cobre esta funcionalidade.
 
+<a name="implementacao" tabindex="-1" href="#implementacao"></a>
 <h2>
 <span>Implementação proposta</span>
-<a name="implementacao" tabindex="-1" href="#implementacao"></a>
 </h2> 
 
 Vamos deixar uma coisa clara, a base de inspiração dessa implementação foi o pattern matching do F#, então vamos fazer algumas comparações por aqui, usando os exemplos da introdução, beleza?
@@ -262,8 +262,10 @@ public class PessoaJuridica : Pessoa
 Pessoa pessoaFisica = new PessoaFisica() {CPF = "12312312" };
 string codigo =
     Match(
-        (pessoaFisica is PessoaFisica,   () => pessoaFisica is PessoaFisica pf ? pf.CPF : ""),
-        (pessoaFisica is PessoaJuridica, () => pessoaFisica is PessoaJuridica pj ? pj.CNPJ : "")
+        (pessoaFisica is PessoaFisica,   () => pessoaFisica is PessoaFisica pf ? 
+                                               pf.CPF : ""),
+        (pessoaFisica is PessoaJuridica, () => pessoaFisica is PessoaJuridica pj ? 
+                                               pj.CNPJ : "")
     );
 ```
 
