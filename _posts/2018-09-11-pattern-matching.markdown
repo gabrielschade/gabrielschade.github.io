@@ -273,7 +273,7 @@ string codigo =
 
 Bom pessoal, este é o estágio em que o pattern matching está, assim que eu gostar mais dele vou incluí-lo na `Tango`, por enquanto, ainda fica só como experimentação!
 
-Problemas que ainda existem:
+**Problemas que ainda existem**:
 
 1. Não está suportando pattern matching com coleção de dados separando Head e Tail;
 1. Para pattern matching com classes derivadas preciamos fazer a comparação com `is` duas vezes;
