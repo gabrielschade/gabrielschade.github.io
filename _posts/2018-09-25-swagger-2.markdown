@@ -1,0 +1,172 @@
+---
+layout: post
+title:  "Swagger e .NET Core - Parte 2"
+date:   2018-09-25 00:00:00 +0000
+comments: true
+tags: [C#]
+---
+
+Olá pessoa!
+
+Um tempo atrás publiquei um post sobre como criar uma documentação viva com Swagger e .NET Core! Que tal melhorarmos um pouco a documentação gerada?
+
+<!--more-->
+
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/APICore" %} 
+
+
+Este post faz parte é a continuação de outro, então, é super recomendado que antes de continuar sua leitura você tenha lido a primeira parte. Se você ainda não leu, tudo bem, é só ler clicando [aqui]({{ site.baseurl }}{% link _posts/2018-06-18-swagger.markdown %}) e depois voltar. 
+
+No último post terminamos criando o método `ObterId` no nosso `ClienteController`, esta ação retorna um `Guid`, mas vamos para uma aplicação um pouco mais real. 
+
+Vamos fazer uma *action* que vai simular a atualização de um cliente no banco de dados. Não vamos implementar realmente todos os passos, mas o conceito será o mesmo.
+
+Vamos criar um objeto de response que nossa *action* receberá por parâmetro:
+
+```csharp
+public class ClienteRequest
+{
+    public Guid Id { get; set; }
+    public string Nome { get; set; }
+    public string Sobrenome { get; set; }
+    public DateTime DataNascimento { get; set; }
+}
+```
+Para deixar nossa documentação mais rica, é recomendável incluir os comentários para identificar os campos:
+
+```csharp
+public class ClienteRequest
+{
+    /// <summary>
+    /// Id do cliente que será atualizado
+    /// </summary>
+    public Guid Id { get; set; }
+
+    /// <summary>
+    /// Nome do cliente
+    /// </summary>
+    public string Nome { get; set; }
+
+    /// <summary>
+    /// Sobrenome do cliente
+    /// </summary>
+    public string Sobrenome { get; set; }
+
+    /// <summary>
+    /// Data de nascimento do cliente
+    /// </summary>
+    public DateTime DataNascimento { get; set; }
+}
+```
+Vamos criar a *action* e utilizar este request!
+
+```csharp
+/// <summary>
+/// Atualiza o cliente informado no parâmetro
+/// </summary>
+/// <param name="clienteRequest">Informações para atualizar o cliente</param>
+/// <returns>
+/// Retorna o response do cliente atualizado
+/// </returns>
+[HttpPost]
+public IActionResult Atualizar(ClienteRequest clienteRequest)
+{
+    throw new NotImplementedException();
+}
+```
+Agora, vamos ver a documentação!
+
+{% include image.html link="https://i.imgur.com/PYBqFA8.jpg" alt="Documentação do Request" width=90 %}
+
+A próxima implementação é retornarmos um `ClienteResponse`, vamos lá:
+
+```csharp
+public class ClienteResponse
+{
+    public Guid Id { get; set; }
+    public string NomeCompleto { get; set; }
+    public DateTime DataNascimento { get; set; }
+}
+```
+
+Nesse caso substituí as propriedades `Nome` e `Sobrenome` por uma única propriedade chamada `NomeCompleto`, dessa forma conseguimos diferenciá-lo do request.
+
+Em nossa *action* vamos fazer uma pequena implementação, caso o `Id` informado no request esteja vazio, devemos retornar um 404 (Not found), caso contrário, um 200 (Ok) com um objeto de response:
+
+```csharp
+[HttpPost]
+public IActionResult Atualizar(ClienteRequest clienteRequest)
+{
+    if (clienteRequest.Id != Guid.Empty)
+        return Ok(new ClienteResponse()); 
+    else
+        return NotFound();
+}
+```
+Vamos dar uma olhada em como está nossa documentação:
+
+{% include image.html link="https://i.imgur.com/nuwZT57.jpg" alt="Documentação do Response" width=90 %}
+
+Ué, o que houve aqui?
+
+Bom, o que acontece é que chegamos no ponto em que os mecanismos automáticos não conseguem mais detectar tudo sozinho. Precisamos dar uma forcinha para a documentação.
+
+O problema para a documentação é que o retorno informado é um `IActionResult`, então ele fica incapaz de detectar as variações possíveis. Mas podemos fazer isso através de anotações no método e comentários!
+
+Podemos identificar as respostas através da anotação `ProducesResponseType`, basta colocá-la acima do método, da mesma forma que a anotação `HttpPost`.
+
+```csharp
+[HttpPost]
+[ProducesResponseType(typeof(ClienteResponse), 200)]
+[ProducesResponseType(404)]
+[ProducesResponseType(500)]
+public IActionResult Atualizar(ClienteRequest clienteRequest)
+{
+  //...
+}
+```
+Com isso já temos um resultado melhor, mas podemos ir um pouco mais longe, basta inserirmos a tag `response` nos comentários, identificando o `code` e a mensagem:
+
+```csharp
+/// <summary>
+/// Atualiza o cliente informado no parâmetro
+/// </summary>
+/// <param name="clienteRequest">Informações para atualizar o cliente</param>
+/// <returns>
+/// Retorna o response do cliente atualizado
+/// </returns>
+/// <response code="200">Cliente Atualizado</response>
+/// <response code="404">Não foi possível encontrar um cliente com o Id informado</response>
+/// <response code="500">Erro no servidor</response>
+[HttpPost]
+[ProducesResponseType(typeof(ClienteResponse), 200)]
+[ProducesResponseType(404)]
+[ProducesResponseType(500)]
+public IActionResult Atualizar(ClienteRequest clienteRequest)
+{
+    //...
+}
+```
+Note que o `code` da tag `response` é responsável por indicar qual mensagem será utilizada para qual código HTTP.
+
+Vamos entrar novamente na documentação e ver o resultado:
+
+{% include image.html link="https://i.imgur.com/2zu2WjF.jpg" alt="Documentação do Response completa" width=90 %}
+
+Existem várias outras formas de fazermos isso, inclusive a própria biblioteca possui uma extensão para anotações, com isso, você poderá utilizar constantes na anotação do método, evitando cópias de textos das ações.
+
+Mas quem sabe falamos disso em um post futuro, porque por hoje é só!
+
+> **Atenção**
+> Você pode encontrar a aplicação de exemplo com o Swagger configurado no meu [Github](https://github.com/gabrielschade/posts-blog/tree/master/APICore).
+
+
+O que achou?
+
+Alguma sugestão para posts futuros? 
+
+Gostou deste tipo de post?
+
+Me conte nos comentários!
+
+E Até mais!
