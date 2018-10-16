@@ -20,17 +20,17 @@ Como assim, com seus emojis? -Eu explico.
 
 A aplicação de detecção facial é capaz de mostrar e detectar uma série de coisas:
 
-* Retângulo ao redor da face;
-* Pontos da face;
-* Índices dos pontos da face;
-* Linhas;
-* Estimativa de idade;
-* Estimativa de gênero;
-* **Emoji** baseado na emoção expressada;
+- Retângulo ao redor da face;
+- Pontos da face;
+- Índices dos pontos da face;
+- Linhas;
+- Estimativa de idade;
+- Estimativa de gênero;
+- **Emoji** baseado na emoção expressada;
 
 Uma versão bastante similar desta aplicação também foi exibida pela Resource (empresa que trabalho) no SAP Fórum, também em São Paulo, em nosso estande.
 
-{% include image.html link="https://i.imgur.com/dBgwWas.png" alt="SAP Forum" width=90 %}
+{% include image.html link="https://i.imgur.com/eyx8dga.png" alt="SAP Forum" width=50 %}
 
 Como essa aplicação foi construída? Tensorflow ou Azure ML?
 
