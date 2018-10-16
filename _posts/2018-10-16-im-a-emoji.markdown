@@ -1,0 +1,64 @@
+---
+layout: post
+title:  "Olá, eu sou um emoji"
+date:   2018-10-16 00:00:00 +0000
+comments: true
+tags: [IA]
+---
+
+Olá pessoa!
+
+Hoje trouxe um aplicativo que criei faz um tempinho utilizando JavaScript com IA!
+
+<!--more-->
+
+{% include github-link.html link="https://im-a-emoji.surge.sh/" %} 
+
+Algum tempo atrás fiz uma publicação sobre o TDC-São Paulo, entre tantas coisas incríveis, tivemos uma aplicação com detecção facial no TDC 4Kids para as crianças brincarem com seus emojis!
+
+Como assim, com seus emojis? -Eu explico.
+
+A aplicação de detecção facial é capaz de mostrar e detectar uma série de coisas:
+
+* Retângulo ao redor da face;
+* Pontos da face;
+* Índices dos pontos da face;
+* Linhas;
+* Estimativa de idade;
+* Estimativa de gênero;
+* **Emoji** baseado na emoção expressada;
+
+Uma versão bastante similar desta aplicação também foi exibida pela Resource (empresa que trabalho) no SAP Fórum, também em São Paulo, em nosso estande.
+
+{% include image.html link="https://i.imgur.com/dBgwWas.png" alt="SAP Forum" width=90 %}
+
+Como essa aplicação foi construída? Tensorflow ou Azure ML?
+
+Na verdade, nenhum dos dois!
+
+Estou utilizando a biblioteca JavaScript da [affectiva](https://www.affectiva.com/)! Ela é super simples e roda totalmente client-side. Então nem precisamos de um webserver no ar para manter nossa aplicação!
+
+Na verdade, fiz a publicação dela utilizando o [**surge**]({{ site.baseurl }}{% link _posts/2018-08-27-surge.markdown %}), você pode acessar a versão final [neste link](https://im-a-emoji.surge.sh/), é só clicar e usar!
+
+{% include image.html link="https://i.imgur.com/yfQenQn.png" alt="I'm a Emoji" width=90 %}
+
+Para bater uma foto com o aplicativo, basta seguir alguns passos:
+
+1. Utilizar o navegador Google Chrome (para desktops);
+2. Pressionar o botão para ligar a câmera (e permitir que o site utilize a câmera do dispositivo);
+3. Configurar as propriedades de exibição na barra lateral;
+4. Pressionar o botão para bater a foto OU sorrir OU fechar os olhos por um instante (as duas últimas opções ativam a câmera automaticamente);
+5. Agora é só compartilhar a foto!
+
+A biblioteca da Affectiva não possui todas as funcionalidades deste app nativas, mas naturalmente é possível chegar nessa solução completa utilizando ela, algumas coisa só vão dar um pouquinho mais de trabalho, como desenhar as ligas ou o retângulo.
+
+Você pode conferir toda a documentação da biblioteca [neste link](https://knowledge.affectiva.com/v3.2/docs/analyze-the-camera-stream-3).
+
+
+E claro, sinta-se à vontade para utilizar este projeto em qualquer evento, por qualquer motivo (só peço para deixar os créditos).
+
+Nos vemos no próximo post!
+
+Alguma sugestão? Me conte nos comentários!
+
+E Até mais!
