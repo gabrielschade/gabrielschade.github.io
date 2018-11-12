@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fiz uma Live no canal .NET!"
+title:  "Azure Machine Learning Studio - Apresentação"
 date:   2018-11-12 00:00:00 +0000
 comments: true
 tags: [IA]
