@@ -3,7 +3,7 @@ layout: post
 title:  "Fiz uma Live no canal .NET!"
 date:   2018-11-12 00:00:00 +0000
 comments: true
-tags: [C#]
+tags: [IA]
 ---
 
 Olá pessoa!
