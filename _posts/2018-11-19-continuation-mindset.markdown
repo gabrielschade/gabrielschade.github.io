@@ -301,7 +301,29 @@ public int ContinueCom(int valor, Func<int, int> lambda)
 
 Legal né?
 
-Nos vemos no próximo post!
+Para fazer isso geralmente criamos estruturas que provêem um suporte para continuação de uma maneira mais agradável, até porque, como vimos neste post, isso pode ser bastante trabalhoso.
+
+O mesmo se aplica ao F#:
+
+```fsharp
+let continueCom (valor, lambda) =
+    printfn "%i" valor
+    valor |> lambda
+```
+
+Com exceção de um **grande** ponto positivo para o F#, na verdade, no caso do F#, podemos incluir um comportamento na atribuição! Então podemos continuar utilizando o `let` e colocar alguma funcionalidade lá!!
+
+Mas isso vai ficar para um próximo post!
+
+Fazendo um resumão do post hoje:
+
+1. Foi mostrado como tornar as funções mais abstratas, permitindo que o usuário da funções decida o destino dela;
+2. Vimos que atribuição e Continuation são equivalentes;
+3. Por conta da equivalência, vimos que podemos escrever a mesma coisa dos dois modos;
+4. Vimos que através de Continuations podemos incluir funcionalidades em uma atribuição;
+5. No próximo post sobre este assunto veremos como incluir uma funcionalidade no `bind` do F# através das computation express!
+
+O que acharam deste post de programação com um pouco mais de teoria?
 
 Alguma sugestão? Me conte nos comentários!
 
