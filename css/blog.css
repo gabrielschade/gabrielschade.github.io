@@ -419,6 +419,15 @@ h2.font-medium-large.img-title{
     }
   }
 
+  @media (min-width: 100em){
+    .content {
+        margin-left: 18rem;
+        margin-right: 1rem;
+        max-width: 110rem;
+        width:75%
+    }
+  }
+
   a.brand-logo:hover,
   a.brand-logo:focus{
       text-decoration: none;
