@@ -183,7 +183,6 @@ auditor{
 Na prática, alteramos a foram de escrever nosso método, mas a compilação transformará as duas soluções na mesma coisa. Esta é só uma forma mais familiar de escrevermos código escondendo uma complexidade.
 
 > **Atenção**
->
 > Um disclaimer importante é: vamos conversar sobre os métodos possíveis e o que é este "bloco" utilizado como exemplo aqui.
 > O tema é relativamente complexo, então vamos seguir um passo de cada vez. Por vezes estou utilizando simplificações para facilitar o entendimento.
 
