@@ -211,7 +211,6 @@ Ainda parece confuso? Vamos fazer exemplos simples de equivalências, primeiro e
 
 ```fsharp
 //Binding
-
 let funcao = 
     let a = 5
     let b = 10
