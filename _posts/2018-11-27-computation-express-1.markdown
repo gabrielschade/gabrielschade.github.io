@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Criando uma sintaxe mais limpa para o binding"
+title:  "Criando uma sintaxe mais limpa para o Bind"
 date:   2018-11-27 00:00:00 +0000
 comments: true
 tags: [F#, C#]
@@ -14,7 +14,7 @@ No post da semana passada falei um pouco sobre o mindset para criarmos um `Conti
 
 É bem importante que você entende a equivalência entre *binding* e expressões lambda, com isso, ficará muito mais claro entender como (e porque) a sintaxe mostrada funciona.
 
-<!--aqui-->
+O post completo pode ser acessado clicando [aqui]({{ site.baseurl }}{% link _posts/2018-11-19-continuation-mindset.markdown %}), mas vou fazer uma recaptulação rápida.
 
 O principal ponto é você entender que estas duas implementações, apesar de sintaticamente diferentes, representam a mesma coisa:
 
