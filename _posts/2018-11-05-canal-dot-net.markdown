@@ -12,7 +12,9 @@ Se você me acompanha nas redes sociais, deve ter notado que algum tempo atrás 
 
 <!--more-->
 
-Eu tenho falado com frequência de programação funcional por aqui e em alguns eventos técnicos, dessa vez, apareci lá pelo canal .NET, que inclusive, recomendo se tornar inscrito, caso ainda não seja.
+Eu tenho falado com frequência de programação funcional por aqui e em alguns eventos técnicos, dessa vez, apareci lá pelo [canal .NET](https://www.youtube.com/channel/UCIahKJr2Q50Sprk5ztPGnVg), que inclusive, recomendo se tornar inscrito, caso ainda não seja.
+
+Fica aqui meu agradecimento para o MVP [Renato Groffe](https://www.linkedin.com/in/renatogroffe/), pelo convite e espaço lá no canal.
 
 Fizemos um live sobre programação funcional utilizando C#, mostrando alguns conceitos:
 
