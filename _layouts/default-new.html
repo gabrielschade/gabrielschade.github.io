@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head-new.html %}
+{% include head-new.html %}
 
-  <body>
-      {{ content }}
-      
-    {% include scripts-new.html %}
-  </body>
+<body>
+  <nav id="navbar" name="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Gabriel Schade</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/{{ site.baseurl }}">Home</a></li>
+          <li><a href="/posts-categoria">Posts</a></li>
+          <li><a href="/livros">Livros</a></li>
+          <li><a href="/livros">Projetos</a></li>
+          <li><a href="/about">Sobre</a></li>
+        </ul>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="/{{ site.baseurl }}">Home</a></li>
+    <li><a href="/posts-categoria">Posts</a></li>
+    <li><a href="/livros">Livros</a></li>
+    <li><a href="/livros">Projetos</a></li>
+    <li><a href="/about">Sobre</a></li>
+  </ul>
+
+  {{ content }}
+
+  {% include scripts-new.html %}
+</body>
+
 </html>
