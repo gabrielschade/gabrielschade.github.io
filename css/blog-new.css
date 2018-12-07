@@ -1,0 +1,39 @@
+/*RESET*/
+body{
+    font-size:14px;
+}
+/*RESETEND*/
+
+/*SIDENAV TRIGGER*/
+
+nav{
+    background-color:white;
+}
+
+nav li>a,
+nav .brand-logo{
+    color:initial;
+}
+
+.sidenav-trigger{
+    float:right !important;
+}
+
+.sidenav{
+    width:100%;
+}
+
+
+
+.sidenav li>a{
+    font-size:1.4em;
+}
+
+.sidenav i{
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    color:rgba(0,0,0,0.87);
+}
+
+/*SIDENAV TRIGGER END*/
