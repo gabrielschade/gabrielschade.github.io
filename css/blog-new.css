@@ -1,6 +1,7 @@
 /*RESET*/
 body{
     font-size:14px;
+    background-color:#F8F8F8;
 }
 /*RESETEND*/
 
@@ -8,11 +9,51 @@ body{
 
 nav{
     background-color:white;
+    background-color:white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height:100px;
+    line-height: 100px;
+
+    -webkit-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
+    -moz-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
+    -ms-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
+    -o-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
+    transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
 }
 
+nav.scrolled{
+    height:64px;
+    line-height:64px;
+}
+
+nav .sidenav-trigger,
 nav li>a,
 nav .brand-logo{
     color:initial;
+    font-size: 1.3em;
+}
+
+nav .brand-logo{
+    font-size: 2em;
+}
+
+nav .nav-wrapper img{
+    height:80px;
+    opacity:1;
+    margin-right:30px;
+    margin-top:10px;
+    
+    -webkit-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    -moz-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    -ms-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    -o-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    transition: all 300ms cubic-bezier(0, 0, 0, 1.15);
+}
+
+nav.scrolled .nav-wrapper img{
+    opacity:0;
+    margin-right: -30px;
 }
 
 .sidenav-trigger{
