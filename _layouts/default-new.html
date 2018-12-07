@@ -4,20 +4,23 @@
 {% include head-new.html %}
 
 <body>
-  <nav id="navbar">
-    <div class="nav-wrapper container">
-      <img class="center circle icon responsive-img" alt="profile" src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400">
-      <a href="#!" class="brand-logo">Gabriel Schade</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/{{ site.baseurl }}">Home</a></li>
-        <li><a href="/posts-categoria">Posts</a></li>
-        <li><a href="/livros">Livros</a></li>
-        <li><a href="/livros">Projetos</a></li>
-        <li><a href="/about">Sobre</a></li>
-      </ul>
-    </div>
-  </nav>
+
+  <div class="navbar-fixed">
+    <nav id="navbar">
+      <div class="nav-wrapper container">
+        <img class="center circle icon responsive-img" alt="profile" src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400">
+        <a href="#!" class="brand-logo">Gabriel Schade</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/{{ site.baseurl }}">Home</a></li>
+          <li><a href="/posts-categoria">Posts</a></li>
+          <li><a href="/livros">Livros</a></li>
+          <li><a href="/livros">Projetos</a></li>
+          <li><a href="/about">Sobre</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="/{{ site.baseurl }}">Home</a></li>

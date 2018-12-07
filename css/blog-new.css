@@ -3,6 +3,10 @@ body{
     font-size:14px;
     background-color:#F8F8F8;
 }
+
+html{
+    font-family: "Segoe UI", "PT Sans", Helvetica, Arial, sans-serif;
+}
 /*RESETEND*/
 
 /*SIDENAV TRIGGER*/
@@ -31,7 +35,7 @@ nav .sidenav-trigger,
 nav li>a,
 nav .brand-logo{
     color:initial;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 nav .brand-logo{
@@ -43,7 +47,7 @@ nav .nav-wrapper img{
     opacity:1;
     margin-right:30px;
     margin-top:10px;
-    
+
     -webkit-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
     -moz-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
     -ms-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
