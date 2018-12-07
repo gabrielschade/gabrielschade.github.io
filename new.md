@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Home
+layout: default-new
+title: New
 ---
 <!-- {% include huge-h2.html content="Últimas Postagens" css="margin-low" %} 
 {% include posts-cards.html %} 

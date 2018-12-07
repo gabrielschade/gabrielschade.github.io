@@ -2,6 +2,7 @@
 layout: default-2
 title: Home
 ---
+
 {% include huge-h2.html content="Últimas Postagens" css="margin-low" %} 
 {% include posts-cards.html %} 
 
