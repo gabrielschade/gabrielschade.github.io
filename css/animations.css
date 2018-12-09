@@ -9,7 +9,8 @@
 
   .img-image {
     display: block;
-    width: 100%;
+    width: auto;
+    max-height: 220px;
     height: auto;
     border-radius:0;
   }

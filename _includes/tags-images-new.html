@@ -21,7 +21,7 @@
 	{% for tag in tags %}
 	{% assign link = tag | replace: "#", "sharp" %}
 	{% assign image = tag | replace: "#", "" %}
-	<div class="col s12 m6 l4 post-col">
+	<div class="col s12 m6 l4 xl3 post-col">
 		<div class="post post-tag">
 			<a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" style="text-decoration: none;position: relative;">
 				<img class="img-image" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="Avatar">

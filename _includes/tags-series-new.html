@@ -21,7 +21,7 @@
 	{% for serie in series %}
 	{% assign link = serie | replace: "#", "sharp" %}
 	{% assign image = serie | replace: "#", "" | replace: " ", "" %}
-	<div class="col s12 m6 l4 post-col">
+	<div class="col s12 m6 l4 xl3 post-col">
 		<div class="post post-tag">
 			<a href="/posts-serie/{{link | downcase | replace: "ê", "e" | replace: "õ","o" | replace: "ã", "a"}}" style="text-decoration: none;position: relative;">
 
