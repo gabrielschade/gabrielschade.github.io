@@ -2,16 +2,18 @@
     <div class="post">
         <a href="{{ post.url }}" style="text-decoration: none;">
             <div style="padding:15px;cursor:pointer;">
-                <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
-                <div class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{%
-                    include postdate.html %}</div>
-                <div class="card-content" style="padding:15px 0;">
-                    <div class="post-excerpt" style="{{include._style}} height: 150px;
+                <div class="card-post">
+                    <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
+                    <div class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{%
+                        include postdate.html %}</div>
+                    <div class="card-content" style="padding:15px 0;">
+                        <div class="post-excerpt" style="{{include._style}} height: 150px;
                         overflow: hidden;
                         display: -webkit-box;
                         -webkit-line-clamp: 6;
                         -webkit-box-orient: vertical;">
-                        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                        </div>
                     </div>
                 </div>
                 <div class="card-action" style="max-height:65px">
