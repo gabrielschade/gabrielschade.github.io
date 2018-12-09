@@ -1,7 +1,7 @@
 ---
 layout: default-new
 title:  "Update na Tango"
-date:   2018-10-01 00:00:00 +0000
+date:   2019-10-01 00:00:00 +0000
 comments: true
 tags: [C#]
 ---
