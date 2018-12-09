@@ -2,8 +2,6 @@
 layout: default-new
 title: New
 ---
+## Últimos Posts
 
-LALALLAA
-TESTE DA NOVA HOME
-
-## TESTANDO
+{% include posts-cards-new.html %} 

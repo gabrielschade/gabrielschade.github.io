@@ -1,0 +1,59 @@
+<div class="row">
+    <span style="display:none">{% increment limite-cards-new %}</span>
+    {% for post in site.posts %}
+    {% if limite-cards-new <= 3 %} {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
+        %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} <span style="display:none">{%
+        increment limite-cards-new %}</span>
+        <div class="col s12 m6 l4">
+            <div class="post">
+                <a href="{{ post.url }}" style="text-decoration: none;">
+                    <div class="card hoverable" style="padding:15px;cursor:pointer;">
+                        <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
+                        <span class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{%
+                            include postdate.html %}</span>
+                        <div class="card-content" style="padding:15px 0;">
+                            <div class="post-excerpt" style="{{include._style}} height: 150px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 6;
+                            -webkit-box-orient: vertical;">
+                                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                            </div>
+                        </div>
+                        <div class="card-action" style="max-height:65px">
+                            {% assign rawtags = "" %}
+                            {% assign ttags = post.tags | join:'|' | append:'|' %}
+                            {% assign rawtags = rawtags | append:ttags %}
+
+                            {% assign rawtags = rawtags | split:'|' | sort %}
+                            {% assign tags = "" %}
+                            {% for tag in rawtags %}
+                            {% if tag != "" %}
+                            {% if tags == "" %}
+                            {% assign tags = tag | split:'|' %}
+                            {% endif %}
+                            {% unless tags contains tag %}
+                            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+                            {% endunless %}
+                            {% endif %}
+                            {% endfor %}
+
+                            {% for tag in tags reversed %}
+                            {% assign link = tag | replace: "#", "sharp" %}
+                            {% assign image = tag | replace: "#", "" %}
+                            <a href="/posts-categoria/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" class="collection-item none-decoration"
+                                target="_blank" style="text-decoration: none;">
+                                <img title="{{tag}}" style="height:50px;width:55px;margin: 0 0 0 0;display: inline-block;"
+                                    src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="{{tag}}" class="center responsive-img">
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+</div>

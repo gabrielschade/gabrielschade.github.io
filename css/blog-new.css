@@ -116,7 +116,7 @@ nav.scrolled .nav-wrapper img{
 }
 
 .parallax-container .parallax img{
-    bottom:375px;
+    bottom:325px;
 }
 
 h1,h2{
@@ -130,6 +130,47 @@ h3{
     text-shadow: 2px 2px #000000;
 }
 
+.bg-white{
+    background-color:white;
+}
+
+.content-container{
+    padding:15px;
+}
+
+.content-container h2{
+    font-size:3.5em;
+    text-transform:uppercase;
+    margin-top: 10px;
+}
+
+.post{
+    padding:15px;
+    background-color:white;
+    color: #333;
+}
+
+.post a{
+    color: #333;
+}
+
+.post a:hover .card-title{
+    color:#24bfcf;
+
+}
+
+.post-excerpt{
+    font-size:1.2em;
+}
+
+.card-title{
+    font-size:1.5em;
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-date{
+    color: #9a9a9a;
+}
 /*CONTENT HOME END*/
 
 /*Newsletter*/
