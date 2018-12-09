@@ -250,3 +250,12 @@ footer .icon{
     }
 
 }
+
+/*MOBILE END*/
+
+/*DESKTOP*/
+@media(min-width: 992px) {
+    .sidenav{
+        display:none;
+    }
+}
