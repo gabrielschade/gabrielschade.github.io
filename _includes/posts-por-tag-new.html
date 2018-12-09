@@ -1,4 +1,5 @@
 <div class="row">
+    <input type="hidden" value="{site.tags.IA}"/>
     {% for post in site.tags.IA limit:3 %}
     {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {%
     capture posttime %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} 
