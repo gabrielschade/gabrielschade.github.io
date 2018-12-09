@@ -193,6 +193,24 @@ h3{
     transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
 }
 
+.post-tag{
+    min-height:400px;
+}
+
+.post-tag h2{
+    margin-top:0;
+    font-size:3em;
+}
+
+.post-col{
+    min-height:410px;
+    height:410px;
+}
+
+.post-tag:hover h2{
+    color:#24bfcf;
+}
+
 .card-post{
     min-height:280px;
     height:280px;
