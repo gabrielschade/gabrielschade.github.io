@@ -5,32 +5,7 @@
 
 <body>
 
-  <header>
-    <div class="navbar-fixed">
-      <nav id="navbar">
-        <div class="nav-wrapper container">
-          <img class="center circle icon responsive-img" alt="profile" src="https://avatars3.githubusercontent.com/u/3276580?v=4&amp;u=454f9f40621e24e60e9d2c0d026ea05eba10287d&amp;s=400">
-          <a href="#!" class="brand-logo">Gabriel Schade</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="/{{ site.baseurl }}">Home</a></li>
-            <li><a href="/posts-categoria">Posts</a></li>
-            <li><a href="/livros">Livros</a></li>
-            <li><a href="/livros">Projetos</a></li>
-            <li><a href="/about">Sobre</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="/{{ site.baseurl }}">Home</a></li>
-    <li><a href="/posts-categoria">Posts</a></li>
-    <li><a href="/livros">Livros</a></li>
-    <li><a href="/livros">Projetos</a></li>
-    <li><a href="/about">Sobre</a></li>
-    <a href="#" onclick="$('.sidenav').sidenav('close');"><i class="material-icons">close</i></a>
-  </ul>
+  {% include header-new.html %}
 
   <div style="min-height: 1000px;">
     <div class="content-div-home">
@@ -38,92 +13,14 @@
         <div class="parallax"><img src="https://i.imgur.com/2RgVzmr.png" style="display: block; transform: translate3d(-50%, 723.702px, 0px); opacity: 1;"></div>
       </div>
 
-      {{ content }}
+      <div>
+        {{ content }}
+      </div>
     </div>
   </div>
 
-  <footer class="">
-    <div class="container">
-
-      <div class="row">
-        <div class="col s12 m8">
-          <div class="row">
-            <div class="col s12 m6">
-              <h3>Gabriel Schade</h3>
-              <p>Desenvolvimento,
-                <br>Inteligência Artificial<br>&amp; Ciência</p>
-
-
-            </div>
-            <div class="col s12 m6">
-              <h3>Contato</h3>
-              <p><a href="mailto:gabriel.schade@outlook.com">
-                  <i class="material-icons left">email</i>
-                  gabriel.schade@outlook.com</a></p>
-              <div class="row">
-                <div class="col s12">
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m6">
-              <a title="MVP - Visual Studio And Development Technologies" href="https://mvp.microsoft.com/pt-br/PublicProfile/5003167"
-                class="none-decoration">
-                <img class="" src="/public/img/MVP_Logo_Horizontal_1.png" style="display:inline;max-width: 60%;border-radius:0;height: 75px;">
-              </a>
-            </div>
-            <div class="col s12 m6">
-              <div class="col s12">
-                <a title="Linkedin" href="https://www.linkedin.com/in/gabrielschade" class="none-decoration">
-                  <img class="icon" src="/public/icons/Linkedin.png" style="display:inline;">
-                </a><a title="Github" href="https://github.com/gabrielschade" class="none-decoration">
-                  <img class="icon" src="/public/icons/GitHub.png" style="display:inline">
-                </a>
-                <a title="RSS" href="https://gabrielschade.github.io/feed" class="none-decoration">
-                  <img class="icon" src="/public/icons/rss.png" style="display:inline">
-                </a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <h3>Navegação</h3>
-          <div class="row">
-            <div class="col s6">
-              <p>
-                <a href="/{{ site.baseurl }}">Home</a>
-              </p>
-            </div>
-            <div class="col s6">
-              <p>
-                <a href="/posts-categoria">Posts</a>
-              </p>
-            </div>
-            <div class="col s6">
-              <p>
-                <a href="/livros">Livros</a>
-              </p>
-            </div>
-            <div class="col s6">
-              <p>
-                <a href="/livros">Projetos</a>
-              </p>
-            </div>
-            <div class="col s6">
-              <p>
-                <a href="/about">Sobre</a>
-              </p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </footer>
+  {% include newsletter-new.html %}
+  {% include footer.html %}
   {% include scripts-new.html %}
 </body>
 

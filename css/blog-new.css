@@ -86,29 +86,40 @@ nav.scrolled .nav-wrapper img{
 
 .sidenav{
     width:100%;
+    padding-top:60px;
+    padding-right:10px;
+    background: #333;
+   
 }
 
 
 
 .sidenav li>a{
-    font-size:1.4em;
+    font-size:2em;
+    font-family:'Segoe UI Light';
+    text-align:right;
+    color: white;
 }
 
 .sidenav i{
     position: fixed;
     top: 15px;
-    right: 20px;
-    color:rgba(0,0,0,0.87);
+    right: 40px;
+    color: white;
 }
 
 /*SIDENAV TRIGGER END*/
 
 /*CONTENT HOME*/
 .content-div-home .parallax-container{
-    height: 150px;
+    height: 200px;
 }
 
-h1{
+.parallax-container .parallax img{
+    bottom:375px;
+}
+
+h1,h2{
     font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
@@ -120,6 +131,45 @@ h3{
 }
 
 /*CONTENT HOME END*/
+
+/*Newsletter*/
+
+.newsletter{
+    background-color: #222;
+    padding-top:30px;
+    border: none;
+}
+
+.newsletter h2{
+    color:white;
+    font-size: 3em;
+}
+
+.newsletter button{
+    background:transparent;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border:1px solid white;
+    border-radius:0;
+    height:auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:45px;
+    padding-right:45px;
+}
+
+.newsletter button:hover{
+    background:white;
+    color:#222;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+.newsletter input{
+    color:white;
+}
+
+/*Newsletter END*/
 
 /*FOOTER*/
 
@@ -133,9 +183,18 @@ footer{
 footer .row{
     margin-bottom:0;
 }
+footer .col .row{
+    margin-left:0;
+    margin-right:0;
+}
 
 footer a{
     color:white;
+}
+
+footer p{
+    margin:0;
+    margin-bottom:15px;
 }
 
 footer h3{
@@ -143,7 +202,37 @@ footer h3{
     font-size:2em;
 }
 
+.sidenav .icon,
 footer .icon{
     height: 75px;
+    max-width: 30%;
 }
 /*FOOTER END*/
+
+/*MOBILE*/
+@media(max-width: 991px) {
+    .sidenav .icon{
+        margin-top:60px;
+    }
+
+    .center-on-small{
+        text-align:center;
+    }
+
+    nav,
+    nav.scrolled{
+        height:56px;
+        line-height: 56px;
+    }
+
+    nav .brand-logo{
+        font-size:1.9em;
+    }
+
+    nav .nav-wrapper img{
+        opacity:0;
+        margin-right: 0;
+        width: 0;
+    }
+
+}
