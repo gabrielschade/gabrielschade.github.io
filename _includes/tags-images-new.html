@@ -19,14 +19,14 @@
 
 <div class="row">
 	{% for tag in tags %}
-	{% assign link = include.content | replace: "#", "sharp" %}
-	{% assign image = include.content | replace: "#", "" %}
+	{% assign link = tag | replace: "#", "sharp" %}
+	{% assign image = tag | replace: "#", "" %}
 	<div class="col s12 m6 l4">
 		<div class="post post-tag">
 			<a href="{{ post.url }}" style="text-decoration: none;position: relative;">
 
 				<img class="img-image" src="/{{ site.baseurl }}public/img/{{image}}.jpg" alt="Avatar">
-				<h2 class="center">{{include.content}}</h2>
+				<h2 class="center">{{tag}}</h2>
 			</a>
 		</div>
 	</div>
