@@ -7,6 +7,10 @@ body{
 html{
     font-family: "Segoe UI", "PT Sans", Helvetica, Arial, sans-serif;
 }
+
+.row .col{
+    padding:0;
+}
 /*RESETEND*/
 
 /*SIDENAV TRIGGER*/
@@ -19,17 +23,24 @@ nav{
     height:100px;
     line-height: 100px;
 
-    -webkit-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
-    -moz-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
-    -ms-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
-    -o-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);;
+    -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
     transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
 }
 
+navbar-fixed.scrolled,
 nav.scrolled{
     height:64px;
     line-height:64px;
 }
+
+navbar-fixed{
+    height:100px;
+    line-height:100px;
+}
+
 
 nav .sidenav-trigger,
 nav li>a,
@@ -38,8 +49,16 @@ nav .brand-logo{
     font-size: 1.5em;
 }
 
+footer a:hover,
+nav ul a:hover {
+    background-color: rgba(0,0,0,0.02);
+    color:#24bfcf;
+}
+
+
 nav .brand-logo{
     font-size: 2em;
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav .nav-wrapper img{
@@ -57,7 +76,8 @@ nav .nav-wrapper img{
 
 nav.scrolled .nav-wrapper img{
     opacity:0;
-    margin-right: -30px;
+    margin-right: 0;
+    width: 0;
 }
 
 .sidenav-trigger{
@@ -82,3 +102,48 @@ nav.scrolled .nav-wrapper img{
 }
 
 /*SIDENAV TRIGGER END*/
+
+/*CONTENT HOME*/
+.content-div-home .parallax-container{
+    height: 150px;
+}
+
+h1{
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    font-family: 'Segoe UI Semibold','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parallax-text{
+    font-size:3em;
+    text-shadow: 2px 2px #000000;
+}
+
+/*CONTENT HOME END*/
+
+/*FOOTER*/
+
+footer{
+    background-color: #222;
+    min-height:300px;
+    color:white;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+footer .row{
+    margin-bottom:0;
+}
+
+footer a{
+    color:white;
+}
+
+footer h3{
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:2em;
+}
+
+footer .icon{
+    height: 75px;
+}
+/*FOOTER END*/
