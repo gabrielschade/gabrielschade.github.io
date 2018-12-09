@@ -194,7 +194,8 @@ h3{
 }
 
 .post-tag{
-    min-height:400px;
+    min-height: 290px;
+    height: 290px;
 }
 
 .post-tag h2{
@@ -203,8 +204,13 @@ h3{
 }
 
 .post-col{
-    min-height:410px;
-    height:410px;
+    min-height:320px;
+    height:320px;
+}
+
+.small-header{
+    font-size: 1.75em;
+    margin-top: 10px;
 }
 
 .post-tag:hover h2{
