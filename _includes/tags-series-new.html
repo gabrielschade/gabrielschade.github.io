@@ -1,0 +1,26 @@
+{% assign rawseries = "" %}
+{% for post in site.posts %}
+	{% assign _series = post.serie | join:'|' | append:'|' %}
+	{% assign rawseries = rawseries | append:_series %}
+{% endfor %}
+{% assign rawseries = rawseries | split:'|' | sort %}
+
+{% assign series = "" %}
+{% for serie in rawseries %}
+	{% if serie != "" %}
+		{% if series == "" %}
+			{% assign series = serie | split:'|' %}
+		{% endif %}
+		{% unless series contains serie %}
+			{% assign series = series | join:'|' | append:'|' | append:serie | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+<div class="row">
+{% for serie in series %}
+	<div class="col s12 m6 l4">
+        {% include image-text-link-wide.html content=serie %}
+    </div>
+{% endfor %}
+</div>
