@@ -131,6 +131,7 @@ nav.scrolled .nav-wrapper img{
     padding-left:45px !important;
     padding-right:45px !important;
     color:#333 !important;
+    margin-bottom:60px;
 }
 
 .content-div-home a.btn:hover{
@@ -190,6 +191,11 @@ h3{
     -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
     -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
     transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.card-post{
+    min-height:280px;
+    height:280px;
 }
 
 .post:hover{

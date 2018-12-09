@@ -1,6 +1,7 @@
 ---
-layout: default-new
+layout: parallax-new
 title: New
+parallax-bg: https://i.imgur.com/2RgVzmr.png
 ---
 
 <h2 class="center">Últimas Postagens</h2>
