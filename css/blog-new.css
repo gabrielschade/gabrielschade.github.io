@@ -251,6 +251,13 @@ h3{
 .post-date{
     color: #9a9a9a;
 }
+
+.chip.bg-blue{
+    background-color:#24bfcf;
+}
+.chip.bg-dark{
+    background-color:#222;
+}
 /*CONTENT HOME END*/
 
 /*Newsletter*/
