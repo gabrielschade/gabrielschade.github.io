@@ -1,0 +1,26 @@
+{% assign rawtags = "" %}
+{% assign ttags = post.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:ttags %}
+
+{% assign rawtags = rawtags | split:'|' | sort %}
+{% assign tags = "" %}
+{% for tag in rawtags %}
+	{% if tag != "" %}
+		{% if tags == "" %}
+			{% assign tags = tag | split:'|' %}
+		{% endif %}
+		{% unless tags contains tag %}
+			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+{% for serie in post.serie reversed %}
+	{% assign link = serie | replace: "#", "sharp" %}
+	<a href="/posts-serie/{{link | downcase | replace: "ê", "e" | replace: "õ","o"}}" 
+		class="collection-item">
+		<span class="chip" style="font-size: 0.8rem;color: #fff; float:left; margin-left:0;">
+			Serie: {{serie}}
+		</span>
+	</a>
+{% endfor %}

@@ -1,5 +1,5 @@
 ---
-layout: default-new
+layout: post-new
 title:  "Update na Tango"
 date:   2019-10-01 00:00:00 +0000
 comments: true
