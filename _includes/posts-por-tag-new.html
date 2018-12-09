@@ -1,5 +1,5 @@
 <div class="row">
-    {% for post in site.tags.{include.content} limit:3 %}
+    {% for post in site.tags.IA limit:3 %}
     {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {%
     capture posttime %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} 
 
