@@ -184,6 +184,16 @@ h3{
     margin: 15px;
     min-height: 380px;
     height: 380px;
+
+    -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.post:hover{
+    margin-top:-10px;
 }
 
 .post a{

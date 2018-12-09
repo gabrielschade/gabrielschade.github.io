@@ -1,9 +1,7 @@
 <div class="row">
-    <span style="display:none">{% increment limite-cards-new-{include.content} %}</span>
-    {% for post in site.posts %}
-    {% if limite-cards-new-{include.content} <= 3 %} {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {%
-        capture posttime %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} <span style="display:none">{%
-        increment limite-cards-new-{include.content} %}</span>
+    {% for post in site.tags.{include.content} limit:3 %}
+    {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {%
+    capture posttime %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} 
 
         {% include single-post-new.html %}
 
