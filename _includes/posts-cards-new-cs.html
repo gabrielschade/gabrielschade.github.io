@@ -1,0 +1,23 @@
+<div class="row">
+    <span style="display:none">{% increment limite-cards-new-cs %}</span>
+    {% for post in site.posts %}
+    {% if post.tags contains 'C#' %}
+    {% if limite-cards-new-cs <= 3 %} {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
+        %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} <span style="display:none">{%
+        increment limite-cards-new-cs %}</span>
+
+        {% include single-post-new.html %}
+
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+</div>
+
+<div class="row">
+    <div class="col s12 center">
+        <a href="/posts-categoria/csharp" class="btn waves-effect waves-light">Ver Mais
+        </a>
+    </div>
+</div>

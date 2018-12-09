@@ -1,8 +1,8 @@
 <div class="row">
-    <input type="hidden" value="{site.tags.IA}"/>
-    {% for post in site.tags.IA limit:3 %}
-    {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {%
-    capture posttime %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} 
+    {% for post in site.posts %}
+    {% if post.tags contains include.content %}
+    {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
+        %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %}
 
         {% include single-post-new.html %}
 
@@ -14,8 +14,7 @@
 
 <div class="row">
     <div class="col s12 center">
-        <a class="btn waves-effect waves-light" href="/posts-categoria/{{include.content | downcase | replace: "ê", "e" | replace: "õ","o"}}">
-            Ver Mais
+        <a class="btn waves-effect waves-light">Ver Mais
         </a>
     </div>
 </div>
