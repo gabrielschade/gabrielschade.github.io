@@ -2,6 +2,9 @@
 layout: default-new
 title: New
 ---
-## Últimos Posts
 
+<h2 class="center">Últimas Postagens</h2>
 {% include posts-cards-new.html %} 
+
+<h2 class="center">Inteligência Artificial</h2>
+{% include posts-por-tag-new.html content="IA" %} 

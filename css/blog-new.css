@@ -115,6 +115,39 @@ nav.scrolled .nav-wrapper img{
     height: 200px;
 }
 
+.content-div-home h2{
+    text-align:center;
+}
+
+.content-div-home a.btn{
+    background:transparent !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    border:1px solid #333 !important;
+    border-radius:0 !important;
+    height:auto !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    padding-left:45px !important;
+    padding-right:45px !important;
+    color:#333 !important;
+}
+
+.content-div-home a.btn:hover{
+    background: #24bfcf !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    border:1px solid white !important;
+    border-radius:0 !important;
+    height:auto !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    padding-left:45px !important;
+    padding-right:45px !important;
+    color:white !important;
+}
+
+
 .parallax-container .parallax img{
     bottom:325px;
 }
@@ -148,6 +181,9 @@ h3{
     padding:15px;
     background-color:white;
     color: #333;
+    margin: 15px;
+    min-height: 380px;
+    height: 380px;
 }
 
 .post a{

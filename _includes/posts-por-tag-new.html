@@ -1,0 +1,22 @@
+<div class="row">
+    <span style="display:none">{% increment limite-cards-new-{include.content} %}</span>
+    {% for post in site.posts %}
+    {% if limite-cards-new-{include.content} <= 3 %} {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {%
+        capture posttime %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} <span style="display:none">{%
+        increment limite-cards-new-{include.content} %}</span>
+
+        {% include single-post-new.html %}
+
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+</div>
+
+<div class="row">
+    <div class="col s12 center">
+        <a class="btn waves-effect waves-light" href="/posts-categoria/{{include.content | downcase | replace: "ê", "e" | replace: "õ","o"}}">
+            Ver Mais
+        </a>
+    </div>
+</div>
