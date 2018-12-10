@@ -1,5 +1,5 @@
 ---
-layout: parallax-new
+layout: about-new
 title: About
 parallax-bg: https://imgur.com/vRrhtSV.png   
 ---
