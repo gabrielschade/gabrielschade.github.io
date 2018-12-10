@@ -4,14 +4,17 @@ title: New
 parallax-bg: https://i.imgur.com/2RgVzmr.png
 ---
 
-<h2 class="center">Últimas Postagens</h2>
-{% include posts-cards-new.html %} 
+<div class="container">
+    <h2 class="center">Últimas Postagens</h2>
+    {% include posts-cards-new.html %} 
 
-<h2 class="center">Inteligência Artificial</h2>
-{% include posts-cards-new-ia.html %} 
+    <h2 class="center">Inteligência Artificial</h2>
+    {% include posts-cards-new-ia.html %} 
+</div>
+<div class="container">
+    <h2 class="center">C#</h2>
+    {% include posts-cards-new-cs.html %} 
 
-<h2 class="center">C#</h2>
-{% include posts-cards-new-cs.html %} 
-
-<h2 class="center">F#</h2>
-{% include posts-cards-new-fs.html %} 
+    <h2 class="center">F#</h2>
+    {% include posts-cards-new-fs.html %} 
+</div>
