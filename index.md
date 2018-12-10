@@ -11,7 +11,7 @@ parallax-bg: https://i.imgur.com/2RgVzmr.png
     <h2 class="center">Inteligência Artificial</h2>
     {% include posts-cards-new-ia.html %} 
 </div>
-
+ 
  {% include banner-funcional.html %} 
 
 <div class="container">
