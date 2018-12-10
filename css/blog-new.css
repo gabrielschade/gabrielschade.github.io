@@ -299,6 +299,7 @@ h3{
     max-width:100%;
 }
 
+p,
 .about p,
 .post-text li,
 .post-text p{
@@ -337,6 +338,33 @@ h3{
 /*CONTENT HOME END*/
 
 /*Newsletter*/
+
+    .py .btn{
+        background:transparent;
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        border:1px solid #222;
+        color:#222;
+        border-radius:0;
+        height:auto;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:45px;
+        padding-right:45px;
+    }
+
+    .py .btn:hover{
+        background:#24bfcf;
+        color:white;
+        box-shadow:none;
+        -webkit-box-shadow:none;
+    }
+
+    .py input{
+        padding-left:.75rem !important;
+        font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:1.5em !important;
+    }
 
 .newsletter{
     background-color: #222;

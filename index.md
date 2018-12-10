@@ -11,9 +11,10 @@ parallax-bg: https://i.imgur.com/2RgVzmr.png
     <h2 class="center">Inteligência Artificial</h2>
     {% include posts-cards-new-ia.html %} 
 </div>
- 
- {% include banner-funcional.html %} 
 
+<div> 
+    {% include banner-funcional.html %} 
+</div>
 <div class="container">
     <h2 class="center">C#</h2>
     {% include posts-cards-new-cs.html %} 
@@ -22,8 +23,9 @@ parallax-bg: https://i.imgur.com/2RgVzmr.png
     {% include posts-cards-new-fs.html %} 
 </div>
 
-{% include banner-py.html %} 
-
+<div> 
+    {% include banner-py.html %} 
+</div>
 <div class="container">
     <h2 class="center">Python</h2>
     {% include posts-cards-new-py.html %} 
