@@ -1,9 +1,10 @@
 ---
 layout: parallax-new
 title: About
-parallax-bg: /public/img/bio-bg.jpg    
+parallax-bg: https://imgur.com/vRrhtSV.png   
 ---
 
+<div class="about">
 <h2 class="center">Sobre</h2>
 
 Eu sou formado em ciência da computação e mestre em computação aplicada com foco em inteligência artificial. No meu dia-a-dia eu programo, escrevo, jogo, palestro, ensino e aprendo, não necessariamente nesta ordem.
@@ -36,3 +37,4 @@ Em alguns casos, a postagem é uma interpretação minha sobre algum tipo de con
 
 Portanto, sinta-se livre para utilizar o conteúdo produzido aqui, desde que haja uma referência para a fonte original (este blog) e haja comum acordo entre o criador de conteúdo e quem o está reproduzindo.
 
+</div>
