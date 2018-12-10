@@ -311,10 +311,9 @@ h3{
 
 .github-fixed-button{
     position: fixed;
-    /* text-align: right; */
-    /* right: 0; */
-    /* top: 0; */
-    /* left: 100px; */
+    right: 0;
+    top: 100px;
+    max-width: 64px;
 }
 
 .chip.bg-blue{
@@ -441,6 +440,13 @@ footer .icon{
         opacity:0;
         margin-right: 0;
         width: 0;
+    }
+
+    .github-fixed-button{
+        position: fixed;
+        right: -30px;
+        top: 100px;
+        max-width: 64px;
     }
 
 }
