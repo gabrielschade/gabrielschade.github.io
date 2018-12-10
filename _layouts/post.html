@@ -1,29 +1,37 @@
 ---
-layout: page
+layout: default-new
 ---
 
   {% assign post = page %}
 
-  {% include huge-h2.html content=page.title css="left-align" %} 
-  <span class="post-date right-align">
-    {% include postdate.html %}
-    <br/>
-    {% include post-serie-badges.html %} 
-    {% include post-tags-images.html %} 
-  </span>
-  {{ content }}
+  <div class="post-text">
+    <div class="container">
+      <h2 class="center">{{page.title}}</h2>
+      <div class="post-date">
+        {% include postdate.html %}
+        <br/>
+        {% include post-serie-badges-new.html %} 
+        {% include post-tags-images-new.html %} 
+      </div>
 
-<div class="related">
-  {% include huge-h2.html content="Você pode ter interesse em" %} 
-  <ul>
-    {% for post in site.related_posts limit:5 %}
-        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-        {% if posttime <= nowunix %}
-          {% include single-post.html _style="display:none;" _padding="padding-bottom:0;" %} 
-        {% endif %}
-    {% endfor %}
-  </ul>
+      {{ content }}
+</div>
 </div>
 
-{% include disqus.html %}
+ <div class="container">
+    <div class="related">
+        <h3 class="center small-header mt-3">Você pode ter interesse em</h2>
+
+        <div class="row">
+          {% for post in site.related_posts limit:5 %}
+              {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+              {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+              {% if posttime <= nowunix %}
+                {% include single-post-new.html _style="display:none;" _padding="padding-bottom:0;" %} 
+              {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+    {% include disqus.html %}
+</div>

@@ -1,16 +1,20 @@
 ---
-layout: default-2
-title: Home
+layout: home-new
+title: New
+parallax-bg: https://i.imgur.com/2RgVzmr.png
 ---
 
-{% include huge-h2.html content="Últimas Postagens" css="margin-low" %} 
-{% include posts-cards.html %} 
+<div class="container">
+    <h2 class="center">Últimas Postagens</h2>
+    {% include posts-cards-new.html %} 
 
-<a href="/posts-categoria" class="right light-font" style="
-    font-size: 28px;
-    margin-bottom: 45px;">Ver mais</a>
+    <h2 class="center">Inteligência Artificial</h2>
+    {% include posts-cards-new-ia.html %} 
+</div>
+<div class="container">
+    <h2 class="center">C#</h2>
+    {% include posts-cards-new-cs.html %} 
 
-<div class="card z-depth-3" style="padding: 15px;margin-top:75px;">
-    {% include huge-h2.html content="Inscreva-se no meu Newsletter" css="margin-top-0" %} 
-    {% include form-email.html %} 
+    <h2 class="center">F#</h2>
+    {% include posts-cards-new-fs.html %} 
 </div>
