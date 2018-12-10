@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Home
+layout: page-new
+title: Python - Guia Prático para Iniciantes
 ---
 
 {% include huge-h2.html content="Python - Guia Prático para Iniciantes" css="margin-low" %} 

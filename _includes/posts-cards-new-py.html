@@ -1,0 +1,23 @@
+<div class="row">
+    <span style="display:none">{% increment limite-cards-new-py %}</span>
+    {% for post in site.posts reversed %}
+    {% if post.tags contains 'Python' %}
+    {% if limite-cards-new-py <= 3 %} {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
+        %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} <span style="display:none">{%
+        increment limite-cards-new-py %}</span>
+
+        {% include single-post-new.html %}
+
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+</div>
+
+<div class="row">
+    <div class="col s12 center">
+        <a href="/posts-categoria/python" class="btn waves-effect waves-light">Ver Mais
+        </a>
+    </div>
+</div>
