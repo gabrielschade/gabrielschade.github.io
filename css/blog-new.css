@@ -265,6 +265,18 @@ h3{
     color: #9a9a9a;
 }
 
+.banner{
+    background-color:white;
+    padding-top:30px;
+    padding-bottom:30px;    
+    }
+    
+    .banner h1{
+        font-size:3.5em;
+        color:#222;
+        padding-left:30px;
+    }
+
 .post-text{
     font-size:1em;
 }
@@ -458,6 +470,22 @@ footer .icon{
 
 /*MOBILE*/
 @media(max-width: 991px) {
+    .banner{
+        text-align:center;
+    }
+    .banner h1{
+        font-size:2em;
+        text-align:center;
+        padding-left:0;
+    }
+
+    .banner img{
+        float: initial!important;
+        margin:auto !important;
+        width: 100%;
+        height: auto !important;
+    }
+
     .sidenav .icon{
         margin-top:60px;
     }
