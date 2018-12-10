@@ -1,0 +1,11 @@
+<div class="row">
+    {% for post in site.posts %}
+    {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
+        %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %}
+
+        {% include single-post-new.html %}
+
+        {% endif %}
+        {% endfor %}
+
+</div>

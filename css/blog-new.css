@@ -288,7 +288,7 @@ h3{
     font-size: 1.4em;
 }
 
-
+.about h3,
 .post-text h3{
     margin-top:45px;
     margin-bottom:30px;
@@ -299,6 +299,7 @@ h3{
     max-width:100%;
 }
 
+.about p,
 .post-text li,
 .post-text p{
     font-size:1.5em;

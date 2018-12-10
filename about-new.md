@@ -18,7 +18,9 @@ Além disso, atuo como revisor de artigos científicos (convidado) no *journal* 
 
 A última conquista profissional foi receber o prêmio [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003167?fullName=Gabriel%20Schade%20Cardoso) devido às minhas contribuições com a comunidade de desenvolvimento de software, incluindo este blog.
 
-Todas estas coisas foram conquistadas com muito esforço e dedicação, e claro, com um pouquinho de sorte. Afinal é como dizem "*luck is when preparation meets opportunity*".
+Todas estas coisas foram conquistadas com muito esforço e dedicação, e claro, com um pouquinho de sorte. Afinal é como dizem:
+
+> "luck is when preparation meets opportunity".
 
 ### Disclaimer
 
