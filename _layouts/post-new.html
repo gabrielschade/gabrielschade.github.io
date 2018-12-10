@@ -1,30 +1,33 @@
 ---
-layout: page-new
+layout: default-new
 ---
 
   {% assign post = page %}
 
   <div class="post-text">
-  <h2 class="center">{{page.title}}</h2>
-  <div class="post-date">
-    {% include postdate.html %}
-    <br/>
-    {% include post-serie-badges-new.html %} 
-    {% include post-tags-images-new.html %} 
-  </div>
-  {{ content }}
+    <div class="container">
+      <h2 class="center">{{page.title}}</h2>
+      <div class="post-date">
+        {% include postdate.html %}
+        <br/>
+        {% include post-serie-badges-new.html %} 
+        {% include post-tags-images-new.html %} 
+      </div>
 
-<div class="related">
-  {% include huge-h2.html content="Você pode ter interesse em" %} 
-  <ul>
-    {% for post in site.related_posts limit:5 %}
-        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-        {% if posttime <= nowunix %}
-          {% include single-post.html _style="display:none;" _padding="padding-bottom:0;" %} 
-        {% endif %}
-    {% endfor %}
-  </ul>
+      {{ content }}
+
+    <div class="related">
+      {% include huge-h2.html content="Você pode ter interesse em" %} 
+      <ul>
+        {% for post in site.related_posts limit:5 %}
+            {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+            {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+            {% if posttime <= nowunix %}
+              {% include single-post.html _style="display:none;" _padding="padding-bottom:0;" %} 
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
 </div>
 </div>
 

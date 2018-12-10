@@ -11,9 +11,18 @@ html{
 .row .col{
     padding:0;
 }
+
+.margin-0{
+    margin:0;
+
+}
 /*RESETEND*/
 
 /*SIDENAV TRIGGER*/
+
+.navbar-fixed{
+    height:100px;
+}
 
 nav{
     background-color:white;
@@ -154,7 +163,7 @@ nav.scrolled .nav-wrapper img{
 }
 
 h1,h2{
-    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
     font-family: 'Segoe UI Semibold','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -250,6 +259,62 @@ h3{
 
 .post-date{
     color: #9a9a9a;
+}
+
+.post-text{
+    font-size:1em;
+}
+
+.post-text{
+    text-align:justify;
+    padding: 30px;
+    background-color: white;
+}
+
+.post-text .highlight{
+    padding:5px;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    word-break: break-word;
+    overflow-x: overlay;
+}
+
+.post-text .post-date{
+    text-align:right;
+    font-size: 1.4em;
+}
+
+
+.post-text h3{
+    margin-top:45px;
+    margin-bottom:30px;
+    font-size: 2.5em;
+}
+
+.post-text img{
+    max-width:100%;
+}
+
+.post-text li,
+.post-text p{
+    font-size:1.5em;
+    color: rgb(85, 85, 85);
+    text-align: justify;
+}
+
+.post-text blockquote{
+    padding: 10px;
+    border-left: 4px solid #ddd;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.github-fixed-button{
+    position: fixed;
+    /* text-align: right; */
+    /* right: 0; */
+    /* top: 0; */
+    /* left: 100px; */
 }
 
 .chip.bg-blue{
@@ -361,6 +426,7 @@ footer .icon{
         text-align:center;
     }
 
+    .navbar-fixed,
     nav,
     nav.scrolled{
         height:56px;
