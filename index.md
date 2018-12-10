@@ -12,22 +12,7 @@ parallax-bg: https://i.imgur.com/2RgVzmr.png
     {% include posts-cards-new-ia.html %} 
 </div>
 
-<a href="https://www.casadocodigo.com.br/products/livro-programacao-funcional-net" target="_blank">
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6">
-                    <img class="responsive-img right" src="https://i.imgur.com/5wyJGYp.png" style="max-width: 80%;">
-                </div>
-                <div class="col s12 m6">
-                    <h1>
-                Aprenda programação funcional de maneira <b>fácil</b>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</a>
+ {% include banner-funcional.html %} 
 
 <div class="container">
     <h2 class="center">C#</h2>
@@ -37,28 +22,7 @@ parallax-bg: https://i.imgur.com/2RgVzmr.png
     {% include posts-cards-new-fs.html %} 
 </div>
 
-<a href="https://gabrielschade.github.io/livros/python-guia-pratico.html" target="_blank">
-
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m6">
-                <img class="responsive-img right" src="https://imgur.com/vXifhLH.png" style="
-                max-width: 80%;
-                height: 350px;
-                text-align: right;
-                margin-right: 30px;
-            ">
-            </div>
-            <div class="col s12 m6">
-                        <h1>Aprenda a programar em Python com este guia totalmente <b>gratuito</b>
-                        </h1>
-            </div>
-        </div>
-    </div>
-</div>
-
-</a>
+{% include banner-py.html %} 
 
 <div class="container">
     <h2 class="center">Python</h2>
