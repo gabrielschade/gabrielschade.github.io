@@ -17,13 +17,14 @@ layout: default-new
       {{ content }}
 
     <div class="related">
-      {% include huge-h2.html content="Você pode ter interesse em" %} 
-      <ul>
+        <h3 class="center">Você pode ter interesse em</h2>
+
+      <div class="row">
         {% for post in site.related_posts limit:5 %}
             {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
             {% if posttime <= nowunix %}
-              {% include single-post.html _style="display:none;" _padding="padding-bottom:0;" %} 
+              {% include single-post-new.html _style="display:none;" _padding="padding-bottom:0;" %} 
             {% endif %}
         {% endfor %}
       </ul>
@@ -31,4 +32,6 @@ layout: default-new
 </div>
 </div>
 
-{% include disqus.html %}
+ <div class="container">
+    {% include disqus.html %}
+</div>

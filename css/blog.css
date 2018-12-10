@@ -1,640 +1,463 @@
+/*RESET*/
 body{
-    color:#555;
-}
-
-strong{
-    font-weight: bolder;
-}
-
-
-.transparent-nav {
-    background-color: transparent;
-    box-shadow: none;
-    height:auto;
-}
-
-.sidebar{
-    background: #222;
-    color: white;
-    z-index:99;
-}
-.side-nav li>a{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400; 
-}
-.side-nav li>a:hover{
-    background-color:transparent;
-    color: #24bfcf;
-}
-
-
-.sidebar .background{
-    background-image: url(/public/img/profile-card-bg.jpg);
-    background-position: 55% 20%;
-    background-size: cover;
-    min-height: 120px;
-}
-
-
-
-.icon{
-    transition: all 300ms;
-}
-
-.icon:hover{
-    transform: scale(1.3);
-}
-
-
-.icon-medium{
-    max-width: 36px;
-}
-
-.square{
-    border-radius:0%;
-}
-
-.accent-text{
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-}
-
-.light-text{
-     color: rgba(0,0,0,0.54);
-}
-
-.parallax-text{
-    margin-top:25%;
-}
-
-.none-decoration, 
-.none-decoration:hover,
-.none-decoration:focus{
-    text-decoration: none;
-    outline: none;
-}
-
-.mid-image-container{
-    margin-bottom:-32px;
-}
-
-.mid-image{
-    height: 96px;
-    margin-top: -36px;
-}
-
-.bg-image{
-    background-image: url('/public/img/bg.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 600px;
-}
-
-.intro-content{
-    height: 100vh;
-}
-
-.post-date{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.default-font{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.light-font{
-    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.content-card{
-    background-color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right:auto;
-    padding: 15px 30px;
-    padding-top: 15px;
-    
-}
-
-.parallax-container {
-    min-height:500px;
-  }
-
-.side-nav{
-        position: static;
-        width: auto;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-}
-
-.divider {
-    height: 10px;
-    overflow: hidden;
-    background-color:transparent;
-}
-
-.side-nav li>a{
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    height:36px;
-}
-
-.strong-on-hover:hover{
-    color: rgba(0,0,0,0.87);
-}
-
-.huge{
-    font-size: 2.0rem;
-    color: #24bfcf;
-    font-weight: lighter;
-    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
-}
-
-
-h2.huge{
-    margin-top: 60px;
-    margin-bottom: 45px;    
-}
-
-h2.huge.margin-top-0{
-    margin-top: 0;
-    margin-bottom: 45px;    
-}
-
-h2.huge.margin-low{
-    margin-top: 15px;
-    margin-bottom: 5px;    
-}
-
-h2.huge.img-title{
-    margin-top:35px;
-    color:white;
-    font-size: 1.5rem;
-    transition: .3s ease;
-}
-
-h2{
-    font-weight: 200;
-    color: #24bfcf;
-}
-
-h3{
-    font-weight: 200;
-    color: #24bfcf;
-}
-
-h3.huge{
-    font-size: 1.5rem;
-    margin:0;
-}
-
-h3.huge.margin-top-65{
-    font-size: 1.5rem;
-    margin:0;
-    margin-top:65px;
-}
-
-.content-list-item{
-    float: none;
-    line-height: 48px;
-    margin-top:10px;
-}
-
-.content-list-item a{
-    text-decoration:none !important;
-    color: #555;
-    display: block;
-    font-weight: 300;
-    height: 48px;
-    line-height: 48px;
-    padding: 0 32px;
-    font-size: 22px;
-    border-bottom: 1px solid #eee;
-}
-
-.content-list-item a.font-16{
-    font-size:16px;
-}
-
-.content-list-item a.font-12{
-    font-size:12px;
-}
-
-.content-list-item a.font-small{
     font-size:14px;
+    background-color:#F8F8F8;
 }
 
-.content-list-item a:hover{
-    background-color: transparent;
-    color: #24bfcf
+html{
+    font-family: "Segoe UI", "PT Sans", Helvetica, Arial, sans-serif;
 }
 
-.content p{
-    text-align: justify;
-    color:#555;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
-}
-
-.content blockquote p{
-    text-align: left;
-}
-
-.text-left{
-    text-align: left;
-}
-
-.border-none{
-    border:none;
-}
-
-.light-bottom-border{
-    border-bottom: 1px solid #eee
-}
-
-.content-list-item a:hover{
-    background-color: transparent;
-    color: #24bfcf;
-    text-decoration: none;
-}
-
-.content a{
-    color: #555;
-    text-decoration: underline;
-    text-decoration-color: #24bfcf;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif
-}
-
-.content a:hover{
-    color: #24bfcf;
-}
-
-.content .home-list a:hover{
-    color: #24bfcf;
-    background-color: rgba(0,0,0,0.02);
-}
-
-
-.no-bottom{
-    margin-bottom:0;
-}
-
-.margin-top-32{
-    margin-top:32px;
-}
-
-.margin-top-0{
-    margin-top:0;
-}
-
-.margin-bottom-0{
-    margin-bottom:0;
-}
-
-.margin-top-15{
-    margin-top:15px;
-}
-
-.margin-side-15{
-    margin: 0 15px;
-}
-.margin-top-65{
-    margin-top:65px;
-}
-.margin-side-30{
-    margin: 0 30px;
-}
-
-.no-padding{
+.row .col{
     padding:0;
 }
 
-.padding-bottom-0{
-    padding-bottom: 0;
+.margin-0{
+    margin:0;
+
+}
+/*RESETEND*/
+
+/*SIDENAV TRIGGER*/
+
+.navbar-fixed{
+    height:100px;
 }
 
-.padding-top-0{
-    padding-top: 0;
+nav{
+    background-color:white;
+    background-color:white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height:100px;
+    line-height: 100px;
+
+    -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
 }
 
-.padding-bottom-80{
-    top: 95%;
-    padding-bottom: 80px;
+navbar-fixed.scrolled,
+nav.scrolled{
+    height:64px;
+    line-height:64px;
 }
 
-.font-16{
-    font-size: 16px;
-}
-
-.font-12{
-    font-size:12px;
-}
-
-.font-10{
-    font-size:10px;
+navbar-fixed{
+    height:100px;
+    line-height:100px;
 }
 
 
-.font-small{
-    font-size:14px;
+nav .sidenav-trigger,
+nav li>a,
+nav .brand-logo{
+    color:initial;
+    font-size: 1.5em;
 }
 
-.font-medium-large{
-    font-size:22px;
+footer a:hover,
+nav ul a:hover {
+    background-color: rgba(0,0,0,0.02);
+    color:#24bfcf;
 }
 
-.font-32{
-    font-size:32px;
-}
 
-h2.font-medium-large.img-title{
-    margin-top: 10px;
-    color: white;
-    font-size: 22px;
-    font-weight: 100;
-    transition: .3s ease;
-}
-
-.img-container:hover .font-medium-large.img-title {
+nav .brand-logo{
     font-size: 2em;
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav .nav-wrapper img{
+    height:80px;
+    opacity:1;
+    margin-right:30px;
+    margin-top:10px;
+
+    -webkit-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    -moz-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    -ms-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    -o-transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+    transition: all 300ms cubic-bezier(0, 0, 0, 1.15);
+}
+
+nav.scrolled .nav-wrapper img{
+    opacity:0;
+    margin-right: 0;
+    width: 0;
+}
+
+.sidenav-trigger{
+    float:right !important;
+}
+
+.sidenav{
+    width:100%;
+    padding-top:60px;
+    padding-right:10px;
+    background: #333;
+   
 }
 
 
 
-.font-large{
-    font-size:48px;
+.sidenav li>a{
+    font-size:2em;
+    font-family:'Segoe UI Light';
+    text-align:right;
+    color: white;
 }
 
-.font-64{
-    font-size:64px;
+.sidenav i{
+    position: fixed;
+    top: 15px;
+    right: 40px;
+    color: white;
+}
+
+/*SIDENAV TRIGGER END*/
+
+/*CONTENT HOME*/
+.content-div-home .parallax-container{
+    height: 200px;
+}
+
+.content-div-home h2{
+    text-align:center;
+}
+
+.content-div-home a.btn{
+    background:transparent !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    border:1px solid #333 !important;
+    border-radius:0 !important;
+    height:auto !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    padding-left:45px !important;
+    padding-right:45px !important;
+    color:#333 !important;
+    margin-bottom:60px;
+}
+
+.content-div-home a.btn:hover{
+    background: #24bfcf !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    border:1px solid white !important;
+    border-radius:0 !important;
+    height:auto !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    padding-left:45px !important;
+    padding-right:45px !important;
+    color:white !important;
 }
 
 
-.gold{
-    color:#caa669
+.parallax-container .parallax img{
+    bottom:325px;
 }
 
-
-
-
-
-
-  @media (min-width: 48em) {
-    .sidebar {
-        width:16em;
-    }
-
-    .font-large{
-        font-size:64px;   
-       }
-
-    .content {
-        max-width: 30rem;
-        margin-left: 16.5rem;
-        margin-right: 2rem;
-    }
+h1,h2{
+   font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    font-family: 'Segoe UI Semibold','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parallax-text{
+    font-size:3em;
+    text-shadow: 2px 2px #000000;
 }
 
-@media (min-width: 64em){
-    .content {
-        margin-left: 16.5rem;
-        margin-right: 4rem;
-        max-width: 32rem;
-    }
-  }
-
-  @media (min-width: 80em){
-    .content {
-        margin-left: 18rem;
-        margin-right: 4rem;
-        max-width: 45rem;
-    }
-  }
-
-  @media (min-width: 100em){
-    .content {
-        margin-left: 18rem;
-        margin-right: 1rem;
-        max-width: 110rem;
-        width:75%
-    }
-  }
-
-  a.brand-logo:hover,
-  a.brand-logo:focus{
-      text-decoration: none;
-  }
-
-  .speaker-name{
-      text-align: center;
-      font-weight: 200;
-      color:#68217a;
-  }
-
-  .icon-itj{
-    text-align: center;
-    display: inherit;
-  }
-
-  .icon-padding{
-      padding-top:5px;
-  }
-
-  .vertical-top{
-    vertical-align: top;
-  }
-  .itj-font{
-    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  }
-
-  .nav-itj{
-    background-color: #68217a;
-  }
-
-  .no-margin{
-     margin:0;
-  }
-
-  
-
-  .banner-itj{
-      min-height: 250px;
-      background-color: #70397e;
-  }
-
-  .span-itj-left{
-    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    margin-left: 45px;
-  }
-
-  .span-itj-right{
-    margin-right: 45px;
-    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 22px;
-  }
-  
-  .img-itj{
-    margin-top: -30px;
-    height: 75px;
-    vertical-align: middle;
-    display: inline;
-  }
-  .margin-side-10p{
-      margin-left:10%;
-      margin-right:10%;
-      text-align: justify;
-  }
-  .font-white{
-      color: white;
-  }
-
-  .purple-itj{
-    color: #68217a;
-  }
-
-  
-
-  .banner-itj .text-itj .header{
-    color:white;
-    font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    margin-top:90px;
-    font-size:42px;
+.bg-white{
+    background-color:white;
 }
 
-  .nav-tango{
-    background-color: #222;
-  }
+.content-container{
+    padding:15px;
+}
 
-  .nav-tango ul a:hover,
-  .nav-tango ul a.active{
-    background-color: rgba(0,0,0,0.2);
-    color: #ffb300;
-    text-decoration: none;
-    border-bottom: 1px solid #ffb300;
-  }
+.content-container h2{
+    font-size:3.5em;
+    text-transform:uppercase;
+    margin-top: 10px;
+}
 
-  .img-tango{
-    height: 64px;
-    vertical-align: middle;
-  }
-
-  .post-excerpt,
-  .post-excerpt:hover{
+.post{
+    padding:15px;
+    background-color:white;
     color: #333;
-    font-size: .8em;
-    line-height: 1.6em;
-  }
+    margin: 15px;
+    min-height: 400px;
+    height: 400px;
+    -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+    -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+    -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+    -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+    transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+}
 
-  .post-date{
-      margin-bottom:3.5rem; 
-  }
+.post-tag{
+    min-height: 290px;
+    height: 290px;
+}
 
-  ul.home-list .post-date,
-  .content-list-item .post-date{
-      margin-bottom:5px;
-  }
+.post-tag h2{
+    margin-top:0;
+    font-size:3em;
+}
 
-  ul.home-list .content-list-item{
-      margin-top:0;
-  }
-  .post-serie-badge{
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: #617ab9;
-    border-radius: 2px;
-    min-width: 6rem;
+.post-col{
+    min-height:320px;
+    height:320px;
+}
+
+.post-col-2{
+    min-height:450px;
+    height:450px; 
+}
+
+.small-header{
+    font-size: 2.5em !important;
+    margin-top: 10px !important;
+}
+
+.post-tag:hover h2{
+    color:#24bfcf;
+}
+
+.card-post{
+    min-height: 300px;
+    height: 300px;
+}
+
+.post:hover{
+    margin-top:-10px;
+}
+
+.post a{
+    color: #333;
+}
+
+.post a:hover .card-title{
+    color:#24bfcf;
+
+}
+
+.post-excerpt{
+    font-size:1.2em;
+}
+
+.card-title{
+    font-size:1.5em;
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-date{
+    color: #9a9a9a;
+}
+
+.post-text{
+    font-size:1em;
+}
+
+.post-text{
+    text-align:justify;
+    padding: 30px;
+    background-color: white;
+}
+
+.post-text .highlight{
+    padding:5px;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    word-break: break-word;
+    overflow-x: overlay;
+}
+
+.post-text .post-date{
+    text-align:right;
+    font-size: 1.4em;
+}
+
+
+.post-text h3{
+    margin-top:45px;
+    margin-bottom:30px;
+    font-size: 2.5em;
+}
+
+.post-text img{
+    max-width:100%;
+}
+
+.post-text li,
+.post-text p{
+    font-size:1.5em;
+    color: rgb(85, 85, 85);
+    text-align: justify;
+}
+
+.post-text blockquote{
+    padding: 10px;
+    border-left: 4px solid #ddd;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.github-fixed-button{
+    position: fixed;
+    max-width: 64px;
+    top: 100px;
+    right: 0;
+}
+
+.chip.bg-blue{
+    background-color:#24bfcf;
+}
+.chip.bg-dark{
+    background-color:#222;
+}
+/*CONTENT HOME END*/
+
+/*Newsletter*/
+
+.newsletter{
+    background-color: #222;
+    padding-top:30px;
+    border: none;
+}
+
+.newsletter input{
+    padding-left:.75rem !important;
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.5em !important;
+}
+.newsletter input:focus + label{
+    color:white !important;
+}
+.newsletter input:focus{
+    border-bottom: 1px solid white !important;
+    -webkit-box-shadow: 0 1px 0 0 white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+.newsletter h2{
+    color:white;
+    font-size: 3em;
+}
+
+.newsletter button{
+    background:transparent;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border:1px solid white;
+    border-radius:0;
+    height:auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:45px;
+    padding-right:45px;
+}
+
+.newsletter button:hover{
+    background:white;
+    color:#222;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+.newsletter input{
+    color:white;
+}
+
+/*Newsletter END*/
+
+/*FOOTER*/
+
+footer{
+    background-color: #222;
+    min-height:300px;
+    color:white;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+footer .row{
+    margin-bottom:0;
+}
+footer .col .row{
     margin-left:0;
-    float:left;
-    text-align: center;
-  }
+    margin-right:0;
+}
 
-  .post-tag-badge{
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: #24bfcf;
-    border-radius: 2px;
-    min-width: 1.75rem;
-    text-align: center;
-  }
+footer a{
+    color:white;
+}
 
-  .spoiler{
-    border-bottom: 1px solid #eee;
-    border-top: 1px solid #eee;
-    margin-bottom: 15px;
-  }
+footer p{
+    margin:0;
+    margin-bottom:15px;
+}
 
-  .spoiler-message{
-    cursor: pointer;
-  }
-    .spoiler-message span{
-        color: rgb(85, 85, 85);
-        font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-        font-size: 24px;
-        margin-left: 30px;
-        cursor: pointer;
+footer h3{
+    font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:2em;
+}
+
+.sidenav .icon,
+footer .icon{
+    height: 75px;
+    max-width: 30%;
+}
+/*FOOTER END*/
+
+/*MOBILE*/
+@media(max-width: 991px) {
+    .sidenav .icon{
+        margin-top:60px;
     }
 
-    .spoiler-hidden{
-        display: none;
+    .center-on-small{
+        text-align:center;
     }
 
-    a.github-fixed-button {
-        position: fixed;
-        top: 15px;
-        right: -55px;
-        width: 65px;
-        height: 65px;
-        border-radius: 0;
-    }
-    
-    a.github-fixed-button:hover{
-            transform: scale(0.9) translateX(-60px);
-            transition: all 300ms;       
-        }
-
-    a.github-fixed-button.open{
-        transform: scale(1.2) translateX(-60px);
-        transition: all 300ms;  
+    .navbar-fixed,
+    nav,
+    nav.scrolled{
+        height:56px;
+        line-height: 56px;
     }
 
-    a.github-fixed-button.closing{
-        transform: scale(1) translateX(0);
-        transition: all 300ms;
+    nav .brand-logo{
+        font-size:1.9em;
     }
 
-    a.github-fixed-button img.github-arrow{
-        opacity: 0;
-    }
-
-    a.github-fixed-button.open img.github-arrow{
-        opacity:1;
-        transition: all 300ms;  
-    }
-
-    a.github-fixed-button.closing img.github-arrow{
+    nav .nav-wrapper img{
         opacity:0;
-        transition: all 300ms;  
+        margin-right: 0;
+        width: 0;
     }
 
-.card .card-title{
-    font-size: 22px;
-    font-weight: 300;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    max-height: 60px;
-    height: 60px;
-}    
+    .github-fixed-button{
+        position: fixed;
+        max-width: 64px;
+        top: 100px;
+        right: -30px;
+;
+    }
 
 
+}
+
+/*MOBILE END*/
+
+/*DESKTOP*/
+@media(min-width: 992px) {
+    .sidenav{
+        display:none;
+    }
+}
