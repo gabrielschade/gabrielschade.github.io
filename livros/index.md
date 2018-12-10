@@ -1,10 +1,13 @@
 ---
-layout: default-2
-title: Home
+layout: parallax-new
+title: Livros
+parallax-bg: https://i.imgur.com/oPTleSN.png
 ---
-{% include huge-h2.html content="Meus Livros" css="margin-low" %} 
-{% include livros.html %} 
 
-{% include huge-h2.html content="Gratuitos" css="margin-low" %} 
-{% include livros-gratuitos.html %} 
+<h2 class="center">Meus Livros</h2>
+{% include livros-new.html %} 
+
+
+<h2 class="center">Gratuitos</h2>
+{% include livros-gratuitos-new.html %} 
 
