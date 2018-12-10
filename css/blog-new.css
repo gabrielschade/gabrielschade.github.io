@@ -307,6 +307,7 @@ h3{
     text-align: justify;
 }
 
+.about blockquote,
 .post-text blockquote{
     padding: 10px;
     border-left: 4px solid #ddd;

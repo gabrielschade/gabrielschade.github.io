@@ -1,6 +1,6 @@
 ---
 layout: home-new
-title: New
+title: Home
 parallax-bg: https://i.imgur.com/2RgVzmr.png
 ---
 
