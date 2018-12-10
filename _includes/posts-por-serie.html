@@ -1,5 +1,5 @@
 <div class="row">
-        {% for post in site.posts %}
+        {% for post in site.posts reversed %}
         {% if post.serie contains include.content %}
         {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
             %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %}

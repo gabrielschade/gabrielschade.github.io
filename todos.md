@@ -1,5 +1,5 @@
 ---
-layout: post-list-new
+layout: post-list
 title: Todos os Posts
 ---
 
