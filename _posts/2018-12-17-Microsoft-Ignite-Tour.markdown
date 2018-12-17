@@ -20,13 +20,13 @@ Tivemos um público de quase 4000 pessoas, ou seja, gente pra cacete. Acontecera
 
 Bateram bastante na tecla da diversidade e de como isso é super importante, contendo inclusive, um estande específico para tratar deste assunto.
 
-{% include image.html link="https://imgur.com/RIby7o6.png" alt="Diversidade" width=50 %}
+{% include image.html link="https://imgur.com/RIby7o6.png" alt="Diversidade" width=75 %}
 
 As palestras trataram de temas bastante relevantes para o mercado como o Office 365, Azure, AI, Desenvolvimento e tudo que cabe na cartela Microsoft. O mais legal é que além das palestras nos auditórios tínhamos uma área chamada "The Hub", onde vários MVPs (eu incluso) realizaram pequenas Talks sobre os mais diversos assuntos!
 
 Eu falei sobre o Azure Machine Learning Studio, inclusive, se você tiver interesse, já tratei deste assunto por aqui, é só acessar [este link]({{ site.baseurl }}{% link posts-serie/azure machine learning.html %}).
 
-{% include image.html link="https://imgur.com/XTT4ksU.png" alt="Machine Learning" width=50 %}
+{% include image.html link="https://imgur.com/XTT4ksU.png" alt="Machine Learning" width=75 %}
 
 Além disso, tive a oportunidade de conhecer vários novos MVPs e rever alguns que já conhecia, o que é sempre fantástico!
 
@@ -34,7 +34,7 @@ Gostaria de deixar aqui meu obrigado para toda a equipe que mobilizou o evento e
 
 Tenho muito orgulho de fazer parte deste time ❤.
 
-{% include image.html link="https://i.imgur.com/qBlLlZv.png" alt="MVP BR" width=50 %}
+{% include image.html link="https://i.imgur.com/qBlLlZv.png" alt="MVP BR" width=75 %}
 
 Nos vemos no próximo post!
 

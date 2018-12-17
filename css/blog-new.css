@@ -60,8 +60,9 @@ nav .brand-logo{
 
 footer a:hover,
 nav ul a:hover {
-    background-color: rgba(0,0,0,0.02);
-    color:#24bfcf;
+    background-color: transparent;
+    color: #24bfcf;
+    border-bottom: 1px solid #24bfcf;
 }
 
 
