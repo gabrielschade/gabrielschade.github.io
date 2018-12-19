@@ -284,6 +284,11 @@ h3{
         padding-left:30px;
     }
 
+    .banner-large{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
 .post-text{
     font-size:1em;
 }
@@ -475,6 +480,14 @@ footer .icon{
 }
 /*FOOTER END*/
 
+/*PROJETOS*/
+.bg-portugol{
+    background-color:#151b1e;
+    color:white;
+}
+
+/*PROJETOS END*/
+
 /*MOBILE*/
 @media(max-width: 991px) {
     .banner{
@@ -527,6 +540,10 @@ footer .icon{
 
     .post-text iframe{
         width:100%;
+    }
+
+    .tango-name{
+        margin-top:30px;
     }
 
 }
