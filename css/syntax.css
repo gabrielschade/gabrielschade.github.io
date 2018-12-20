@@ -1,5 +1,6 @@
 .highlight  {background: rgb(30,30,30); border-radius:0; -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);}
+.highlight code {color: rgb(220,220,220);}
 .highlight .c { color: rgb(96,139,76); font-style: italic } /* Comment */
 .highlight .err { color:rgb(214,157,133); } /* Error */
 .highlight .k { color: rgb(92, 156, 220); } /* Keyword */
@@ -25,8 +26,10 @@
 .highlight .kp { color:#999999; } /* Keyword.Pseudo */
 .highlight .kr { color:#999999; } /* Keyword.Reserved */
 .highlight .kt {color: rgb(92, 156, 220);} /* Keyword.Type */
+.highlight .kn {color: rgb(220,220,220);}
 .highlight .m { color: rgb(184,215,165); } /* Literal.Number */
 .highlight .s { color: rgb(214,157,133) } /* Literal.String */
+.highlight .nl {color: rgb(220,220,220);}
 .highlight .na { color: #008080 } /* Name.Attribute */
 .highlight .nb { color: #0086B3 } /* Name.Builtin */
 .highlight .nc { color: #46c2c3; } /* Name.Class */
