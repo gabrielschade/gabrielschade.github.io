@@ -489,6 +489,10 @@ footer .icon{
     color:white;
 }
 
+.bg-py{
+    background-color:#f7b20c;
+}
+
 .banner .img-80{
     max-width: 80% !important;
 }
