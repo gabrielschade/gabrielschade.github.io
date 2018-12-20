@@ -486,6 +486,19 @@ footer .icon{
     color:white;
 }
 
+.banner .img-80{
+    max-width: 80% !important;
+}
+
+.margin-top-120{
+    margin-top:120px;
+}
+
+.padding-45{
+    padding:45px;
+}
+
+
 /*PROJETOS END*/
 
 /*MOBILE*/
@@ -555,4 +568,6 @@ footer .icon{
     .sidenav{
         display:none;
     }
+
+    
 }
