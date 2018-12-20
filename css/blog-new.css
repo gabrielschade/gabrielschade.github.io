@@ -481,6 +481,9 @@ footer .icon{
 /*FOOTER END*/
 
 /*PROJETOS*/
+.light-text{
+    color: rgb(145,145,145);
+}
 .bg-portugol{
     background-color:#151b1e;
     color:white;
