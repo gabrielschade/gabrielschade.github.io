@@ -31,7 +31,7 @@ Os _underlines_ não fazem parte do resultado, mas acho que ajuda na visualizaç
 
 Depois disso, podemos realizar novas comparações (não fazem parte deste algoritmo) para descobrir o que foi apagado e o que foi incluído.
 
-Para descobrir o que foi apagado, basta indentificarmos as diferenças entre a subsequência encontrada: `O cinema n  foi muito bom` e a string original: O cinema n~o sábado~ foi muito bom. Para descobrir o que foi incluído fazemos o mesmo processo, desta vez comparando com a string editada: O cinema n**a sexta** foi muito bom.
+Para descobrir o que foi apagado, basta indentificarmos as diferenças entre a subsequência encontrada: `O cinema n  foi muito bom` e a string original: O cinema n~~o sábado~~ foi muito bom. Para descobrir o que foi incluído fazemos o mesmo processo, desta vez comparando com a string editada: O cinema n**a sexta** foi muito bom.
 
 Nesta publicação vamos focar em realizar a primeira operação, ou seja, encontrar a maior subsequência em dois textos, sem realizar as comparações.
 
