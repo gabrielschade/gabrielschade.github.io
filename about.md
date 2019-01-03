@@ -10,7 +10,7 @@ Eu sou formado em ciência da computação e mestre em computação aplicada com
 
 Toda minha carreira profissional na área de desenvolvimento de software começou aos 18 anos, quando iniciei em meu primeiro emprego como programador. Eu já programava antes disso, mas nada profissionalmente.
 
-Depois de algum tempo na área, tive a oportunidade de palestrar pela em um evento MSDN Community, o que depois de algum tempo, me rendeu contato com a editora [Casa do Código](https://www.casadocodigo.com.br/) e a publicação de quatro livros que me orgulho muito.
+Depois de algum tempo na área, tive a oportunidade de palestrar pela primeira vez. Foi em um evento MSDN Community, o que depois de algum tempo, me rendeu contato com a editora [Casa do Código](https://www.casadocodigo.com.br/) e a publicação de quatro livros que me orgulho muito.
 
 Depois de formar mestre em computação aplicada atuei como professor na [UNIVALI (Universidade do Vale do Itajaí)](https://www.univali.br) no curso de Ciência da Computação, Sistemas para Internet e Desenvolvimento Web. Durante este período também atuei como pesquisador e colaborador do LITE (Laboratório de Inovação Tecnológica na Educação), onde pude contribuir para o projeto Portugol Studio e auxiliar em eventos com o foco em ensino à pensamento computacional para crianças e adolescentes.
 
