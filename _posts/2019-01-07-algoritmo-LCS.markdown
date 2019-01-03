@@ -12,6 +12,7 @@ Vocês já pararam para pensar como o Git Diff funciona? -Ok, talvez não seja e
 
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/algorithms/blob/master/LongestCommonSubsequence/Program.fs" %} 
 Imagine o seguinte, o algoritmo vai comparar dois textos diferentes, isso pode ser um comentário, um post ou no caso do Git diff, um trecho de código.
 
 Vamos usar como exemplo uma publicação em rede social, imagine o usuário escreveu um post e logo depois fez uma pequena edição no texto para corrigir a data:
@@ -259,6 +260,8 @@ let main argv =
     0
 ```
 
+Já conseguimos ver o resultado esperado!
+
 {% include image.html link="https://i.imgur.com/8pGb70g.png" alt="LCS Resultado" width=75 %}
 
 Agora vamos testar uma última vez, dessa vez com um trecho de código de uma função completa. Vamos criar duas versões diferentes da função `solveWhenDifferentChars`, uma delas declarando os resultados como string (como foi implementado) e na outra usando um `ToString()` na comparação do tamanho das strings:
@@ -288,8 +291,108 @@ Funcionou? -Funcionar, funcionou, mas ficou **bem** lento.
 
 Podemos resolver isso com a chamada **programação dinâmica**, que possui algumas características, mas a mais simples dela é armazenar os resultados intermediários para não termos que calcular de novo.
 
-Nos vemos no próximo post!
+Faremos isso criando uma matriz de cache, sim, ela precisa ser **mutável**. E olha só, quando isso é algo controlado, não é um crime. Mas sempre que possível, evite.
 
-Alguma sugestão? Me conte nos comentários!
+Esta matriz de cache funciona da seguinte maneira, iremos armazenar o resultado da LCS sob duas letras específicas. Cada letra já possui um índice dentro da palavra (`indexOriginal` e `indexEdited` em nosso código), dessa forma, utilizaremos o índice da primeira letra como linha da matriz e o índice da segunda como coluna.
+
+Por exemplo, nas palavras "BMOAL" "BLOA", o resultado da primeira comparação será armazenado em `[0,0]`, o resultado de "M" e "L", será armazenado em `[1,1]`, de "M" e "O" em `[1,2]` e assim por diante.
+
+Vamos adicionar o parâmetro para a função, iniciar uma matriz de strings vazias e renomear as funções para diferenciá-las da original:
+
+```fsharp
+let longestCommonSubsequenceSolveWithCache (original:string) (edited:string) =
+    let rec solveWithCache 
+        (original:string) (edited:string) (cache:string[,]) 
+        indexOriginal indexEdited =
+        
+        let solveWithCache' = solveWithCache original edited cache
+
+        let solveWhenDifferentCharsWithCache indexOriginal indexEdited =
+            let resultA : string = solveWithCache' (indexOriginal+1) indexEdited
+            let resultB : string = solveWithCache' indexOriginal (indexEdited+1)
+            if resultA.Length >= resultB.Length
+                then resultA
+                else resultB
+
+        match original, edited with
+        | original', edited' 
+            when indexOriginal = original'.Length || indexEdited = edited'.Length -> 
+            String.Empty
+
+        | original', edited' 
+            when original'.Chars(indexOriginal) = edited'.Chars(indexEdited) -> 
+            original'.Chars(indexOriginal) ^ (solve' (indexOriginal+1) (indexEdited+1) )
+
+        | _ -> solveWhenDifferentCharsWithCache indexOriginal indexEdited
+    
+    let mutable cache = 
+        Array2D.init original.Length edited.Length 
+            (fun linha coluna -> String.Empty)
+
+    solveWithCache original edited cache 0 0
+```
+
+Agora vamos criar mais uma função aninhada para realizar o armazenamento dos resultados intermediários:
+
+```fsharp
+let cacheResult indexOriginal indexEdited value =
+    cache.[indexOriginal,indexEdited] <- value
+    value
+
+let cacheResult' = cacheResult indexOriginal indexEdited
+```
+Como você pode ver, já fizemos uma versão derivada da função informando os índices, dessa forma, só precisamos indentificar o valor que estamos armazenando. 
+
+Note também que, após realizar o armazenamento na matriz, retoranmos o valor armazenado, isso facilita a composição e diminui a quantidade de alterações que precisamos fazer em nosso código.
+
+Agora precisamos utilizar esta função todas as vezes que calculamos um resultado, primeiro vamos alterar o _pattern matching_, tanto no caso de quando as letras são iguais, quanto no caso de quando as letras são diferentes:
+
+```fsharp
+match original, edited with
+| original', edited' 
+    when indexOriginal = original'.Length || indexEdited = edited'.Length -> 
+    String.Empty
+
+| original', edited' 
+    when original'.Chars(indexOriginal) = edited'.Chars(indexEdited) -> 
+    cacheResult' 
+        (original'.Chars(indexOriginal) 
+        ^ (solveWithCache' (indexOriginal+1) (indexEdited+1)) )
+    
+| _ -> 
+    cacheResult' (solveWhenDifferentCharsWithCache indexOriginal indexEdited)
+```
+
+Por fim, precisamos adicionar mais um caso para o _pattern matching_, o caso onde a matriz de cache já contém o resultado que estamos calculando:
+
+```fsharp
+match original, edited with
+| original', edited' 
+    when indexOriginal = original'.Length || indexEdited = edited'.Length -> 
+    String.Empty
+
+| original', edited' 
+    when cache.[indexOriginal, indexEdited] <> String.Empty ->
+    cache.[indexOriginal, indexEdited]
+
+| original', edited' 
+    when original'.Chars(indexOriginal) = edited'.Chars(indexEdited) -> 
+    cacheResult' 
+        (original'.Chars(indexOriginal) 
+        ^ (solveWithCache' (indexOriginal+1) (indexEdited+1)) )
+    
+| _ -> 
+    cacheResult' (solveWhenDifferentCharsWithCache indexOriginal indexEdited)
+```
+
+Agora podemos testar mais uma vez!
+
+{% include image.html link="https://i.imgur.com/OXRxk8o.png" alt="LCS resultado com cache" width=75 %}
+
+Se tudo foi implementado corretamente, é provavel que o resultado seja próximo do instântaneo. Esta ainda não é a melhor solução, porque pode ser gerado `StackOverflow` em textos muito grandes. Podemos contornar isso, mas por enquanto ficaremos por aqui!
+
+Gostou desse tipo de post? Quer que eu implemente a próxima parte do diff?
+
+Me conte nos comentários!
 
 E Até mais!
