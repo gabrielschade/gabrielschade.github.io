@@ -8,12 +8,8 @@ parallax-bg: https://i.imgur.com/OMxZU5M.png
     <h2 class="center">Posts</h2>
 
 
-    <div id="retainable-rss-embed" data-rss="https://medium.com/feed/@gabrielschade" 
-        data-maxcols="3" data-layout="grid" data-poststyle="inline" 
-        data-readmore="Read more" data-buttonclass="btn waves-effect waves-light" 
-        data-offset="-100">
-    </div>
+    <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@gabrielschade","postsPerLine":3,"limit":10,"picture":"big","fields":["description","claps","publishAt"],"ratio":"landscape"}})</script>
 
-    
-    <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 </div>
