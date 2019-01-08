@@ -61,7 +61,7 @@ A LCS de "BMOAL" e "BLOA" é equivalente à "B" + LCS de "MOAL" e "LOA".
 LCS "BMOAL" "BLOA" = "B" + LCS "MOAL" "LOA"
 ```
 
-Focamos bastante no conceito, mas vamos pensar um pouco na estrutura de código. Vamos criar uma função chamada `longestCommonSubsequenceSolve`, ela será responsável por resolver este algoritmo.
+Focamos bastante no conceito, mas vamos pensar um pouco na estrutura de código. Vamos criar uma função chamada "longest Common Subsequence Solve", ela será responsável por resolver este algoritmo.
 
 Precisamos sinalizar em F# que a função é recursiva, então usaremos a palavra reservada `rec`, além disso, também precisamos de dois parâmetros diferentes, um para a string original e outro para a string editada.
 
@@ -126,7 +126,7 @@ let longestCommonSubsequenceSolve original edited =
     solve original edited 0 0
 ```
 
-Agora podemos implementar o primeiro caso, quando as duas letras comparadas forem iguais, simplesmente vamos adicionar a letra à solução e decompor o problema, faremos isso com um _pattern matching_`_:
+Agora podemos implementar o primeiro caso, quando as duas letras comparadas forem iguais, simplesmente vamos adicionar a letra à solução e decompor o problema, faremos isso com um _pattern matching_:
 
 ```fsharp
 open System
