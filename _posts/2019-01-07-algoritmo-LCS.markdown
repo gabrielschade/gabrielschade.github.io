@@ -389,7 +389,7 @@ Agora podemos testar mais uma vez!
 
 {% include image.html link="https://i.imgur.com/OXRxk8o.png" alt="LCS resultado com cache" width=75 %}
 
-Se tudo foi implementado corretamente, é provavel que o resultado seja próximo do instântaneo. Esta ainda não é a melhor solução, porque pode ser gerado `StackOverflow` em textos muito grandes. Podemos contornar isso, mas por enquanto ficaremos por aqui!
+Se tudo foi implementado corretamente, é provavel que o resultado seja próximo do instantâneo. Esta ainda não é a melhor solução, porque pode ser gerado `StackOverflow` em textos muito grandes. Podemos contornar isso, mas por enquanto ficaremos por aqui!
 
 Gostou desse tipo de post? Quer que eu implemente a próxima parte do diff?
 
