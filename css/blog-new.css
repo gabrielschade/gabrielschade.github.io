@@ -120,8 +120,9 @@ nav.scrolled .nav-wrapper img{
 
 /*SIDENAV TRIGGER END*/
 /*RTB*/
-.medium-widget-article__item{
+.medium-widget-article__column{
  background:white;   
+ padding:15px;
  -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
  -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
  -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
@@ -129,8 +130,11 @@ nav.scrolled .nav-wrapper img{
  transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
 }
 
+.medium-widget-article__column:hover{
+    margin-top:-15px;
+}
 
-.medium-widget-article__item:hover a{
+.medium-widget-article__column:hover a{
  color:#24bfcf;
 }
 
