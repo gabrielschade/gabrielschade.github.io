@@ -352,6 +352,10 @@ p,
     text-align: justify;
 }
 
+ol li p{
+    font-size: 1em !important;
+}
+
 .post-text iframe{
     width:80%;
     box-shadow: none !important;

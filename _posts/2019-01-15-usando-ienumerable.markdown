@@ -280,6 +280,7 @@ Assim fica bem mais claro o motivo do método `Dispose` ser chamado, afinal, est
 Agora sim, sem problemas! -Inclusive podemos testar mais de uma vez que o `Current` reiniciará corretamente.
 
 > **Atenção**
+>
 > Esta não é a maneira correta de implementar o `Dispose`, não quis estender o post e alterar o foco, por isso simplesmente chamamos o `Reset`.
 
 
