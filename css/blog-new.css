@@ -365,9 +365,8 @@ ol li p{
 .about blockquote,
 .post-text blockquote{
     padding: 10px;
-    border-left: 4px solid #ddd;
+    border-left: 4px solid #24bfcf;
     font-style: italic;
-    font-size: 1.5em;
 }
 
 .github-fixed-button{
