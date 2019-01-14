@@ -32,7 +32,7 @@ Uma boa forma de visualizar como funciona a iteração da coleção é lembrar d
 
 {% include image.html link="https://i.imgur.com/TNuQcrF.png" alt="Colecao" width=75 %}
 
-A seta indica a posição atual do elemento, lembrando que esta seta só se move para a direita.
+A seta indica a posição atual do elemento e move-se apenas para frente (para a direita na imagem).
 
 Agora vamos falar um pouco da implementação, começando pela inteface IEnumerable:
 
