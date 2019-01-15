@@ -30,7 +30,7 @@ Antes de começarmos temos que ter em mente três características básicas do I
 
 Uma boa forma de visualizar como funciona a iteração da coleção é lembrar da fita da máquina de turing, ok, talvez eu tenha ido um pouco longe, mas vamos lá:
 
-{% include image.html link="https://i.imgur.com/TNuQcrF.png" alt="Colecao" width=75 %}
+{% include image.html link="https://i.imgur.com/4TKGhG6.png" alt="Colecao" width=75 %}
 
 A seta indica a posição atual do elemento e move-se apenas para frente (para a direita na imagem).
 
@@ -106,7 +106,7 @@ O método `MoveNext` realiza duas operações diferentes: a primeira é alterar 
 
 Na primeira iteração, o resultado da coleção seria este:
 
-{% include image.html link="https://i.imgur.com/teti0zA.png" alt="Colecao estado 2" width=75 %}
+{% include image.html link="https://i.imgur.com/wTUJYN3.png" alt="Colecao estado 2" width=75 %}
 
 A propriedade `Current` simplesmente obtém o valor para o qual o cursor está apontando neste momento.
 
