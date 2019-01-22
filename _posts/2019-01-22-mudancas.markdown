@@ -14,11 +14,11 @@ O blog passou por algumas modificações de layout, você deve já deve ter nota
 
 Além do novo visual, o blog também conta com algumas mudanças de conteúdo. 
 
-Vai continuar tendo as postagens regulares que sempre faço por aqui, mas agora, em paralelo, também estou escrevendo no ![Medium](https://medium.com/@gabrielschade).
+Vai continuar tendo as postagens regulares que sempre faço por aqui, mas agora, em paralelo, também estou escrevendo no [Medium](https://medium.com/@gabrielschade).
 
 Por lá vou focar no conteúdo em inglês, afinal, vale a pena praticar e de quebra ainda conseguir ajudar alguém.
 
-O blog também conta com uma pequena área chamada ![`English`]({{ site.baseurl }}{% link posts-en.html %}), nesta área você encontrará todos os posts feitos lá no medium.
+O blog também conta com uma pequena área chamada [`English`]({{ site.baseurl }}{% link posts-en.html %}), nesta área você encontrará todos os posts feitos lá no medium.
 
 Além disso, os e-mails notificando as atualizações do blog serão enviados em intervalos maiores, também vou tentar começar a colocar mais conteúdo exclusivo para assinantes.
 
