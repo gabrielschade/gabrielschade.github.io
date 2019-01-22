@@ -37,7 +37,7 @@ Neste caso, este algoritmo teria complexidade _O(N)_ + _O(M)_ onde, N é o taman
 
 No entanto, a complexidade real deste algoritmo é de apenas _O(N)_, isso porque as operações acontecem uma após à outra durante o **mesmo** loop. O que é bastante interessante, mas pode causar alguns efeitos comportamentais que, se não sabidos previamente, podem dar uma boa dor de cabeça.
 
-Vamos começar fazendo o exemplo utilizando uma lista, onde as coisas são executadas de maneira "tradicional". Vamos começar criando um método que gera a lista, este método irá fazer um loop de zero até 9 adicionando o número na lista:
+Vamos começar fazendo o exemplo utilizando uma lista, onde as coisas são executadas de maneira "tradicional". Para começar criaremos o método que gera a lista, esse método irá fazer um loop de zero até 9 adicionando o número na lista:
 
 ```csharp
 List<int> GenerateList()
@@ -52,7 +52,7 @@ List<int> GenerateList()
     return list;
 }
 ```
-Vamos colocar mensagens no console em cada interação com um elemento, desse jeito facilitamos a visualização.
+Vamos colocar mensagens no console na interação com cada elemento, desse jeito facilitamos a visualização do que está ocorrendo durante a execução.
 
 No método `Main` faremos algumas operações com esta lista. Primeiro vamos simplesmente fazer um loop utilizando o `foreach`:
 
@@ -111,7 +111,7 @@ IEnumerable<int> GenerateIEnumerable()
 ```
 O método em sua essência é o mesmo, gera uma coleção, exibindo uma mensagem ao passar por cada elemento.
 
-Todo o corpo do método principal não precisa ser alterado, basta alterarmos o tipo da lista para um `IEnumerable` e a chamada para o novo método:
+Todo o corpo do método principal não precisa ser alterado, basta alterarmos o tipo da lista para um `IEnumerable` e apontar a chamada para criação da coleção para o novo método:
 
 ```csharp
 static void Main(string[] args)
@@ -121,9 +121,9 @@ static void Main(string[] args)
 }
 ```
 
-Antes de executar, você consegue prever o resultado?
+Antes de executar, você consegue prever o resultado? -Talvez você se assuste um pouco.
 
-Vamos para o resultado:
+Mas vamos lá:
 
 {% include image.html link="https://imgur.com/uyoPZ4p.png" alt="IEnumerable operations" width=75 %}
 
@@ -133,9 +133,9 @@ Note que foram feitas muitas operações a mais do que no caso da lista, isso si
 
 Simplesmente estávamos trabalhando com o `IEnumerable` como se fosse uma lista, o que claramente não é o caso. Vamos fazer um passo a passo para entender o que houve.
 
-Note que a mensagem que o `IEnumerable` foi gerado, ocorreu antes das mensagens que notificam que um elemento foi adicionado na coleção, por quê?
+Note que a mensagem notificando que o `IEnumerable` foi gerado foi exibida antes das mensagens que notificam que cada elemento foi adicionado na coleção, por quê?
 
-Isso ocorre por conta do `IEnumerable` possuir uma característica de avaliação _lazy_, ou seja, o valor de um `IEnumerable` não está verdadeiramente lá, ele só será computado quando precisarmos dele.
+Isso ocorre por conta do `IEnumerable` possuir uma característica de avaliação _lazy_, ou seja, o valor de um `IEnumerable` não está armazenado verdadeiramente na estrutura, ele só será computado quando precisarmos dele.
 
 Esse é o motivo dele conseguir realizar as operações no mesmo loop o que pode causar um imenso ganho de performance (ou perda, quando usado de forma errada).
 
@@ -143,11 +143,13 @@ Note que quando começamos a iterar cada elemento no `foreach` ele é computado 
 
 No caso da lista, criar a lista e percorrê-la possuia complexidade _O(N²)_, enquanto no caso do `IEnumerable` realizamos estas duas operações em _O(N)_, legal né?
 
-Depois disso, vimos que a lista é gerada novamente quando utilizamos o `Count`, por que diabos isso acontece?
+Depois disso, vimos que a lista é gerada novamente quando utilizamos o `Count`, mas por que diabos isso acontece?
 
 Você sempre precisa lembrar que o `IEnumerable` não contém os dados de verdade, ele precisa computá-los, então para contar quantos elementos existem na lista ele irá percorrê-la até o fim.
 
-No caso da lista, nós já sabíamos quantos elementos ela continha, por conta disso, `Count` é uma **propriedade** dentro da lista e um **método** no `IEnumerable`. A diferença em termos de execução aqui, também é gritante. No caso da lista temos a complexidade _O(1)_ afinal, basta checarmos uma propriedade, enquanto no `IEnumerable` temos a complexidade _O(N)_.
+No caso da lista, nós já sabíamos quantos elementos ela continha, por conta disso, `Count` é uma **propriedade** dentro da lista e um **método** no `IEnumerable`. A diferença em termos de execução aqui, também é gritante. 
+
+No caso da lista temos a complexidade _O(1)_ afinal, basta checarmos uma propriedade que já contém este valor armazenado, enquanto que no `IEnumerable` temos a complexidade _O(N)_.
 
 Imagine que o `Count` do `IEnumerable` seja um método similar à este:
 
