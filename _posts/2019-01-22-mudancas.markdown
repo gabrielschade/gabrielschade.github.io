@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Mudanças na criação de conteúdo"
+date:   2019-01-22 00:00:00 +0000
+comments: true
+tags: [Discussões]
+---
+
+Olá pessoa!
+
+O blog passou por algumas modificações de layout, você deve já deve ter notado, porque mudou **bastante**.
+
+<!--more-->
+
+Além do novo visual, o blog também conta com algumas mudanças de conteúdo. 
+
+Vai continuar tendo as postagens regulares que sempre faço por aqui, mas agora, em paralelo, também estou escrevendo no ![Medium](https://medium.com/@gabrielschade).
+
+Por lá vou focar no conteúdo em inglês, afinal, vale a pena praticar e de quebra ainda conseguir ajudar alguém.
+
+O blog também conta com uma pequena área chamada ![`English`]({{ site.baseurl }}{% link posts-en.html %}), nesta área você encontrará todos os posts feitos lá no medium.
+
+Além disso, os e-mails notificando as atualizações do blog serão enviados em intervalos maiores, também vou tentar começar a colocar mais conteúdo exclusivo para assinantes.
+
+Talvez, só talvez, também começarei a publicar alguns vídeos como conteúdo. Estou estudando uma forma de tornar isso possível e claro, qualquer novidade eu publico por aqui!
+
+E Até mais!
