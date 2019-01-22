@@ -284,7 +284,6 @@ Agora sim, sem problemas! -Inclusive podemos testar mais de uma vez que o `Curre
 > Esta não é a maneira correta de implementar o `Dispose`, não quis estender o post e alterar o foco, por isso simplesmente chamamos o `Reset`.
 
 
-
 Gostou desse tipo de post?
 
 Me conte nos comentários!
