@@ -308,8 +308,8 @@ h3{
         padding-top:60px;
         padding-bottom:60px;
     }
-.banner-tango{
-    background-color:#634261;
+.banner-tango img{
+    height: 300px;
 }
 .post-text{
     font-size:1em;
