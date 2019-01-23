@@ -23,13 +23,13 @@ parallax-bg: https://i.imgur.com/OMxZU5M.png
             if (jQuery) {
 
                 MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 3, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
-                $('large-m').addClass('hide-on-med-and-down');
+                $('#large-m').addClass('hide-on-med-and-down');
 
                 MediumWidget.Init({ renderTo: '#medium-widget-m', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 2, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
-                $('medium-m').addClass('hide-on-small-only hide-on-large-only');
+                $('#medium-m').addClass('hide-on-small-only hide-on-large-only');
 
                 MediumWidget.Init({ renderTo: '#medium-widget-s', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 1, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
-                $('small-m').addClass('hide-on-med-and-up');
+                $('#small-m').addClass('hide-on-med-and-up');
 
                 clearInterval(timer);
             }
