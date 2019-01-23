@@ -8,27 +8,28 @@ parallax-bg: https://i.imgur.com/OMxZU5M.png
     <h2 class="center">Posts in english</h2>
 
 
-    <div id='large-m' class="hide-on-med-and-down">
+    <div id='large-m' class="">
         <div id="medium-widget"></div>
     </div>
-    <div id='medium-m' class="hide-on-small-only hide-on-large-only">
+    <div id='medium-m' class="">
         <div id="medium-widget-m" class=""></div>
     </div>
-    <div id='small-m' class="hide-on-med-and-up">
+    <div id='small-m' class="">
         <div id="medium-widget-s"></div>
     </div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>
         var timer = setInterval(function () {
             if (jQuery) {
-                if ($('#large-m').css('display') != 'none')
-                    MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 3, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
 
-                else if ($('#medium-m').css('display') != 'none')
-                    MediumWidget.Init({ renderTo: '#medium-widget-m', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 2, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 3, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                $('large-m').addClass('hide-on-med-and-down');
 
-                else if ($('#small-m').css('display') != 'none')
-                    MediumWidget.Init({ renderTo: '#medium-widget-s', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 1, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                MediumWidget.Init({ renderTo: '#medium-widget-m', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 2, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                $('medium-m').addClass('hide-on-small-only hide-on-large-only');
+
+                MediumWidget.Init({ renderTo: '#medium-widget-s', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 1, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                $('small-m').addClass('hide-on-med-and-up');
 
                 clearInterval(timer);
             }
