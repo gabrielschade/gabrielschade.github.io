@@ -19,14 +19,21 @@ parallax-bg: https://i.imgur.com/OMxZU5M.png
     </div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>
-        if ($('#large-m').css('display') != 'none')
-            MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 3, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+        var timer = setInterval(function () {
+            if (jQuery) {
+                if ($('#large-m').css('display') != 'none')
+                    MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 3, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
 
-        else if ($('#medium-m').css('display') != 'none')
-            MediumWidget.Init({ renderTo: '#medium-widget-m', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 2, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                else if ($('#medium-m').css('display') != 'none')
+                    MediumWidget.Init({ renderTo: '#medium-widget-m', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 2, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
 
-        else if ($('#small-m').css('display') != 'none')
-            MediumWidget.Init({ renderTo: '#medium-widget-s', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 1, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+                else if ($('#small-m').css('display') != 'none')
+                    MediumWidget.Init({ renderTo: '#medium-widget-s', params: { "resource": "https://medium.com/@gabrielschade", "postsPerLine": 1, "limit": 10, "picture": "big", "fields": ["description", "claps", "publishAt"], "ratio": "landscape" } })
+
+                clearInterval(timer);
+            }
+        }, 100);
+
     </script>
 
 </div>
