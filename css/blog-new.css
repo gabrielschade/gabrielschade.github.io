@@ -590,7 +590,25 @@ footer .icon{
     .tango-name{
         margin-top:30px;
     }
+    h2{
+        font-size: 2.5em;
+    }
 
+    .post-text{
+        padding-left:0;
+        padding-right:0;
+    }
+
+    ol, ul{
+        padding-left:5%;
+    }
+
+    p,
+.about p,
+.post-text li,
+.post-text p{
+    font-size:1.3em;
+    }
 }
 
 /*MOBILE END*/
