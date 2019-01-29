@@ -14,6 +14,8 @@ Você também já deve ter escutado sobre funções recursivas serem mais lentas
 
 <!--more-->
 
+{% include github-link.html link="https://github.com/gabrielschade/algorithms/blob/master/TailRecursion/Program.fs" %} 
+
 Recursividade é uma técnica bastante popular para resolver problemas que possam ser decompostos em partes menores, problemas como a sequência fibonacci ou percorrer estruturas de dados, por exemplo.
 
 No entanto, existem alguns problemas que cercam o uso de recursividade. Não é nenhum segredo que de maneira geral, elas são mais lentas que um laço de repetição tradicional, além disso, há um limite de chamadas de funções que podemos realizar. E é esse o ponto que tocaremos hoje.
