@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Aquele sobre Recursividade (em Cauda)"
-date:   2020-01-29 00:00:00 +0000
+date:   2019-01-29 00:00:00 +0000
 comments: true
 tags: [F#]
 ---
@@ -16,11 +16,11 @@ Você também já deve ter escutado sobre funções recursivas serem mais lentas
 
 Recursividade é uma técnica bastante popular para resolver problemas que possam ser decompostos em partes menores, problemas como a sequência fibonacci ou percorrer estruturas de dados, por exemplo.
 
-No entanto, existem alguns problemas que cercam o uso de recursividade, não é nenhum segredo que de maneira geral, elas são mais lentas que um laço de repetição tradicional, além disso, há um limite de chamadas de funções que podemos realizar.
+No entanto, existem alguns problemas que cercam o uso de recursividade. Não é nenhum segredo que de maneira geral, elas são mais lentas que um laço de repetição tradicional, além disso, há um limite de chamadas de funções que podemos realizar. E é esse o ponto que tocaremos hoje.
 
-Vamos entender isso melhor, por que há um limite de chamadas?
+Primeiro, vamos entender isso melhor, por que há um limite de chamadas?
 
-Existe uma estrutura chamada **pilha de chamadas**, esta estrutura de dados funciona como uma pilha comum, mas neste caso, armazena o local para onde a execução do programa deve retornar quando uma função é chamada.
+A aplicação contém uma estrutura chamada **pilha de chamadas**, essa estrutura de dados funciona como uma pilha comum, armazenando o local para onde a execução do programa deve retornar quando uma função é chamada.
 
 Na prática funciona da seguinte maneira, sempre que você realiza uma chamada para qualquer função no seu código (mesmo as que não são recursivas), um ponteiro com o local de execução código é armazenado nesta pilha, depois disso, a função é executada. Ao terminar sua execução, o ponteiro é restaurado da pilha e o código volta para seu local de origem.
 
@@ -40,9 +40,9 @@ Como você pode ver na imagem abaixo, se colocarmos um _breakpoint_ podemos visu
 
 {% include image.html link="https://imgur.com/9FF6XVa.png" alt="Call Stack" width=75 %}
 
-Apesar de super útil a pilha de chamadas pode causar um erro bastante popular **Stack Overflow**, na verdade, você já deve ter escutado esse nome quando foi tirar uma dúvida na internet. É isso mesmo, este erro é tão famoso que o site fez uma brincadeira/homenagem a ele.
+Apesar de super útil, a pilha de chamadas pode causar um erro bastante popular, o **Stack Overflow**. Você já deve ter escutado esse nome quando foi tirar uma dúvida na internet, pois é, esse erro é tão famoso que o site fez uma brincadeira/homenagem a ele.
 
-Este erro acontece porque a pilha de chamadas possui um limite fixo de memória, isso pode variar de linguagem para linguagem, mas geralmente não é muito diferente de 1MB. Então, se realizarmos mais chamadas que o suportado, essa exceção será lançada.
+Este erro acontece porque a pilha de chamadas possui um limite fixo de memória, isso pode variar de linguagem para linguagem, mas geralmente não é muito diferente de 1MB. Então, se realizarmos mais chamadas que o suportado, acabará a memória e essa exceção será lançada.
 
 Vamos fazer um exemplo simples, uma função recursiva que soma os números de uma lista, vamos lá:
 
@@ -80,15 +80,23 @@ Mas e se aumentarmos o tamanho da lista para 10000?
 
 Ops, talvez não tenha sido tanto sucesso assim. Acabamos de estourar a pilha de chamadas.
 
-Isso acontece porque não estamos utilizando recursão em cauda. Mas afinal de contas, o que é isso?
+Isso acontece porque não estamos utilizando recursão em cauda. Ok, entendi.
 
-Recursão em cauda é um tipo específico de recursividade que está bastante relacionada ao que chamamos de _Tail Call_. Uma _tail call_ ocorre quando é feita uma chamada recursiva garantindo que não há mais **nada** para ser executado depois da chamada da função recursiva, ou seja, o retorno da função será idêntico ao retorno da nova chamada.
+Mas afinal de contas, o que é isso?
 
-Como não há instruções depois da nova chamada recursiva, o programa não precisa manter armazenado o ponteiro de retorno, afinal, será o mesmo retorno da nova chamada. Internamente o compilador irá substituir a chamada recursiva por um JUMP para a primeira instrução, melhorando inclusive a performance.
+Recursão em cauda é um tipo específico de recursividade que está bastante relacionada ao que chamamos de _Tail Call_. Uma _tail call_ ocorre quando é feita uma chamada recursiva garantindo que não há mais **nada** para ser executado depois da chamada da função recursiva.
+
+Com isso, é justo falar que o retorno da função que realizou a chamada recursiva é o mesmo retorno da função chamada, afinal, nada será executado depois disso.
+
+Por conta disso, o programa não precisa manter armazenado o ponteiro com o endereço de retorno, afinal, pode-se assumir que o local é o mesmo da nova chamada. 
+
+Internamente o compilador irá substituir a chamada recursiva (quando a _tail recursion_ é utilizada) por uma instrução de JUMP voltando para a primeira linha de código da função, melhorando inclusive a performance, por não precisarmos alocar nada na pilha de chamadas.
 
 Agora precisamos entender o motivo de nosso código não estar realizando a _tail call_. Uma _tail call_ só é utilizada quando a função recursiva é chamada em uma _tail position_.
 
-O jeito mais simples de definir a _tail position_ é: ela é última instrução que acontece. Só isso, é só um nome bonito para uma coisa muito simples. Veja alguns exemplos:
+E o jeito mais simples de definir a _tail position_ é: ela é última instrução que acontece. Só isso, é só um nome bonito para uma coisa muito simples. 
+
+Veja alguns exemplos:
 
 ```fsharp
 let function1 n =
@@ -108,9 +116,9 @@ let function4 n =
     | 2 -> n //Tail position
     | _ -> 0 //Tail position
 ```
-Repare na `function4`, parece que nosso código estava em uma _tail position_ afinal de contas, certo? -Errado.
+Repare na `function4`, parece que nosso código estava em uma _tail position_ afinal de contas, certo? -**Errado**.
 
-Ele **quase** estava, mas a expressão em nosso patern matching anterior era:
+Ele **quase** estava, mas a expressão em nosso _patern matching_ anterior era:
 
 ```fsharp
 let rec sum list =
@@ -120,7 +128,7 @@ let rec sum list =
 ```
 Apesar de parecer muito, a chamada da função ocorre antes da soma com o `head`, portanto, não estamos em uma _tail position_, e por consequência disso, não estamos realizando uma _tail call_. 
 
-Neste ponto a solução já deve estar obvia para você, tudo que precisamos fazer é que a chamada da função esteja na _tail position_. Para fazer isso, vamos fazer uma nova função.
+Neste ponto a solução já deve estar óbvia para você, tudo que precisamos fazer é que a chamada da função esteja na _tail position_. Para fazer isso, vamos fazer uma nova função.
 
 Essa nova função será bastante semelhante à anterior, mas neste caso vamos utilizar um acumulador via parâmetro ao invés de acumular os retornos. Simples assim.
 
@@ -201,10 +209,12 @@ Agora vamos navegar pelo IL DASM, primeiro vamos dar uma olhada na primeira fun�
   IL_0025:  add
   IL_0026:  ret
 } // end of method Program::sum
+
+
 ```
 
 
-Talvez essa linguagem pareça bastante estranha para você, mas o ponto aqui não é entendermos todas as intruções, mas note em especial a instrução **call**, ela acontece em quatro momentos distintos:
+Talvez essa linguagem pareça bastante estranha para você, mas o ponto aqui não é entendermos todas as intruções, vamos focar na instrução **call**, ela acontece em quatro momentos distintos:
 
 1. IL 003 - call para a função get_TailOrNull();
 2. IL 011 - call para a função get_TailOrNull();
@@ -230,6 +240,8 @@ Agora vamos ver a função `tailRecursionSum`:
   IL_000b:  call       !!0 class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<class [FSharp.Core]Microsoft.FSharp.Collections.FSharpList`1<int32>,int32>::InvokeFast<int32>(class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<!0,class [FSharp.Core]Microsoft.FSharp.Core.FSharpFunc`2<!1,!!0>>, !0, !1)
   IL_0010:  ret
 } // end of method Program::tailRecursionSum
+
+
 ```
 
 A primeira grande diferença é o tamanho do código gerado, esta função parece bem mais simples que a anterior, certo?
@@ -279,14 +291,19 @@ Agora vamos dar uma olhada no código:
   IL_0024:  starg.s    list
   IL_0026:  br.s       IL_0000
 } // end of method _internalSum@13::Invoke
+
+
 ```
-Se notarmos ainda ocorrem três instruções de `call`, mas desta vez, apenas para obter o `head` e o `tail` da lista. Ao invés de termos uma última `call` para a própria função, temos uma instrução `br.s` que funciona como um JUMP para a instrução listada como parâmetro, ou seja, temos um jump para a primeira linha de código da função. 
+Se notarmos ainda ocorrem três instruções de `call`, mas desta vez, apenas para obter o `head` e o `tail` da lista. 
+
+Ao invés de termos uma última `call` para a própria função, temos uma instrução `br.s` que funciona como um JUMP para a instrução listada como parâmetro, ou seja, temos um JUMP para a primeira linha de código da função. 
 
 Este JUMP está ocorrendo logo depois de duas instruções `starg.s`, que são utilizadas para armazenar um valor em um argumento, então, o que nosso código está de fato fazendo é: atualizando o valor dos parâmetros em cada iteração e utilizando um JUMP para voltar à primeira linha.
 
 Por conta disso, nada de `StackOverflows`!
 
 Como eu disse antes, o entendimento deste tipo de implementação é fundamental para escrevermos um código funcional de alta performance e evitar problemas bobos como o `StackOverflow`. 
+
 Muitas vezes não paramos para realizar uma autocrítica de como estamos desenvolvendo, mas este é um ótimo exemplo de um código que pode funcionar "na sua máquina" e em produção começar a gerar exceções.
 
 Espero que tenham gostado deste tipo de post!
