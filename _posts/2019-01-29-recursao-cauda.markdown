@@ -111,7 +111,7 @@ let function2 n =
 
 let function3 n =
     let value = n + 1
-    value ;//Tail position
+    value //Tail position
 
 let function4 n =
     match n with
