@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Azure Notebooks"
-date:   2019-02-13 00:00:00 +0000
+date:   2019-02-12 00:00:00 +0000
 comments: true
 tags: [IA, Python, F#]
 ---
