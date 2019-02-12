@@ -108,12 +108,10 @@ matriz.plot.bar()
 
 {% include image.html link="https://imgur.com/TbbPb5B.png" alt="Azure Notebooks - Plot" width=75 %}
 
-O mais legal é que temos tudo isso no mesmo lugar!
+O mais legal é que temos tudo isso no mesmo lugar. 
 
-Você pode acessar o Notebook completo [aqui](https://notebooks.azure.com/gabriel-schade/projects/primeiro-experimento/html/MeuPrimeiroNotebook.ipynb)!
-
-Espero que tenham gostado deste tipo de post!
+> Você pode acessar o Notebook completo [aqui](https://notebooks.azure.com/gabriel-schade/projects/primeiro-experimento/html/MeuPrimeiroNotebook.ipynb).
 
 Qualquer dúvida ou sugestão, deixem nos comentários!
 
-E Até mais!
+E até mais.
