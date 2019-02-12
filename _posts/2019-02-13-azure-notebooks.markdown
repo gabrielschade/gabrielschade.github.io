@@ -3,7 +3,7 @@ layout: post
 title:  "Azure Notebooks"
 date:   2019-02-13 00:00:00 +0000
 comments: true
-tags: [IA]
+tags: [IA, Python, F#]
 ---
 
 Olá pessoa!
