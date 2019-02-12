@@ -12,7 +12,7 @@ Um dos lançamentos recentes da Microsoft é o Azure Notebooks, já ouviu falar?
 
 <!--more-->
 
-Se você já mexeu com inteligência artificial, data science ou algum tipo de experimento com dados, é muito possível que você conheça o {% include link.html text="Jupyter Notebooks" link"https://jupyter.org/" %}.
+Se você já mexeu com inteligência artificial, data science ou algum tipo de experimento com dados, é muito possível que você conheça o [Jupyter Notebooks](https://jupyter.org/).
 
 Trata-se de um projeto open-source que permite criar o que chamamos de Notebook. Ok, mas o que significa isso?
 
@@ -26,7 +26,7 @@ O Azure Notebooks é um serviço gratuito que incorpora o Jupyter e permite real
 
 Vamos dar uma olhada nele?
 
-Primeiro acesse: {% include link.html text="https://notebooks.azure.com/" link"https://notebooks.azure.com/" %}
+Primeiro acesse: [https://notebooks.azure.com/](https://notebooks.azure.com/)
 
 {% include image.html link="https://imgur.com/yWsYKKX.png" alt="Azure Notebooks" width=75 %}
 
