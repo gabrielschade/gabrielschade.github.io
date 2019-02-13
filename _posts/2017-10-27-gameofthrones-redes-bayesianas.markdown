@@ -79,11 +79,11 @@ Em toda rede bayesiana os nós são interligados de acordo com sua correlação.
 
 Jaime e Cersei possuem três filhos: Joffrey, Myrcella e Tommen. Cada um deles depende dos pais para terem ou não falhas genéticas, por isso seus estados são um pouco mais complexos:
 
-- Quando ambos os pais **não** possuem a falha genética: a probabilidade de ter a falha permanecerá em 1%.
+1. Quando ambos os pais **não** possuem a falha genética: a probabilidade de ter a falha permanecerá em 1%.
 
-- Quando um dos pais possui a falha genética: a probabilidade de ter a falha é elevada para 50% (metade do gene herdado);
+2. Quando um dos pais possui a falha genética: a probabilidade de ter a falha é elevada para 50% (metade do gene herdado);
 
-- Quando ambos os pais possuem a falha genética: a probabilidade de ter a falha será 100% (não estamos considerando mutações que curam falhas genéticas)
+3. Quando ambos os pais possuem a falha genética: a probabilidade de ter a falha será 100% (não estamos considerando mutações que curam falhas genéticas)
  
 Veja a representação do nó de Joffrey:
 
@@ -107,7 +107,7 @@ Esta probabilidade se propaga tanto para os pais, quanto para os irmãos de Joff
 
 Mas para termos um resultado mais real e entendermos melhor o problema, precisamos subir um pouco mais na árvore genealógica da família Lannister.
 
-{% include huge-h2.html content="Criando uma representação da árvore genealógica dos Lannisters" %}
+## Criando uma representação da árvore genealógica dos Lannisters
 
 Vamos criar os nós para representar os pais dos Lannisters: Tywin e Joana.
 
@@ -131,7 +131,7 @@ Também será preciso criar o nó para representar os pais de Tytos (avó de Tyw
 
 Por fim, vamos completar a família criando o nó do Lannister mais amado, **Tyrion**, ao lado de Jaime e Cersei.
 
-{% include huge-h2.html content="Alguns experimentos" %}
+## Alguns experimentos
 
 Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
 
@@ -159,7 +159,7 @@ Ainda sobre probabilidades, agora vamos focar em um outro casal, desta vez não 
 
 Calma que assim como no caso Lannisters, **piora**.
 
-{% include huge-h2.html content="Targaryens - destruidores da família tradicional" %}
+## Targaryens - destruidores da família tradicional
 
 A árvore genealógica dos Targaryen é **gigante** e com muitas, mas muitas coisas erradas. É pai com filha, sobrinho com tia, irmão com irmã e por aí vai.
 
