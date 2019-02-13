@@ -91,6 +91,7 @@ Vamos gerar o DataFrame com números sequenciais de 1 até 6, separando-os em tr
 
 ```python
 matriz = pandas.DataFrame(numpy.array([ [1,2,3], [4,5,6] ], dtype=int), columns=["Primeira", "Segunda", "Terceira"])
+
 ```
 Ao fazer isso e executar a célula, não veremos nenhum resultado.
 
