@@ -107,6 +107,8 @@ Por fim, vamos gerar um gráfico utilizando a função `.plot.bar()` do DataFram
 matriz.plot.bar()
 ```
 
+E o resultado pode ser conferido abaixo:
+
 {% include image.html link="https://imgur.com/TbbPb5B.png" alt="Azure Notebooks - Plot" width=75 %}
 
 O mais legal é que temos tudo isso no mesmo lugar. 
