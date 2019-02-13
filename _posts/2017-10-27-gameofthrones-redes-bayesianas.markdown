@@ -107,7 +107,7 @@ Esta probabilidade se propaga tanto para os pais, quanto para os irmãos de Joff
 
 Mas para termos um resultado mais real e entendermos melhor o problema, precisamos subir um pouco mais na árvore genealógica da família Lannister.
 
-## Criando uma representação da árvore genealógica dos Lannisters
+### Criando uma representação da árvore genealógica dos Lannisters
 
 Vamos criar os nós para representar os pais dos Lannisters: Tywin e Joana.
 
@@ -131,7 +131,7 @@ Também será preciso criar o nó para representar os pais de Tytos (avó de Tyw
 
 Por fim, vamos completar a família criando o nó do Lannister mais amado, **Tyrion**, ao lado de Jaime e Cersei.
 
-## Alguns experimentos
+### Alguns experimentos
 
 Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
 
@@ -159,7 +159,7 @@ Ainda sobre probabilidades, agora vamos focar em um outro casal, desta vez não 
 
 Calma que assim como no caso Lannisters, **piora**.
 
-## Targaryens - destruidores da família tradicional
+### Targaryens - destruidores da família tradicional
 
 A árvore genealógica dos Targaryen é **gigante** e com muitas, mas muitas coisas erradas. É pai com filha, sobrinho com tia, irmão com irmã e por aí vai.
 
