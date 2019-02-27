@@ -125,7 +125,7 @@ Esse post foi fácil ein?!
 
 Então agora é hora de por a mão na massa!
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que inicialize uma lista de compras com 5 itens diferentes e exiba todos utilizando um laço de repetição `while`.
 

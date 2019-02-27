@@ -18,7 +18,7 @@ Então fica aqui meu **muito obrigado** para o [Antonio](https://www.linkedin.co
 
 O resultado disso foi um evento incrível, tivemos ótimos feedbacks e fiquei **muito** feliz com tudo que fizemos.
 
-## Cognitive Services, Cortana e Hololens
+### Cognitive Services, Cortana e Hololens
 
 Começamos com a Talk do [Alexandre](https://www.linkedin.com/in/alexandre-vasques-b89b20/) sobre indústria 4.0, com direito à Azure Cognitive Services e uma Cortana tangível!
 
@@ -30,7 +30,7 @@ Para fechar com chave de ouro, a apresentação também teve um **Hololens** com
 
 Depois disso tivemos duas palestras mais técnicas, uma focada em *front-end* e outra em *back-end*!
 
-## TypeScript + React + Redux
+### TypeScript + React + Redux
 
 A palestra sobre *front-end* falou sobre uma combinação de tecnologias para desenvolvimento: React + Redux usando a linguagem TypeScript!
 
@@ -38,7 +38,7 @@ Você pode conferir os slides do [Leo](https://www.linkedin.com/in/leonardo-pran
 
 {% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/6x4E93nUGOM0Uh" %}
 
-## Programação Funcional com C# e F##
+### Programação Funcional com C# e F##
 
 Por fim, minha palestra sobre programação funcional usando as linguagens C# e F#!
 

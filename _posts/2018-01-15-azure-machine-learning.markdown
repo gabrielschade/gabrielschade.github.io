@@ -84,7 +84,7 @@ Por conta da natureza deste tipo de problema podemos medir os resultados da segu
 
 Com isso conseguimos medir o quão bom (ou ruim) nosso modelo ficou!
 
-## Começando as implementações
+### Começando as implementações
 
 Com as perguntas respondidas, podemos começar nossa implementação! A única coisa que fizemos até agora foi arrastar os dados para o experimento, mas será que estes dados já estão preparados para o experimento? - **Não**, não estão.
 
@@ -96,7 +96,7 @@ Lembram dos processos envolvidos?
 
 Como citado no outro post, o pré-processamento geralmente é a etapa mais demorada e complicada, não seria diferente em nosso exemplo!
 
-### Pré-processamento
+#### Pré-processamento
 
 Bom, eu disse um pouquinho antes que os dados não estão preparados, mas o que isso significa de fato? - Significa que devemos preparar os dados para treinarmos o modelo corretamente. Removendo dados inconsistentes ou colunas desnecessárias.
 

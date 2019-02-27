@@ -94,7 +94,7 @@ Neste caso a lista resultante é: [0, 2, 4, 6, 8], bem legal né?
 
 Agora que já vimos as variações do `range` e deste comando, vamos praticar!
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que inicialize uma lista de compras com 5 itens diferentes e exiba todos utilizando um laço de repetição.
 

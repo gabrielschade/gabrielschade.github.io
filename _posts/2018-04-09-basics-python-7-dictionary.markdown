@@ -117,7 +117,7 @@ print (pessoa["sobrenome"])
 ```
 O código acima irá gerar um erro, porque a partir do momento que o comando `del` foi aplicado à chave-valor "sobrenome", ela deixa de existir no dicionário, portanto, tome cuidado!
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que crie um dicionário para definir um produto, contendo sua descrição e seu preço.
 

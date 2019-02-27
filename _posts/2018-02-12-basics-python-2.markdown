@@ -174,7 +174,7 @@ print( "Aprovado" if nota >= 7 else "Reprovado" z )
 ```
 A ordem das palavras muda um pouco, mas não se assuste, vamos com calma que logo você se acostuma.
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um algoritmo que solicite 3 notas para o usuário, calcule a média e indique se o aluno foi aprovado ou reprovado (nota precisar ser maior ou igual à sete para o aluno ser aprovado).
 

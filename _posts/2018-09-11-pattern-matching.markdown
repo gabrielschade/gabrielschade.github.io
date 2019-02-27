@@ -21,7 +21,7 @@ Primeiro vale citar uma pequena explicação sobre o pattern matching:
 > Como o próprio nome sugere, pattern matching é utizado para comparar padrões. Um pattern matching é uma expressão que realiza uma comparação e extração de valores.
 > Não é exatamente isso, mas você pode entender um pattern matching como um `switch` que permite realizar comparações e retornar valor a partir de uma expressão.
 
-## Introdução
+### Introdução
 
 Primeiro vale uma introdução geral sobre pattern matchings em F#, se você já domina este assunto, fique à vontade para pular para a [implementação proposta na próxima seção](#implementacao).
 

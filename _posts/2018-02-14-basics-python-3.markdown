@@ -53,7 +53,7 @@ if teste:
 ```
 Bem simples né?
 
-## Explorando um pouco mais das strings
+### Explorando um pouco mais das strings
 
 Já usamos algumas vezes variáveis do tipo string, mas ainda há muito trabalho para fazer!
 
@@ -168,7 +168,7 @@ print(itens[3]) # -> Gera um erro
 ```
 Tenha em mente que sempre o maior índice da lista vai ser igual à seu tamanho -1, no nosso exemplo temos três itens diferentes, portanto o último índice válido é 2.
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que solicite o nome do usuário e depois disso faça uma saudação no formato: "Olá {nome digitado pelo usuário}"
 

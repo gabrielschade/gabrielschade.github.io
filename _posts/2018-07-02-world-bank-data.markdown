@@ -108,7 +108,7 @@ Veja o resultado:
 
 {% include image.html link="https://i.imgur.com/P3uBgRV.jpg" alt="Resultado da extração dos dados" width=90 %}
 
-## Utilizando os dados para relatórios
+### Utilizando os dados para relatórios
 
 Ok, temos os dados, mas o que faremos com eles?
 

@@ -211,7 +211,7 @@ Agora ficamos com um código bem mais curto e simples!
 Com isso passamos por todos os conceitos envolvidos na criação de uma função!
 
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que escreva "Minha primeira função", esta escrita deve ser realizada a partir da chamada de uma função.
 

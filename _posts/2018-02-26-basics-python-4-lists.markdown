@@ -132,7 +132,7 @@ Ou seja, tínhamos o café na posição 4 e agora ele está na posição 3, faze
 
 Vamos entender melhor cada função com alguns exercícios!
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que inicialize uma lista com o nome das pessoas da sua família.
 

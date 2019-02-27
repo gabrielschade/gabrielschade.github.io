@@ -70,7 +70,7 @@ Talvez você estranhe um pouco, afinal, eu havia escrito antes que as expressõe
 
 Na prática você pode obter o valor de retorno da função `print`, mas ele será um valor do tipo `None`! Portanto, a mesma sintaxe de lambda continua funcionando normalmente.
 
-## Utilização
+### Utilização
 
 Ok, entendi o conceito, mas para o que isso serve?
 Agora vem a parte mais complicada desta lição, existem funções que podem receber outras funções por parâmetro!
@@ -113,7 +113,7 @@ for par in pares:
 Transformamos todo nosso laço de repetição com um desvio condicional em uma única instrução! Legal né?
 O `filter` não é a única função capaz de realizar este tipo de operação, mas é um bom exemplo para você entender o poder das expressões lambda!
 
-## Vamos Praticar!
+### Vamos Praticar!
 
 * Faça um programa que escreva "Minha primeira função", esta escrita deve ser realizada a partir da chamada de uma função que foi declarada como uma expressão lambda.
 
