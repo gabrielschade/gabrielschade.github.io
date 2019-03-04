@@ -13,7 +13,7 @@ Já faz um tempo desde o último post sobre F# com Type Providers, hoje vamos fa
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/DataVisualizationSample/DataVisualizationSample/Program.fs" %} 
+{% include github-link.html link="https://github.com/gabrielschade/TypeProviderSample/blob/master/DataGeoVisualizationSample/DataGeoVisualizationSample/Program.fs" %} 
 
 Este post faz parte de uma série sobre Type Providers! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/entenda o mundo com fsharp.html %})
 
@@ -372,7 +372,7 @@ Executando novamente, teremos o HTML com os dois gráficos!
 
 >**Atenção**
 >
->Você pode fazer o download da página HTML com os gráficos [aqui](https://raw.githubusercontent.com/gabrielschade/TypeProviderSample/master/DataVisualizationSample/DataVisualizationSample/Plot/map.html)
+>Você pode fazer o download da página HTML com os gráficos [aqui](https://raw.githubusercontent.com/gabrielschade/TypeProviderSample/master/DataGeoVisualizationSample/DataGeoVisualizationSample/Plot/map.html)
 
 Os demais gráficos disponíveis fica para um post no futuro, quem sabe até com alguma implementação de machine learning!
 
