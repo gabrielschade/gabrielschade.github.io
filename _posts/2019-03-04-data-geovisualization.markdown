@@ -22,7 +22,7 @@ No post de hoje usaremos os providers para o [world bank](http://www.worldbank.o
 Para seguir, é recomendável que você leia os posts sobre os dois type providers citados:
 
 1. [World Bank Data]({{ site.baseurl }}{% link _posts/2018-07-02-world-bank-data.markdown %})
-2. [JSON]({{ site.baseurl }}{% link _posts/2017-12-28/web-data-json.markdown %})
+2. [JSON]({{ site.baseurl }}{% link _posts/2017-12-28-web-data-json.markdown %})
 
 Como em toda utilização de providers, precisaremos do pacote `FSharp.Data`, vamos instalá-lo a partir do nuget:
 
