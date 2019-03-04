@@ -234,6 +234,7 @@ let urlBase =
 
 type Clima = 
     JsonProvider<"http://api.openweathermap.org/data/2.5/forecast?appid={SUA APP KEY}&units=metric&q=London,UK">
+    
 ```
 
 Com o tipo definido já podemos criar a função que irá buscar a temperatura atual através desta API. Essa função terá de receber um local por parâmetro, com o formato indicado no `JsonProvider`: `"London,UK"`.
