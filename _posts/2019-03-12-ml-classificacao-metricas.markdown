@@ -3,7 +3,7 @@ layout: post
 title:  "Machine Learning: Métricas para Modelos de Classificação"
 date:   2019-03-12 00:00:00 +0000
 comments: true
-tags: [IA]
+tags: [IA] 
 ---
 
 Olá pessoa!
