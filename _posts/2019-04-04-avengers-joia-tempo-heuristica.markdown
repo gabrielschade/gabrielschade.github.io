@@ -3,7 +3,7 @@ layout: post
 title:  "A Heurística da Jóia do Tempo do Dr. Estranho"
 date:   2019-04-04 00:00:00 +0000
 comments: true
-tags: [IA] 
+tags: [Algoritmos] 
 ---
 
 Olá pessoa!
@@ -131,15 +131,6 @@ public static IEnumerable<Personagem> GerarVingadores()
 {
     yield return new Personagem()
     {
-        Nome = "Doutor Estranho",
-        Ataque = 95,
-        Defesa = 80,
-        HP = 170,
-        Pontuacao = 120
-    };
-
-    yield return new Personagem()
-    {
         Nome = "Homem de Ferro",
         Ataque = 90,
         Defesa = 100,
@@ -190,6 +181,15 @@ public static IEnumerable<Personagem> GerarVingadores()
         Defesa = 40,
         HP = 100,
         Pontuacao = 10
+    };
+
+    yield return new Personagem()
+    {
+        Nome = "Doutor Estranho",
+        Ataque = 95,
+        Defesa = 80,
+        HP = 170,
+        Pontuacao = 120
     };
 }
 ```
@@ -246,9 +246,67 @@ Com isso já conseguimos popular nosso campo de batalha com os personagens abaix
 
 Apesar de termos simplificado bastante os atributos e golpes dos personagens vamos manter a mecânica de turnos clássica. Quem iniciará o combate será um herói, seguido pelo Thanos, próximo herói, Thanos novamente e assim por diante.
 
-Para nossos testes, os turnos ocorrerãm da seguinte maneira:
+Para nossos testes, os turnos ocorrerão na seguinte ordem:
 
 {% include image.html link="https://imgur.com/gpgBJ56.png" alt="Turnos da simulação" width=80 %}
+
+Na prática é a ordem em que eu criei a lista dos vingadores.
+
+Se a nossa batalha é definida por turnos, precisamos definir em nosso código, o que é um turno, certo? -Certo.
+
+Mas antes precisamos entender como essa simulação será feita.
+
+Partiremos do ponto zero, onde o Homem de Ferro fará a primeira ação (assim como no filme). Para adicionar um pouco de dinamismo no combate, faremos com que o golpe de um herói possua 3 variações de modificadores.
+
+1. Golpe normal;
+2. Golpe usando o dobro de ataque;
+3. Golpe usando o triplo do ataque;
+
+Qual o motivo dessas variações? -Tentar adicionar o dinamismo de um combate. Os multiplicadores de ataque podem ser entendidos como: o herói recebendo ajuda de um ou mais parceiros ou pegando o vilão desprevinido.
+
+Como o Thanos estará lutando sozinho, ele não terá esse bônus, somente os heróis. Mas no turno do Thanos temos mais variações ainda. Afinal de contas, ele poderá atacar qualquer um dos heróis que ainda esteja de pé.
+
+Isso faz com que as possibilidades de turno sofram do crescimento exponencial que falamos no começo do texto.
+
+Imagine o início da batalha: o Homem de Ferro atacará o Thanos, temos três possibilidades diferentes: ataque normal, forte ou muito forte.
+
+Para cada uma dessas três possibilidades, existem 7 novas possibilidades, onde o Thanos ataca um vingador diferente. Dentro de cada uma dessas 21 possibilidades, são geradas 3 novas, onde o Homem Aranha utiliza as três variações de ataque.
+
+Dentro de cada uma dessas 63 possibilidades, são geradas novas 7 para o turno do Thanos... E acaba virando uma estrutura gigante.
+
+Uma forma de organizar isso de forma navegável e fazer com que cada turno seja um nó em uma árvore contendo as possibilidades futuras.
+
+Tudo começa em um nó raiz, ou nó de início e as possibilidades são geradas a partir disso, simulando apenas 3 turnos a árvore estaria nesse estado:
+
+{% include image.html link="https://imgur.com/UJ4YMTG.png" alt="Árvore de Turnos" width=80 %}
+
+Note que o turno 3 só foi simulado para um dos possíveis futuros, caso contrário teríamos muito mais nós.
+
+Vamos começar com o básico, um turno é o momento em que algum personagem irá atacar um oponente. Então vamos começar criando a classe contendo a propriedade que irá armazenar o Thanos e o Vingador que irá batalhar com ele:
+
+```csharp
+ public class Turno
+{
+    public Personagem Thanos { get; set; }
+    public Personagem Vingador { get; set; }
+}
+```
+
+É interessante que o turno armazene o estado atual de todos os personagens da batalha, dessa forma conseguiremos entender todo o contexto da batalha olhando para o objeto. 
+
+Além disso, também é interessante termos mais informações como: número do turno e a descrição da ação que foi realizada.    
+
+```csharp
+ public class Turno
+{
+    public Personagem Thanos { get; set; }
+    public Personagem Vingador { get; set; }
+
+    public List<Personagem> Vingadores { get; set; }
+    public string Descricao { get; set; }
+    public int Numero { get; set; }
+}
+```
 
 
 Bom galera, o post de hoje era isso!
