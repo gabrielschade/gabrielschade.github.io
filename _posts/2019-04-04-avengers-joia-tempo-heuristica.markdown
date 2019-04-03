@@ -278,7 +278,7 @@ Uma forma de organizar isso de forma navegável e fazer com que cada turno seja 
 
 Tudo começa em um nó raiz, ou nó de início e as possibilidades são geradas a partir disso, simulando apenas 3 turnos a árvore estaria nesse estado:
 
-{% include image.html link="https://imgur.com/UJ4YMTG.png" alt="Árvore de Turnos" width=80 %}
+{% include image.html link="https://imgur.com/UJ4YMTG.png" alt="Árvore de Turnos" width=100 %}
 
 Note que o turno 3 só foi simulado para um dos possíveis futuros, caso contrário teríamos muito mais nós.
 
