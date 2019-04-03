@@ -335,7 +335,9 @@ h3{
 }
 
 .about h3,
-.post-text h3{
+.post-text h3,
+.about h4,
+.post-text h4{
     margin-top:45px;
     margin-bottom:30px;
     font-size: 2.5em;
