@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "InterOP Floripa"
+date:   2019-04-03 00:00:00 +0000
+comments: true
+tags: [Talks] 
+---
+
+Olá pessoa!
+
+Na sexta-feira passada, dia 29 de março de 2019 rolou o InterOP Floripa, evento que fui convidado para falar sobre machine learning!
+
+<!--more-->
+
+Eu já abordo o tema machine learning aqui no blog faz um tempo, então surgiu o convite para fazer uma palestra sobre isso.
+
+Na palestra abordei o mesmo assunto que já tratei nesses dois posts:
+
+1. [Machine Learning: criando um classificador de sentimentos]({{ site.baseurl }}{% link _posts/2018-04-16-machine-learning-classificador.markdown %})
+
+2. [Classificador de Sentimentos - Azure ML]({{ site.baseurl }}{% link _posts/2018-01-15-azure-machine-learning.markdown %})
+
+A ideia principal dessa palestra é conceituar o básico de machine learning e exemplificar, tanto com Python quanto com o Azure Machine Learning. Você pode conferir os slides abaixo:
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/7Ii23oFWdKVYS" %}
+
+Bom galera, o post de hoje era isso!
+
+Espero que tenham gostado, qualquer dúvida, correção ou sugestão, deixem nos comentários!
+
+E até mais.
