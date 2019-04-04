@@ -884,7 +884,7 @@ Os dois melhores casos acabam com o Tony Stark derrubando o titã, mas em um fut
 
 Uma das dificuldades de encontrar uma boa função de avaliação é fazer com que o descarte dos turnos aconteça cedo o suficiente para economizar tempo de processamento, mas tarde o suficiente para gerar uma boa amostragem do que pode ou não acontecer.
 
-Para ter uma noção de valores, os vingadores geralmente vencem a batalha no turno 29, teríamos aproximadamente: 9.731.759.797.564.520.000 possibilidades (9 quinquilhões!).
+Para ter uma noção de valores, os vingadores geralmente vencem a batalha no turno 29, teríamos aproximadamente: 9.731.759.797.564.520.000 possibilidades (eu nem sei falar esse número).
 
 O número deve ser menor do que isso, porque depois de um determinado nível não serão mais gerados 7 nós no turno do Thanos, porque já vão haver vingadores mortos. Mas de qualquer forma, dá para dar uma boa noção do tamanho da árvore.
 
