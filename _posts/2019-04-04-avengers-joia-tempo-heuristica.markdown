@@ -637,8 +637,6 @@ Não conseguimos simular todas as possibilidades, simplesmente porque elas são 
 | 14    | 1.801.088.541  | 7                    |
 | 15    | 5.403.265.623  | 3                    |
 
-{% include image.html link="https://imgur.com/9DYoGnf.png" alt="Olhando para o Futuro" width=50 %}
-
 {% include image.html link="https://i.imgur.com/mVDxIo0.gif" alt="Muitas possibilidades" width=80 %}
 
 Mas se não conseguimos simular tudo, como chegamos em algum lugar?
@@ -784,7 +782,7 @@ SimulacaoBatalha simulacao = new SimulacaoBatalha(
 Nesse caso conseguimos chegar no final da simulação bastante rápido e já podemos ver os resultados:
 
 ```
-Vit¢rias: 1
+Vitórias: 1
 Derrotas: 99
 Descrição da batalha que levou à vitória:
 
@@ -855,6 +853,8 @@ Vamos fazer uma alteração leve na função de avaliação. Agora vamos continu
 Isso nos entregaria um resultado de 115 derrotas (podadas) e 3 vitórias diferentes!
 
 Os dois melhores casos acabam com o Tony Stark derrubando o titã, mas em um futuro alternativo, quem faz o trabalho final e fica de pé é o próprio Dr. Estranho!
+
+{% include image.html link="https://i.imgur.com/HFbkx3Z.png" alt="Dr. Estranho vencendo" width=80 %}
 
 {% include image.html link="https://i.imgur.com/hEWuGLy.gif" alt="Dr. Estranho vencendo" width=50 %}
 

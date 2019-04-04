@@ -347,6 +347,16 @@ h3{
     max-width:100%;
 }
 
+.post-text table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post-text table th,
+.post-text table td{
+    padding:0;
+}
+
 p,
 .about p,
 .post-text li,
