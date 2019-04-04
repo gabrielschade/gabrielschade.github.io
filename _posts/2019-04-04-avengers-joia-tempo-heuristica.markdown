@@ -892,13 +892,17 @@ Não gostou dos parâmetros ou da função de avaliação? Você pode fazer clon
 
 > O repositório no git está em inglês, mas o código é o mesmo.
 
-### A ideia
+### Os créditos
 
 Por fim, vale ressaltar que a ideia de usar o Dr. Estranho para gerar uma árvore e utilizar uma heurística para percorrê-la não foi minha.
 
 Eu assisti essa ideia em um vídeo no canal Nerdologia (que já recomendei por aqui), você pode conferir o vídeo abaixo:
 
 {% include youtube-video.html width=560 height=315 url="https://www.youtube.com/embed/Y8j892-qg-4?rel=0" %}
+
+Ainda sobre os créditos, eu também não fiz as imagens (esqueci de colocar isso na publicação original e fiz um edit).
+
+Todos os ícones para representar os heróis foram feitos pelo usuário: thelivingethan, lá no deviantart: https://www.deviantart.com/thelivingethan/gallery/.
 
 Em todo caso, construir o simulador, parametrizar e criar a função de avaliação também deu um trabalhinho.
 
