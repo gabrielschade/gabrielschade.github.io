@@ -902,7 +902,7 @@ Eu assisti essa ideia em um vídeo no canal Nerdologia (que já recomendei por a
 
 Ainda sobre os créditos, eu também não fiz as imagens (esqueci de colocar isso na publicação original e fiz um edit).
 
-Todos os ícones para representar os heróis foram feitos pelo usuário: thelivingethan, lá no deviantart: https://www.deviantart.com/thelivingethan/gallery/.
+Todos os ícones para representar os heróis foram feitos pelo usuário: thelivingethan, lá no deviantart [dele](https://www.deviantart.com/thelivingethan/gallery/).
 
 Em todo caso, construir o simulador, parametrizar e criar a função de avaliação também deu um trabalhinho.
 
