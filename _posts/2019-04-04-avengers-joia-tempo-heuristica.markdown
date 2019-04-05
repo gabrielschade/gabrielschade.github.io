@@ -3,7 +3,7 @@ layout: post
 title:  "A Heurística da Jóia do Tempo do Dr. Estranho"
 date:   2019-04-04 00:00:00 +0000
 comments: true
-tags: [Algoritmos] 
+tags: [C#, Algoritmos] 
 ---
 
 Olá pessoa!

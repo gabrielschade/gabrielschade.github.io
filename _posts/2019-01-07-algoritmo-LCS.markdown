@@ -3,7 +3,7 @@ layout: post
 title:  "Longest Common Subsequence - Git Diff"
 date:   2019-01-07 00:00:00 +0000
 comments: true
-tags: [F#]
+tags: [F#, Algoritmos]
 ---
 
 Olá pessoa!
