@@ -31,7 +31,7 @@ Até aí tudo bem, certo?
 
 Eles não compartilham o sobrenome por serem casados, mas sim, por serem **irmãos**. 
 
-As relações incestuosas não parecem ser um problema cultural em GoT, mas genéticamente falando, este tipo de relação pode ser bastante problemático. 
+As relações incestuosas não parecem ser um problema cultural em GoT, mas genéticamente falando, este tipo de relação pode ser bastante problemática. 
 
 Vamos entender melhor: cada um de nós recebe material genético do pai e da mãe biológica, metade de cada um. 
 E quando produzimos um óvulo ou um espermatozóide, passamos metade deste material genético para frente.
@@ -43,6 +43,8 @@ Como explicado no vídeo, todos nós carregamos erros em nosso material genétic
 Com isso, o gene problemático herdado pelo pai pode ser corrigido pelo gene saudável da mãe e vice-versa. Então só teremos este tipo de problema, se tanto os genes da mãe quanto do pai possuierem a mesma falha, ou quando um não for suficiente para corrigir o problema herdado pelo outro. 
 
 Isso é bastante raro, exceto entre familiares.
+
+### Começando a Modelagem
 
 Diferente do Átila, minha área de pesquisa e atuação não é biologia, então vou vamos focar na questão computacional e probabilística do problema que tenho menos chances de falar besteiras.
 
@@ -61,7 +63,9 @@ Vamos considerar algumas premissas:
 5. Vamos limitar a árvore genealógica das famílias envolvidas;
 
 
-Ok, mas o que é uma **rede bayesinana**?
+Ok, mas o que é uma **rede bayesiana**?
+
+#### Redes Bayesianas
 
 É uma técnica computacional diretamente ligada à área da Inteligência Artificial, tendo como propósito a reprodução de raciocíonio lógico probabilístico.
 
@@ -89,6 +93,8 @@ Veja a representação do nó de Joffrey:
 
 {% include image.html link="https://i.imgur.com/VjICdTv.jpg" alt="Nó representando Joffrey" width=80 %} 
 
+#### Primeiro Experimento
+
 Através das ligações entre os nós é possível propagar uma evidência pela rede, ou seja, ao alterarmos a probabilidade de um estado de um nó, as probabilidades de estados de outros nós também poderão ser alteradas.
 
 Vamos fazer um exemplo. Imagine que o lunático do Joffrey era desta forma por conta de uma falha genética, então vamos sinalizar que ele com certeza possui uma falha, veja o resultado da rede após informarmos esta evidência:
@@ -97,7 +103,7 @@ Vamos fazer um exemplo. Imagine que o lunático do Joffrey era desta forma por c
 
 Mas peraí, 26% para todos os outros? Como assim?
 
-Eu explico, esta probabilidade é o resultado do seguinte cenário: Temos 2 pais, cada um provendo metade dos genes para os filhos, 50% cada um.
+Essa probabilidade é o resultado do seguinte cenário: Temos 2 pais, cada um provendo metade dos genes para os filhos, 50% cada um.
 
 Agora em nossa rede, não há nenhuma informação que os pais compartilham qualquer quantidade de genes, sendo assim, estamos tratando como se Cersei e Jaime não fossem irmãos e com isso, os genes de Cersei e Jaime teriam vindo de pais diferentes.
 
@@ -107,7 +113,7 @@ Esta probabilidade se propaga tanto para os pais, quanto para os irmãos de Joff
 
 Mas para termos um resultado mais real e entendermos melhor o problema, precisamos subir um pouco mais na árvore genealógica da família Lannister.
 
-### Criando uma representação da árvore genealógica dos Lannisters
+#### Criando uma Representação da Árvore Genealógica dos Lannisters
 
 Vamos criar os nós para representar os pais dos Lannisters: Tywin e Joana.
 
@@ -121,33 +127,35 @@ Cersei e Jaime possuem aproximadamente 50% de chances cada um de ter esta mesma 
 
 Mas calma, ainda **piora**.
 
-Piora porque Tywin e Joana Lannister são **primos**. 
+Isso porque Tywin e Joana Lannister são **primos**. 
 
 E você achando que sua família era complicada.
 
-Para conseguirmos mapear este relacionamento será preciso criar o nó com o pai de Tywin: Tytos e de seu irmão/irmã (não encontrei quem é o parente que é pai biológico) que é um ascendente de Joana.
+Para conseguirmos mapear esse relacionamento será preciso criar o nó com o pai de Tywin: Tytos e de seu irmão/irmã, não encontrei os nomes dos pais de Joana, mas isso não é importante agora.
 
-Também será preciso criar o nó para representar os pais de Tytos (avó de Tywin e bisavó de Cersei e Jaime), desta forma, conseguiremos mapear o parentesco entre Tywin e Joana.
+Também teremos de criar o nó para representar os pais de Tytos (avó de Tywin e bisavó de Cersei e Jaime), desta forma, conseguiremos mapear o parentesco entre Tywin e Joana.
 
 Por fim, vamos completar a família criando o nó do Lannister mais amado, **Tyrion**, ao lado de Jaime e Cersei.
 
-### Alguns experimentos
+#### Mais Alguns Experimentos
 
 Por conta deste bônus de seus avôs serem primos, as crianças Lannisters compartilham aproximadamente 78% do material genético. Enquanto os irmãos Lannisters compartilham aproximadamente: 57%.
 
+Vamos fazer mais um experimento, agora evidenciando Tywin e Cersei como portadores de uma falha genética: 
+
 {% include image.html link="https://i.imgur.com/3K91oU3.jpg" alt="Evidência em Tywin e Cersei" width=80 %}
 
-Um comportamento curioso da propagação de evidências que não é muito intuitivo, é o fato de os nós ascendentes sofrem com evidências novas mesmo que a evidência seja revelada em um nó mais profundo.
+Um comportamento curioso da propagação de evidências que não é muito intuitivo, é o fato de os nós ascendentes sofrem com novas evidências de um nó mais profundo.
 
-Tyrion, o melhor anão que você respeita, possui 57% de chance de ter a falha genética no cenário atual, onde temos certeza de que apenas Cersei e Tywin possuem a falha em questão.
+Tyrion, o melhor anão, possui 57% de chance de ter a falha genética nesse último experimento, onde temos certeza de que apenas Cersei e Tywin possuem a falha em questão.
 
-E se incluirmos a evidência de que Joffrey com certeza também possui a falha?
+E se incluirmos a evidência de que Joffrey também possui a falha?
 
 {% include image.html link="https://i.imgur.com/jrivrco.jpg" alt="Evidência em Tywin, Cersei e Joffrey" width=80 %}
 
-Ao fazer isso aumentamos as chances de Jaime `(57% -> 72%)` possuir esta falha, afinal se um dos filhos com certeza tem o problema, as chances dele ter também aumentam. 
+Ao fazer isso aumentamos as chances de Jaime `(57% -> 72%)` possuir esta falha, afinal se um dos filhos com certeza tem um problema, as chances do pai também tê-lo aumentam. 
 
-Pela mesma razão, isso aumenta a probabilidade do pai de Tywin, Tytos `(42% -> 45%)` também ter a falha. E da mesma forma que Joffrey aumentou a probabilidade de seu pai, Tytos também o fez. Aumentando a probabilidade de seu pai em 1%.
+Pela mesma razão, isso aumenta a probabilidade do pai de Tywin, Tytos `(42% -> 45%)` também ter a falha. Ou seja, da mesma forma que Joffrey aumentou a probabilidade de seu pai, Tytos também o fez. Mas dessa vez foi um aumento menor, em apenas 1%.
 
 O aumento da probabilidade do pai de Tytos possuir a falha, propaga para todos os seus descentes: Tio de Tytos `(16% -> 19%)`, Joana `(13% -> 17%)` e por fim, Tyrion `(57% -> 58%)`.
 
@@ -155,9 +163,11 @@ Note também que, aumentando a probabilidade da falha estar em Tytos Lannister e
 
 Neste ponto você já deve ter notado que os resultados deste tipo de sistema são as probabilidades dos eventos ocorrerem baseado nas evidências, devido a esta natureza, chamamos este tipo de sistema de *Sistemas Probabilísticos*.
 
-Ainda sobre probabilidades, agora vamos focar em um outro casal, desta vez não são mais irmãos, mas são tia e sobrinho, isso parece muito errado? 
+Agora vamos focar em um casal diferente, que vem sendo apresentado na série, dessa vez, não são irmãos, são tia e sobrinho.
 
-Calma que assim como no caso Lannisters, **piora**.
+Se isso já parece muito errado, calma.
+
+Assim como no caso Lannisters, só **piora**.
 
 ### Targaryens - destruidores da família tradicional
 
@@ -167,9 +177,9 @@ A versão original da família Targaryen pode ser encontrada [aqui](https://i.im
 
 Nas imagens irei mostrar apenas os descendentes a partir do rei louco, mas a rede utilizada é maior que isso (será disponibilizada no final do post).
 
-Por conta da quantidade exagerada de gerações onde os irmãos se casaram e tiveram filhos, os irmãos Targaryen compartilham bem mais genes do que os irmãos Lannisters, vistos na rede anterior.
+Por conta da quantidade exagerada de gerações onde irmãos se casaram e tiveram filhos, os Targaryen compartilham bem mais genes do que os irmãos Lannisters, que vimos na rede anterior.
 
-Vamos atribuir a loucura do rei louco a um falha genética, portanto vamos criar esta evidência. 
+Vamos atribuir a loucura do rei louco a um falha genética, portanto vamos marcar isso como uma evidência de falha. 
 
 Além dele, a querida mãe dos dragões já deu alguns indícios de que não bate muito bem. Seus conselheiros vivem alertando-a sobre uma possível loucura e o quão cuidadosa ela deve ser.
 
@@ -177,30 +187,28 @@ Considerando que ela herdou as falhas do pai. Quais são as chances dos irmãos 
 
 {% include image.html link="https://i.imgur.com/FLNxDuv.jpg" alt="Targaryen" width=80 %}
 
-No caso dos irmãos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Logo, cada um dos irmãos compartilham quase **90%** genes. O.O
+No caso dos irmãos Lannisters as chances eram de 57%, aqui temos um aumento de enormes 30% por conta dos ascendentes. Logo, cada um dos irmãos compartilham quase **90% genes**.
 
-Vamos o momento do **spoiler**, vá direto para o fim do post caso não queira receber informações indesejadas.
+O episódio final da sétima temporada mostrou um relacionamento entre Daenerys e Jon Snow.
 
-O episódio final da sétima temporada mostrou um relacionamento ( ͡° ͜ʖ ͡°) entre Daenerys e Jon Snow.
+Até aí tudo bem, o problema começa quando esse mesmo episódio revelou que Daenerys e Jon na verdade são tia e sobrinho. Ou seja, Jon também é um Targaryen.
 
-Até aí tudo bem, o problema é que este mesmo episódio revelou que Daenerys e Jon na verdade são tia e sobrinho. Ou seja, Jon também é um Targaryen.
-
-Por conta da quantidade de casamentos entre familiares Targaryen, Jon e Daenerys compartilham praticamente a mesma quantidade de genes que dois irmãos (45%).
+Por conta da quantidade de casamentos entre familiares Targaryen, Jon e Daenerys mesmo sendo tia e sobrinhos, compartilham praticamente a mesma quantidade de genes que dois irmãos (45%).
 
 {% include image.html link="https://i.imgur.com/DUIkefk.jpg" alt="Filho de Jon e Daenerys" width=80 %}
 
-Neste cenário, caso nasça uma criança deste relacionamento, há uma probabilidade de 72% da falha genética se propagar.
+Nesse cenário, caso nasça uma criança deste relacionamento, há uma probabilidade de 72% da falha genética se propagar.
 
 Não seria nada mal chamá-lo de Aerys III, tendo em vista que podemos ter mais um rei louco acabando com Westeros e causando mais uma guerra. 
 
-Desde que isso renda outra série com esta qualidade, não vejo problema nenhum.
+Desde que isso renda outra série com a mesma qualidade, não vejo problema nenhum.
 
 Você pode encontrar as duas redes baysianas utilizadas no experimento neste repositório:
 http://bit.ly/GoT-redes-bayesianas
 
 O que você achou deste post?
 
-Gostou? Odiou?
+Gostou? Sugestões?
 
 Me conte nos comentários!
 
