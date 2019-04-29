@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "The Developer's Conference - Floripa 2019"
+date:   2019-04-29 01:00:00 +0000
+comments: true
+tags: [Talks] 
+---
+
+Olá pessoa!
+
+Semana passada aconteceu o The Developer's Conference aqui em Floripa SC e foi incrível!
+
+<!--more-->
+
+Todo ano tem TDC (The Developer's Conference) por aqui. Já faz algum tempo que venho participando, mas dessa vez fui bem mais ativo que o normal.
+
+### Arquitetura .NET
+
+No primeiro dia, entre todas as trilhas, tivemos a de Arquitetura .NET. Oficialmente eu não estava de coordenador, mas mesmo assim, acabei me envolvendo na construção da grade de palestrar e organização de horários.
+
+Além disso, ministrei uma palestra sobre Clean Architecture utilizando .NET Core (C# e F#). O objetivo principal era demonstrar uma arquitetura mais compatível com projetos comuns ao dia a dia (médio e pequeno porte).
+
+Você pode conferir os slides abaixo:
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/JgShYyxy1Zww9H" %}
+
+### .NET
+
+O segundo dia foi bem importante pra mim, estava coordenando a trilha de .NET e além disso, tive a honra de falar sobre programação funcional usando F#. 
+
+Qualquer um que acompanha o blog sabe o quanto eu gosto desse assunto e poder estar no palco passando isso para toda a galera de lá foi demais.
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/dqcYSbq6uTRvHW" %}
+
+### Machine Learning
+
+Durante o terceiro dia tive a honra de palestrar pela primeira vez na trilha **Stadium**. Essa é a principal trilha do evento, com transmissão ao vivo em português e espanhol, além de tradução simultânea para libras.
+
+Nessa palestra falei sobre o desenvolvimento de modelos para detecção de objetos em imagens, usando como estudo de caso o reconhecimento de letras em libras.
+
+{% include slide-share.html width=595 height=485 url="https://www.slideshare.net/slideshow/embed_code/key/mGLPkimhhgyFLe" %}
+
+Você pode ver o vídeo da palestra neste [link](https://www.eventials.com/Globalcode/tdc-floripa-2019-stadium-quinta-4/).
+
+### TDC INSPIRE
+
+Apesar de todas as experiências terem sido incríveis, nenhuma se compara com essa.
+
+O TDC INSPIRE foi um evento no qual eu tive a sorte de ser coordenador e mentor, apoiado por muita gente, muita gente mesmo. Entre eles, a equipe do TDC, mentores e o Jorge, que ficou como segundo coordenador.
+
+Esse mini evento dentro do TDC uniu 40 jovens do ensino médio para prototipar um projeto em conjunto com um mentor. Preciso confessar que, apesar de ser mentor, eu muito mais aprendi do que ensinei.
+
+Foi emocionante demais!
+
+E no final de tudo, cada uma das equipes fez um pitch de 1 minuto no palco **principal** do evento.
+
+Fica uma foto com a equipe para fechar o post de hoje:
+
+{% include image.html link="https://imgur.com/RzHNV5E.png" alt="TDC INSPIRE" width=80 %}
+
+Valeu pessoa!
+
+E até mais.
