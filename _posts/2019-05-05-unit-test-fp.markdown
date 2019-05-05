@@ -2,6 +2,7 @@
 layout: post
 title:  "E os Testes Unitários em Programação Funcional?"
 date:   2019-05-05 00:00:00 +0000
+image: https://i.imgur.com/aMTU9M0.png
 comments: true
 tags: [F#] 
 ---

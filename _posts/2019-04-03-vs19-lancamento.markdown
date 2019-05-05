@@ -2,6 +2,7 @@
 layout: post
 title:  "Lançamento do Visual Studio 2019"
 date:   2019-04-03 01:00:00 +0000
+image: https://i.imgur.com/NcIn2V4.png
 comments: true
 tags: [Talks] 
 ---
