@@ -2,6 +2,7 @@
 layout: post
 title:  "Vamos entender o IEnumerable? - Parte II"
 date:   2019-01-22 00:00:00 +0000
+image: https://i.imgur.com/4TKGhG6.png
 comments: true
 tags: [C#]
 ---

@@ -3,6 +3,7 @@ layout: post
 title:  "Classificador de Sentimentos - Azure ML"
 date:   2019-02-19 00:00:00 +0000
 comments: true
+image: https://i.imgur.com/FovyubT.png
 tags: [IA]
 serie: Azure Machine Learning
 ---

@@ -3,6 +3,7 @@ layout: post
 title:  "Azure Notebooks"
 date:   2019-02-12 00:00:00 +0000
 comments: true
+image: https://i.imgur.com/fLa1KfS.png
 tags: [IA, Python, F#]
 ---
 

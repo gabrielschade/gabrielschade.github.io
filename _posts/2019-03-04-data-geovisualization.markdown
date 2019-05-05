@@ -3,6 +3,7 @@ layout: post
 title:  "Visualização de Dados com F#"
 date:   2019-03-04 00:00:00 +0000
 comments: true
+image: https://imgur.com/pG7fzBX.png
 tags: [F#]
 serie: Entenda o Mundo com F#
 ---
