@@ -3,7 +3,6 @@
         <a href="{{ post.url }}" style="text-decoration: none;">
             <div style="padding:15px;cursor:pointer;">
                 <div class="card-post">
-                    <input type="hidden" value={{post.image}}>
                     {% unless post.image %}
                         <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
                         <div class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{%
