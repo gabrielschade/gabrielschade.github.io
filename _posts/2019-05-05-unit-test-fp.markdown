@@ -12,7 +12,9 @@ Um dos posts mais antigos aqui do blog tratava do assunto de testes unitários e
 
 <!--more-->
 
-A primeira grande pergunta é, dá para testar? -**Sim**, dá.
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp/TesteUnitarioFsharp/CalculoGit" %} 
+
+A primeira grande pergunta é: dá para testar? -**Sim**, dá.
 
 Inclusive eu ouso dizer que o processo para testar seu código funcional é bastante simples. Vamos fazer um exemplo usando F#.
 
@@ -69,6 +71,7 @@ let carregarRepositorios() =
 ```
 
 Agora podemos fazer as funções para calcular cada uma das propriedades, começando pelo número de Forks.
+
 Nossa função deve carregar os repositórios, depois realizar o agrupamento por linguagem e por fim, realizar a soma dos Forks, conforme código:
 
 ```fsharp
@@ -139,7 +142,7 @@ let ``Teste para cálculo de Forks por linguagem``() =
 
 Aqui já notamos nosso primeiro problema, nossa função busca os repositórios internamente, ou seja, ela está utilizando os recursos externos de forma fixa.
 
-Precisamos melhorar isso fazendo com que ela seja uma função pura. E isso implica que ele deve receber tudo que precisa por parâmetro:
+Precisamos melhorar isso fazendo com que ela seja uma função pura. Isso implica que a funçãos deve receber tudo que precisa por parâmetro:
 
 ```fsharp
 let calcularForksPorLinguagem repositorio =
@@ -153,18 +156,20 @@ let calcularForksPorLinguagem repositorio =
 
 Mas é só isso? - Quase.
 
-Essa simples refatoração gera um problema para a aplicação, agora todas as vezes que precisarmos chamar essa função, teríamos que informar o mesmo parâmetro.
+Essa simples refatoração gera um problema para a aplicação, agora todas as vezes que precisarmos chamar essa função, teríamos que informar o repositório do Git como parâmetro.
 
-Podemos resolver isso de maneira bastante simples: Usando **composição**.
+Podemos resolver isso de maneira bastante simples: **composição**.
 
 ```fsharp
 let calcularForksPorLinguagemEmRepositoriosGit =
     carregarRepositorios
     >> calcularForksPorLinguagem
 ```
-Essa composição cria algo semelhante à uma injeção de dependência local, temos uma função que contém o que deve ser testado e outra função com o repositório já "injetado" nela. Legal né?
+Essa composição cria algo semelhante à uma injeção de dependência local, temos uma função que realiza o trabalho efetivamente (e portanto, o que deve ser testado) e outra função com o repositório já "injetado" nela. 
 
-Agora vamos voltar para nosso teste e ver como fica!
+Legal né?
+
+Agora vamos voltar para nosso teste e ver como fica. 
 
 O primeiro passo é termos o gerador de repositórios falsos, vamos lá:
 
@@ -176,7 +181,7 @@ let criarRepositorioFalso() =
         {Linguagem = Some "C#"; Forks = 1; Estrelas = 10; IssuesAbertas = 2;}
     |]
 ```
-Podemos usar o mesmo recurso de composição, mas dessa vez para utilizarmos esses repositórios falsos:
+Podemos usar o mesmo recurso de composição, mas dessa vez para prepararmos a função para o teste:
 
 ```fsharp
 [<Test>]
@@ -191,15 +196,15 @@ let ``Teste para cálculo de Forks por linguagem``() =
     |> should equal (Some "F#", 5)
 ```
 
-Lembre-se que a ideia não é fazer o teste mais bonito do mundo, mas sim, mostrar como utilizar valores fictícios para testarmos.
+Lembre-se que a ideia deste post não é mostrar como fazer o teste de maneira correta, mas sim, mostrar como criar funções que podem ser testadas, algo semelhante a um Mock.
 
-Agora significa que nossa função para está bem feita? - Não tão rápido...
+Agora que já conseguimos testar significa que nossa função para está bem feita? - Não tão rápido...
 
-O problema da nossa função é que agora ela possui um **comportamento** fixo. Eita, como assim?
+Nossa função ainda pode ser bastante melhorada. Seu principal problema agora é que ela possui um **comportamento** fixo.
 
-Antes, nós tínhamos um dado fixo (o repositório do Git), agora temos o comportamento de somar Forks de maneira fixa, que tal parametrizarmos isso também?
+Antes, nós tínhamos um dado fixo (os repositórios do Git), agora temos o comportamento de somar Forks de maneira fixa, que tal parametrizarmos isso também?
 
-Vamos subir mais um nível de abstração na função `calcularForksPorLinguagem`, agora vamos alterá-la para `calcularPorLinguagem` recebendo o cálculo por parâmetro:
+Vamos subir mais um nível de abstração na função `calcularForksPorLinguagem`, agora vamos alterar seu nome para `calcularPorLinguagem` recebendo a propriedade que será calculada por parâmetro:
 
 ```fsharp
 let calcularPorLinguagem propriedadeParaCalculo repositorio =
@@ -210,7 +215,9 @@ let calcularPorLinguagem propriedadeParaCalculo repositorio =
         (repositorio |> Array.sumBy(propriedadeParaCalculo))
     ) 
 ```
-Fundamentalmente, a única mudança foi substituir a função do `Array.sumBy` por um parâmetro genérico. Este parâmetro é uma função que recebe um repositório e retorna um valor inteiro. Com isso podemos gerar as três funções que completam nossas features, veja:
+Fundamentalmente, a única mudança foi substituir a função passada para o `Array.sumBy` por um parâmetro genérico. 
+
+Esse parâmetro deve ser uma função que recebe um repositório e retorna um valor inteiro. Com isso podemos gerar as três funções que completam nossas features, veja:
 
 ```fsharp
 let calcularForksPorLinguagem repositorio =
@@ -225,7 +232,9 @@ let calcularIssuesAbertasPorLinguagem repositorio =
     repositorio
     |> calcularPorLinguagem (fun repo -> repo.IssuesAbertas)
 ```
-Essas funções encapsulam a lógica da aplicação, portanto, podemos utilizá-las para testes informando qualquer repositório falso. Além disso, com elas, podemos criar as funções para utilizar no código da aplicação, onde já injetamos os repositórios do Git:
+Essas funções encapsulam a lógica da aplicação, portanto, podemos utilizá-las para testes informando qualquer repositório falso. 
+
+Além disso, com elas, podemos criar as funções para utilizar no código da aplicação, onde já injetamos os repositórios do Git:
 
 ```fsharp
 let calcularForksPorLinguagemEmRepositoriosGit =
@@ -260,8 +269,11 @@ Através de um setup de testes podemos criar as funções com os mocks uma únic
 
 E o mais legal, é que podemos utilizar nossas funções com os repositórios online injetados em nossa aplicação real.
 
-Vamos até o nosso arquivo `Program.fs` parar uma função que imprima os valores de maneira legível.
-Essa função irá receber o nome da propriedade que estamos imprimindo (Forks, Issues ou Estrelas) e os dados dos repositórios.
+Vamos voltar para o nosso arquivo `Program.fs`.
+
+Agora vamos fazer uma função que imprima os valores do repositório de maneira legível.
+
+Ela deverá receber o nome da propriedade que estamos imprimindo (Forks, Issues ou Estrelas) e os dados dos repositórios.
 
 Faremos um `map` para formatar os dados e depois um `iter` para exibirmos no Console, conforme código:
 
@@ -301,6 +313,10 @@ let main argv =
 O resultado disso para os repositórios do usuário dotnet estão listados abaixo:
 
 {% include image.html link="https://imgur.com/1ktvYIA.png" alt="Dados dos repositórios .NET" width=80 %}
+
+> **Atenção**
+>
+> Você pode visualizar o código desta aplicação [neste link](https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp/TesteUnitarioFsharp/CalculoGit) e do projeto de testes [neste link](https://github.com/gabrielschade/posts-blog/blob/master/Teste-unitario-fsharp/TesteUnitarioFsharp/CalculoGit.Testes/Test.fs).
 
 Bom galera, o post de hoje era isso!
 
