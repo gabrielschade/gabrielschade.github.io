@@ -36,7 +36,7 @@
                         </div>
                     {% endif %}
                 </div>
-                <div class="card-action" style="max-height:65px">
+                <div class="card-action" style="max-height:65px;padding:15px 0;">
                     {% assign rawtags = "" %}
                     {% assign ttags = post.tags | join:'|' | append:'|' %}
                     {% assign rawtags = rawtags | append:ttags %}
