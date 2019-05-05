@@ -17,7 +17,7 @@
                                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
                             </div>
                         </div>
-                    {% endif %}
+                    {% endunless %}
                     
                     {% if post.image %}
                         <img class="responsive-img" src="{{post.image}}">
