@@ -3,18 +3,37 @@
         <a href="{{ post.url }}" style="text-decoration: none;">
             <div style="padding:15px;cursor:pointer;">
                 <div class="card-post">
-                    <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
-                    <div class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{%
-                        include postdate.html %}</div>
-                    <div class="card-content" style="padding:15px 0;">
-                        <div class="post-excerpt" style="{{include._style}} height: 150px;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 6;
-                        -webkit-box-orient: vertical;">
-                            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                    {% if post.image == "" %}
+                        <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
+                        <div class="post-date" style="font-size:18px;{{include._style}};margin-bottom:0;padding-top:15px;">{%
+                            include postdate.html %}</div>
+                        <div class="card-content" style="padding:15px 0;">
+                            <div class="post-excerpt" style="{{include._style}} height: 150px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 6;
+                            -webkit-box-orient: vertical;">
+                                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                            </div>
                         </div>
-                    </div>
+                    {% endif %}
+                    
+                    {% if post.image != "" %}
+                        <img class="responsive-img" src="{{post.image}}">
+                    
+                        <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
+                        <div class="card-content" style="padding:15px 0;">
+                            <div class="post-excerpt" style="{{include._style}} height: 60px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;">
+                                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                            </div>
+                            <div class="post-date" style="font-size:14px;{{include._style}};margin-bottom:0;padding-top:5px;">{%
+                                    include postdate.html %}</div>
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="card-action" style="max-height:65px">
                     {% assign rawtags = "" %}
