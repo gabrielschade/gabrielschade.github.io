@@ -132,11 +132,11 @@ static void Main(string[] args)
 
 Legal né? -Mas nem tudo são flores, vamos deixar claro alguns detalhes:
 
-* Não é possível criar **propriedades**, **atributos/fields** ou **eventos** de extensão;
+1. Não é possível criar **propriedades**, **atributos/fields** ou **eventos** de extensão;
 
-* Não é possível **sobrescrever** um método da classe através de um método de extensão, mas é possível **sobrecarregar** um;
+2. Não é possível **sobrescrever** um método da classe através de um método de extensão, mas é possível **sobrecarregar** um;
 
-* Você precisa importar o namespace com os métodos de extensão para que eles sejam acessíveis (O Visual Studio já dá uma força nessa).
+3. Você precisa importar o namespace com os métodos de extensão para que eles sejam acessíveis (O Visual Studio já dá uma força nessa).
 
 Você pode encontrar o código destes métodos de extensão no [meu GitHub](https://github.com/gabrielschade/posts-blog/tree/master/ExtensionMethods).
 
