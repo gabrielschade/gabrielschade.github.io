@@ -3,8 +3,8 @@
         <a href="{{ post.url }}" style="text-decoration: none;">
             <div style="padding:15px;cursor:pointer;">
                 <div class="card-post">
-                    {% unless post.image %}
-                        <div class="card-title light-font" style="line-height: normal;">{{ post.title }}</div>
+                    {% unless post.image %} 
+                        <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
                         
                         <div class="card-content" style="padding:15px 0;">
                             <div class="post-excerpt" style="{{include._style}} height: 150px;
@@ -23,7 +23,7 @@
                         <div style="min-height: 150px;max-height: 150px;" class="valign-wrapper">
                             <img class="responsive-img" src="{{post.image}}">
                         </div>
-                        <span class="card-title light-font" style="line-height: normal;">{{ post.title }}</span>
+                        <div class="card-title light-font" style="line-height: normal;">{{ post.title }}</div>
                         <div class="card-content" style="padding:15px 0;">
                             <div class="post-excerpt" style="{{include._style}} height: 65px;
                             overflow: hidden;
