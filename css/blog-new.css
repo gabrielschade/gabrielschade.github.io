@@ -213,8 +213,8 @@ h3{
     background-color:white;
     color: #333;
     margin: 15px;
-    min-height: 400px;
-    height: 400px;
+    min-height: 425px;
+    height: 425px;
     -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
     -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
     -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
@@ -262,8 +262,8 @@ h3{
 }
 
 .card-post{
-    min-height: 300px;
-    height: 300px;
+    min-height: 325px;
+    height: 325px;
 }
 
 .post:hover{
@@ -284,6 +284,7 @@ h3{
 }
 
 .card-title{
+    padding-top:15px;
     font-size:1.35em;
     font-family: 'Segoe UI Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
