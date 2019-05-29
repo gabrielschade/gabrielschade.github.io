@@ -87,17 +87,17 @@ Mas vamos deixar nossa função disponível apenas para GET, para simplificar um
 
 ```csharp
 [FunctionName("Function1")]
-    public static IActionResult Run(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
-        ILogger log)
-    {
-        log.LogInformation("C# HTTP trigger function processed a request.");
+public static IActionResult Run(
+    [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+    ILogger log)
+{
+    log.LogInformation("C# HTTP trigger function processed a request.");
 
-        string name = req.Query["name"];
-        return name != null
-            ? (ActionResult)new OkObjectResult($"Hello, {name}")
-            : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
-    }
+    string name = req.Query["name"];
+    return name != null
+        ? (ActionResult)new OkObjectResult($"Hello, {name}")
+        : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+}
 ```
 
 Vamos executar esse projeto e ver o que acontece?
