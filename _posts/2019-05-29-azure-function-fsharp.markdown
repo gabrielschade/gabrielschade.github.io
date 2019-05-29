@@ -13,7 +13,7 @@ Você já ouviu falar do Azure Functions? Que tal utilizar ele com F#? Vale a pe
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/Teste-unitario-fsharp/TesteUnitarioFsharp/CalculoGit" %} 
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/AzureFunctions" %} 
 
 Vamos começar falando um pouquinho sobre o que é o **Azure Functions**.
 
