@@ -1,0 +1,563 @@
+---
+layout: post
+title:  "ML .NET: Classificador de Sentimentos"
+date:   2019-05-29 00:00:00 +0000
+image: https://i.imgur.com/tkKco4z.png
+comments: true
+tags: [IA, F#, C#] 
+---
+
+Olá pessoa!
+
+Já fizemos classificadores de sentimentos em Python e no Azure, agora chegou a hora do ML.NET.
+
+<!--more-->
+
+{% include github-link.html link="https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosMLNet/Program.fs" %} 
+
+Este post foi feito em parceria com Microsoft MVP Juliano Custódio, onde no post [Utilizando ML.NET em aplicações Xamarin.Forms](https://medium.com/@juucustodio/a9bdb8a4e156) ele utiliza o modelo que criaremos aqui para rodar em aplicações móveis! Depois de entender as bases para criar o modelo, corre lá no blog dele para ver ele executando na prática!
+
+Vamos começar então! Aqui iremos implementar um modelo para classificação de comentários, usando o ML.NET. Assim como implementamos anteriormente outros modelos de classificação. Você pode também pode conferir o modelo feito em [Python]({{ site.baseurl }}{% link _posts/2018-04-16-machine-learning-classificador.markdown %}) ou feito com o [Azure Machine Learning Studio]({{ site.baseurl }}{% link _posts/2019-02-19-azure-ml-classificador.markdown %}).
+
+Os três modelos de classificação utilizam o mesmo _dataset_ e resolvem o mesmo problema. O modelo deve indicar se um dado comentário é positivo ou negativo. Os dados para treinamento utilizam dados referentes à filmes, lugares e produtos, vamos manter a implementação, mas mudaremos o framework.
+
+Então vamos lá, o que é o ML.NET?
+
+### ML.NET
+
+O ML.NET é um framework para Machine Learning open source e _cross-platform_ (Windows, Linux & macOS) focado em .NET, ou seja. podemos utilizar C# e F# para criação de modelos de machine learning!
+
+O mais legal disso, é que o resultado é totalmente exportável, ou seja, o ambiente de criação não precisa ser necessariamente o mesmo ambiente de desenvolvimento.
+
+Como já citado, podemos usar C# ou F#, mas qual devemos escolher?
+
+**Depende**.
+
+Na minha opinião pessoal, eu prefiro utilizar o F# para a criação de modelos, meus principais argumentos sobre isso são:
+
+1. Você pode extrair dados para montar seus _datasets_ utilizando [Type Providers]({{ site.baseurl }}{% link posts-serie/entenda o mundo com fsharp.html %});
+
+2. Eu gosto bastante da facilidade de gerar gráficos com o F#, por ser uma pessoa bastante visual, gosto de comparar as métricas através de gráficos;
+
+3. Como o ambiente de criação do modelo é descolado do ambiente de utilização do modelo, você não precisará de desenvolvedores com aptidão em F#, desenvolvedores C# (mais comuns no mercado) poderão utilizar seu modelo sem nenhum tipo de problema;
+
+Isso significa que é melhor criar o modelo em F# do que C#? **Não**.
+
+Apenas significa que no meu cenário, F# acaba sendo melhor. Mas avalie caso a caso, se você estiver confortável com C# e não com F#, vai de C# que o framework é literalmente o mesmo (o que muda são as coisas periféricas da linguagem).
+
+### Criando o projeto
+
+Podemos começar criando um projeto Console em F# comum. Antes de qualquer código vamos instalar os pacotes:
+
+```
+PM> Install-Package Microsoft.ML
+PM> Install-Package FSharp.Data
+```
+
+Isso vai nos dar as ferramentas necessárias para gerar o modelo com o ML.NET.
+
+Agora que já instalamos o pacote precisamos dos dados que serão utilizados para treinamento e avaliação. Para isso vamos usar o mesmo conjunto de dados dos exemplos anteriores. Ele é composto por três fontes públicas que contém comentários dos sites: [IMDb](http://www.imdb.com/), [Amazon](https://www.amazon.com/) e [Yelp](https://www.yelp.com/). Ao todo teremos exatos três mil registros.
+
+#### Pré-processamento
+
+Vamos importar os arquivos .csv para nosso projeto:
+
+{% include image.html link="https://imgur.com/86U8bGO.png" alt="Importando arquivos .CSV" width=80 %}
+
+Outra coisa que precisamos fazer para garantir que a importação vai funcionar em tempo de execução é marcarmos os arquivos para serem copiados para a pasta destino da publicação.
+
+Para fazer isso, basta alterarmos o valor da propriedade _Copy to Output Directory_ para _Copy if newer_:
+
+{% include image.html link="https://imgur.com/HMEj4KW.png" alt="Alterando a propriedade copy to output directory" width=80 %}
+
+Com isso já podemos começar a implementação!
+
+A primeira coisa que precisamos fazer é criar um objeto do tipo `MLContext`, esse é o objeto mais importante do ML.NET, praticamente tudo está ligado à ele.
+
+Agora vamos importar os dados dos arquivos CSV, para fazer isso, precisamos de um tipo que reflita os dados presentes no arquivo. Os arquivos possuem duas colunas: `Text` e `Value`, vamos criar um tipo para carregar isso.
+
+Vamos deixar os tipos da implementação em um arquivo separado, vamos chamá-lo de `Types`:
+
+```fsharp
+module Types
+
+open Microsoft.ML.Data
+
+[<CLIMutable>]
+type DataCommentary = {
+    [<LoadColumn(0)>]
+    Text : string
+
+    [<LoadColumn(1)>]
+    Label : bool
+}   
+```
+
+Note algumas coisas nesse tipo: estamos utilizando a anotação `[<CLIMutable>]` por conta de compatibilidade; alteramos o nome de `Value` para `Label` que é um nome mais correto para esse tipo de modelagem; estamos utilizando a notação `[<LoadColumn>]` presente no namespace `Microsoft.ML.Data` para mapear os dados do arquivo para o objeto de dados.
+
+Agora já podemos carregar o arquivo na função `main`! Usamos a função `Load` de um `TextLoader`, com ela podemos carregar os três arquivos. 
+
+Além disso, no momento de criar o `loader` precisamos configurar qual o separador do arquivo CSV e se o arquivo possui um cabeçalho ou não.
+
+```fsharp
+[<EntryPoint>]
+let main argv =
+    let mlContext = new MLContext();
+    let textLoader = mlContext.Data.CreateTextLoader<DataCommentary>(',', true)
+    let rawData = textLoader.Load 
+                    [|
+                      "Datasets/amazon_cells_labelled.csv"
+                      "Datasets/imdb_labelled.csv"
+                      "Datasets/yelp_labelled.csv"
+                    |]
+```
+
+Agora podemos fazer a divisão dos dados: 80% para treinamento e 20% para avaliação. Faremos isso através da função: `TrainTestSplit`:
+
+```fsharp
+    ...
+    let data = mlContext.Data.TrainTestSplit(rawData, 0.2)
+```
+
+Por fim, vamos encapsular tudo isso em uma função para não poluir a função `main`:
+
+```fsharp
+let preprocessing (mlContext:MLContext) = 
+    let textLoader = mlContext.Data.CreateTextLoader<DataCommentary>(',', true)
+    let rawData = textLoader.Load 
+                    [|
+                      "Datasets/amazon_cells_labelled.csv"
+                      "Datasets/imdb_labelled.csv"
+                      "Datasets/yelp_labelled.csv"
+                    |]
+    let data = mlContext.Data.TrainTestSplit(rawData, 0.2)
+
+    rawData, data
+```
+Estamos retornando uma tupla com os dados crus importados do arquivo e com os dados já divididos entre treino e avaliação.
+
+
+#### Treinamento
+
+Na etapa de treinamento precisamos fazer a "featurização" do texto, que expliquei no [primeiro post]({{ site.baseurl }}{% link _posts/2018-04-16-machine-learning-classificador.markdown %}) sobre essa implementação. A explicação mostra a forma mais simples de featurizar um texto, mas lembre-se que existem **várias** outras formas.
+
+Fazer esse processo com ML.NET é bastante simples, basta usar a função `FeaturizeText` indicando qual coluna deve ser featurizada e qual o nome da coluna que receberá o resultado do processo:
+
+```fsharp
+let mlFeaturedText = 
+    mlContext.Transforms.Text.FeaturizeText("Features", "Text")
+```
+
+Agora chega o momento de escolher o algoritmo de treinamento e fazê-lo de fato. Por enquanto vamos escolher o algoritmo `LinearSvm`, conforme código:
+
+```fsharp
+let mlFeaturedText = 
+    mlContext.Transforms.Text.FeaturizeText("Features", "Text")
+
+let trainer = 
+    mlContext.BinaryClassification.Trainers.LinearSvm(
+        "Label", 
+        "Features")
+ 
+let pipeline = mlFeaturedText.Append trainer
+let model = pipeline.Fit data.TrainSet
+```
+
+Neste ponto já temos um modelo gerado!
+
+Para poder testarmos precisamos descrever o tipo referênte ao parâmetro de entrada e o tipo do valor de saída. Então vamos voltar rapidinho lá para o arquivo `Types.fs` e adicionar esses caras:
+
+```fsharp
+[<CLIMutable>]
+type InputCommentary = {
+    Text:string
+}
+
+[<CLIMutable>]
+type Prediction = {
+    [<ColumnName("PredictedLabel")>]
+    Prediction : bool
+
+    Score : float32
+}
+```
+
+A explicação desses tipos é bastante simples. Para entrada só precisamos de um texto, afinal o label é o valor que estamos tentando descobrir.
+
+Para o retorno temos alguns indicadores (Score e Probability) e o resultado propriamente dito: `Prediction`.
+
+Vamos testar:
+
+```fsharp
+let predictiveModel = 
+    mlContext.Model.CreatePredictionEngine<InputCommentary, Prediction>(model)
+
+predictiveModel.Predict { Text = "awesome" }
+|> Console.WriteLine
+```
+
+Já podemos ver o resultado no console!
+
+{% include image.html link="https://imgur.com/kDPplif.png" alt="Resultado no console" width=80 %}
+
+Mas antes de sair usando, vamos refatorar isso para limpar a nossa função `main`.
+
+Vamos criar a função `train`, ela deve receber três parâmetros: o MLContext, os dados de treinamento e o algoritmo que será utilizado para treinamento:
+
+```fsharp
+let train (mlContext:MLContext) 
+          (data:IDataView)
+          (trainer:IEstimator<'u>)=
+
+    let mlFeaturedText = 
+        mlContext.Transforms.Text.FeaturizeText("Features", "Text")
+
+    let pipeline = mlFeaturedText.Append trainer
+    pipeline.Fit data
+```
+Note que estamos utilizando interfaces genéricas, isso permitirá alterar o algoritmo usado para treino sem alterarmos o corpo principal da função.
+
+Agora que já temos as funções para criar o modelo, vamos organizar a função `main` para consumí-los. Podemos inclusive utilizar dois algoritmos diferentes:
+
+```fsharp
+[<EntryPoint>]
+let main argv =
+    let mlContext = new MLContext()
+    let (raw, datasets) = preprocessing mlContext
+
+    //SVM
+    let trainerSvm = mlContext.BinaryClassification.Trainers.LinearSvm(
+                        "Label", 
+                        "Features")
+
+    let modelSvm = train mlContext datasets.TrainSet trainerSvm
+    let predictiveModelSvm = 
+        mlContext.Model.CreatePredictionEngine<InputCommentary, Prediction>(modelSvm)
+
+    predictiveModelSvm.Predict { Text = "best movie" }
+    |> Console.WriteLine    
+
+    Console.WriteLine "\n"
+
+    //PERCEPTRON
+    let trainerPerceptron = mlContext.BinaryClassification.Trainers.AveragedPerceptron(
+                                "Label", 
+                                "Features")
+
+    
+    let modelPerceptron = train mlContext datasets.TrainSet trainerPerceptron
+    let predictiveModelPerceptron = 
+        mlContext.Model.CreatePredictionEngine<InputCommentary, Prediction>(modelPerceptron)
+
+    predictiveModelPerceptron.Predict { Text = "best movie" }
+    |> Console.WriteLine
+```
+Ignore por enquanto a repetição de código, mas realize o teste no console.
+
+Se tudo ocorreu bem, você deve perceber que os dois modelos acertaram. Mas como saber qual o melhor e qual o pior?
+
+Precisamos realizar a etapa de avaliação!
+
+#### Avaliação
+
+Vamos começar limpando o código da função `main`:
+
+```fsharp
+[<EntryPoint>]
+let main argv =
+    let mlContext = new MLContext()
+    let (raw, datasets) = preprocessing mlContext
+```
+
+Vamos manter o código apenas até o demonstrado acima, por enquanto.
+
+A função de avaliação também precisará de três parâmetros: o MLContext (mas é claro); os dados para avaliação; e o modelo já gerado pela etapa de treinamento:
+
+```fsharp
+let evaluate (mlContext:MLContext) 
+             (data:IDataView) 
+             (model:TransformerChain<'v>) =
+    //...
+```
+
+Para obtermos as métricas no ML.NET é bastante simples. Primeiro temos de utilizar o método `Transform` do modelo, passando os dados para avaliação por parâmetro. Depois disso usamos o método de avaliação disponível no MLContext, conforme código:
+
+```fsharp
+let predictions = model.Transform data
+let metrics = mlContext.BinaryClassification.EvaluateNonCalibrated(
+                predictions, 
+                "Label", 
+                "Score"
+            )
+```
+A partir disso já podemos acessar as métricas normalmente. Para facilitar nosso trabalho de mensurá-las no futuro, vamos retornar um array contendo o nome e o resultado de cada métrica (vamos usar as mesmas que usamos em Python e no Azure):
+
+```fsharp
+let evaluate (mlContext:MLContext) 
+             (data:IDataView) 
+             (model:TransformerChain<'v>) =
+
+    let predictions = model.Transform data
+    let metrics = mlContext.BinaryClassification.EvaluateNonCalibrated(
+                    predictions, 
+                    "Label", 
+                    "Score"
+                )
+    [|
+        "Accuracy", metrics.Accuracy
+        "Positive Precision", metrics.PositivePrecision
+        "Negative Precision", metrics.NegativePrecision
+        "Positive Recall", metrics.PositiveRecall
+        "Negative Recall", metrics.NegativeRecall
+        "F1 Score", metrics.F1Score
+    |]
+```
+Agora vamos voltar para a função `main`, mas dessa vez evitando repetição de código. Para fazer isso, vamos utilizar aplicação parcial, currying e composição!
+
+Primeiro vamos criar uma função derivada da função `train`, já informando os parâmetros necessários, com exceção do algoritmo de treino:
+
+```fsharp
+[<EntryPoint>]
+let main argv =
+    let mlContext = new MLContext()
+    let (raw, datasets) = preprocessing mlContext
+    let trainWith = train mlContext datasets.TrainSet
+```
+Vamos fazer a mesma coisa com a função de avaliação, mas neste caso, omitiremos o parâmetro do modelo:
+
+```fsharp
+    //...
+    let (raw, datasets) = preprocessing mlContext
+    let trainWith = train mlContext datasets.TrainSet
+    let evaluateWith = evaluate mlContext datasets.TestSet
+```
+Agora vamos usar uma função que é utiliza estas duas:
+
+```fsharp
+let trainAndEvaluate (trainer:IEstimator<'u>)=
+    trainWith trainer
+    |> evaluateWith 
+```
+
+Para garantir que o parâmetro `trainer` seja uma interface abstrata vamos abrir mão da composição.
+
+Com isso acabamos de gerar uma função em que só precisamos passar o algoritmo de treino e teremos como retorno todas as métricas de avaliação!
+
+```fsharp
+let trainer = mlContext.BinaryClassification.Trainers.LinearSvm(
+                    "Label", 
+                    "Features")
+    
+trainAndEvaluate trainer
+|> Array.iter (fun (name, value) -> printf "%s %f \n" name value)
+```
+
+{% include image.html link="https://imgur.com/gstW6vY.png" alt="Métricas SVM" width=80 %}
+
+Se você lembra das métricas, deve ter notado que o SVM não foi muito bem. Que tal tentarmos outro algoritmo?
+
+```fsharp
+let trainer = mlContext.BinaryClassification.Trainers.AveragedPerceptron(
+                    "Label", 
+                    "Features")
+    
+trainAndEvaluate trainer
+|> Array.iter (fun (name, value) -> printf "%s %f \n" name value)
+```
+{% include image.html link="https://imgur.com/gqsseg2.png" alt="Métricas AveragedPerceptron" width=80 %}
+
+Parece bem melhor!
+
+Mas que tal usarmos uma das funcionalidades que mencionei no começo do post como argumento para usar o F#?
+
+Que tal visualizarmos isso em forma de gráficos? Vamos lá!
+
+#### Visualização dos Dados
+
+Para criar a visualização das métricas, vamos gerar a métrica de vários trainers diferentes:
+
+```fsharp
+let trainerSgd = 
+    mlContext.BinaryClassification.Trainers.SgdNonCalibrated(
+        "Label", 
+        "Features")
+
+let trainerPerceptron = 
+    mlContext.BinaryClassification.Trainers.AveragedPerceptron(
+        "Label", 
+        "Features")
+
+let trainerSvm = 
+    mlContext.BinaryClassification.Trainers.LinearSvm(
+        "Label", 
+        "Features")
+
+let trainerSdca = 
+    mlContext.BinaryClassification.Trainers.SdcaNonCalibrated(
+        "Label", 
+        "Features")
+
+let metrics = [
+    trainAndEvaluate trainerSgd
+    trainAndEvaluate trainerPerceptron
+    trainAndEvaluate trainerSvm
+    trainAndEvaluate trainerSdca
+]
+```
+
+Vamos criar um segundo array com o nome dos algoritmos:
+
+```fsharp
+let trainersLabels = [
+    "SgdNonCalibrated"
+    "AveragedPerceptron"
+    "LinearSvm"
+    "SdcaNonCalibrated"
+]
+```
+
+Agora é a hora de instalarmos o pacote nuget para gráficos:
+
+```
+PM> Install-Package XPlot.GoogleCharts
+```
+
+Com esse pacote vamos usar o Google Charts para gerar um gráfico de barras
+Agora vamos criar algumas configurações para o nosso gráfico:
+
+```fsharp
+let options = Options ( title = "Metrics Comparison", 
+                            hAxis = Axis(
+                                title = "Algorithm",
+                                titleTextStyle = TextStyle(color = "blue")
+                       ))
+```
+Agora é só gerar o gráfico em si, como já fizemos [neste post]({{ site.baseurl }}{% link _posts/2019-03-04-data-geovisualization.markdown %})!
+
+```fsharp
+let chart = 
+    metrics
+    |> Chart.Column
+    |> Chart.WithOptions options
+    |> Chart.WithLabels trainersLabels
+
+let html = chart.GetHtml()
+File.AppendAllLines ("metrics.html",[html])
+
+Process.Start (@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", 
+                "file:\\" + Directory.GetCurrentDirectory() + "\\metrics.html")
+|> ignore  
+```
+
+Agora é só executar e ver qual algoritmo teve a melhor performance!
+
+{% include image.html link="https://imgur.com/znw6YZa.png" alt="Métricas dos algoritmos" width=80 %}
+
+Inclusive o gráfico gerado mostra os valores com tooltips, então podemos visualizar tudo. Após explorar um pouquinho já é fácil notar que o algoritmo `"SdcaNonCalibrated"`(Stochastic Dual Coordinate Ascent).
+
+#### Publicação
+
+Agora que já temos o algoritmo escolhido, vamos publicá-lo e exportá-lo para utilização!
+
+Na verdade esta parte é SUPER simples, basta passarmos o modelo por parâmetro para o método `Save` disponível em `MLContext.Model`, conforme código:
+
+```fsharp
+let model = trainWith trainerSdca
+mlContext.Model.Save(model, raw.Schema,"model.zip")
+```
+Vamos executar e ver o resultado disso!
+
+Se formos na pasta de saída teremos o arquivo do modelo ali. Tenha isso em mente, porque usaremos ele em uma API C#!
+
+#### Consumindo em uma API ASP.NET Core
+
+Estamos na reta final agora, vamos criar um projeto ASP.NET Core com C# normalmente. Lembre-se de instalar a biblioteca Microsoft.ML via Nuget nesse projeto também!
+
+Além disso, vamos lá na pasta de resultado copiar o arquivo de modelo gerado para incorporá-lo na solução ASP.NET:
+
+{% include image.html link="https://imgur.com/t4Y1kLO.png" alt="Incorporando Modelo no projeto" width=80 %}
+
+Lembre-se também, de marcar o arquivo para copiar para o diretório de saída, como fizemos com os arquivos CSV.
+
+Além disso, vamos criar o diretório `Types` para os tipos de entrada e saída do modelo, assim como fizemos no outro projeto:
+
+```csharp
+public class Commentary
+{
+    public string Text { get; set; }
+}
+
+public class PredictionResult
+{
+    [ColumnName("PredictedLabel")]
+    public bool Prediction { get; set; }
+
+    public float Score { get; set; }
+}
+```
+
+Agora estamos na reta final, vamos criar o `CommentaryController` para abrirmos o modelo, criarmos a `PredictionEgine` e retornarmos o resultado do modelo:
+
+```csharp
+public class CommentaryController : ControllerBase
+{
+    [HttpGet("{text}")]
+    public ActionResult<PredictionResult> Get(string text)
+    {
+        string diretorioModelo = "Model\\model.zip";
+
+        MLContext mlContext = new MLContext();
+        ITransformer model;
+
+        using (var stream = 
+                    new FileStream(diretorioModelo, 
+                                   FileMode.Open, 
+                                   FileAccess.Read, 
+                                   FileShare.Read)
+              )
+        {
+            model = 
+                mlContext.Model.Load(stream, 
+                                     out DataViewSchema modelSchema);
+        }
+
+        var predictiveModel = 
+            mlContext.Model.CreatePredictionEngine<Commentary, PredictionResult>(model);
+
+        return predictiveModel.Predict(new Commentary()
+        {
+            Text = text
+        });
+    }
+}
+```
+Vamos ver o resultado:
+
+{% include image.html link="https://imgur.com/cC3NOeG.png" alt="Incorporando Modelo no projeto" width=80 %}
+
+Tudo certo!
+
+> **Observação importante**
+>
+> Estou confiando na sua capacidade de compreender que o Controller em questão não deve ser visto como um modelo para desenvolvimento de projeto. Ele é a versão mais simples possível para abrir o modelo, mas por favor, não faça operações de IO ou crie métodos desse tamanho em um controller real.
+> Lembre-se que o objetivo do post é falar do ML.NET por isso, várias coisas são abstraídas.
+> O código do controller pode ser encontrado [aqui](https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosCSharpConsumidor/Controllers/CommentaryController.cs)
+
+#### Xamarin.Forms
+
+Como já dito no começo do post, essa publicação faz parte de uma série feita em parceria!
+
+Tudo que fizemos aqui podemos utilizar no Xamarin.Forms, ou seja, ML.NET em Android e iOS.
+
+Você pode conferir o post [Utilizando ML.NET em aplicações Xamarin.Forms](https://medium.com/@juucustodio/a9bdb8a4e156) feito pelo Juliano e chegar nesse resultado sensacional!
+
+{% include image.html link="https://cdn-images-1.medium.com/max/1000/0*-MwpGY9-iwxblISE.gif" alt="ML.NET no mobile" width=80 %}
+
+
+Bom, o post de hoje termina por aqui aqui.
+
+Espero que tenham gostado, qualquer dúvida, correção ou sugestão, deixem nos comentários!
+
+E ah, corre lá no blog do Juliano e veja a magia acontecendo no mobile também, aproveita e segue de perto o conteúdo dele, que além de gente finíssima é um profissional excelente!
+
+Até mais.
