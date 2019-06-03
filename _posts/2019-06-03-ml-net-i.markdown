@@ -5,8 +5,8 @@ date:   2019-06-03 00:00:00 +0000
 image: https://i.imgur.com/tkKco4z.png
 comments: true
 tags: [IA, F#, C#] 
----
-
+--- 
+ 
 Olá pessoa!
 
 Já fizemos classificadores de sentimentos em Python e no Azure, agora chegou a hora do ML.NET.
