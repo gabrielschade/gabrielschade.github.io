@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "O Big-O importa"
-date:   2019-06-03 00:00:00 +0000
+date:   2019-06-10 00:00:00 +0000
 image: https://i.imgur.com/tkKco4z.png
 comments: true
-tags: [IA, F#, C#] 
+tags: [F#, C#] 
 --- 
  
 Olá pessoa!
