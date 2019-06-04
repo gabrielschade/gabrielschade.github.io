@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ML .NET: Classificador de Sentimentos"
+title:  "O Big-O importa"
 date:   2019-06-03 00:00:00 +0000
 image: https://i.imgur.com/tkKco4z.png
 comments: true
@@ -451,7 +451,7 @@ Process.Start (@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
 
 Agora é só executar e ver qual algoritmo teve a melhor performance!
 
-{% include image.html link="https://imgur.com/IRakdie.png" alt="Métricas dos algoritmos" width=80 %}
+{% include image.html link="https://imgur.com/znw6YZa.png" alt="Métricas dos algoritmos" width=80 %}
 
 Inclusive o gráfico gerado mostra os valores com tooltips, então podemos visualizar tudo. Após explorar um pouquinho já é fácil notar que o algoritmo `"SdcaNonCalibrated"`(Stochastic Dual Coordinate Ascent).
 
