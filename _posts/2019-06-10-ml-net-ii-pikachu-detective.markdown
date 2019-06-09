@@ -12,7 +12,7 @@ Olá pessoa!
 
 Que tal ajudarmos o detetive Pikachu em uma investigação usando IA para descobertas sobre Pokémon?
 
-<!--more-->
+<!--more--> 
 
 {% include github-link.html link="https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosMLNet/Program.fs" %} 
 
