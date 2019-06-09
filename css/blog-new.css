@@ -243,8 +243,8 @@ h3{
 }
 
 .bg-head-post{
-    background-size: cover;
-    background-position: center center;
+    background-size: cover !important;
+    background-position: center center !important;
 }
 
 .bg-layer-post {
