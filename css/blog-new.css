@@ -563,7 +563,7 @@ footer .icon{
 
 /*MOBILE*/
 @media(max-width: 991px) {
-    .frame-layer-responsive p{
+    .frame-layer-responsive blockquote{
         display:block;
     }
     .frame-layer-responsive iframe{
@@ -654,7 +654,11 @@ footer .icon{
         display:none;
     }
 
-    .frame-layer-responsive p{
+    .frame-layer-responsive blockquote{
         display:none !important;
+    }
+
+    .frame-layer-responsive iframe{
+        display:block !important;
     }
 }

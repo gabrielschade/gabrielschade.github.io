@@ -17,6 +17,7 @@ Que tal ajudarmos o detetive Pikachu em uma investigação usando IA para descob
 
 {% include github-link.html link="https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosMLNet/Program.fs" %} 
 
+Este post faz parte de uma série sobre o ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com ml.net.html %})
 
 {% include embedded.html width=800 height=620 url="https://gabrielschade.github.io/posts-embedded/pkmnKantoKMeans" %}
 
