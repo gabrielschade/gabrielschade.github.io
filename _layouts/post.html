@@ -7,7 +7,7 @@ layout: default-new
   <div class="post-text">
     <div class="container">
       
-        {% if page.image %}
+        {% if page.image && page.imageHeader %}
           <div class="bg-head-post" style="background:url('{{page.image}}')">
             <div class="bg-layer-post" >
               <h2 class="center" style="margin: 0;">
@@ -16,7 +16,8 @@ layout: default-new
             </div>
           </div>  
         {% endif %}
-        {% unless page.image %} 
+        
+        {% unless page.image && imageHeader %} 
           <h2 class="center">
             {{page.title}}
           </h2>

@@ -3,6 +3,7 @@ layout: post
 title:  "ML .NET: IA para ajudar o Detetive Pikachu com Descobertas sobre Pokémon"
 date:   2019-06-10 00:00:00 +0000
 image: https://imgur.com/2JAqPKU.png
+imageHeader: true
 comments: true
 tags: [IA, F#] 
 serie: IA com ML.NET

@@ -3,6 +3,7 @@ layout: post
 title:  "A Heurística da Jóia do Tempo do Dr. Estranho"
 date:   2019-04-04 00:00:00 +0000
 image: https://i.imgur.com/NFeIiv2.png
+imageHeader: true
 comments: true
 tags: [C#, Algoritmos] 
 ---
