@@ -20,7 +20,7 @@ Que tal ajudarmos o detetive Pikachu em uma investigação usando IA para descob
 
 Veja o gráfico abaixo:
 
-{% include embedded.html width=800 height=600 url="{{ site.baseurl }}{% link _embedded/pkmnKMeansKanto.html %}" %}
+<!-- {% include embedded.html width=800 height=600 url="{{ site.baseurl }}{% link _embedded/pkmnKMeansKanto.html %}" %} -->
 
 
 
