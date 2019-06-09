@@ -6,7 +6,22 @@ layout: default-new
 
   <div class="post-text">
     <div class="container">
-      <h2 class="center">{{page.title}}</h2>
+      
+        {% if post.image %}
+          <div class="bg-head-post">
+            <div class="bg-layer-post">
+              <h2 class="center" style="margin: 0;">
+                  {{page.title}}
+              </h2>
+            </div>
+          </div>  
+        {% endif %}
+        {% unless post.image %} 
+          <h2 class="center">
+            {{page.title}}
+          </h2>
+        {% endunless %}
+      
       <div class="post-date">
         {% include postdate.html %}
         <br/>

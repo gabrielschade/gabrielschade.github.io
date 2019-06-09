@@ -242,6 +242,19 @@ h3{
     height:450px; 
 }
 
+.bg-head-post{
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-layer-post {
+    background: rgba(0,0,0,0.75);
+    padding: 30px;
+}
+.bg-layer-post h2{
+    color:white;
+}
+
 .small-header{
     font-size: 2em !important;
     margin-top: 10px !important;
