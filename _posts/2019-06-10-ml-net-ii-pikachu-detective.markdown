@@ -18,7 +18,7 @@ Que tal ajudarmos o detetive Pikachu em uma investigação usando IA para descob
 {% include github-link.html link="https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosMLNet/Program.fs" %} 
 
 
-{% include embedded.html width=560 height=315 url="{{ site.baseurl }}{% link _posts-embedded/pkmnKantoKMeans.html %}" %}
+{% include embedded.html width=800 height=600 url="https://gabrielschade.github.io/posts-embedded/pkmnKantoKMeans" %}
 
 
 Bom, o post de hoje termina por aqui aqui.
