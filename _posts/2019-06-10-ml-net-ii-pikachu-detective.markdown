@@ -5,7 +5,7 @@ date:   2019-06-10 00:00:00 +0000
 image: https://imgur.com/2JAqPKU.png
 comments: true
 tags: [IA, F#] 
- serie: IA com ML.NET
+#  serie: IA com ML.NET
 --- 
  
 Olá pessoa!
@@ -16,7 +16,7 @@ Que tal ajudarmos o detetive Pikachu em uma investigação usando IA para descob
 
 {% include github-link.html link="https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosMLNet/Program.fs" %} 
 
-Este post também faz parte de uma série aqui no blog sobre o uso de ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com mlnet.html %})
+<!-- Este post também faz parte de uma série aqui no blog sobre o uso de ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com mlnet.html %}) -->
 
 Veja o gráfico abaixo:
 

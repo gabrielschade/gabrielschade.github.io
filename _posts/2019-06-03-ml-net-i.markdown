@@ -5,7 +5,7 @@ date:   2019-06-03 00:00:00 +0000
 image: https://i.imgur.com/tkKco4z.png
 comments: true
 tags: [IA, F#, C#] 
- serie: IA com ML.NET
+#  serie: IA com ML.NET
 --- 
  
 Olá pessoa!
@@ -18,7 +18,7 @@ Já fizemos classificadores de sentimentos em Python e no Azure, agora chegou a 
 
 Este post foi feito em parceria com Microsoft MVP Juliano Custódio, onde no post [Utilizando ML.NET em aplicações Xamarin.Forms](https://julianocustodio.com/utilizando-ml-net-em-aplicacoes-xamarin-forms) ele utiliza o modelo que criaremos aqui para rodar em aplicações móveis! Depois de entender as bases para criar o modelo, corre lá no blog dele para ver ele executando na prática!
 
-Além disso, este post também faz parte de uma série aqui no blog sobre o uso de ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com mlnet.html %})
+<!-- Além disso, este post também faz parte de uma série aqui no blog sobre o uso de ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com mlnet.html %}) -->
 
 Vamos começar então! Aqui iremos implementar um modelo para classificação de comentários, usando o ML.NET. Assim como implementamos anteriormente outros modelos de classificação. Você pode também pode conferir o modelo feito em [Python]({{ site.baseurl }}{% link _posts/2018-04-16-machine-learning-classificador.markdown %}) ou feito com o [Azure Machine Learning Studio]({{ site.baseurl }}{% link _posts/2019-02-19-azure-ml-classificador.markdown %}).
 
