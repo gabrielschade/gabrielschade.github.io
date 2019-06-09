@@ -255,6 +255,8 @@ h3{
     color:white;
 }
 
+
+
 .small-header{
     font-size: 2em !important;
     margin-top: 10px !important;
@@ -561,6 +563,13 @@ footer .icon{
 
 /*MOBILE*/
 @media(max-width: 991px) {
+    .frame-layer-responsive p{
+        display:block;
+    }
+    .frame-layer-responsive iframe{
+        display:none;
+    }
+
     .banner{
         text-align:center;
     }
@@ -645,5 +654,7 @@ footer .icon{
         display:none;
     }
 
-    
+    .frame-layer-responsive p{
+        display:none;
+    }
 }
