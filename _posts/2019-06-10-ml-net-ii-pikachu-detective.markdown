@@ -25,7 +25,7 @@ A base de dados que usaremos com as características dos pokémon foi encontrada
 
 Essa base contém as mega evoluções e todos os pokémon até a região de Kalos (dos jogos Pokémon X & Y), você pode verificar o formato dos dados na imagem abaixo:
 
-{% include image.html link="https://imgur.com/zHuAXhE.png" alt="Pokemon.csv" width=80 %}
+{% include image.html link="https://imgur.com/hTzL0hS.png" alt="Pokemon.csv" width=80 %}
 
 Agora vamos criar nosso projeto F# para importar esses dados usando Type Providers!
 
