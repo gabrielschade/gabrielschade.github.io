@@ -213,8 +213,8 @@ h3{
     background-color:white;
     color: #333;
     margin: 15px;
-    min-height: 425px;
-    height: 425px;
+    min-height: 435px;
+    height: 435px;
     -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
     -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
     -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
@@ -277,8 +277,8 @@ h3{
 }
 
 .card-post{
-    min-height: 325px;
-    height: 325px;
+    min-height: 335px;
+    height: 335px;
 }
 
 .post:hover{
