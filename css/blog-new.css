@@ -412,6 +412,41 @@ ol li p{
 .chip.bg-dark{
     background-color:#222;
 }
+
+.tabs {
+    border: solid 1px #e8e8e8;
+    color: #039be5 !important;
+}
+
+.tabs a{
+  color: #039be5 !important;
+   
+}
+
+.tabs .indicator{
+    background-color: rgb(3, 155, 229);
+}
+
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: transparent;
+    
+}
+
+
+.tabs .tab a:hover{
+    background-color: rgba(3, 155, 229,0.2) !important;
+    
+}
+
+.tabs .tab{
+  text-transform:none;
+}
+
+.tabs .tab a.active{
+  font-weight: bolder;
+}
+
 /*CONTENT HOME END*/
 
 /*Newsletter*/
