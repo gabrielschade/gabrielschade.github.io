@@ -1,11 +1,11 @@
-<ul id="tabs-swipe" class="tabs"></ul>
+<ul id="tabs-swipe" class="tabs">
     {% for tabHeader in include.headers %}
-        <li class="tab col s3"><a href="#tab-0">{{tabHeader}}</a></li>
+        <li class="tab col s3"><a href="#tab-{{forloop.index}}">{{tabHeader}}</a></li>
     {% endfor %}
 </ul>
 
 {% for gist in include.gists %}
-    <div id="tab-0" class="col s12">
+    <div id="tab-{{forloop.index}}" class="col s12">
         <script src="{{gist}}"></script>
     </div>
 {% endfor %}
