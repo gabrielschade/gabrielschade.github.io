@@ -5,7 +5,7 @@
 </ul>
 
 {% for gist in include.gists %}
-    <div id="tab-{{forloop.index}}" class="col s12">
+    <div id="tab-{{forloop.index}}" class="col s12" markdown="1">
         <script src="{{gist}}"></script>
     </div>
 {% endfor %}
