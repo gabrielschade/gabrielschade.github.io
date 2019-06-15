@@ -4,3 +4,8 @@
     {% endfor %}
 </ul>
 
+{% for gist in include.gists %}
+    <div id="tab-0" class="col s12">
+        <script src="{{gist}}"></script>
+    </div>
+{% endfor %}
