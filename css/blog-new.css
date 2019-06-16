@@ -99,6 +99,7 @@ nav.scrolled .nav-wrapper img{
     padding-top:60px;
     padding-right:10px;
     background: #333;
+    z-index: 99999;
    
 }
 
