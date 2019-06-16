@@ -63,7 +63,7 @@ Podemos checar se uma determinada posição em um array é um número par ou ím
 
 {% assign headers = "JavaScript|F#|C#" | split: "|" %}
 {% assign gists = "https://gist.github.com/gabrielschade/8bc53b85b0591091f89a2587b0ce5d4d.js|https://gist.github.com/gabrielschade/a365a6d1137a1af6e801d5b1959c1324.js|https://gist.github.com/gabrielschade/190e776dd6c524e62ab0900d815b505f.js" | split: "|" %}
-{% include code-tab.html headers=headers gists=gists  %}
+{% include code-tab.html headers=headers gists=gists number=0 %}
 
 #### Complexidade O(n) - Tempo Linear
 
@@ -78,7 +78,7 @@ O gráfico abaixo demonstra o crescimento linear de acordo com a entrada do algo
 Um exemplo bastante simples de complexidade deste tipo é a busca por um valor em um determinado array:
 
 {% assign gists = "https://gist.github.com/gabrielschade/1bf9914e22e55dd7816e099256b65f69.js|https://gist.github.com/gabrielschade/0fad4b69b8fcc069a719ae8ddb4d10fe.js|https://gist.github.com/gabrielschade/e3838dff7caac8406e865ae9847efab5.js" | split: "|" %}
-{% include code-tab.html headers=headers gists=gists  %}
+{% include code-tab.html headers=headers gists=gists number=1 %}
 
 Note que neste exemplo o código em F# destoa bastante dos outros dois, isso porque em F# recomenda-se utilizar recursividade ao invés de laços de repetição. Isso é algo que normalmente tornaria o código pior em termos de complexidade de espaço, afinal teríamos que alocar mais recurso para a _Call Stack_.
 
