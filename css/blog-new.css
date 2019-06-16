@@ -405,6 +405,12 @@ ol li p{
     right: 0;
     top: 100px;
     max-width: 64px;
+    z-index: 9999;
+    -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);;
+    transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 .chip.bg-blue{
@@ -647,11 +653,20 @@ footer .icon{
         width: 0;
     }
 
+    .github-fixed-button:hover{
+        right:0;
+    }
+
     .github-fixed-button{
         position: fixed;
-        right: -30px;
+        right: -50px;
         top: 100px;
         max-width: 64px;
+        -webkit-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+        -moz-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+        -ms-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+        -o-transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
+        transition: all 500ms cubic-bezier(0, 0, 0.2, 1);
     }
 
     .post-text iframe{
