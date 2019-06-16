@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Como Medimos a Complexidade de um Algoritmo?"
-date:   2019-06-17 00:00:00 +0000
+date:   2019-06-16 00:00:00 +0000
 image: https://imgur.com/6DpARLR.png
 comments: true
 tags: [JavaScript, F#, C#, Algoritmos] 
