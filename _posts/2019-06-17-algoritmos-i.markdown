@@ -17,7 +17,7 @@ Esse post vai ser um pouco mais teórico, mas muito útil! Será que você sabe 
 
 Na comunidade de desenvolvimento há essa discussão sobre o quão importante é saber medir a complexidade de um algoritmo. Eu não acredito que isso faça parte do básico que todo programador junior deva saber, mas ao mesmo tempo, eu realmente acho que dominar esse conceito te faz sim um programador melhor.
 
-Principalmente quando começamos a falar de aplicações escaláveis, entender como seu algoritmo funciona dependendo do tamanho da entrada pode ser extremamente útil.
+Principalmente quando começamos a falar de aplicações escaláveis, entender como seu algoritmo se comporta de acordo com o tamanho da entrada pode ser extremamente útil.
 
 Vou juntar isso com meus estudos de JavaScript, então para dar uma variada os exemplos serão feitos em JavaScript, F# e C#!
 
@@ -25,7 +25,7 @@ Vou juntar isso com meus estudos de JavaScript, então para dar uma variada os e
 
 Quando falamos de complexidade de algoritmo podemos estar lidando com complexidade de tempo (performance) ou espaço (alocação em memória, CPU e outros recursos), neste post vamos lidar apenas com complexidade de tempo, ok?
 
-Uma coisa bastante importante é que quando falamos de complexidade de tempo de um algoritmo, estamos nos referindo diretamenta à quantidade de vezes em que a operação fundamental do algoritmo ocorre, **não confunda isso com o tempo de execução de um determinado algoritmo**.
+Outro ponto que é precisi deixar claro é que a complexidade de tempo de um algoritmo, se refere diretamenta à quantidade de vezes em que a operação fundamental do algoritmo é executada, **não confunda isso com o tempo de execução de um determinado algoritmo**.
 
 A diferença entre as duas coisas é bastante nítida. Afinal, o tempo de execução de um programa irá variar de máquina para máquina de acordo com suas configurações. Enquanto que a quantidade de vezes que a operação fundamental é executada permanecerá imutável, independente da máquina que executar o algoritmo.
 
@@ -82,7 +82,7 @@ Um exemplo bastante simples de complexidade deste tipo é a busca por um valor e
 
 Note que neste exemplo o código em F# destoa bastante dos outros dois, isso porque em F# recomenda-se utilizar recursividade ao invés de laços de repetição. Isso é algo que normalmente tornaria o código pior em termos de complexidade de espaço, afinal teríamos que alocar mais recurso para a _Call Stack_.
 
-Isso não acontece em F# devido à _Tail Recursion_, para saber mais sobre isso, acesse [este post]({{ site.baseurl }}{% link _posts/2019-01-29-recursao-cauda.markdown %}){:target="_blank"}
+Isso não acontece em F# devido à _Tail Recursion_, para saber mais sobre isso, acesse [este post]({{ site.baseurl }}{% link _posts/2019-01-29-recursao-cauda.markdown %}){:target="_blank"}.
 
 #### Complexidade O(n²) - Tempo Quadrático
 
@@ -96,7 +96,7 @@ O tempo de execução desses algoritmos cresce de maneira bastante rápida, veja
 
 Veja que em um array de 100 elementos, faríamos 10.000 iterações! Enquanto em um algoritmo de tempo linear, faríamos apenas 100.
 
-Como exemplo para algoritmo deste tipo, veja esta solução para encontrar valores duplicados em um array:
+Como exemplo para algoritmo deste tipo, veja esta solução para verificar se existem valores duplicados em um array:
 
 {% assign gists = "https://gist.github.com/gabrielschade/ee5f5cf4adde31790ec079607d1afc85.js|https://gist.github.com/gabrielschade/54bc916276dac7dc8d8dd574459a0f74.js|https://gist.github.com/gabrielschade/b3161dbe16352793178ce978ebb3e565.js" | split: "|" %}
 {% include code-tab.html headers=headers gists=gists number=2 %}
