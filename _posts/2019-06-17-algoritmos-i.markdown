@@ -13,7 +13,7 @@ Esse post vai ser um pouco mais teórico, mas muito útil! Será que você sabe 
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/IA/blob/master/ClassificacaoComentariosMLNet/Program.fs" %} 
+{% include github-link.html link="https://github.com/gabrielschade/algorithms/tree/master/BigO" %} 
 
 Na comunidade de desenvolvimento há essa discussão sobre o quão importante é saber medir a complexidade de um algoritmo. Eu não acredito que isso faça parte do básico que todo programador junior deva saber, mas ao mesmo tempo, eu realmente acho que dominar esse conceito te faz sim um programador melhor.
 
