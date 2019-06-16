@@ -3,6 +3,8 @@ layout: post
 title:  "Machine Learning: criando um classificador de sentimentos"
 date:   2018-04-16 00:00:00 +0000
 comments: true
+featured: true
+image: https://i.imgur.com/FovyubT.png
 tags: [Python, IA]
 ---
 

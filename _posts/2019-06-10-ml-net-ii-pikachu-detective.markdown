@@ -5,6 +5,7 @@ date:   2019-06-10 00:00:00 +0000
 image: https://imgur.com/2JAqPKU.png
 imageHeader: true
 comments: true
+featured: true
 tags: [IA, F#] 
 serie: IA com ML.NET
 --- 

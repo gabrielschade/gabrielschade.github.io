@@ -1,0 +1,16 @@
+<div class="row">
+    <span style="display:none">{% increment limite-cards-new-featured %}</span>
+    {% for post in site.posts %}
+    {% if post.featured %}
+    {% if limite-cards-new-featured <= 3 %} {% capture nowunix %}{{'now' | date: '%s' }}{% endcapture %} {% capture posttime
+        %}{{post.date | date: '%s' }}{% endcapture %} {% if posttime <=nowunix %} <span style="display:none">{%
+        increment limite-cards-new-featured %}</span>
+
+        {% include single-post-new.html %}
+
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+</div>
