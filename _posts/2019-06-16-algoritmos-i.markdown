@@ -25,7 +25,7 @@ Vou juntar isso com meus estudos de JavaScript, então para dar uma variada os e
 
 Quando falamos de complexidade de algoritmo podemos estar lidando com complexidade de tempo (performance) ou espaço (alocação em memória, CPU e outros recursos), neste post vamos lidar apenas com complexidade de tempo, ok?
 
-Outro ponto que é precisi deixar claro é que a complexidade de tempo de um algoritmo, se refere diretamenta à quantidade de vezes em que a operação fundamental do algoritmo é executada, **não confunda isso com o tempo de execução de um determinado algoritmo**.
+Outro ponto que é preciso deixar claro é que a complexidade de tempo de um algoritmo, se refere diretamente à quantidade de vezes em que a operação fundamental do algoritmo é executada, **não confunda isso com o tempo de execução de um determinado algoritmo**.
 
 A diferença entre as duas coisas é bastante nítida. Afinal, o tempo de execução de um programa irá variar de máquina para máquina de acordo com suas configurações. Enquanto que a quantidade de vezes que a operação fundamental é executada permanecerá imutável, independente da máquina que executar o algoritmo.
 
