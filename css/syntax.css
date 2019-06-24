@@ -21,10 +21,10 @@
 .highlight .gs { color: #999999; } /* Generic.Strong */
 .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
 .highlight .gt { color: #aa0000 } /* Generic.Traceback */
-.highlight .kc { color:#999999; } /* Keyword.Constant */
-.highlight .kd { color:#999999; } /* Keyword.Declaration */
-.highlight .kp { color:#999999; } /* Keyword.Pseudo */
-.highlight .kr { color:#999999; } /* Keyword.Reserved */
+.highlight .kc { color:rgb(92, 156, 220); } /* Keyword.Constant */
+.highlight .kd { color:rgb(92, 156, 220); } /* Keyword.Declaration */
+.highlight .kp { color:rgb(92, 156, 220); } /* Keyword.Pseudo */
+.highlight .kr { color:rgb(92, 156, 220); } /* Keyword.Reserved */
 .highlight .kt {color: rgb(92, 156, 220);} /* Keyword.Type */
 .highlight .kn {color: rgb(92, 156, 220)}
 .highlight .m { color: rgb(184,215,165); } /* Literal.Number */
