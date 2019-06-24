@@ -26,7 +26,7 @@ A `Stack` ou pilha é uma estrutura de dados bastante rápida para adicionar ou 
 Mas o que isso significa? Para exemplificar é melhor fazermos uma analogia com o mundo.
 Imagine livros empilhados um sobre o outro:
 
-{% include image.html link="https://imgur.com/xPXxjsN.png" alt="Pilha de livros" width=80 %}
+{% include image.html link="https://imgur.com/8mwimOF.png" alt="Pilha de livros" width=80 %}
 
 O último livro colocado nessa pilha é o livro de capa verde, por isso ele está no topo. Se formos desmontar essa pilha de livros, ele seria o primeiro livro a ser pego. Ou seja, o último livro adicionado a pilha (Last In) é o primeiro a sair dela (First Out).
 
