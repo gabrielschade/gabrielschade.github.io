@@ -26,6 +26,11 @@
             var sidenav = $('.sidenav').sidenav();
             sidenav[0].M_Sidenav.options.edge = 'right';
         }, 1);
+
+        if($("#time_to_read").length && $(".content-count").length){
+            let time = parseInt($(".content-count")[0].innerText.split(" ").length / 200);
+            $("#time_to_read").val(time + ' minuto(s) para ler');
+        }
     });
 
     window.onscroll = function () { scrollFunction() };
