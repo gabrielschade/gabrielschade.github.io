@@ -13,7 +13,7 @@ Vamos continuar explorando estruturas de dados, dessa vez falaremos da Queue!
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/algorithms/blob/master/DataStructures/DataStructures.JavaScript/Stack.js" %} 
+{% include github-link.html link="https://github.com/gabrielschade/algorithms/blob/master/DataStructures/DataStructures.JavaScript/Queue.js" %} 
 
 Se você não viu o post passado, recomendo acessar [este link]({{ site.baseurl }}{% link _posts/2019-06-24-algoritmos-ii.markdown %}){:target="_blank"}, afinal `Stacks` e `Queues` são bastante semelhantes.
 
