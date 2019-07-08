@@ -18,7 +18,7 @@ Que tal ajudarmos o detetive Pikachu em uma investigação usando IA para descob
 
 {% include github-link.html link="https://github.com/gabrielschade/IA/tree/master/PokeClustering" %} 
 
-Este post faz parte de uma série sobre o ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com ml.net.html %})
+Este post faz parte de uma série sobre o ML.NET! Para visualizar a série inteira clique [aqui]({{ site.baseurl }}{% link posts-serie/ia com ml.net.html %}){:target="_blank"}
 
 Nessa publicação vamos usar inteligência artificial para ajudar o detetive Pikachu a investigar uma base sobre pokémon de diferentes regiões.
 
