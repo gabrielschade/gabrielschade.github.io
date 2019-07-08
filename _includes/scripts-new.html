@@ -27,13 +27,20 @@
             sidenav[0].M_Sidenav.options.edge = 'right';
         }, 1);
 
-        if($("#time_to_read").length && $(".content-count").length){
-            let time = parseInt($(".content-count")[0].innerText.split(" ").length / 200);
-            $("#time_to_read").val(time + ' minuto(s) para ler');
+        if ($("#time-to-read").length && $(".content-count").length) {
+            let text = $(".content-count")[0].innerText;
+            calculateTimeToRead("#time-to-read", ".time-icon", text, ' minuto(s) para ler');
         }
     });
 
     window.onscroll = function () { scrollFunction() };
+
+    function calculateTimeToRead(selectorText, selectorIcon, text, addText) {
+        let time = parseInt(text.split(" ").length / 200);
+        if (time <= 0) time = 1;
+        $(selectorText).text(time + addText);
+        $(selectorIcon).removeClass("hide");
+    }
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
