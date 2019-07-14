@@ -606,6 +606,10 @@ footer .icon{
 
 /*MOBILE*/
 @media(max-width: 991px) {
+    .hide-on-mobile{
+        display: none;
+    }
+
     .frame-layer-responsive blockquote{
         display:block;
     }
@@ -712,5 +716,9 @@ footer .icon{
 
     .frame-layer-responsive iframe{
         display:block !important;
+    }
+
+    .hide-on-desktop{
+        display: none;
     }
 }
