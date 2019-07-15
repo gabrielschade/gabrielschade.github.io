@@ -5,7 +5,6 @@ date:   2019-04-04 00:00:00 +0000
 image: https://i.imgur.com/NFeIiv2.png
 imageHeader: true
 comments: true
-featured: true
 tags: [C#, Algoritmos] 
 ---
 

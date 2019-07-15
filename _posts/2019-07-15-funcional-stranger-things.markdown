@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Entendendo Programação Funcional com Stranger Things"
-date:   2019-07-16 00:00:00 +0000
+date:   2019-07-15 00:00:00 +0000
 image: https://i.imgur.com/g3ZPR5d.png
 comments: true
+featured: true
 tags: [F#, C#] 
 --- 
  
