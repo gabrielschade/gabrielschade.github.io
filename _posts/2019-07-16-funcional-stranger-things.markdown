@@ -13,11 +13,11 @@ Que tal explorarmos um pouco sobre as teorias de programação funcional com Str
 
 <!--more-->
 
-{% include github-link.html link="https://github.com/gabrielschade/algorithms/blob/master/DataStructures/DataStructures.JavaScript/Queue.js" %} 
+{% include github-link.html link="https://github.com/gabrielschade/posts-blog/tree/master/StrangerThings" %} 
 
 Vamos falar sobre toda a teoria por trás de programação funcional? -**Não**, não vamos.
 
-Vamos focar em alguns funções de alta ordem (`map`, `return`, `apply`, `bind`) e entender o conceito por trás delas. Todas essas funções tem uma coisa comum: elas lidam com _values containers_.
+Vamos focar em alguns funções de alta ordem (`return`, `apply`, `map`) e entender o conceito por trás delas. Todas essas funções tem uma coisa comum: elas lidam com _values containers_.
 
 O que são _values containers_? -De forma bastante resumida, um _value container_ é qualquer classe/struct/tipo que "envelopa" outro valor.
 
@@ -91,10 +91,137 @@ Mesmo em C# que não é tão focado em programação funcional podemos usar isso
 
 ### Conceitos de Funções - Apply
 
-A próxima função que precisamos é o `apply`, diferente da função `return` ela não funciona para valores simples e para funções. Neste caso ela é destinada totalmente para funções.
+A próxima função que precisamos é o `apply`, diferente da função `return` ela não funciona para valores simples, seu único foco são funções.
 
-O que o `apply` faz é basicamente quebrar uma função encapsulada no _Upside down_ (`UpsideDown< Func<X, Y> >`) em uma função do mundo normal onde os parâmetros estão encapsulados (`Func< UpsideDown<X>, UpsideDown<Y> >`).
+O que o `apply` faz é basicamente quebrar uma função encapsulada no _Upside down_ (`UpsideDown< Func<X,Y> >`) em uma função do mundo normal onde os parâmetros estão encapsulados (`Func< UpsideDown<X>,UpsideDown<Y> >`).
 
+{% include image.html link="https://i.imgur.com/6eZOuJk.png" alt="Upside Down Portal Code - Apply" width=80 %}
+
+Nesse caso não temos nenhuma travessia entre os mundos, tudo se mantém no _Upside Down_, mas o que isso significa?
+
+Na primeira temporada, um dos personagens fica preso no _Upside Down_ consegue se comunicar com sua mãe através de luzes, nesse caso, simplesmente passar a função para o _Upside Down_ não é suficiente, precisamos que ela **afete** o _Upside Down_ e que produza resultados lá (ao invés de produzir resultados do mundo normal).
+
+Essas são as luzes que a mãe do Will fez para realizar o `apply` com seu filho perdido:
+
+{% include image.html link="https://i.imgur.com/FCjHMtx.png" alt="Upside Down Portal Code - Lights Apply" width=80 %}
+
+Agora vamos tentar implementar isso. Assim como fizemos antes, vamos enviar a função de mensagem através de nosso portal e tentar executá-la no _Upside Down_.
+
+A função de mensagem através da luz pode simplesmente receber um parâmetro, escrevê-lo no console e retorná-lo. Mas mesmo em uma função assim simples, encontraremos um problema:
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/168b42f2fe7c1c55990472d919ec279b.js|https://gist.github.com/gabrielschade/3f10f0064e55a9161a4e43e58f756b4d.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=4 %}
+
+Uma vez que enviamos a função para o _Upside Down_ não somos mais capazes de executá-la, isso porque não temos acesso direto a função. Além disso, como passamos a função para o _Upside Down_, não podemos esperar que ela receba por parâmetro um valor do mundo real, portanto precisamos que ela receba `UpsideDown<"A">` ao invés de `"A"`.
+
+Por último, temos que lembrar que a função precisa afetar o _Upside Down_ e não o mundo normal, logo, seu retorno também deve ser um valor no _Upside Down_.
+
+O jeito mais simples de resolvermos isso, é remover o contexto dos valores e da função, dessa forma, podemos executar a função normalmente. Depois de executarmos a função podemos gerar o resultado no _Upside Down_ enviando-o novamente através do portal.
+
+Nesse caso específico a função em C# fica um pouco mais verbosa, pela necessidade de declaração dos tipos, veja o código abaixo:
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/889c61193f9200e5944eab7b387191f4.js|https://gist.github.com/gabrielschade/c9e524a15a985e0c85d0cee03bb3db5d.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=5 %}
+
+Nesse caso é possível notar como em geral, C# e linguagens orientadas a objeto são bastante declarativas, enquanto linguagens funcionais tendem a ter um fluxo de continuídade maior. Isso não significa que um é melhor do que o outro, são apenas formas diferentes de fazer a mesma coisa.
+
+Mas precisamos notar que, linguagens com currying automático e aplicação parcial acabam ganhando uma função `apply` mais poderosa. Vamos fazer a implementação do método de mensagem de luz e depois veremos uma implementação que funcionará em F#, mas infelizmente não funcionará em C#.
+
+Primeiro vamos à implementação da mensagem de luz com um parâmetro:
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/14a67b3c0c887bca67c1fb6f85a9dc1e.js|https://gist.github.com/gabrielschade/f6ac25aff5b2fe2104caf46a54883351.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=6 %}
+
+Em C# podemos fazer com que a função `apply` além de estático também seja um método de instância do nosso objeto, podemos fazer da mesma forma da biblioteca Linq, utilizando os métodos de extensão:
+
+{% assign headers = "C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/b3c4146b69c187ff500660bec017859e.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=12 %}
+
+Não temos métodos de extensão em F#, mas também há um ponto que pode soar mais prático (ou mais confuso). Trata-se da utilização de operadores para realizar o `apply`. O operador mais comum para essa função é o `<*>`, para definirmos e utilizarmos é bastante simples, veja:
+
+{% assign headers = "F#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/d76c6ef315075644792623401d2ffcf5.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=7 %}
+
+Dessa forma basta inserir o operador entre a função e o parâmetro que tudo funcionará corretamente. Você pode argumentar que esse operador prejudica a visibilidade do código e eu tendo a concordar com isso. Mas uma vantagem inegável é o que comentei antes sobre funções com múltiplos parâmetros.
+
+Imagine que ao invés da função de passar uma letra na mensagem de luzes precisamos enviar duas... Parece um problema super simples de resolver, mas vamos tentar solucionar isso usando C#.
+
+{% assign headers = "C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/3f57756d63bded5333741d9aa4ade61b.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=8 %}
+
+Com o código que fizemos até agora é simplesmente impossível... O que podemos tentar fazer é utilizar expressões lambda para reduzir o parâmetro da função, criarmos novas sobrecargas para funções com múltiplos parâmetros e etc. Existem saídas, elas só precisariam ser implementadas.
+
+No caso do F#, a linguagem já faz com que uma função com múltiplos parâmetros seja automaticamente reduzida múltiplas funções de um parâmetro, onde cada uma delas retorna uma nova função com menos parâmetros, se isso soa confuso para você acesse [este post sobre Currying e Aplicação Parcial]({{ site.baseurl }}{% link _posts/2018-03-05-currying-partial-app.markdown %}){:target="_blank"}).
+
+A vantagem de combinarmos isso com o operador é que podemos com o código que criamos anteriormente, transformar qualquer função com qualquer quantidade de parâmetro em uma função do _Upside Down_, veja:
+
+{% assign headers = "F#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/b528dcf49220c4862b5b261258d4bf91.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=9 %}
+
+Veja que tanto `result` quanto `result2` terão o mesmo valor, com a diferença de que um utiliza valores armazenados previamente e o último gera os valores no _Upside Down_ inline.
+
+### Conceitos de Funções - Map
+
+Vamos para a última e mais famosa função apresentada aqui. Se você está acostumado com qualquer linguagem de programação que suporte funções de alta ordem, provavelmente vai haver uma função `map`. Com exceção do C#, que possui essa função, mas ela se chama `Select`.
+
+A função `map` é responsável por fazer com que uma função do mundo normal, possa ser aplicada à um valor de um mundo diferente, como uma lista ou um valor do _Upside Down_.
+
+Qual a diferença entre o `map` e o `apply`?
+
+É bastante comum essas duas funções confundirem um pouco e parecerem a mesma, mas não são. Lembre-se do nosso exemplo, no caso do `apply` estamos tentando reproduzir a função equivalente no _Upside Down_.
+
+No caso das mensagens através de luzes, era preciso que as luzes existissem tanto mundo normal `(string->string)` quanto no _Upside Down_ `UpsideDown<string -> string>`. No caso do `map` não temos uma função equivalente no _Upside Down_, simplesmente queremos que uma função do mundo normal consiga afetar os objetos do _Upside Down_.
+
+{% include image.html link="https://i.imgur.com/dEoEKXp.png" alt="Upside Down Portal Code - Map" width=80 %}
+
+Isso seria como os Mike tentando se comunicar com o Will (enquanto ele estava preso no _Upside Down_ através do walk talk. O que ele estava fazendo aqui é basicamente o funcionamento do `map`. Utilizar-se de uma função do mundo normal e **mapeá-la** ao _Upside Down_.
+
+{% include image.html link="https://i.imgur.com/QJuEl5b.png" alt="Upside Down Portal Code - Map" width=80 %}
+
+Talvez você já tenha percebido, mas existem duas formas diferentes de implementarmos o `map`. Na primeira implementação podemos retirar o parâmetro do _Upside Down_, aplicar a função normalmente e transformar o resultado em seu equivalente no _Upside Down_, veja:
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/7cad3ac291fde9b4a10532c9c9ae2825.js|https://gist.github.com/gabrielschade/9186bcdd8cf2e9689eac3abd013c5aed.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=10 %}
+
+Essa implementação funciona normalmente, mas além dela, também podemos reaproveitar as implementações de `return` e `apply`, afinal, eles combinados podem formar um `map`.
+
+Para fazer isso, basta transformarmos nossa função em seu equivalente no _Upside Down_ através do `return` e depois utilizarmos o `apply` para resolvê-la:
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/729718517527b0c1925fa392c78d46df.js|https://gist.github.com/gabrielschade/591c7f963873be88b897eb3603e00d37.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=11 %}
+
+No fim das contas não faz muita diferença sua implementação, o que vale ser lembrado aqui é que isso mostra que a combinação: `return` + `apply` é mais poderosa do que o `map`. Afinal, ela pode fazer coisas diferentes e emular um `map` enquanto o contrário não é verdadeiro.
+
+Uma coisa interessante para validar se a implementação do `map` está correta é que podemos tirar a prova real. Uma função aplicada com um `map` em um valor do `Upside Down` deve produzir o mesmo valor que o resultado do `return` da mesma função aplicada ao valor no mundo normal.
+
+{% include image.html link="https://i.imgur.com/ao62MKe.png" alt="Upside Down - Map" width=80 %}
+
+Assim como fizemos com o `apply`, podemos ter a função `map` nas formas de métodos de extensão (C#) e operador (F#):
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/c272ea3f1ab9fcd6454fd75c6c00069c.js|https://gist.github.com/gabrielschade/0daed6ab47df78a5ca704c08669581c4.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=15 %}
+
+Para finalizar, vamos implementar uma função que aumente o poder da Eleven!
+
+{% include image.html link="https://i.imgur.com/eHWNIlt.png" alt="Upside Down - Map" width=80 %}
+
+Na verdade, vamos só incrementar um valor inteiro, mas podemos usar a imaginação aqui né?
+
+{% assign headers = "F#|C#" | split: "|" %}
+{% assign gists = "https://gist.github.com/gabrielschade/812aeb8aecf91052983fb5325ce8b111.js|https://gist.github.com/gabrielschade/f2366c5177427457a644b1140a62589b.js" | split: "|" %}
+{% include code-tab.html headers=headers gists=gists number=16 %}
+
+Com o perdão do trocadilho, mas programação funcional as vezes pode soar um tanto quanto **estranho**, não acha?
 
 Bom, o post de hoje era isso!
 
