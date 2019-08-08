@@ -11,7 +11,7 @@ Olá pessoa!
 
 Praticamente todo programador C# já se deparou com a interface IEnumerable, né?
 
-Principalmente com aquele `ToList()` depois de uma operação LINQ. E talvez, só talvez, você ainda não tenha entendido como esta interface funciona.
+Principalmente com aquele ToList() depois de uma operação LINQ. E talvez, só talvez, você ainda não tenha entendido como esta interface funciona.
 
 <!--more-->
 
