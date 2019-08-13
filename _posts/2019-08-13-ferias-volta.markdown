@@ -19,7 +19,7 @@ Bom, a primeira novidade é que eu fui renovado no programa Microsoft MVP, mais 
 Então agora o troféuzinho aqui de casa tem duas bolinhas: 2018-2019 e 2019-2020.
 
 {% assign items = "https://imgur.com/k8H1sds.png|https://imgur.com/rcjbbeO.png" | split: "|" %}
-{% include carousel.html items=items height=450 %}
+{% include carousel.html items=items height=550 %}
 
 A segunda novidade é que não estou mais morando no Brasil, depois de alguns anos acabei me sentindo limitado pelo idioma. É claro que muita gente precisa de material em português e eu não pretendo deixar de produzir isso, inclusive o blog vai continuar normalmente.
 
