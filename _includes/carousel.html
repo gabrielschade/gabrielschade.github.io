@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col s12">
+        <div class="carousel" style="height:{{include.height}}px;margin-bottom:40px;margin-top:-150px;">
+            {% for item in include.items %}
+            <a class="carousel-item" href="{{item}}" target="_blank">
+                <img src="{{item}}">
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
