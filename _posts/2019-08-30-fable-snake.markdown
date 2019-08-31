@@ -480,9 +480,9 @@ let rec snakeGame game =
     let state = run game
     let updatedGame = 
         match state with
+        | Alive snake -> continueGame game snake direction
+        | Score snake -> score game snake direction
         | Dead -> resetGame game.Score
-        | Alive snake -> continueGame game direction
-        | Score snake -> score game direction
 ```
 
 Agora precisamos realizar a chamada recursiva, mas nesse caso, não vamos simplesmente chamar a função. Isso faria com que a atualização de tela fosse rápida demais ficando quase impossível jogar.
