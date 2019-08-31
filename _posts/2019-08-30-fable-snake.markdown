@@ -321,16 +321,16 @@ let checkColisions apple snake  =
 Agora vamos implementar duas funções diretamente relacionadas com a atualização do jogo ao decorrer um tempo, uma delas será utilizada para alterar a direção da Snake quando o jogo continua executando:
 
 ```fsharp
-let continueGame game direction =
-    {game with Snake = {game.Snake with Direction = direction}}
+let continueGame game snake direction =
+    {game with Snake = {snake with Direction = direction}}
 ```
 
 E a outra deve executar as atualizações quando o jogador marcar um ponto. Isso inclui também atualizar a direção da Snake, mas além disso, a posição da maçã precisa ser sorteada novamente, a pontuação deve ser aumentada e o tamanho da Snake incrementado:
 
 ```fsharp
-let score game direction =
+let score game snake direction =
     {game with 
-            Snake = {game.Snake with Direction = direction ; Length = game.Snake.Length + 1}
+            Snake = {snake with Direction = direction ; Length = snake.Length + 1}
             Score = game.Score + 1
             Apple = getApple()
     }
@@ -495,9 +495,9 @@ let rec snakeGame game =
     let state = run game
     let updatedGame = 
         match state with
+        | Alive snake -> continueGame game snake direction
+        | Score snake -> score game snake direction
         | Dead -> resetGame game.Score
-        | Alive snake -> continueGame game direction
-        | Score snake -> score game direction
 
     window.setTimeout( (fun args -> snakeGame updatedGame), 1000/15) 
     |> ignore
@@ -512,7 +512,7 @@ snakeGame defaultGameSettings |> ignore
 
 Você pode conferir o resultado do jogo abaixo!
 
-{% include embedded.html width=800 height=400 url="https://gabrielschade.github.io/posts-embedded/fable-snake" %}
+{% include embedded.html width=800 height=450 url="https://gabrielschade.github.io/posts-embedded/fable-snake" %}
 
 Bom, o post de hoje era isso!
 
