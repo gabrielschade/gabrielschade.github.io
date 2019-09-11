@@ -512,7 +512,7 @@ snakeGame defaultGameSettings |> ignore
 
 Você pode conferir o resultado do jogo abaixo ou [neste link](https://gabrielschade.github.io/posts-embedded/fable-snake){:target="_blank"}!
 
-{% include embedded.html width=800 height=650 url="https://gabrielschade.github.io/posts-embedded/fable-snake" %}
+{% include embedded.html width=800 height=450 url="https://gabrielschade.github.io/posts-embedded/fable-snake" %}
 
 
 Bom, o post de hoje era isso!
