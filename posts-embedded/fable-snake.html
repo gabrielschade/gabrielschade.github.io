@@ -5,13 +5,35 @@ title: Fable Snake - Gabriel Schade
 
 <!doctype html>
 <html>
+
 <head>
   <title>Fable Snake - Gabriel Schade</title>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <canvas id="myCanvas" width="400" height="400"></canvas>
-    <script src="fable-snake.js"></script>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+  <div class="row">
+    <button id='btn-up' class="btn-floating btn-large waves-effect waves-light" style="margin-left:150px; margin-top:10px;">
+        <i class="material-icons right">arrow_upward</i>
+      </button>
+  </div>
+  <div class="row">
+    <button id='btn-left' class="btn-floating btn-large waves-effect waves-light" style="margin-left:90px;">
+        <i class="material-icons right">arrow_back</i></button>
+    <button id='btn-right' class="btn-floating btn-large waves-effect waves-light" style="margin-left:60px;">
+        <i class="material-icons right">arrow_forward</i></button>
+  </div>
+  <div class="row">
+    <button id='btn-down' class="btn-floating btn-large waves-effect waves-light" style="margin-left:150px;">
+        <i class="material-icons right">arrow_downward</i>
+      </button>
+  </div>
+  <script src="fable-snake.js"></script>
+  
 </body>
+
 </html>
