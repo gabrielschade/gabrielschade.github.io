@@ -1,0 +1,141 @@
+---
+layout: post
+title:  "Algoritmos de Ordenação - Parte I"
+date:   2019-09-16 00:00:00 +0000
+image: https://imgur.com/fOuYH7M.png
+comments: true
+featured: false
+tags: [JavaScript, Algoritmos] 
+--- 
+ 
+Olá pessoa!
+
+Hoje vamos falar de algoritmos de ordenação!
+
+<!--more-->
+
+Todos os algoritmos de ordenação possuem o mesmo objetivo: **ordenar**.
+
+Os problemas de ordenação possuem uma vasta quantidade de estudos na área da ciência da computação, apesar do problema parecer simples, é algo bastante complicado para resolver de maneira eficiente. Desde os anos 50 esses algoritmos vem sendo alvo de estudos e por incrível que pareça, de lá pra cá ainda utilizamos muitos dos algoritmos inventados naquela época.
+
+Mas por que existem tantos diferentes?
+
+Bom, podemos aplicar diversos conceitos de computação em cada um, tais como: recursividade, dividir e conquistar, estruturas de dados, análise de complexidade e os efeitos de *trade-offs* e assim por diante.
+
+Além disso, algoritmos de ordenação possuem diferentes dificuldades de implementação e mais importante que isso, diferentes complexidade de tempo e espaço. Isso faz com que alguns algoritmos possam ser mais eficientes em algumas situações específicas.
+
+Vamos começar com o que talvez seja um dos mais famosos, mais simples e menos performáticos algoritmo de ordenação: **bubble sort**.
+
+#### Bubble sort
+
+**Complexidade**
+
+| Tempo  | Espaço  | 
+|--------|---------|
+| O(n²)  |   O(1)  |
+
+Esse algoritmo é bastante problemático em termos de complexidade de tempo, mas o lado bom é que ele é MUITO simples para implementarmos.
+
+O algoritmo inicia a operação no primeiro elemento do array. A partir daí, o algoritmo irá comparar o primeiro número com o segundo, e realizará a troca de posição entre eles, caso necessário. 
+
+Depois disso, basta que o algoritmo continue repetindo isso para cada par adjacente até o fim do array. Depois de alcançar o fim do array, o algoritmo deve repetir a operação novamente até que nenhuma troca seja realizada.
+
+Por conta disso, este algoritmo é raramente utilizado em arrays com grande número de elementos, isso porque sua taxa de crescimento em complexidade é O(n²), ou seja, ele não escala bem.
+
+No entanto, podemos utilizar ele para ordenar pequenos conjuntos de dados sem muitos problemas, além disso, esse algoritmo se comporta muito bem quando o array está "quase" ordenado, ou seja, com poucos elementos fora de ordem.
+
+
+```javascript
+function compare(array, index1, index2){
+    return array[index1] > array[index2];
+}
+
+function swap(array, index1, index2){
+    let temporary = array[index1];
+    array[index1] = array[index2];
+    array[index2] = temporary;
+}
+
+function bubblesort(array){
+    let swapped;
+    do{
+        swapped = false;
+        for(let index = 0; index < array.length -2; index++){
+            if(compare(array, index, index+1)){
+                swapped = true;
+                swap(array, index, index+1);
+            }
+        }
+    }while(swapped);
+}
+```
+Existem outras variações de _bubble sort_ que simplesmente utilizam dois laços `for` aninhados. O problema disso é que perde-se a otimização para coleções "quase" ordenadas. Utilizando dessa forma, podemos realizar um retorno prematuro sempre que possível.
+
+#### Selection sort
+
+**Complexidade**
+
+| Tempo  | Espaço  | 
+|--------|---------|
+| O(n²)  |   O(1)  |
+
+O _selection sort_ é outro algoritmo bastante simples para implementarmos e que possui limitações de complexidade tão ruins quanto o _bubble sort_. No caso deste algoritmo também teremos dois laços de repetição aninhados, mas ele funciona um pouco diferente.
+
+Neste algoritmo manteremos dois índices diferentes, um índice que chamaremos de índice à esquerda, que iniciará em zero e um índice que utilizaremos para percorrer o array. Precisaremos percorrer todo o array para encontrarmos o menor valor, ao encontrarmos, faremos a troca entre o menor valor e o valor na posição referente ao índice à esquerda.
+
+Após isso, incrementaremos o índice à esquerda em 1 e repetiremos o processo, até que este índice seja igual à N (último elemento do array).
+
+```javascript
+function selectionsort(array){
+    for(let leftIndex = 0; leftIndex < array.length-1; leftIndex++){
+        let minIndex = leftIndex;
+        for(let index = leftIndex+1; index < array.length; index++){
+            if(compare(array, minIndex, index))
+                minIndex = index;
+        }
+
+        swap(array, leftIndex, minIndex);
+    }
+}
+```
+
+O último algoritmo que veremos hoje é o _insertion sort_, tão simples quanto os dois acimas!
+
+#### Insertion sort
+
+**Complexidade**
+
+| Tempo  | Espaço  | 
+|--------|---------|
+| O(n²)  |   O(1)  |
+
+Como já dito, esse algoritmo também é bastante simples, vamos interpretá-lo como uma subdivisão do array em dois. Essa divisão é feita para identificarmos onde cada elemento do array deve ser posicionado. Para essa divisão teremos um índice que funcionará como o limite. Esse índice é responsável por delimitar a parte ordenada do array, com a parte que ainda está bagunçada.
+
+Ele deve iniciar com o valor 1, considerando que o elemento de posição zero já está em seu lugar correto (mesmo que isso não seja verdade ainda). Com isso estabelecido precisamos percorrer a parte não ordenada do array. A cada elemento percorrido deste lado, precisaremos percorrer todo o subarray já ordenado até encontrarmos a posição em que este novo elemento deve ser inserido.
+
+Cada vez que inserimos um elemento neste subarray precisamos incrementar o índice limite em 1, repetindo o processo até que o índice limite atinja o final do array.
+
+Vamos lá!
+
+```javascript
+function insertionsort(array){
+    for(let index = 1; index < array.length; index++){
+        let currentValue = array[index];
+        let sortedArrayIndex = index-1;
+
+        while(sortedArrayIndex >= 0 && 
+              array[sortedArrayIndex] > currentValue){
+            
+            array[sortedArrayIndex+1] = array[sortedArrayIndex];
+            sortedArrayIndex--;
+        }
+        array[sortedArrayIndex+1] = currentValue;
+    }
+}
+```
+
+Bom, para o post de hoje é isso! Daqui a um tempo retomamos esse assunto novamente, mas com algoritmos um pouco mais sofisticados.
+
+Espero que tenham gostado, qualquer dúvida, correção ou sugestão, deixem nos comentários!
+
+E até mais.

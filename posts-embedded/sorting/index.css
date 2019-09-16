@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    height: calc(100vh - 200px);
+    width: 100vw;
+    margin: 0;
+    display: block; 
+    background:red;
+}
+
+nav{
+    background: #222;
+}
+
+nav ul li a{
+    font-size:21px;
+}
+
+nav ul a:hover, nav ul a.active {
+    background-color: rgba(0,0,0,0.2);
+    color: #ffb300;
+    text-decoration: none;
+    border-bottom: 1px solid #ffb300;
+}
