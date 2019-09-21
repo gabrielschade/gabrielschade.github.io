@@ -209,7 +209,7 @@ Essa sintaxe existe para qualquer _computation express_, mas vamos focar nas fun
 
 Dentro de um escopo `Async` devemos utilizar o operador _Bang (!)_ sempre que interagirmos com algo assíncrono, em muitos casos o `!` funcionará como um `await` para essa sintaxe. Vamos ver o que podemos com esse operador:
 
-**Do**
+##### **Do**
 
 O `do` normalmente funciona como um _statement_ isolado, ele é quase que um caso especial de `let` onde não precisamos atribuir um resultado. Na prática utilizamos o `do` para executar uma função que não retorna nada, ou seja, que retorna um `unit`. 
 
@@ -259,7 +259,7 @@ let wait seconds = async{
 ```
 Isso é especialmente útil quando precisamos orquestrar processamentos assíncronos ou paralelos.
 
-**Let**
+##### **Let**
 
 Como você já deve saber em F#, o `let` funciona como uma forma de atribuirmos ou vincularmos um valor de função ou um valor discreto para uma variável. No contexto `Async` podemos utilizar o `let!` sempre que precisarmos esperar uma operação assíncrona que retorna valor terminar, ele é basicamente o mesmo que o `do!` com operações que retornam valor.
 
@@ -343,7 +343,7 @@ async {
 }
 ```
 
-**Match**
+##### **Match**
 
 O `match` é a palavra reservada para realizarmos o tão famoso _pattern matching_, essa é uma inclusão relativamente nova na linguagem, mas agora temos um _syntax sugar_ para realizarmos um `await` dentro da expressão do _pattern matching_ utilizando `match!`
 
@@ -416,7 +416,7 @@ let main argv =
     //...
 ```
 
-**Return**
+##### **Return**
 
 Por fim, temos o `return` que é um pouco diferente do resto. Mas nada super complicado. 
 Diferente dos anteriores o `return` já faz parte do bloco `async`, peraí, como assim?
