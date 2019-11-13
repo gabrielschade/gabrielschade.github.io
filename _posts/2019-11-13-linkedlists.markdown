@@ -18,7 +18,7 @@ Vamos continuar a série sobre estrutura de dados? -Dessa vez com listas encadea
 
 Este é o terceiro post sobre estrutura de dados aqui no blog, dessa vez falaremos sobre listas encadeadas ou `Linked Lists`.
 
-Se ainda não leu, recomendo que você também leia o post sobre [pilhas]({{ site.baseurl }}{% link _posts/2019-06-24-algoritmos-ii.markdown %}){:target="_blank"} e [filas]({{ site.baseurl }}{% link _posts/2019-07-08-algoritmos-iii %}){:target="_blank"}.
+Se ainda não leu, recomendo que você também leia o post sobre [pilhas]({{ site.baseurl }}{% link _posts/2019-06-24-algoritmos-ii.markdown %}){:target="_blank"} e [filas]({{ site.baseurl }}{% link _posts/2019-07-08-algoritmos-iii.markdown %}){:target="_blank"}.
 
 Agora vamos ao assunto do post.
 
