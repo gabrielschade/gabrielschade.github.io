@@ -1,0 +1,118 @@
+---
+layout: post
+title:  "Minha Retrospectiva 2019"
+date:   2020-01-07 00:00:00 +0000
+image: https://i.imgur.com/HhAFBoz.png
+comments: true
+featured: false
+tags: [JavaScript, Algoritmos] 
+--- 
+ 
+Olá pessoa!
+
+Esse ano foi bastante atípico, teve muita, mas muita coisa acontecendo. 
+
+Aqui pelo blog tivemos aproximadamente **200 mil visitas únicas** e no medium tivemos **20 mil leitores**. Em palestras ao vivo é muito mais difícil de contabilizar a quantidade de pessoas impactadas, mas espero ter ajudado bastante gente. E como ninguém é de ferro, visitei **7 países diferentes** e passei por muitas experiências novas, incluindo um intercambio e uma mudança de vida que certamente vou me lembrar mesmo que se passem 10, 20, 40 anos.
+
+<!--more-->
+
+Como não pretendo fazer esse post muito longo, vamos direto para os _highlights_!
+
+#### Microsoft MVP Summit
+
+O primeiro grande _highlight_ do ano certamente foi o Microsoft MVP Summit, um evento que rola todo ano lá na matriz da Microsoft em Seattle, onde os MVPs do mundo todo são convidados para uma série de palestras técnicas e anúncios do que chega de novo para o próximo ano nas tecnologias Microsoft.
+
+Foi o meu primeiro ano no evento e tudo foi fantástico! Não tem como descrever a experiência de conhecer uma galera tão foda. As pessoas que constroem as ferramentas que eu usava no dia a dia para trabalhar. E muito mais que isso, ter a oportunidade de se encontrar com outros MVPs do Brasil e do mundo.
+
+Fiz diversas amizades nessa viagem e sem dúvida nenhuma, esse evento vai ficar na memória!
+
+Antes do evento fizemos um passeio por Toronto, foi só um diazinho, mas deu para aproveitar algumas coisas, como a CB Tower por exemplo, uma das maiores torres do mundo! (E vencer o medo de altura, como faz?) 
+
+{% assign items = "https://i.imgur.com/TheUFsD.png|https://imgur.com/tvPjRUq.png|https://imgur.com/LOew7FG.png" | split: "|" %}
+{% include carousel.html items=items height=550 %}
+
+Depois desse dia de correria, o evento começou pra valer! Muito conteúdo e uma dose de realidade para ver o quanto a gente ainda precisa aprender. De quebra, ainda conheci o estúdio do [Channel 9](https://channel9.msdn.com/Browse){:target="_blank"}, um canal de vídeos de treinamentos da Microsoft.
+
+{% assign items = "https://i.imgur.com/Ugn6cfZ.png|https://imgur.com/UAogxvb.png|https://imgur.com/E67j14x.png" | split: "|" %}
+{% include carousel.html items=items height=550 %}
+
+Aproveitando Seattle, fiz mais alguns rolês, até porque ninguém é de ferro né? Teve Space Needle, teve museu da cultura pop e tudo mais que tinha direito.
+
+{% assign items = "https://imgur.com/aGi9JTO.png|https://imgur.com/3f3ZcqB.png|https://imgur.com/nQLY6qU.png" | split: "|" %}
+{% include carousel.html items=items height=550 %}
+
+
+#### Eventos Técnicos de Abril
+
+Abril foi um mês com alguns eventos bem legais, primeiro pude palestrar sobre Machine Learning no InterOP, lá em Florianópolis. Depois disso, tivemos o evento de lançamento do Visual Studio 2019 em Balneário Camboriu e por último e definitivamente mais importante, tivemos o TDC (The Developer's Conference) em Floripa.
+
+Nesse evento tive a honra de ser coordenador das trilhas .NET e INSPIRE. A INSPIRE é uma trilha focada em introduzir adolescentes à área de tecnologia. Falei isso alguma vezes no evento e acho que vale repetir aqui: **O objetivo não era dizer que a área de tecnologia é o único caminho, mas sim, para mostrar que se eles quiserem seguir essa área, tem gente disposta a abrir as portas**.
+
+Tenho muito orgulho de ter participado disso e aqui fica um vídeo para quem tiver curiosidade sobre essa trilha do evento:
+
+{% include youtube-video.html width=560 height=315 url="https://www.youtube.com/embed/NfGmwsUe0Z4?rel=0" %}
+
+Além disso, esse TDC também teve um outro momento bastante especial, foi a primeira vez que tive a honra de poder palestrar no palco principal do evento. Minha palestra foi sobre reconhecimento de letras em libras através de algoritmos de machine learning.
+
+{% include image.html link="https://imgur.com/jTlzkIj.png" alt="TDC" width=80 %}
+
+#### Nerdologia
+
+Ainda em abril decidi fazer [este post]({{ site.baseurl }}{% link _posts/2019-04-04-avengers-joia-tempo-heuristica.markdown %}){:target="_blank"} sobre como o Doutor Estranho dos Vingadores poderia navegar pelas possibilidades vistas pela jóia do tempo de maneira eficiente.
+
+Esse post foi feito com base em um vídeo do [Nerdologia](https://www.youtube.com/nerdologia), que na minha visão é um dos melhores canais do YouTube. E imagine a minha felicidade quando fui citado por lá?
+
+
+{% include youtube-video.html width=560 height=315 url="https://www.youtube.com/embed/lrtVyvgmN_I&feature=youtu.be&t=503" %}
+
+#### Publicações iMasters e no Microsoft Tech
+
+Também foi em 2019 que comecei a publicar artigos pelo site [iMasters](https://imasters.com.br/perfil/gabrielschade){:target="_blank"} e nesse desde então aproximadamente 17 mil pessoas foram impactadas!
+
+No Microsoft Tech foi só um [post específico](http://www.microsofttech.com.br/pt-br/microsofttech/ml-net-inteligencia-artificial-ia-para-ajudar-o-detetive-pikachu-com-descobertas-sobre-pokemon/){:target="_blank"}, confesso que é um dos que eu mais tenho orgulho de ter feito aqui no blog. Este [post sobre IA aplicada à uma base de pokémon]({{ site.baseurl }}{% link _posts/2019-06-10-ml-net-ii-pikachu-detective.markdown %}){:target="_blank"} deu um trabalho monstro, mas acho que o resultado ficou bem bacana, se ainda não viu, dá uma conferida.
+
+#### Intercâmbio na Irlanda
+
+Em maio foi onde o maior ponto de virada aconteceu, eu e minha esposa viemos para **Dublin, Irlanda** para fazer um intercâmbio para melhorar o inglês. 
+
+Isso significou: largar o emprego e ficar longe da família e de amigos. Mas é impossível não se sentir super privilegiado por ter uma oportunidade dessas. Porque apesar do que eu falei, isso tornou possível conhecer muito mais gente, muito mais lugares, culturas e ter várias novas experiências. É até difícil de descrever o quão transformador isso foi para mim.
+
+#### Renovação do Programa Microsoft MVP
+
+Em julho recebi a notícia que minha premiação como [Microsoft MVP](https://mvp.microsoft.com/){:target="_blank"}__, tinha sido renovada, mais uma vez na categoria _Developer Technologies_, fiquei muito feliz em receber o prêmio novamente. É sempre bom ser reconhecido por compartilhar conhecimento com a comunidade.
+
+Apesar de estar realmente honrado com a premiação, me mantive no grupo por bem pouco tempo após este ciclo. Em outubro eu mesmo fiz a ligação pedindo para ser desligado do programa.
+
+Normalmente sair do programa Microsoft MVP seria uma coisa muito triste, mas neste caso específico foi por conta de uma conquista, definitivamente não era tempo de ficar triste, mas sim, de celebrar!
+
+#### Me tornei um Amazonian
+
+Bom, o motivo de eu ter saído do programa Microsoft MVP é por ter recebido (e aceitado, claro) uma oferta da Amazon!
+
+{% include image.html link="https://imgur.com/TVHatR3.png" alt="AWS" width=100 %}
+
+Eu não consigo descrever o tamanho dessa conquista, de verdade. Parece surreal.
+
+Foi uma mudança gigantesca de carreira, troquei praticamente todo o conjunto de tecnologias que eu estava acostumado a trabalhar, mas sabe do que mais? Está sendo maravilhoso.
+
+Eu sei que pode soar um pouco clichê, mas sair da zona de conforto e conseguir impactar literalmente milhões/bilhões de pessoas é inacreditável.
+
+#### Que venha 2020
+
+Novo ano, novos tempos e eu não quero cair no papo de auto-ajuda, mas esse ano foi de fato, recheado de realizações e vitórias. Eu sei que não é assim tão simples, que o caminho pode ser mais difícil pra uns do que para os outros, mas corre atrás do sonho, sério.
+
+Eu tive a sorte de conhecer muita gente incrível ao longo da minha carreira e isso abriu muitas portas. Também tento ser ciente de que tive muitos privilégios: nunca passei fome, nunca vivi em uma área perigosa, nunca faltou grana em casa (até tivemos momentos de bastante fartura). 
+
+Além disso, eu sei que meus pais fizeram de tudo e mais um pouco para que eu tivesse uma **educação** decente, e eles terem se importado tanto com isso é uma coisa que eu nunca vou ser capaz de retribuir.
+
+É impossível falar de educação sem falar dos tempos atuais, em que infelizmente várias teorias da conspiração, obscurantismos e movimentos anti-ciência (terra plana, anti-vacina e por aí vai) vem ganhando força. Acredite, estudar e entender como a ciência funciona ainda é uma das maiores revoluções que você pode fazer contra "o sistema". 
+
+Eu compartilho o pouco do que sei aqui no blog, porque foi saber esse pouco que fez, eu, o filho de pescador João e dona de casa Eulália, poder morar na Europa e trabalhar como _software engineer_ em uma das maiores empresas do mundo.
+
+Tá, talvez eu tenha caído um pouco no auto-ajuda, mas de qualquer forma, se eu puder ajudar uma pessoa com essa mensagem, já valeu a pena.
+
+Bom, o post de hoje era isso!
+
+Espero que tenham gostado, tenham todos um feliz novo e um ótimo recomeço!
+
+E até o próximo post!
