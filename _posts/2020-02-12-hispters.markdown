@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Hipsters ponto tech: Algoritmos e estrutura de dados"
+date:   2020-02-12 00:00:00 +0000
+image: https://i.imgur.com/K9n3qE3.png
+comments: true
+featured: false
+tags: [Discussões] 
+--- 
+ 
+Olá pessoa!
+
+Se você viu o post passado, sabe que minha vida deu uma boa mudada, sei não estou dando tanta atenção por aqui, mas a frequência de publicações voltará a aumentar assim que tudo estabilizar novamente. 
+
+Para quem não viu, semana passada participei do Hipsters ponto tech!
+
+<!--more-->
+
+No podcast falamos sobre um assunto que adoro discutir por aqui: Algoritmos e estrutura de dados!
+
+É importante? Não é? Como ganhar 1 milhão de dólares resolvendo um problema de computação?
+
+Discutimos essas coisas por lá, dá uma conferida no [episódio](https://hipsters.tech/algoritmos-e-estrutura-de-dados-hipsters-186/){:target="_blank"}:
+
+{% include image.html link="https://i.imgur.com/K9n3qE3.png" alt="Banner episodio" width=80 %}
+{% include embedded.html width=320 height=30 url="https://hipsters.tech/?powerpress_embed=2916-podcast&amp;powerpress_player=mediaelement-audio" %}
+
+Queria também aproveitar para agradecer o convite para participar e que venham os próximos!
+
+Bom, o post de hoje era isso!
+
+Espero que tenham gostado, tenham todos um feliz novo e um ótimo recomeço e que final de 2020 eu e você possamos comemorar mais um monte de conquistas!
+
+E até o próximo post!
