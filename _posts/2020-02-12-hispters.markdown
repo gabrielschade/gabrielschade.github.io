@@ -23,7 +23,7 @@ No podcast falamos sobre um assunto que adoro discutir por aqui: Algoritmos e es
 Discutimos essas coisas por lá, dá uma conferida no [episódio](https://hipsters.tech/algoritmos-e-estrutura-de-dados-hipsters-186/){:target="_blank"}:
 
 {% include image.html link="https://i.imgur.com/K9n3qE3.png" alt="Banner episodio" width=80 %}
-{% include embedded.html width=320 height=30 url="https://hipsters.tech/?powerpress_embed=2916-podcast&amp;powerpress_player=mediaelement-audio" %}
+{% include embedded.html width=320 height=40 url="https://hipsters.tech/?powerpress_embed=2916-podcast&amp;powerpress_player=mediaelement-audio" %}
 
 Queria também aproveitar para agradecer o convite para participar e que venham os próximos!
 
