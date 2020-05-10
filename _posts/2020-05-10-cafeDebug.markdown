@@ -19,7 +19,7 @@ Neste episódio eu e a queridíssima [Jéssica Nathany](https://twitter.com/Jess
 Passamos uma visão macro por quase tudo sobre o tema nesse bate papo super tranquilo.
 
 Segue o episódio:
-{% include spotify.html width=100% height=232 url="https://open.spotify.com/embed-podcast/episode/3ZjaWvrZm1tghAjYOBslji" %}
+{% include spotify.html width="100%" height=232 url="https://open.spotify.com/embed-podcast/episode/3ZjaWvrZm1tghAjYOBslji" %}
 
 Queria também aproveitar para agradecer o convite e que venham mais parcerias!
 
