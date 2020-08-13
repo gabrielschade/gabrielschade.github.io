@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Café Debug:  Programação funcional, um jeito diferente de programar!"
+date:   2020-05-10 00:00:00 +0000
+image: https://i.imgur.com/RvKeFPh.png
+comments: true
+featured: false
+tags: [Discussões] 
+--- 
+ 
+Olá pessoa!
+
+Eu participei de mais um podcast Café Debug, dessa vez sobre algoritmos e estrutura de dados!
+
+<!--more-->
+
+Neste episódio eu, [Jéssica Nathany](https://twitter.com/JessicaNathanyF) e meu grande amigo [André Santana](https://www.linkedin.com/in/andrelms91/) conversamos sobre a importância de algoritmos e estrutura de dados.
+
+Segue o episódio:
+{% include spotify.html width="100%" height=232 url="https://open.spotify.com/embed-podcast/episode/5YcsvdH6hqqGRAbPCTohex" %}
+
+Queria também aproveitar para agradecer o convite e que venham mais parcerias!
+
+Bom, o post de hoje era isso!
+
+Espero que tenham gostado, qualquer dúvida, correção ou sugestão, deixem nos comentários!
+
+E até o próximo post!
