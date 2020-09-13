@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Café Debug:  Programação funcional, um jeito diferente de programar!"
+title:  "Café Debug:  Algoritmos e Estrutura de Dados!"
 date:   2020-08-13 00:00:00 +0000
 image: https://i.imgur.com/RvKeFPh.png
 comments: true
