@@ -1,0 +1,1 @@
+> As informações neste site representam minha opinião pessoal, o que pode não ser igual à sua ou de qualquer outra pessoa, incluindo a empresa para qual eu trabalho. Portanto as publicações inseridas aqui estão relacionadas somente a mim.
