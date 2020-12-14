@@ -1,0 +1,106 @@
+---
+layout: post
+title:  "Introdução à Apache Hadoop"
+date:   2020-12-14 00:00:00 +0000
+image: https://i.imgur.com/nfVWFwO.png
+comments: true
+featured: false
+tags: [AWS] 
+--- 
+ 
+Olá pessoa!
+
+Depois de um bom tempo fora, estou de volta!
+
+Depois de uma virada na minha carreira, agora vamos começar uma série sobre serviços AWS e tecnologias envolvidas!
+
+<!--more-->
+
+O primeiro assunto que quero tratar é o Apache Hadoop, sim, eu sei, não é um serviço AWS, mas vai servir de base para o próximo assunto, então vamos começar por ele.
+
+O que é o Apache Hadoop? Bom, uma forma de resumir ele é simplesmente dizer que ele é um framework open-source que permite processar grandes quantidades de dados de forma distribuída entre clusters de computadores. Ele é projetado principalmente para escalabilidade, ou seja, podemos utilizá-lo em clusters com centenas ou até milhares de máquinas ao invés de utilizarmos uma super máquina para fazer tudo. Além disso, Hadoop também é projetado para detectar e lidar com falhas nos nós de processamento na camada de aplicação.
+
+Vamos fazer um overview dos componentes do Hadoop, seus módulos e como eles interagem entre si.
+
+Normalmente um Hadoop cluster é composto por um nó principal(master) e N nós secundários(slave).
+
+O nó principal é responsável por gerenciar os recursos do cluster a agendar as tarefas entre os nós secundários usando Hadoop Distribuited File System (HDFS).
+
+Os nós secundários são responsáveis por executar tarefas em conjunto com o nó principal e por seus pares.
+
+{% include image.html link="https://imgur.com/7JkrydC.png" alt="Visão geral" width=100 %}
+
+Vamos agora falar da arquitetura do Hadoop! Ele é dividido entre módulos, não vou falar de todos aqui, mas vamos focar nos que considero mais importante.
+
+### Hadoop Core
+
+Como o nome sugere, o módulo _core_ contém as bibliotecas e utilitários consumidos pelos outros módulos, ou seja, ele funciona como uma peça base dentro da arquitetura Hadoop.
+
+Ele é responsável por coisas comoÇ abstrair o sistema de arquivos do sistema operacional e iniciar o Hadoop própriamente dito.
+
+Em alguns locais você também pode ver o nome desse módulo como `Hadoop Common`, eles são basicamente a mesma coisa.
+
+### Hadoop Distribuited File System (HDFS)
+
+Os nomes dos módulos são bastante sugestivos, nessa altura você já deve ter percebido que o HDFS é um sistema de arquivos distribuído, certo? Mas o que isso quer dizer?
+
+Bom, ele é o modo de armazenamento base do framework, isso significa que ele pode armazenar arquivos gigantescos através de diversas máquinas em um cluster. Cada arquivo é armazenado como um sequência de blocos de mesmo tamanho (com exceção do último) e são duplicados para garantir tolerância à falhas. Tanto o tamanho dos blocos como o fator de duplicação são completamente configuráveis.
+
+Isso tudo provendo uma alta taxa de transferência (`throughput`) para acesso dos dados para processamento e análise de grandes volumes de dados.
+
+{% include image.html link="https://imgur.com/DZ4YNCE.png" alt="Visão geral - 2" width=100 %}
+
+### Hadoop Yarn
+
+Esse é um dos nomes não tão claros, YARN significa (Yet Another Resource Negotiator), este módulo basicamente serve para o agendamento de jobs e resource-management do cluster.
+
+Vamos dar uma olhada nos componentes do YARN:
+
+{% include image.html link="https://i.imgur.com/0Yypa1y.png" alt="Visão geral - 3 - Yarn" width=100 %}
+
+#### Resource Manager
+
+O primeiro componente é parte do nó principal, o **Resource Manager**, ele é um agendador para alocação de recursos no cluster para executar processos que podem competir entre si. Isso porque um mesmo cluster Hadoop pode executar multiplos processos, como mais de um MapReduce ou até mesmo processos diferentes como MapReduce + Spark.
+
+#### Node Manager
+
+Em cada nó secundário temos um **Node Manager**, este componente responde diretamente instruções do **Resource Manager**. Ele é responsável por gerenciar os recursos do nó secundário de maniera mais local, enquanto que o **Resource Manager** se preocupa com isso no contexto do cluster.
+
+#### Application Master
+
+Este componente também faz parte dos nós secundários, ele é responsável por negociar recursos com o **Resource Manager** e **Node Manager** para executar e monitorar os **Containers**. 
+
+#### Container
+Todo o processamento de dados e onde a aplicação realmente executa são nos **Containers** dos nós secundários que são executados pelo **Application Master**.
+
+Os containers também são responsáveis por garantir acessos de memóra e CPU à aplicação.
+
+### MapReduce
+
+MapReduce é um framework para processar grandes volumes de dados utilizando processamento paralelo distribuido em um cluster. Esse processamento pode ser desestruturado (utilizando um sistema de arquivos) ou estruturado (utilizando um banco de dados).
+
+Mas por que se chamar MapReduce? - O nome se refere às duas principais tarefas: `Map` e `Reduce`. Se você já utilizou alguma biblioteca de programação funcional já deve ter se deparado com estes métodos (menos em C#, que eles se chamam respectivamente `Select` e `Aggregate`).
+
+Note que eu utilizei a palavra "principais", isso quer dizer que existem mais tarefas? - Sim.
+
+O `MapReduce` possui as seguintes tarefas: `Input`, `Split`, `Map`, `Shuffle`, `Reduce` e `Result`.
+
+Vamos entender o que cada fase é responsável por.
+
+**Input**: Nesta etapa temos apenas a entrada de dados, normalmente desestruturada;
+**Split**: Nesta etapa a entrada é dividida entre múltiplos nós, simplesmente para acelerar o processamento;
+**Map**: Nesta etapa cada registro da entrada é transformada em um key value pair, neste ponto o **Resource Manager** irá atribuir os recursos necessários aos nós para realizar o processamento distribuído, como resultado dessa fase, uma saída intermediária é gerada;
+**Shuffle**: Nesta etapa a saída intermediária é processada para que cada key value pair seja enviado para um local específico para seu processamento final;
+**Reduce**: Nesta etapa obtemos a saída da etapa **Shuffle** e a processamos com a função **Reduce**, fazendo com que os dados possam ser agregados, filtrados e assim por diante;
+**Result**: Nesta etapa o programa pode escrever o arquivo de saída.
+
+Vamos fazer um exemplo, imagine que você está utilizando o `MapReduce` em uma conta do GitHub, com múltiplos repositórios, escritos em linguagens diferentes, poderíamos ter essa pipeline de execução conforme a imagem a seguir:
+
+{% include image.html link="https://i.imgur.com/gnMbk6q.png" alt="MapReduce Pipeline" width=100 %}
+
+
+Bom, o post de hoje era isso!
+
+Espero que tenham gostado, qualquer dúvida, correção ou sugestão, deixem nos comentários!
+
+E até o próximo post!
