@@ -36,7 +36,7 @@ Vamos agora falar da arquitetura do Hadoop! Ele é dividido entre módulos, não
 
 Como o nome sugere, o módulo _core_ contém as bibliotecas e utilitários consumidos pelos outros módulos, ou seja, ele funciona como uma peça base dentro da arquitetura Hadoop.
 
-Ele é responsável por coisas comoÇ abstrair o sistema de arquivos do sistema operacional e iniciar o Hadoop própriamente dito.
+Ele é responsável por coisas como: abstrair o sistema de arquivos do sistema operacional e iniciar o Hadoop própriamente dito.
 
 Em alguns locais você também pode ver o nome desse módulo como `Hadoop Common`, eles são basicamente a mesma coisa.
 
