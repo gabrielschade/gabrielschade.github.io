@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "Elastic Map Reduce - EMR - Arquitetura Geral"
+date:   2020-12-21 00:00:00 +0000
+image: https://imgur.com/dgnT7nK.png
+comments: true
+featured: false
+tags: [AWS] 
+--- 
+ 
+Olá pessoa!
+
+Depois de falarmos sobre Hadoop, que tal começar a falar sobre EMR, um dos serviços AWS que utiliza tudo que vimos no post anterior!
+
+<!--more-->
+
+O que é o EMR? Bom, pra começar a sigla significa Elastic Map Reduce, ele é um serviço que provê uma plataforma de clusters gerenciados para processar e analisar grandes quantidades de dados.
+
+Quase sempre quando temos um volume grande de dados nos deparamos com problemas para dar vazão ao processamento desses dados de forma eficiente, EMR utiliza Hadoop para quebrar esse problema em jobs menores e distribuí-los entre vários nós de processamento.
+
+Podemos aplicar EMR, por exemplo, para processarmos uma quantidade grande de logs, processamentos de machine learning e ETL (Extract, Transform e Load). Tudo isso podendo controlar o quanto queremos escalar (ou não) nossos clusters.
+
+Se você não viu o post passado, recomendo acessar [este link]({{ site.baseurl }}{% link _posts/2020-12-14-Hadoop.markdown %}){:target="_blank"}, afinal vamos utilizar vários conceitos mencionados lá, mas dessa vez, claro, sob o contexto do EMR.
+
+### Arquitetura
+Existem algumas pequenas diferenças entre a arquitetura de um cluster `Hadoop` e de um cluster `EMR`, vamos dar uma olhada geral na arquitetura:
+
+{% include image.html link="https://imgur.com/3m0d7aV.png" alt="Visão geral" width=100 %}
+
+É possível notar algumas diferenças, mas calma, vamos por partes.
+
+Primeiro ponto que pode chamar atenção é: todo o cluster está necessariamente dentro de uma mesma AZ (availability zone), entraremos em mais detalhes sobre isso ao longo do post, mas é importante por agora termos na cabeça que não há chamadas entre diferentes AZs em um mesmo cluster.
+
+Segundo ponto: Nossos nós secundários sumiram, agora eles viraram Core e Task nodes, existem algumas diferenças entre os dois, mas podemos considerar que tanto os tasks quanto os core nodes são sim nós secundários.
+
+Terceiro ponto: Agora temos essas caixinhas chamadas `Instance Group`, o que é isso?
+
+#### Instance Groups
+
+Instance groups é um conceito bem simples, basicamente é uma forma de organizar um grupo, ou coleção de instâncias EC2 e tratá-las como uma unidade única.
+
+Um cluster EMR pode conter até 50 _instance groups_, onde apenas uma delas pode ser uma `Master Instance Group`, contendo seu nó principal. Uma `Core Instance Group` contendo multíplos Core nodes e por fim, você pode criar até 48 `Task Instance Groups`, onde cada um pode conter multíplos Task nodes.
+
+Por que criar multíplos Task nodes ao invés de simplesmente aumentar o número de instâncias? No EMR, cada _instance group_ utiliza um único tipo de instância EC2 para todos os nós. Então caso você queira utilizar diferentes tipos de instâncias, a opção de criar um novo grupo pode ser bastante útil.
+
+Agora assim como fizemos no post de `Hadoop`, vamos destrinchar cada um dos tipos de nós de um cluster EMR!
+
+#### Master Node
+
+Todo cluster EMR possui apenas um único `Master Node`, o que pode não parecer a melhor coisa do mundo, afinal, ele acaba sendo um ponto único de falha, mas existem formas de mitigar isso, podemos falar sobre isso em um post futuro.
+
+Este nó é responsável por gerenciar os recursos do cluster, isso inclui: coordenar e distribuir a execução paralela entre os nós secundários; Gerenciamento do sistema de arquivos (falaremos sobre os tipos de sistemas de arquivos mais para frente, não se preocupe com isso agora), e ah, você ainda lembra do **Resource Manager**? Pois é, é aqui que ele fica no EMR, com todas as responsabilidades descritas no post anterior.
+
+Por fim, o `Master Node` também é responsável por monitorar a saúde dos Core e Task nodes.
+
+#### Core Node
+
+Um `Core Node` é basicamente o mesmo que os nós secundários que aprendemos no post anterior. São responsáveis por executar tarefas enviadas pelo `Master Node`, eles armazenam dados utilizando o sistema de arquivos.
+
+Também é aqui que fica o `Node Manager` e o `Application Master` normalmente, assim como os nós secundários do Hadoop, com as mesmas funções e responsabilidades.
+
+Existem algumas operações extras que podem ser realizadas aqui, mas novamente, isso ficará para um post futuro.
+
+#### Task Node
+
+Se o `Core Node` é o mesmo que um nó secundário, o que diabos é um `Task Node`? Bom, na prática o `Task Node` também é um nó secundário, mas com algumas particularidades.
+
+Começando com o fato de ser opcional, ou seja, você pode ter um cluster sem que ele tenha um `Task Node`. Além disso, esses nós não possuem nenhum acesso ao sistema de arquivos.
+
+Para que servem? - Bom, o nome é bastante sugestivo, estes nós podem ser adicionados ou removidos de um cluster em execução para trazer mais poder computacional à eles. Imagine um cenário em que você precisa adicionar mais memória ou CPU durante uma execução, sem a flexibilidade do `Task Node` você poderia se colocar em uma situação onde não há recursos suficientes e teria de reiniciar o cluster alterando as configurações de seus `Core Nodes`.
+
+
+
+
+
+Bom, o post de hoje era isso!
+
+Espero que tenham gostado, qualquer dúvida, correção ou sugestão, deixem nos comentários!
+
+E até o próximo post!
