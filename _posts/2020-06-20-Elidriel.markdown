@@ -4,7 +4,7 @@ title:  "Um projeto novo: Elidriel - Meu JRPG"
 date:   2020-06-2   0 00:00:00 +0000
 image: https://imgur.com/Bgj3KtI.png
 comments: true
-featured: false
+featured: true
 tags: [Discussões, JavaScript] 
 --- 
  
@@ -23,7 +23,7 @@ Por motivos óbvios, é claro que eu não espero que saia na mesma qualidade que
 Como cheguei no ponto em que tenho uma build estável com todas as mecânicas implementadas, achei que era a hora de lançar.
 Você terá aproximadamente 5 horas de gameplay e eu espero muito que a experiência seja satisfatória (e desafiadora).
 
-Você pode fazer o download [neste link](https://drive.google.com/file/d/1iZ1E8yOffrwMhl4ThheEhrqUaQXAFojG/view) e se divertir!
+Você pode fazer o download [neste link](https://drive.google.com/file/d/1kktFMYJH4wWIn6JAjXChg9-KpCtAN2TH/view?usp=sharing) e se divertir!
 
 De qualquer modo, aqui vai um resumão do jogo com prints, personagens e sinopse, eu espero que você goste!
 
@@ -31,48 +31,31 @@ De qualquer modo, aqui vai um resumão do jogo com prints, personagens e sinopse
 
 {% include image.html link="https://imgur.com/Bgj3KtI.png" alt="Logo do jogo" width=100 %}
 
+<p style="text-align: center;">
+Gênero: RPG / Fantasia
+Data de início: Dezembro 2018
+Concursos:
+{% include image.html link="https://imgur.com/2cZOVNf.png" alt="Troféu" width=48 height=48 %}
+CGA - Vencedor categoria Aventura
+4º Lugar (Demo 1) - Projeto Valente Verão 2020
+4º Lugar (Demo 1) - Protótipo Premiado 18
+
+Downloads:
+[Google Drive](https://drive.google.com/file/d/1kktFMYJH4wWIn6JAjXChg9-KpCtAN2TH/view?usp=sharing)
+[MidiaFire](https://www.mediafire.com/file/vq8maf0lsx9fuxk/Elidriel.rar/file) 
+</p>
+
 ### Introdução 
 
 Este projeto é meu passatempo, mas estou tomando todo cuidado possível em seu desenvolvimento, para que mesmo tendo as limitações de um projeto tocado por uma pessoa só, ele tenha seu valor e possa prover uma experiência legal ao jogador.
 
 ### Sinopse
 
-{% include image.html link="https://imgur.com/CQMWY5m.png" alt="Civilização" width=100 %}
+Onde a paz reinava por séculos um atentado ao governante atual muda tudo, a ascenção do chanceler Arthur O'Caddler ao poder torna a seita do Grifo de Platina lei e todos os julgados pecadores, se tornam condenados e foras da lei.
 
+Ada, uma ex agente do império exilada no vilarejo Valefor, recebe de surpresa a visita de um velho amigo que mudará tudo. Kell membro ativista contra o império convoca Ada para uma missão e nela encontram novos aliados e seu envolvimento com o divino e com as forças de Elidriel mudam seus destinos mudam para sempre.
 
-A civilização conhecida é dividida em dois continentes: Hetios e Ankrah.
-
-Muito tempo atrás, o então imperador, Claude Trajano foi responsável por unir todos os povos, não em um único reino, mas uma união em direção à liberdade.
-
-Com seu espírito de liderança, ele foi capaz de alterar toda a estrutura da civilização, que agora, poderiam escolher seus próprios líderes.
-
-Alguns dizem que Claude foi o primeiro humano capaz de acessar o poder dos Eternos de Elidriel .
-Dizem que, além de feitiços, os próprios deuses lutavam a seu lado.
-
-Depois de muito sangue derramado, finalmente o Elo foi concebido, um acordo de união e liberdade entre os povos da civilização.
-E a paz se manteve por gerações.
-
-Mas os seres humanos possuem pouca memória e muito ódio...
-
-Em um movimento composto por traidores de Hetios e radicais de Ankrah conspiraram contra o império unificado. O atual governante Hector foi assassinado na chacina que ficou conhecida como A Noite das Espadas de Sangue.
-
-Com o império despedaçado e civilização carente de um líder surge uma oportunidade para o atual chanceler da igreja Arthur O'Caddler ascende ao poder.
-A seita do Grifo de Platina defendida por ele passa a ser lei.
-
-Parte dos militares foram dizimados sendo acusados de traidores do governo, grupos foram desmantelados...
-Inclusive o grupo militar de agentes fantasmas do qual eu fazia parte...
-
-O chanceler criou sua própria versão da realidade.
-
-Com o radicalismo crescente não demorou muito para o fim do Elo ser oficialmente declarado. Além disso, o chanceler proibiu completamente o uso de magia fora da nobreza, exército e da igreja.
-
-Ele diz agir em nome dos Eternos, mas o que poderia ser mais profano do que matar em nome de deus?
-
-Vivemos tempos sombrios... Onde liberdades são tiradas enquanto o povo aplaude de pé.
-
-Se dizem sagrados, mas agem como profanos.
-
-Afinal, o que poderia ser mais profano do que matar em nome de deus?
+Os heróis não estão mais envolvidos apenas na guerra humana, existe algo maior. Uma ligação entre a seita do Grifo de Platina e os Eternos de Elidriel podem decidir o destino de toda a humanidade.
 
 ### Personagens
 
@@ -91,13 +74,13 @@ Ada é uma pessoa gentil e ponderada, tem um perfil conciliador e tenta ter uma 
 
 #### Kell
 
-{% include image.html link="https://imgur.com/HH1QIM7.png" alt="Kell" width=50 %}
+{% include image.html link="https://imgur.com/g9qSceG.png" alt="Kell" width=50 %}
 
 Um dos líderes da Armada, um grupo formado por soldados de Ankrah e Hetios que atua contra o chanceler e o império.
 
 Possui uma força física acima da média e é capaz de utilizar uma lança como poucos.
 
-Kell é taxado de extremista e até de terrorista por alguns, mas mesmo com isso, ele continua lutando contra a desigualdade e o ódio disseminado pelo chanceler e seu império.  Ele possui um ódio latente no peito por conta das cicatrizes de seu passado, o que o faz, por vezes, perder a razão e partir para a força bruta.
+Kell é taxado de extremista e até de terrorista por alguns, mas mesmo com isso, ele continua lutando contra a desigualdade e o ódio disseminado pelo chanceler e seu império. Ele possui um ódio latente no peito por conta das cicatrizes de seu passado, o que o faz, por vezes, perder a razão e partir para a força bruta.
 
 #### Erling
 
@@ -132,9 +115,7 @@ Cada criatura possui um dos quatro temperamentos possíveis: dócil, normal, agr
 
 Elas podem ser identificadas de acordo com a cor do ícone acima do inimigo.
 
-{% include image.html link="https://i.imgur.com/0Nebstd.png" alt="Criatura Fugindo" width=80 %}
-
-{% include image.html link="https://imgur.com/HWUbGGc.png" alt="Criatura Perseguindo" width=80 %}
+{% include image.html link="https://imgur.com/qsRPxE1.png" alt="Temperamento" width=80 %}
 
 **Dócil**: Estas são as criaturas mais dóceis, elas sempre tentarão fugir de você, para iniciar uma batalha é necessário seguí-las.
 Geralmente estas batalhas são mais fáceis, mas podem existir criaturas poderosas que não gostam de batalhar.
@@ -149,184 +130,57 @@ iniciada por sua iniciativa.
 
 #### Talentos
 
-Cada um dos protagonistas possui um talento específico.
+Cada um dos protagonistas possui um talento próprio, isso são habilidades que podem ser utilizadas fora de batalhas para interação com o ambiente.
 
-Talentos são habilidades que podem ser utilizadas fora de combate para interagir com o ambiente. Para ativá-lo, basta pressionar a tecla Q ou PageUp.
+É possível visualizar no canto esquerdo da tela uma barra contendo o nome do talento do líder da equipe e a energia para utilizá-lo. Você só pode utilizar o talento quando a energia estiver no máximo, ao esgotar-se ela reiniciará automaticamente.
 
-Durante o jogo, você poderá visualizar uma barra de energia referente ao talento atual, após ativá-lo ele permanecerá em funcionamento até a barra de energia se esgotar, após isso você precisará aguardar a energia ser carregada novamente.
+{% include image.html link="https://imgur.com/xa2sFH3.png" alt="Talentos" width=80 %}
 
-{% include image.html link="https://imgur.com/S7tSzEp.png" alt="Talentos" width=80 %}
+**Ada - Modo Furtivo:** O talento de Ada permite que ela ande por locais sem ser notada por criaturas ou outras pessoas, utilizada em missões de espionagem ao longo do projeto.
 
-Cada personagem possui somente um talento e você só poderá ativar o talento do líder do grupo.
+**Kell - Super Força:** Permite empurrar ou quebrar objetos que estão bloqueando o caminho.
 
-##### Ada - Modo Furtivo
+**Erling - Detecção Mágica:**: Permite visualizar ítens e passagens ocultas no mapa.
 
-Ao utilizá-lo você se torna indetectável pelas pessoas, criaturas e objetos ao seu redor.
-
-Este talento é bastante útil para evitar batalhas com as criaturas no ambiente, obter informações e passar despercebido por pessoas e radares.
-
-No entanto, existem algumas disvantagens em seu uso. Durante a utilização do Modo Furtivo você irá se movimentar mais lento do que o normal.
-Além disso, você também será forçado a desligar qualquer item gerador de iluminação, o que pode dificultar o uso desta habilidade em locais escuros.
-
-Por fim, qualquer interação com o ambiente irá cancelar a ativação do Modo Furtivo instantâneamente, podendo colocá-lo em uma situação de vulnerabilidade.
-
-Durante alguns momentos do jogo você precisará deste talento para fazer missões de espionagem.
-
-##### Kell - Super Força
-
-Ao utilizá-lo você se torna capaz de interagir com ambiente de maneira diferente do normal.
-
-Com ele ativado é possível movimentar objetos pesados e quebrar obstáculos, todos os objetos que interagem com este talento são sinalizados com um ícone
-
-##### Erling - Detecção Mágica
-
-Ao utilizá-lo você se torna capaz de detectar objetos e passagens ocultas por meio de magia.
-
-Este talento é bastante útil para encontrar passagens secretas, objetos ocultos por meio de magia e até revelar propriedades mágicas de objetos.
-
-##### Emmy - Manipulação Temporal
-
-Ao utilizá-lo você se torna capaz de interagir de maneira diferente com os objetos do ambiente, você pode fazer com o que o tempo: acelere, desacelere ou até mesmo pare para determinados objetos. Na versão atual do projeto este talento ainda não foi muito explorado.
+**Emmy - Manipulação Temporal:** Permite alterar a forma que o tempo passa em determinados objetos (incluindo na pescaria).
 
 #### Ferramentas
 
-Existe um tipo específico de equipamento para uso fora de combates.
+As ferramentas são um equipamento especial do projeto, assim como os talentos elas permitem que os personagens interajam com o ambiente de diferentes formas. Você pode utilizar apenas a ferramenta equipada no líder da equipe.
 
-Na imagem abaixo Erling está com uma lanterna equipada:
+Outra característica das ferramentas é que cada um dos personagens possui um nível de habilidade em cada uma delas, este nível aumenta conforme o uso da ferramenta específica:
 
-{% include image.html link="https://imgur.com/T3GgYbe.png" alt="Ferramentas" width=80 %}
+{% include image.html link="https://imgur.com/K6SIDxQ.png" alt="Ferramentas" width=80 %}
 
-As ferramentas podem ser equipadas e removidas livremente como qualquer outro equipamento.
-
-Enquanto estiver no mapa você só poderá utilizar a ferramenta equipada no líder da equipe, ela é mostrada no ícone acima do talento.
-
-##### Vara de Pescar
-
-Você poderá encontrar pontos de pescaria pelos mapas, nesses pontos poderá interagir com o ambiente realizando uma ação de pesca. Nessa ação você poderá obter peixes que restauram HP e MP dos personagens.
-
-{% include image.html link="https://imgur.com/keVbSJu.png" alt="Vara de Pescar" width=80 %}
-
-Depois de ativar a função de pesca você terá de aguardar por um tempo (depende do local e do tipo de vara de pescar equipada) para receber uma notificação, essa notificação pode indicar que você não encontrou nada ou que um peixe mordeu a isca, como na imagem abaixo:
-
-{% include image.html link="https://imgur.com/3kLEwvA.png" alt="Vara de Pescar - 2" width=80 %}
-
-Você tem um tempo para pressionar um botão de confirmação mais uma vez, caso leve muito tempo o peixe irá escapar. Ao realizar múltiplas pescarias no mesmo local de pesca o tempo entre uma notificação e outra aumentará. Você pode ver um exemplo da ferramenta em ação abaixo:
-
-{% include image.html link="https://imgur.com/pwwZydM.gif" alt="Vara de Pescar - Funcionamento" width=80 %}
-
-##### Facão
-
-Quando equipado, este facão permite cortar arbustos e desbloquear caminhos.
-
-{% include image.html link="https://imgur.com/WDthCnW.png" alt="Facao - Funcionamento" width=80 %}
-
-##### Lanterna
-
-Quando equipada, a lanterna cria um raio de luz focal, excelente para locais escuros e mal iluminados.
-Caso  Ada utilize seu talento a lanterna é temporariamente desligada.
-
-{% include image.html link="https://imgur.com/1AuSeE8.png" alt="Lanterna - Funcionamento" width=80 %}
-
-#### Troca rápida de liderança
-
-Para facilitar o uso dos talentos de cada personagem foi implementado um sistema de troca rápida de liderança, basta pressionar a tecla W ou PageDown para alterar o líder da equipe.
-
-#### Perseguição e Espionagem
-
-Em alguns momentos durante o jogo, você precisará utilizar o talento de Ada para perseguir ou espionar alguém, nesses momentos você precisa ficar atendo aos locais de furtividade e à distância que você está do alvo.
-
-Em perseguições você não poderá ficar muito para trás, porque poderá perder informações importantes.
-
-{% include image.html link="https://imgur.com/Anh70dE.png" alt="Espionagem - Funcionamento" width=80 %}
-
-Durante as perseguições uma barra vertical se mostrada no canto esquerdo da tela, essa barra indica a distância que o alvo está de você, caso o alvo alcance qualquer um dos extremos da barra de distância você terá de refazer a missão.
-
-Os locais de furtividade permitem que você se esconda mesmo quando o talento Modo Furtivo estiver desligado, geralmente estes pontos só são disponíveis em locais escuros ou fechados.
+{% include image.html link="https://imgur.com/ct7PAl2.png" alt="Mineração" width=80 %}{% include image.html link="https://imgur.com/NohFRr3.png" alt="Pescaria" width=80 %}
 
 ### Batalha
 
-O sistema de batalha não foge muito do clássico, é um sistema de batalha lateral com alguns adendos.
-No entanto, as habilidades dos personagens são bastante diversificadas e possibilitam a manipulação da ordem dos turnos e até da quantidade vezes que um personagem pode realizar uma ação no mesmo turno.
+O jogo utiliza batalha lateral com uma mecânica de manipulação de turnos, através de técnicas você pode alterar a ordem das ações dos personagens e dos inimigos, cancelar ações e até mesmo realizar mais de uma ação no mesmo turno.
 
-#### Atordoar Inimigo
+Além disso, o jogo conta com um sistema de atordoamento de inimigos, você possui mecânismos para explorar as fraquezas do oponente e remover a resistência de sua defesa.
 
-Além da barra de HP, todos os inimigos irão apresentar uma barra de resistência, essa barra indica o quanto de dano você precisa causar até que o inimigo entre em estado de atordoamento.
+{% include image.html link="https://imgur.com/03LKG38.png" alt="Sob pressão" width=80 %}
 
-Inimigos neste estado tornam-se mais vulneráveis a ataques físicos e mágicos e além disso, ficam por dois turnos sem realizar nenhuma ação.
+Normalmente a resistência é representada por uma barra branca abaixo do HP do inimigo, ao acertar o inimigo com um golpe que causa dano significativo à resistência o inimigo entrará no estado de Pressionado, neste estado a barra fica com uma colocaração rosada e os danos na resistência aumentam significativamente.
 
-Existem três estágios para a resistência de um inimigo:
+{% include image.html link="https://imgur.com/DEnoXW8.png" alt="Atordoado" width=80 %}
 
-**Normal:**
-Barra na cor branca, ataques normais causam baixo dano à resistência
+Quando você quebra toda a resistência de um inimigo com sucesso a barra ficará vermelha, ele entrará no estado Atordoado e ficará duas ações sem jogar.
 
-{% include image.html link="https://imgur.com/FdJAcRJ.png" alt="Batalha - Atordoamento - 1" width=80 %}
-
-**Inimigo sob pressão:**
-
-Barra fica levemente avermelhada e alguns inimigos podem perder parte de suas habilidades. Existem três formas para colocar um inimigo sob pressão: acertos críticos, golpes de elementos que o inimigo possua fraqueza e golpes especiais que causam este estado (O golpe furtivo de Ada causa este estado).
-
-{% include image.html link="https://imgur.com/PVWVNpW.png" alt="Batalha - Atordoamento - 2" width=80 %}
-
-**Inimigo Atordoado:**
-
-Barra fica vermelha e o inimigo ficará dois turnos sem realizar nenhuma ação.
-
-{% include image.html link="https://imgur.com/zLVTIcG.png" alt="Batalha - Atordoamento - 3" width=80 %}
-
-#### Invocação
-
-Ao derrotar uma manifestação de Elidriel você se torna capaz de invocá-la. Para isso, você precisará canalizar energia de Elidriel necessária durante o combate.
-
-{% include image.html link="https://imgur.com/BQYPrc5.png" alt="Invocação - 1" width=80 %}
-
-A energia é exibida em uma barra no canto superior esquerdo, ela é única para todo o grupo e reinicia em cada nova batalha. Ao canalizar toda energia, a opção "Invocar" será habilitada em seus comandos de batalha:
-
-{% include image.html link="https://imgur.com/R7GuD9D.png" alt="Invocação - 2" width=80 %}
 
 ### Galeria
 
+{% include image.html link="https://imgur.com/DsvHSCB.png" alt="Galeria 1" width=30 %}{% include image.html link="https://imgur.com/Yvcj5QB.png" alt="Galeria 2" width=30 %}{% include image.html link="https://imgur.com/py9jMOJ.png" alt="Galeria 3" width=30 %}
 
-<div class="row">
-<div class="col s12">
- <div class="carousel" style="height:450px;margin-bottom:40px;margin-top:-150px;">
-    <a class="carousel-item" href="https://imgur.com/EfRw3zS.png" target="_blank">
-        <img src="https://imgur.com/EfRw3zS.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/pW3XMu8.png" target="_blank">
-        <img src="https://imgur.com/pW3XMu8.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/dWTMFio.png" target="_blank">
-        <img src="https://imgur.com/dWTMFio.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/YlEQPK2.png" target="_blank">
-        <img src="https://imgur.com/YlEQPK2.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/C0XDygS.png" target="_blank">
-        <img src="https://imgur.com/C0XDygS.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/35EvWlr.png" target="_blank">
-        <img src="https://imgur.com/35EvWlr.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/8dkZErb.png" target="_blank">
-        <img src="https://imgur.com/8dkZErb.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/8ks9E4W.png" target="_blank">
-        <img src="https://imgur.com/8ks9E4W.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/WZapBpq.png" target="_blank">
-        <img src="https://imgur.com/WZapBpq.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/1sBOQmq.png" target="_blank">
-        <img src="https://imgur.com/1sBOQmq.png">
-    </a>
-    <a class="carousel-item" href="https://imgur.com/Eitto2s.png" target="_blank">
-        <img src="https://imgur.com/Eitto2s.png">
-    </a>
-  </div>
-  </div> 
-</div>
+{% include image.html link="https://imgur.com/iEuP6g5.png" alt="Galeria 4" width=30 %}{% include image.html link="https://imgur.com/9K499tF.png" alt="Galeria 5" width=30 %}{% include image.html link="https://imgur.com/pNheUW8.png" alt="Galeria 6" width=30 %}
 
-Você pode fazer o download [neste link](https://drive.google.com/file/d/1iZ1E8yOffrwMhl4ThheEhrqUaQXAFojG/view?usp=sharing).
+{% include image.html link="https://imgur.com/PVGJ5Cv.png" alt="Galeria 7" width=30 %}{% include image.html link="https://imgur.com/B5J5pjf.png" alt="Galeria 8" width=30 %}{% include image.html link="https://imgur.com/BwqwOv0.png" alt="Galeria 9" width=30 %}
+
+{% include image.html link="https://imgur.com/plZIX9O.png" alt="Galeria 10" width=30 %}{% include image.html link="https://imgur.com/t8RPd78.png" alt="Galeria 11" width=30 %}{% include image.html link="https://imgur.com/EpuLs0N.png" alt="Galeria 12" width=30 %}
+
+
+Você pode fazer o download [neste link](https://drive.google.com/file/d/1kktFMYJH4wWIn6JAjXChg9-KpCtAN2TH/view?usp=sharing) via Google Drive e [neste link](https://www.mediafire.com/file/vq8maf0lsx9fuxk/Elidriel.rar/file) via MediaFire.
 
 Eu espero muito que você se divirta nessas 5 horas e por favor, deixe seu feedback aqui!
 
