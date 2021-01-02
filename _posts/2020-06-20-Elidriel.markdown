@@ -168,13 +168,48 @@ Quando você quebra toda a resistência de um inimigo com sucesso a barra ficar�
 
 ### Galeria
 
-|   	|   	|   	|
-|---	|---	|---	|
-|{% include image.html link="https://imgur.com/DsvHSCB.png" alt="Galeria 1" width=30 %}   	|{% include image.html link="https://imgur.com/Yvcj5QB.png" alt="Galeria 2" width=30 %}  	|{% include image.html link="https://imgur.com/py9jMOJ.png" alt="Galeria 3" width=30 %}  	|
-|{% include image.html link="https://imgur.com/iEuP6g5.png" alt="Galeria 4" width=30 %}  	|{% include image.html link="https://imgur.com/9K499tF.png" alt="Galeria 5" width=30 %}   	|{% include image.html link="https://imgur.com/pNheUW8.png" alt="Galeria 6" width=30 %}   	|
-|{% include image.html link="https://imgur.com/PVGJ5Cv.png" alt="Galeria 7" width=30 %}   	|{% include image.html link="https://imgur.com/B5J5pjf.png" alt="Galeria 8" width=30 %}   	|{% include image.html link="https://imgur.com/BwqwOv0.png" alt="Galeria 9" width=30 %}   	|
-|{% include image.html link="https://imgur.com/plZIX9O.png" alt="Galeria 10" width=30 %}   	|{% include image.html link="https://imgur.com/t8RPd78.png" alt="Galeria 11" width=30 %}   	|{% include image.html link="https://imgur.com/EpuLs0N.png" alt="Galeria 12" width=30 %}   	|
-
+<div class="row">
+<div class="col s12">
+ <div class="carousel" style="height:450px;margin-bottom:40px;margin-top:-150px;">
+    <a class="carousel-item" href="https://imgur.com/DsvHSCB.png" target="_blank">
+        <img src="https://imgur.com/DsvHSCB.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/Yvcj5QB.png" target="_blank">
+        <img src="https://imgur.com/Yvcj5QB.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/py9jMOJ.png" target="_blank">
+        <img src="https://imgur.com/py9jMOJ.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/iEuP6g5.png" target="_blank">
+        <img src="https://imgur.com/iEuP6g5.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/9K499tF.png" target="_blank">
+        <img src="https://imgur.com/9K499tF.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/pNheUW8.png" target="_blank">
+        <img src="https://imgur.com/pNheUW8.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/PVGJ5Cv.png" target="_blank">
+        <img src="https://imgur.com/PVGJ5Cv.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/B5J5pjf.png" target="_blank">
+        <img src="https://imgur.com/B5J5pjf.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/BwqwOv0.png" target="_blank">
+        <img src="https://imgur.com/BwqwOv0.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/plZIX9O.png" target="_blank">
+        <img src="https://imgur.com/plZIX9O.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/t8RPd78.png" target="_blank">
+        <img src="https://imgur.com/t8RPd78.png">
+    </a>
+    <a class="carousel-item" href="https://imgur.com/EpuLs0N.png" target="_blank">
+        <img src="https://imgur.com/EpuLs0N.png">
+    </a>
+  </div>
+  </div> 
+</div>
 
 Você pode fazer o download [neste link](https://drive.google.com/file/d/1kktFMYJH4wWIn6JAjXChg9-KpCtAN2TH/view?usp=sharing) via Google Drive e [neste link](https://www.mediafire.com/file/vq8maf0lsx9fuxk/Elidriel.rar/file) via MediaFire.
 
