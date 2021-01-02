@@ -33,16 +33,19 @@ De qualquer modo, aqui vai um resumão do jogo com prints, personagens e sinopse
 
 <p style="text-align: center;">
 Gênero: RPG / Fantasia
+
 Data de início: Dezembro 2018
+
 Concursos:
-{% include image.html link="https://imgur.com/2cZOVNf.png" alt="Troféu" width=48 height=48 %}
+
+{% include image.html link="https://imgur.com/2cZOVNf.png" alt="Troféu" width=10 %}
+
 CGA - Vencedor categoria Aventura
+
 4º Lugar (Demo 1) - Projeto Valente Verão 2020
+
 4º Lugar (Demo 1) - Protótipo Premiado 18
 
-Downloads:
-[Google Drive](https://drive.google.com/file/d/1kktFMYJH4wWIn6JAjXChg9-KpCtAN2TH/view?usp=sharing)
-[MidiaFire](https://www.mediafire.com/file/vq8maf0lsx9fuxk/Elidriel.rar/file) 
 </p>
 
 ### Introdução 
