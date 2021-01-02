@@ -30,14 +30,6 @@ De qualquer modo, aqui vai um resumão do jogo com prints, personagens e sinopse
 ## Projeto - Elidriel
 
 {% include image.html link="https://imgur.com/Bgj3KtI.png" alt="Logo do jogo" width=100 %}
-
-<p style="text-align: center;">
-Gênero: RPG / Fantasia
-
-Data de início: Dezembro 2018
-
-Concursos:
-
 {% include image.html link="https://imgur.com/2cZOVNf.png" alt="Troféu" width=10 %}
 
 CGA - Vencedor categoria Aventura
@@ -46,7 +38,9 @@ CGA - Vencedor categoria Aventura
 
 4º Lugar (Demo 1) - Protótipo Premiado 18
 
-</p>
+Gênero: RPG / Fantasia
+
+Data de início: Dezembro 2018
 
 ### Introdução 
 
@@ -174,13 +168,12 @@ Quando você quebra toda a resistência de um inimigo com sucesso a barra ficar�
 
 ### Galeria
 
-{% include image.html link="https://imgur.com/DsvHSCB.png" alt="Galeria 1" width=30 %}{% include image.html link="https://imgur.com/Yvcj5QB.png" alt="Galeria 2" width=30 %}{% include image.html link="https://imgur.com/py9jMOJ.png" alt="Galeria 3" width=30 %}
-
-{% include image.html link="https://imgur.com/iEuP6g5.png" alt="Galeria 4" width=30 %}{% include image.html link="https://imgur.com/9K499tF.png" alt="Galeria 5" width=30 %}{% include image.html link="https://imgur.com/pNheUW8.png" alt="Galeria 6" width=30 %}
-
-{% include image.html link="https://imgur.com/PVGJ5Cv.png" alt="Galeria 7" width=30 %}{% include image.html link="https://imgur.com/B5J5pjf.png" alt="Galeria 8" width=30 %}{% include image.html link="https://imgur.com/BwqwOv0.png" alt="Galeria 9" width=30 %}
-
-{% include image.html link="https://imgur.com/plZIX9O.png" alt="Galeria 10" width=30 %}{% include image.html link="https://imgur.com/t8RPd78.png" alt="Galeria 11" width=30 %}{% include image.html link="https://imgur.com/EpuLs0N.png" alt="Galeria 12" width=30 %}
+|   	|   	|   	|
+|---	|---	|---	|
+|{% include image.html link="https://imgur.com/DsvHSCB.png" alt="Galeria 1" width=30 %}   	|{% include image.html link="https://imgur.com/Yvcj5QB.png" alt="Galeria 2" width=30 %}  	|{% include image.html link="https://imgur.com/py9jMOJ.png" alt="Galeria 3" width=30 %}  	|
+|{% include image.html link="https://imgur.com/iEuP6g5.png" alt="Galeria 4" width=30 %}  	|{% include image.html link="https://imgur.com/9K499tF.png" alt="Galeria 5" width=30 %}   	|{% include image.html link="https://imgur.com/pNheUW8.png" alt="Galeria 6" width=30 %}   	|
+|{% include image.html link="https://imgur.com/PVGJ5Cv.png" alt="Galeria 7" width=30 %}   	|{% include image.html link="https://imgur.com/B5J5pjf.png" alt="Galeria 8" width=30 %}   	|{% include image.html link="https://imgur.com/BwqwOv0.png" alt="Galeria 9" width=30 %}   	|
+|{% include image.html link="https://imgur.com/plZIX9O.png" alt="Galeria 10" width=30 %}   	|{% include image.html link="https://imgur.com/t8RPd78.png" alt="Galeria 11" width=30 %}   	|{% include image.html link="https://imgur.com/EpuLs0N.png" alt="Galeria 12" width=30 %}   	|
 
 
 Você pode fazer o download [neste link](https://drive.google.com/file/d/1kktFMYJH4wWIn6JAjXChg9-KpCtAN2TH/view?usp=sharing) via Google Drive e [neste link](https://www.mediafire.com/file/vq8maf0lsx9fuxk/Elidriel.rar/file) via MediaFire.
