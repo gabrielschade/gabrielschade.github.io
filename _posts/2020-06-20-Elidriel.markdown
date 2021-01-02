@@ -171,40 +171,40 @@ Quando você quebra toda a resistência de um inimigo com sucesso a barra ficar�
 <div class="row">
 <div class="col s12">
  <div class="carousel" style="height:450px;margin-bottom:40px;margin-top:-150px;">
-    <a class="carousel-item" href="https://imgur.com/DsvHSCB.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/DsvHSCB.png" target="_blank">
         <img src="https://imgur.com/DsvHSCB.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/Yvcj5QB.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/Yvcj5QB.png" target="_blank">
         <img src="https://imgur.com/Yvcj5QB.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/py9jMOJ.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/py9jMOJ.png" target="_blank">
         <img src="https://imgur.com/py9jMOJ.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/iEuP6g5.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/iEuP6g5.png" target="_blank">
         <img src="https://imgur.com/iEuP6g5.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/9K499tF.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/9K499tF.png" target="_blank">
         <img src="https://imgur.com/9K499tF.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/pNheUW8.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/pNheUW8.png" target="_blank">
         <img src="https://imgur.com/pNheUW8.png">
     </a>
     <a class="carousel-item" href="https://imgur.com/PVGJ5Cv.png" target="_blank">
         <img src="https://imgur.com/PVGJ5Cv.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/B5J5pjf.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/B5J5pjf.png" target="_blank">
         <img src="https://imgur.com/B5J5pjf.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/BwqwOv0.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/BwqwOv0.png" target="_blank">
         <img src="https://imgur.com/BwqwOv0.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/plZIX9O.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/plZIX9O.png" target="_blank">
         <img src="https://imgur.com/plZIX9O.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/t8RPd78.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/t8RPd78.png" target="_blank">
         <img src="https://imgur.com/t8RPd78.png">
     </a>
-    <a class="carousel-item" href="https://imgur.com/EpuLs0N.png" target="_blank">
+    <a class="carousel-item" href="https://i.imgur.com/EpuLs0N.png" target="_blank">
         <img src="https://imgur.com/EpuLs0N.png">
     </a>
   </div>
